@@ -1,0 +1,473 @@
+{
+    "pf2e-toolbelt": {
+        "settings": {
+            "requiresReload": "(Requires Reload)",
+            "actionable": {
+                "title": "Actionable",
+                "enabled": {
+                    "name": "Enabled",
+                    "hint": "Adds a way to link a macro to a character action."
+                },
+                "message": {
+                    "name": "Chat Message",
+                    "hint": "When using an action macro, should the action's description be sent to chat."
+                }
+            },
+            "arp": {
+                "title": "Automatic Rune Progression",
+                "enabled": {
+                    "name": "Enabled",
+                    "hint": "Should your world use the Automatic Rune Progression Variant? This is incompatible with the regular ABP variant and will disable the system's variant setting."
+                },
+                "force": {
+                    "name": "Force Update",
+                    "hint": "When enabled, the runes will always be updated based on actor level. When disabled only the runes that are currently at a lower value than what they should be for that level will be upgraded."
+                }
+            },
+            "effectsPanel": {
+                "title": "Effects Panel",
+                "remove": {
+                    "name": "Remove-Effect Shortcut",
+                    "hint": "Using [Shift + Right Click] on effect icons in the effects-panel will instantly remove all their charges/counters/badges."
+                },
+                "condition": {
+                    "name": "Condition-Sheet Icon",
+                    "hint": "Adds an extra icon to conditions in the effects-panel to open their sheet."
+                }
+            },
+            "giveth": {
+                "title": "Giveth",
+                "enabled": {
+                    "name": "Enabled",
+                    "hint": "Should your world allow your players actors to be able to give items to other player-owned actors."
+                },
+                "message": {
+                    "name": "Send Message to Chat",
+                    "hint": "When an item is given to another actor, a chat message will be generated."
+                }
+            },
+            "heroActions": {
+                "title": "Hero Actions",
+                "enabled": {
+                    "name": "Enabled",
+                    "hint": "Should your world use the Hero Point Deck actions."
+                },
+                "table": {
+                    "name": "Table UUID",
+                    "hint": "Unique identifier of the table you want to use in your world. To get the UUID of a table (in a compendium or in the Rollable Tables directory), simply open the table and Right-Click on 📔 next to its name."
+                },
+                "trade": {
+                    "name": "Allow Trade",
+                    "hint": "When enabled, characters will be able to trade actions with one another."
+                },
+                "private": {
+                    "name": "Private Draw",
+                    "hint": "When enabled, the chat message generated will be private to other players."
+                },
+                "count": {
+                    "name": "Hero Set Variant",
+                    "hint": "If 0, characters can only have one hero action per hero point. Otherwise, the number of hero actions will be dissociated from the number of hero points available and characters will redraw hero actions in set."
+                }
+            },
+            "noBulk": {
+                "title": "No Bulk",
+                "dropped": {
+                    "name": "No Dropped Bulk",
+                    "hint": "Dropped equipment in an actor's inventory won't be accounted for bulk value calculation."
+                },
+                "coins": {
+                    "name": "Weightless Coins",
+                    "hint": "Coins are weightless in the inventory."
+                }
+            },
+            "unided": {
+                "title": "Set Un-Identified Image",
+                "create": {
+                    "name": "On Item Creation",
+                    "hint": "Automatically set the un-identifed image of items to be the same as the regular image when the item is created/imported."
+                },
+                "update": {
+                    "name": "On Item Update",
+                    "hint": "Automatically update the un-identifed image when the item's regular image is updated."
+                }
+            },
+            "untarget": {
+                "title": "De-targeting",
+                "force": {
+                    "name": "Force De-targeting",
+                    "hint": "Will forcibly remove the targets of all users at turn/round change."
+                },
+                "enabled": {
+                    "name": "Enabled",
+                    "hint": "Will remove all your targets at turn/round change. This can be overridden by the 'Force De-targeting' world setting."
+                }
+            },
+            "templateHelper": {
+                "title": "Template Helper",
+                "enabled": {
+                    "name": "Enabled",
+                    "hint": "When placing a template on the board, a new dialog will show up allowing you to target all the tokens inside it."
+                },
+                "dismiss": {
+                    "name": "Auto Dismiss",
+                    "hint": "The template will be removed from the board after setting all the targets (or if cancelled). Orphan refers to templates that do not originate from a spell chat message.",
+                    "choices": {
+                        "disabled": "Disabled",
+                        "orphan": "Orphan Only",
+                        "all": "All Templates"
+                    }
+                }
+            },
+            "spellsSummary": {
+                "title": "Spells Summary",
+                "enabled": {
+                    "name": "Enabled",
+                    "hint": "Offers the ability to toggle between the regular and an alternate version of the character sheet's spellcasting tab at any moment by clicking once more on the tab icon."
+                },
+                "sort": {
+                    "name": "Sort by Category",
+                    "hint": "When enabled, spells in a same rank table will first be sorted by category and then alphabetically."
+                }
+            },
+            "stances": {
+                "title": "Stances",
+                "enabled": {
+                    "name": "Enabled",
+                    "hint": "Add toggles in the character sheet to change your stance with ease. It will also remove stances at the end of an encounter."
+                }
+            },
+            "share": {
+                "title": "Shared Data",
+                "enabled": {
+                    "name": "Enabled",
+                    "hint": "Actors will be able to link/share their data with one another."
+                }
+            },
+            "targetHelper": {
+                "title": "Target Helper",
+                "enabled": {
+                    "name": "Enabled",
+                    "hint": "Enabled the 'Target Helper' feature in your world."
+                },
+                "addTargets": {
+                    "name": "Add Targets to Messages",
+                    "hint": "Will add extra targets to chat messages where damage can be applied and saves can be rolled."
+                },
+                "smallButtons": {
+                    "name": "Small Buttons",
+                    "hint": "Reduce the size of damage buttons for the extra targets."
+                }
+            },
+            "mergeDamage": {
+                "title": "Merge Damages",
+                "enabled": {
+                    "name": "Enabled",
+                    "hint": "A new icon is added to damage messages allowing them to be merged with other damage messages."
+                }
+            },
+            "hideDamage": {
+                "title": "Hide Damage",
+                "enabled": {
+                    "name": "Enabled",
+                    "hint": "Will hide the damage chat messages value of non-player owned creatures from players."
+                }
+            },
+            "useButton": {
+                "title": "Use Button",
+                "actions": {
+                    "name": "Add To Actions",
+                    "hint": "Will add an extra 'use' button to action that have uses."
+                },
+                "consumables": {
+                    "name": "Add To Consumables",
+                    "hint": "Will add an extra 'use' button to consumables."
+                },
+                "selfApplied": {
+                    "name": "Auto Self-Applied",
+                    "hint": "The use button for self-applied effect will automatically apply the effect."
+                }
+            },
+            "betterMerchant": {
+                "title": "Better Merchant",
+                "enabled": {
+                    "name": "Enabled",
+                    "hint": "Add custom functionalities to the default system merchant."
+                }
+            }
+        },
+        "arp": {
+            "forceVariant": "The module <strong>PF2e Toolbelt</strong> disabled the pf2e system variant ABP rule to work properly. It would probably be better if you reloaded the world now."
+        },
+        "effectsPanel": {
+            "remove": "[Shift + Right Click] Remove effect"
+        },
+        "giveth": {
+            "error": {
+                "zero": "You cannot give an item you don't have yourself.",
+                "withQty": "Giveth {qty} {item} to <strong>{target}</strong>.",
+                "withoutQty": "Giveth {item} to <strong>{target}</strong>.",
+                "noGM": "There is no GM online to trade."
+            },
+            "subtitle": "Giveth Item",
+            "trade": "{giver} giveth {quantity} × {item} to {recipient}."
+        },
+        "heroActions": {
+            "sheet": {
+                "action": {
+                    "use": "Use",
+                    "discard": "Discard"
+                },
+                "label": "Hero Actions",
+                "draw": "Draw {nb}",
+                "redraw": "Redraw",
+                "trade": "Trade",
+                "give": "Give"
+            },
+            "trade": {
+                "title": "Trade Hero Action",
+                "select": "Select the character to trade with",
+                "yes": "Send",
+                "no": "Cancel",
+                "request": {
+                    "title": "Hero Action - Trade Request",
+                    "flavor": "The character <strong>{sender}</strong> wants to trade with <strong>{receiver}</strong>",
+                    "give": "Offers: {give}",
+                    "want": "Wants: {want}",
+                    "yes": "Accept",
+                    "no": "Reject"
+                },
+                "rejected": "The trade between <strong>{sender}</strong> and <strong>{receiver}</strong> was rejected."
+            },
+            "giveActions": {
+                "title": "Give Hero Actions",
+                "yes": "Give Actions",
+                "no": "Cancel",
+                "drawn": "Already Drawn",
+                "asDrawn": "Set as drawn when given",
+                "withMessage": "Generate chat message"
+            },
+            "removeActions": {
+                "title": "Remove Hero Actions",
+                "all": "All Characters",
+                "yes": "Remove",
+                "no": "Cancel",
+                "removed": "Hero Actions were removed from selected Character(s)."
+            },
+            "error": {
+                "onlyCharacter": "Hero Actions is only compatible with Character actors",
+                "notEnoughPoint": "The character doesn't have enough hero points",
+                "noDetails": "Could not find the details for this Hero Action.",
+                "noAction": "The character doesn't have any Hero Action.",
+                "mustDiscard": "The character must discard {nb} actions to engage in a trade.",
+                "noOther": "There is no other character with Hero Actions available to trade with.",
+                "noGM": "There is no GM online to trade.",
+                "notGM": "You need to be a GM to give Hero Actions.",
+                "tradeError": "An error occured when trying to process the trade between <strong>{sender}</strong> and <strong>{receiver}</strong>."
+            },
+            "message": {
+                "drawn": "Has Drawn ({nb}) Hero Action",
+                "given": "Was given ({nb}) Hero Action",
+                "discarded": "Has Discarded ({nb}) Hero Action",
+                "used": "Spends a Hero Point to use",
+                "exchanged": "Traded a Hero Action with {name}",
+                "offer": "Offered: {offer}",
+                "receive": "Received: {receive}"
+            },
+            "table": {
+                "noDraw": "No action could be drawn from the table.",
+                "notFound": "No Hero Point Deck table could be found in this world.",
+                "noFormula": "The Hero Deck table has no formula, tell your GM they messed up.",
+                "noFormulaCompendium": "The Hero Deck table has no formula and is a compendium table.",
+                "drawError": "An error occurred during the draw, most likely the table contains non-conform results."
+            }
+        },
+        "templateHelper": {
+            "menu": {
+                "title": "Template Helper",
+                "self": "Include Self",
+                "neutral": "Include Neutral",
+                "enemies": "Enemies",
+                "allies": "Allies",
+                "all": "Both",
+                "yes": "Target",
+                "no": "Cancel"
+            }
+        },
+        "spellsSummary": {
+            "staff": "Staff",
+            "charges": "Charges"
+        },
+        "stances": {
+            "sheet": {
+                "noCombat": "You can only enter a stance during an encounter"
+            },
+            "error": {
+                "noCombat": "This character isn't part of an encounter."
+            },
+            "opening": {
+                "title": "Opening Stance",
+                "select": "Select the stance for {name}",
+                "yes": "Stance Up!",
+                "no": "Cancel"
+            }
+        },
+        "share": {
+            "config": {
+                "header": "Shared Data",
+                "master": {
+                    "label": "Master",
+                    "hint": "Select a master with whom this actor will share data.",
+                    "disabled": "This actor cannot have a master"
+                },
+                "health": {
+                    "label": "Health Pool",
+                    "hint": "Share health & stamina points with its master."
+                },
+                "turn": {
+                    "label": "Turn Start/End",
+                    "hint": "Whenever the master's turn starts/ends, the events will also be triggered for this actor if it isn't part of the current encounter."
+                },
+                "skills": {
+                    "label": "Skills Proficiencies",
+                    "hint": "Use the master's skills proficiencies."
+                },
+                "hero": {
+                    "label": "Hero Points",
+                    "hint": "Use the master's hero points."
+                },
+                "weapon": {
+                    "label": "Weapon Runes",
+                    "hint": "Use the master's invested handwraps/weapon fundamental & property runes."
+                },
+                "armor": {
+                    "label": "Armor Runes",
+                    "hint": "Use the master's invested armor/bracers potency & resilient runes."
+                }
+            },
+            "skills": {
+                "modifier": "Master Proficiency"
+            }
+        },
+        "targetHelper": {
+            "unnamed": "Unnamed",
+            "tooltip": {
+                "adjustment": "Adjustment: {value}",
+                "dcWithValue": "DC {dc}",
+                "reroll": "Can reroll the save check",
+                "result": {
+                    "format": "Result: {result}",
+                    "withOffset": "{success} by {offset}",
+                    "withoutOffset": "{success}"
+                }
+            },
+            "header": {
+                "sheet": "Open Sheet",
+                "hidden": "Hidden From Players"
+            },
+            "setTargets": "Set targets",
+            "toggleDamageRows": "Toggle original damage buttons",
+            "context": {
+                "rollAll": "Roll All Saves"
+            },
+            "reroll": {
+                "title": "Save Check Reroll",
+                "noPoints": "You need at least 1 Hero Point to Reroll.",
+                "yes": "Reroll",
+                "no": "Cancel"
+            },
+            "drop": {
+                "unauth": "You can only do that on messages you are the author of.",
+                "already": "This message already has a save check linked to it.",
+                "added": "You have successfully added a save to the message."
+            }
+        },
+        "mergeDamage": {
+            "buttons": {
+                "split": "Split back to original messages",
+                "merge": "Merge with previous damage message"
+            },
+            "noMatch": "Counldn't find another matching damage message."
+        },
+        "betterMerchant": {
+            "sheet": {
+                "browser": "From Browser",
+                "filters": "Item Filters",
+                "infiniteAll": {
+                    "label": "Infinite Stocks",
+                    "tooltip": "The merchant will never run out of items to sell (does nothing to Treasures)"
+                },
+                "infiniteToggle": "Toogle Infinite Stock"
+            },
+            "browserPull": {
+                "selected": "Selected",
+                "add": "Add To Merchant",
+                "all": "Select All",
+                "limit": "You have reached the limit!",
+                "wait": "Please wait for the items to be processed.",
+                "finished": "Items have finished being added to the merchant actor.",
+                "owned": "This item is already in the merchant's inventory",
+                "confirm": "<p>Are you sure you want to add the item(s) (selected: <strong>{nb}</strong>) to the merchant?</p><p>The process can take several seconds depending on the amount of items.</p>"
+            },
+            "browserFilter": {
+                "create": "Create {type} Filter",
+                "edit": "Edit {type} Filter",
+                "empty": "No point on creating a filter without .. filters."
+            },
+            "filter": {
+                "buy": "Buy",
+                "sell": "Sell"
+            },
+            "filters": {
+                "title": "{name} - Item Filters",
+                "default": {
+                    "buy": "Default Buy",
+                    "sell": "Default Sell"
+                },
+                "name": "Name",
+                "type": "Type",
+                "buy": "Buy Filters",
+                "sell": "Sell Filters",
+                "enabled": {
+                    "label": "Enabled",
+                    "tooltip": "Enable the filter for this merchant"
+                },
+                "useDefault": {
+                    "label": "Use Default Purse",
+                    "tooltip": "Should this filter also use the default purse, if not, only the purse of this filter will be used"
+                },
+                "ratio": {
+                    "label": "Price Ratio",
+                    "tooltip": "Price ratio for this filter"
+                },
+                "purse": {
+                    "label": "Gold Purse",
+                    "tooltip": {
+                        "buy": "Amount of gold to be spent on this filter (0 = no more money to buy, empty = infinite)<br><em>Note: Will not display anything smaller than gold but still keep track of it</em>",
+                        "sell": "The amount of gold this filter has received selling items so far"
+                    }
+                },
+                "delete": {
+                    "title": "Delete Filter",
+                    "content": "Are you sure you want to delete the <strong>{name}</strong> filter?"
+                }
+            },
+            "sell": {
+                "refuse": "<strong>{actor}</strong> isn't willing to depart willing to depart from <strong>{item}</strong>."
+            },
+            "buy": {
+                "refuse": "<strong>{actor}</strong> isn't interested in buying {quantity} <strong>{item}</strong>.",
+                "message": {
+                    "subtitle": "Buy Item",
+                    "content": "{buyer} buys {quantity} × {item} from {seller} for {price}gp."
+                },
+                "error": "An error occured when trying to process a trade request from <strong>{user}</strong>."
+            }
+        },
+        "actionable": {
+            "itemSheet": {
+                "label": "Macro",
+                "hint": " or a macro that will be executed when this action is used"
+            }
+        }
+    }
+}

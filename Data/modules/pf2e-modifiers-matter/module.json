@@ -1,0 +1,98 @@
+{
+    "id": "pf2e-modifiers-matter",
+    "title": "Pf2E Modifiers Matter",
+    "description": "Highlights situations where status effects (buffs, debuffs, conditions) change the outcome of a roll.  Technically this module is not about modifiers but about all the other things that modify a roll, which happen to not be called modifiers, despite applying modifications.",
+    "version": "1.9.1",
+    "compatibility": {
+        "minimum": "11",
+        "verified": "11"
+    },
+    "esmodules": [
+        "scripts/pf2e-modifiers-matter.js"
+    ],
+    "styles": [
+        "styles/pf2e-modifiers-matter.css"
+    ],
+    "languages": [
+        {
+            "lang": "en",
+            "name": "English",
+            "path": "lang/en.json",
+            "flags": {}
+        },
+        {
+            "lang": "cn",
+            "name": "简体中文（Simplified Chinese）",
+            "path": "lang/cn.json",
+            "flags": {}
+        },
+        {
+            "lang": "de",
+            "name": "Deutsch",
+            "path": "lang/de.json",
+            "flags": {}
+        },
+        {
+            "lang": "fr",
+            "name": "Français",
+            "path": "lang/fr.json",
+            "flags": {}
+        },
+        {
+            "lang": "pl",
+            "name": "polski",
+            "path": "lang/pl.json",
+            "flags": {}
+        },
+        {
+            "lang": "zh-tw",
+            "name": "正體中文",
+            "path": "lang/zh-tw.json",
+            "flags": {}
+        }
+    ],
+    "url": "https://github.com/shemetz/pf2e-modifiers-matter",
+    "manifest": "https://github.com/shemetz/pf2e-modifiers-matter/releases/latest/download/module.json",
+    "download": "https://github.com/shemetz/pf2e-modifiers-matter/releases/download/1.9.1/module.zip",
+    "readme": "https://github.com/shemetz/pf2e-modifiers-matter/blob/master/Readme.md",
+    "changelog": "https://github.com/shemetz/pf2e-modifiers-matter/blob/master/Changelog.md",
+    "license": "https://github.com/shemetz/pf2e-modifiers-matter/blob/master/License.txt",
+    "bugs": "https://github.com/shemetz/pf2e-modifiers-matter/issues",
+    "relationships": {
+        "systems": [
+            {
+                "id": "pf2e",
+                "type": "system",
+                "manifest": "https://github.com/foundryvtt/pf2e/releases/download/latest/system.json",
+                "compatibility": {
+                    "minimum": "5.4.0",
+                    "verified": "5.13.6"
+                }
+            }
+        ]
+    },
+    "authors": [
+        {
+            "name": "shemetz",
+            "email": "itamarcu+foundry@gmail.com",
+            "discord": "shemetz",
+            "flags": {}
+        }
+    ],
+    "media": [
+        {
+            "type": "setup",
+            "url": "https://raw.githubusercontent.com/shemetz/pf2e-modifiers-matter/master/metadata/cover.png"
+        },
+        {
+            "type": "icon",
+            "url": "https://raw.githubusercontent.com/shemetz/pf2e-modifiers-matter/master/metadata/icon.png",
+            "caption": "PF2e Modifiers Matter"
+        },
+        {
+            "type": "cover",
+            "url": "https://raw.githubusercontent.com/shemetz/pf2e-modifiers-matter/master/metadata/cover.png",
+            "caption": "PF2e Modifiers Matter"
+        }
+    ]
+}

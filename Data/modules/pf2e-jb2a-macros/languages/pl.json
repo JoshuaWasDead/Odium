@@ -1,0 +1,133 @@
+{
+	"pf2e-jb2a-macros": {
+		"notifications": {
+			"update": "PF2e Animations v{version} załadowany. Proszę sprawdzić czy nie ma nowych animacji dla twego menu auto-rozpoznawania!",
+			"noToken": "Nie znaleziono źródłowego tokena.",
+			"noDummy": "Brakuje sztucznego aktora dla makra wzywania.",
+			"creatingDummy": " Tworzę sztuczne NPC'ety... ",
+			"noJB2A": "Potrzebujesz włączony <a href=\"https://jb2a.com/home/content-information/#free_library\">moduł JB2A</a> aby użyć razem z PF2e Animations!",
+			"noPack": "Nie można znaleźć paczkę 'pf2e-jb2a-macros.Actions', jak to?",
+			"metaData": "Ta animacja ZOSTANIE zaktualizowana i nadpisana. Jeżeli nie chcesz aby była nadpisana, najlepiej zmień jej <b>animacje</b> lub <b>wariant</b> na coś innego, lub włącz tryb Debugowania w ustawieniach i ponownie klikając przycisk Metadata.",
+			"tooManyArgs": "Za dużo parametrów dla tego makra! Następujące parametry są niekompatybilne: {issues}",
+			"gridless": "Celowniki są polecane do użycia tylko w scenach bazujących na siatce. Sceny pozbawione siatki mogą sprawiać problemy.",
+			"noDependencies": "Do pełnego funkcjonowania PF2e Animations brakuje <b>{modules}</b>! Uruchom wymieniona moduły!",
+			"wrongVersion": "Do pełnego funkcjonowania PF2e Animations brakuje <b>{modules}</b>! Zaktualizuj wymieniona moduły!",
+			"outOfRange": "Cel jest poza zasięgiem.",
+			"noPrem": "Potrzebujesz <a href='https://www.patreon.com/JB2A/membership'>wersji premium zasobów JB2A</a>, żeby używać tej animacji!",
+			"unevenGrid": "Siatka twojej sceny jest nierówna ({grid}px). To może sprawić, że pozycja postaci będzie nieprawidłowa!",
+			"killAnimationsOnKill": "Usunięto animacje pokonanego wojownika \"{name}\"."
+		},
+		"settings": {
+			"disableHitAnims": {
+				"name": "Wyłącz Animacje \"Trafić lub Chybić\"",
+				"hint": "Kiedy możesz usunąć te animacje z menu Auto-rozpoznawania, one powrócą podczas aktualizowania modułu. Włącz te ustawienie aby wyłączyć te animacje."
+			},
+			"randomHitAnims": {
+				"name": "Spraw aby animacje \"Trafić lub Chybić\" pojawiały się poza celem",
+				"hint": "Włącz to ustawienie aby animacje Pudła i Krytycznego Pudła same pojawiały się poza celem."
+			},
+			"autoAccept": {
+				"name": "Automatycznie akceptuj Efekty",
+				"hint": "Automatycznie akceptuj efekty z makr, jak np. dodawanie efektu Rage kiedy się używa akcji Rage."
+			},
+			"autoUpdate": {
+				"name": "Otwórz Menu Aktualizacji podczas aktualizacji modułu",
+				"hint": "Automatycznie otwórz menu Aktualizacji Auto-rozpoznawania kiedy moduł jest zaktualizowny."
+			},
+			"smallTokenScale": {
+				"name": "Domyślna Skala dla Małych Tokenów",
+				"hint": "Określa, jaką skalę animacje zakładają dla małych postaci. Jeśli używasz ustawienia \"Skaluj żetony według rozmiaru\" systemu Pathfinder 2e, to ustawienie jest wyłączone i przyjmuje wartość 0,8."
+			},
+			"debug": {
+				"name": "Tryb Debugowania",
+				"hint": "Włącza logi konsoli pokazujące co PF2e Animations robi."
+			},
+			"autorecUpdate": {
+				"name": "Aktualizacja animacji",
+				"label": "Menu Aktualizacji"
+			},
+			"allowUncommonSummons": {
+				"name": "Pozwól na Rzadkie Przywołania",
+				"hint": "Pozwól na przywołanie niezwykłych, rzadkich, lub unikatowych stworzeń przez graczy. Możesz także na to pozwolić specyficznym zaklęciom poprzez dodawania \"uncommon\" do ich list parametrów w Menu Auto-Rozpoznawania lub w samym zaklęciu na karcie postaci."
+			},
+			"onlyImageSummons": {
+				"name": "Pozwalaj tylko na Przywołanie Stworzeń z Obrazami",
+				"hint": "Tylko pozwalaj na przywoływanie stworzeń z obrazami."
+			},
+			"tmfx": {
+				"name": "Używaj Token Magic Effects",
+				"hint": "Niektóre animacje używają Token Magic FX zamiast Sequencera. Ta opcja jest widoczna tylko kiedy zainstalowany jest moduł Token Magic FX."
+			},
+			"killAnimationsOnKillNotify": {
+				"name": "Powiadomienie o usunięciu animacji na pokonanych Tokenach",
+				"hint": "Powiadomienie o usunięciu animacji na tokenach oznaczonych jako pokonane w inicjatywie."
+			},
+			"killAnimationsOnKill": {
+				"name": "Usunięcie animacji na pokonanych tokenach",
+				"hint": "Automatycznie usunięcie animacji tokenów oznaczonych jako pokonane w inicjatywie."
+			}
+		},
+		"updateMenu": {
+			"deleted": "Poniższe efekty zostaną USUNIĘTE z poprzedniej wersji 'PF2e Animations'.",
+			"added": "Poniższe efekty zostaną dodane do twoich ustawień Auto-Rozpoznawania.",
+			"custom": "Poniższe efekty nie zostaną dodane gdyż już istnieje kopia z nieznanego źródła.",
+			"customHint": "Jeżeli chcesz wersje z 'PF2e Animations', usuń je z menu Auto-Rozpoznawania.",
+			"updated": "Poniższe efekty zostaną zaktualizowane z poprzedniej wersji 'PF2e Animations' (lub z domyślnych efektów Automated Animations).",
+			"nothing": "Brak aktualizacji.",
+			"warning": "Upewnij się, że wykonano kopię zapasową menu auto-rozpoznawania! TEN PROCES JEST NIEODWRACALNY.",
+			"debugCustom": "Poniższe efekty nie istnieją w PF2e Animations. One są kompletnie nowe i pozostaną w twoim menu Auto-Rozpoznawania.",
+			"blacklisted": "Poniższe efekty zostały postawione na czarnej liście i zostaną usunięte z twojego menu Auto-Rozpoznawania."
+		},
+		"macro": {
+			"disguise": {
+				"tokenScale": "Skala Tokena",
+				"tokenScaleHint": "Gdybyś chciał zamienić się w tokena który jest mniejszy od ciebie, lub ma styl \"pop-out\"!",
+				"invisible": "Zamień twój oryginalny token niewidzialny?",
+				"invisibleHint": "Włączone domyślnie, to ukrywa token pod przebraniem. Przydatne do przebrania się w token mniejszym od ciebie lub w innym stylu.",
+				"humanoidForm": "🎭Ludzka Forma🎭",
+				"illusoryDisguise": "🎭Przebranie w Iluzje🎭",
+				"cast": "Czaruj!",
+				"name": "Imię",
+				"tokenImage": "Obraz Tokena",
+				"tokenImageHint": "Upewnij się że działa na scenie, CORS lubi robić psikusy."
+			},
+			"summoning": {
+				"player": {
+					"label": "Sortowane jak…?",
+					"dancingLights": "Wybierz swe tańczące światełka…",
+					"creature": "Stwór",
+					"amount": "Ilość",
+					"title": "Przywołaj Cokolwiek",
+					"level": "Poziom {level}",
+					"unique": "Filtrowane jak wskazano przez {unique}.",
+					"nothingFound": "Nic nie znaleziono. Polepsz parametry filtrowania!",
+					"sorted": "Sortowane po poziomie i alfabetycznie.",
+					"summonArg": "Filtrowane przez poziom <b>(max. poziom {multiplier} przez {spellLevel} poziom zaklęcia)</b>.",
+					"levelArg": "Filtrowane przez poziom <b>wyższy niż {level1}, aż do {level2}</b>.",
+					"traitsArg": "Filtrowane przez cechy: <b>{traits}</b>.",
+					"hasImageArg": "Filtrowane przez posiadanie <b>obrazu</b> czy nie.",
+					"uncommonArg": "Można wybrać <b>niezwykłe lub rzadsze</b> stworzenia.",
+					"sourceArg": "Filtrowane przez źródła: <b>{sources}</b>.",
+					"nameArg": "Filtrowane według nazwy: <b>{name}</b>."
+				},
+				"gm": {
+					"content": "<p>{user} chce przywołać <b>{amount} {actorName}</b>.</p><p>Schemat został stworzony pokazujący gdzie będzie przywołane stworzenie. Jeżeli zaakceptujesz, przywołanie stworzenia stanie się tam gdzie jest schemat. Możesz zmienić pozycję schematu zanim zaakceptujesz.</p><p>Zamykanie lub Odmawianie tej oto prośby usunie schemat i nic nie będzie przywołane.</p>",
+					"title": "Prośba Gracza o Przywołanie",
+					"unknownUser": "Nieznany gracz",
+					"declined": "Odrzucone!"
+				}
+			},
+			"suddenCharge": {
+				"notif": "Nagła Szarża! Wybierz gdzie chcesz się poruszyć. Kliknij prawy przycisk aby anulować.",
+				"suddenCharge": "Nagła Szarża."
+			},
+			"outOfRange": "Poza zasięgiem!"
+		},
+		"welcomeMessage": {
+			"description": "Ten moduł zawiera ustawienia animacji dla systemu PF2e. Animacje te mogą spowolnić działanie komputera, niezależnie od tego, czy jest to spowodowane posiadaniem komputera niższej klasy, czy też dużą ilością efektów na ekranie, co jest powszechne w grach na wyższych poziomach.<p/>Jeśli nie chcesz widzieć tych animacji, zapoznaj się z ustawieniami modułu <b>Sequencer</b> i wyłącz ustawienie <b>\"Enable Effects\"</b>.",
+			"header": "Witamy w PF2e Animations!",
+			"settingsButton": "Otwórz Ustawienia",
+			"footer": "Możesz bezpiecznie usunąć tę wiadomość, nie otrzymasz kolejnej."
+		}
+	}
+}

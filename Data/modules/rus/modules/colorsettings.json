@@ -1,0 +1,13 @@
+{
+  "colorSettings.menuError": "Не найдено подменю для предоставленной клавиши",
+  "colorSettings.dropper": "Глазная пипетка",
+  "colorSettings.reset": "Средства выбора цвета будут сброшены при сохранении",
+  "colorSettings.showError": "Показать ошибку",
+  "colorSettings.showErrorHint": "Включить или отключить ошибку, если отсутствует основной модуль.",
+  "colorSettings.enableDialog": "Включить модуль настройки цвета?",
+  "colorSettings.enableDialogContent": "Похоже у вас уже установлены настройки цвета, вы хотите его включить?",
+  "colorSettings.backupWarning": "В модуле запущена резервная библиотека выбора цвета. Для достижения наилучших результатов, пожалуйста, установите и включите модуль Lib-Color Settings.",
+  "colorSettings.init": "ColorSettings | initializing",
+  "colorSettings.fallBackInit": "ColorSettings | initializing fallback mode",
+  "colorSettings.delay": "Для отображения цвета после клика может потребоваться некоторое время."
+}

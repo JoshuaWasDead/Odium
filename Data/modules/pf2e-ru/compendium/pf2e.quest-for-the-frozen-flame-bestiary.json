@@ -1,0 +1,1313 @@
+{
+	"label": "Quest for the Frozen Flame",
+	"mapping": {
+		"name": {
+            "path": "name",
+            "converter": "actorNameConverter"
+        },
+        "items": {
+            "path": "items",
+            "converter": "actorItemCollectionConverter"
+        },
+		"Cdescription": "system.details.publicNotes",
+		"CdescriptionGM": "system.details.privateNotes",
+		"language": "system.traits.languages.custom",
+		"senses": "system.perception.details",
+		"Hdescription": "system.details.description",
+		"disable": "system.details.disable",
+		"reset": "system.details.reset",
+		"routine": "system.details.routine",
+		"hp": "system.attributes.hp.details",
+		"di": "system.traits.di.custom",
+		"stealth": "system.attributes.stealth.details",
+		"ac": "system.attributes.ac.details",
+		"allSaves": "system.attributes.allSaves.value",
+		"speed": "system.attributes.speed.details"
+	},
+	"entries": {
+		"Abyss-warped Trees": {
+			"name": "Abyss-warped Trees",
+			"Hdescription": "<p>A forest of fiendish trees swing their branches and shift their roots to bludgeon and trip creatures in the tainted grove (area <strong>A21</strong>).</p>",
+			"disable": "<p>@Check[type:survival|dc:22|name:Find a Safe Location|traits:hazard,complex,environmental] (trained) to find a location the trees can't reach or @Check[type:religion|dc:24|name:Cast Out the Fiendish Energy|traits:hazard,complex,environmental] to recite a prayer that temporarily casts out the fiendish energy inside a single tree in the grove, disabling it for 1 minute. A disabled or destroyed tree creates a 5‑foot‑square area in the grove that's safe from this hazard.</p>",
+			"reset": "<p>The Abyss-warped trees cease moving 1 minute after no living creatures are in the tainted grove. They reset immediately. A disabled tree reanimates after 1 minute. A destroyed tree regrows after 1 month.</p>",
+			"routine": "<p>(4 actions) The Abyss‑warped trees use their first action each round to lash their roots; each creature in the tainted grove must succeed at a @Check[type:reflex|dc:21|traits:hazard,complex,environmental] save or fall @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}. The Abyss‑warped trees use their second, third, and fourth actions to make branch Strikes against up to three different creatures in the tainted grove.</p>",
+			"hp": "per tree",
+			"stealth": "<p>(обучен) to determine the trees can move</p>",
+			"items": [{}]
+		},
+		"Acid Strongbox Trap": {
+			"name": "Кислотная ловушка сейфа(*)",
+			"Hdescription": "<p>Будучи потревоженным, окружающее сейф невидимое магическое поле выпускает струю кислоты.</p>",
+			"disable": "<p>@Check[type:thievery|dc:22|name:Истощить магическое поле|traits:acid,evocation,magical,trap,hazard] (эксперт) чтобы безвредно истощить магическое поле, или @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG] (2-й уровень; противодействие КС 20) чтобы развеять его.</p>",
+			"stealth": "(обучен)",
+			"items": [
+                {
+                    "id": "lJHpE7lDy3oQrp0E",
+                    "name": "Кислотные брызги",
+                    "description": "<p><strong>Триггер:</strong> Существо касается сейфа напрямую или с помощью удерживаемого инструмента;</p>\n<hr />\n<p><strong>Эффект:</strong> Ловушка наносит @Damage[(4d8+10)[acid]]{4d8 урона кислотой} в @Template[type:cone|distance:15]{15-футовом конусе} в направлении спровоцировавшего существа (простой спасбросок @Check[type:reflex|dc:21|basic:true|traits:hazard,trap,magical,acid]{Рефлекса}).</p>"
+                }
+            ]
+        },
+		"Animated Blade": {
+			"name": "Оживший меч(*)",
+			"Cdescription": "",
+			"CdescriptionGM": "",
+			"ac": "(14 когда сломан); броня конструкта",
+			"items": [
+                {
+                    "id": "zawMSRddQ1OcK06Z",	
+                    "name": "Ржавый клинок"
+                },{
+                    "id": "UOFQKPtbi1qXPzEu",
+                    "name": "Броня конструкта (Твердость 4)",
+                    "description": "<p>Как обычные объекты, оживший меч имеет Твердость. Эта Твердость снижает любой получаемый урон на величину этой Твердости.</p>\n<p>Как только ОЗ ожившего меча снижаются ниже половины его ОЗ, или сразу после получения урона от критического попадания, его броня конструкта ломается и КБ снижается до 14.</p>"
+				},{
+                    "id": "LXBmCyGQKJlNmxRy",
+                    "name": "Ночное зрение",
+                    "description": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]</p>"
+                },{
+                    "id": "iw9Cbzn6MG4weM6P",
+                    "name": "Столбняк",
+                    "description": "<p><strong>Спасбросок:</strong> @Check[type:fortitude|dc:15]</p>\n<hr/>\n<p><strong>Возникновение:</strong> 1 неделя</p>\n<p><strong>Стадия 1: </strong>@UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Неуклюжесть 1} (1 неделя)</p>\n<p><strong>Стадия 2: </strong>@UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Неуклюжесть 2} и не может говорить (1 день)</p>\n<p><strong>Стадия 3: </strong>@UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Парализован} (1 день)</p>\n<p><strong>Стадия 4:</strong> Смерть</p>"
+                }
+            ]
+		},
+		"Arboreal Tar Tree": {
+			"name": "Смолистый дендроид(*)",
+			"Cdescription": "",
+			"CdescriptionGM": "",
+			"hp": "исцеление пустотой",
+			"items": [{
+				"id": "GtxnFBflThj6aStm",
+				"name": "Врожденные природные заклинания"
+			},{
+				"id": "g9eph1xasksy74xm",
+				"name": "Колючая ветка"
+			},{
+				"id": "bgx552vafvqoedmy",
+				"name": "Камень"
+			},{
+				"id": "0iivgs1u0yqgn0oy",
+				"name": "Слабость к топорам",
+				"description": "<p>Смолистый дендроид получает 10 дополнительного урона от топоров.</p>"
+			},{
+				"id": "vobvh44wug931r0a",
+				"name": "Порождение смоли",
+				"description": "<p>Живой дендроид или оживленное дерево убитое \"Ударом\" колючей ветки, спустя [[/br 1d4 #rounds]]{1d4 раундов} восстает в качестве порождения смоли. Это порождение смоли подчиняется убившему его смолистому дендроиду. Оно не имеет врожденных природных заклинаний и способности \"Порождение смоли\", и становится @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Неуклюже 2} до тех пор, пока является порождением смоли. Если создатель порождения умирает, порождение становится полноценным автономным смолистым дендроидом; оно вновь обретает свободу воли, получает врожденные природные заклинания и способность \"Порождение смоли\" и перестает быть <em>`неуклюжим`</em>.</p>"
+			},{
+				"id": "6ispkww8keqoxcx0",
+				"name": "Бросок камня"
+			}]
+		},
+		"Ardissa Prendergant": {
+			"name": "Ардисса Прендергант(*)",
+			"Cdescription": "",
+			"CdescriptionGM": "",
+			"items": [
+                {
+                    "id": "englaWXy6fDqzqu1",
+                    "name": "Рапира"
+                },{
+                    "id": "qTyKCfxB91orUt8h",
+                    "name": "Тяжелый арбалет"
+                },{
+		            "id": "yf3WtBHQUUn5gDvQ",
+                    "name": "Завораживающий сигил",
+				    "description": "<p><strong>Триггер:</strong> Ардисса становится целью Удара ближнего боя существа;</p>\n<hr />\n<p><strong>Эффект:</strong> Ардисса чертит в воздухе ошеломляющий символ.<p>Существо должно совершить спасбросок @Check[type:will|dc:20]{Воли}. После этого существо становится временно иммунным к  \"Завораживающиему сигилу\" на 1 минуту.</p><hr><p><strong>Успех:</strong> Существо невредимо</p>\n<p><strong>Провал:</strong> До начала своего следующего хода Ардисса @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Скрыта} от спровоцировавшего существа</p>\n<p><strong>Критический провал:</strong> До начала своего следующего хода Ардисса @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Спрятана} от спровоцировавшего существа</p>"
+                },{
+		            "id": "AZmrqYhpYoazB6G4",
+                    "name": "Истощить предмет силы",
+				    "description": "<div data-visibility=\"gm\">\n<p><strong>Частота:</strong> два раза в день</p></div>\n<p><strong>Эффект:</strong> Ардисса получает возможность сотворить 1 заклинание, которое уже использовала. Она должна @UUID[Compendium.pf2e.actionspf2e.aBQ8ajvEBByv45yz]{Сотворить заклинание} как обычно. Она может использовать это умение один раз, чтобы восстановить заклинание 1-го ранга и один раз, чтобы выосстановить заклинание 2-го ранга. Обычно она восстанавливает <em>силовой залп</em>.</p>"					
+                },{
+					"id": "QKB7MkiFViTD9IiU",
+                    "name": "Рапира (предмет силы)",
+					"description": "<p>Рапира это длинный и тонкий колющий клинок с корзинчатой гардой. Среди многих, он ценится как дуэльное оружие.</p>"
+                },{
+                    "id": "ho33xFfkbGFOn0hN",
+                    "name": "Книга заклинаний Адриссы",
+                    "description": "<ul>\n<li>Чары:\n<ul>\n<li><em> @UUID[Compendium.pf2e.spells-srd.Item.WBmvzNDfpwka3qT4]</em></li>\n<li><em>@UUID[Compendium.pf2e.spells-srd.Item.pwzdSlJgYqN7bs2w]</em></li>\n<li><em>@UUID[Compendium.pf2e.spells-srd.Item.gYjPm7YwGtEa1oxh]</em></li>\n<li><em>@UUID[Compendium.pf2e.spells-srd.Item.TVKNbcgTee19PXZR]</em></li>\n<li><em>@UUID[Compendium.pf2e.spells-srd.Item.4gBIw4IDrSfFHik4]</em></li>\n</ul>\n</li>\n<li>1-й ранг заклинаний:\n<ul>\n<li><em>@UUID[Compendium.pf2e.spells-srd.Item.gKKqvLohtrSJj3BM]</em></li>\n<li><em>@UUID[Compendium.pf2e.spells-srd.Item.J7Y7tl0bbdz7TcCc]</em></li>\n<li><em>@UUID[Compendium.pf2e.spells-srd.Item.4YnON9JHYqtLzccu]</em></li>\n<li><em>@UUID[Compendium.pf2e.spells-srd.Item.Gb7SeieEvd0pL2Eh]</em></li>\n</ul>\n</li>\n<li>2-й ранг заклинаний:\n<ul>\n<li><em>@UUID[Compendium.pf2e.spells-srd.Item.9XHmC2JgTUIQ1CCm]</em></li>\n</ul>\n</li>\n</ul>\n<hr />\n<p>Книга заклинаний содержит записанные знания, необходимые для изучения и подготовки различных заклинаний, необходимость для волшебников (которые обычно получают такую книгу бесплатно) и полезный предмет роскоши для других заклинателей, желающих изучить дополнительные заклинания. Каждая книга заклинаний может содержать вплоть до 100 заклинаний. Цена указана для пустой книги.</p>"
+                },{
+                    "id": "K2hLLROOTAU9Vy2U",
+                    "name": "Свиток Огненный шар (Ранг 3)",
+                    "description": "<p>@UUID[Compendium.pf2e.spells-srd.69L70wKfGDY66Mk9]</p><hr /><p>Сотворение заклинания со свитка требует держать свиток в одной руке и активировать его с помощью активности @UUID[Compendium.pf2e.actionspf2e.aBQ8ajvEBByv45yz]{Сотворение заклинания} используя обычно количество действие для этого заклинания.</p>\n<p>Чтобы \"Сотворить заклинание\" со свитка, оно должно присутствовать в вашем списке заклинаний. Так как вы тот, кто колдует заклинание, используется ваш показатель атаки заклинанием и КС заклинания. Заклинание так же получает признак соответствующего обычая колдовства (<a href=https://clck.ru/jjcSG><em>`аркана`</em></a>, <a href=https://clck.ru/kjA84><em>`сакральный`</em></a>, <a href=https://clck.ru/kj9U5><em>`оккультный`</em></a> или <a href=https://clck.ru/jjeJw><em>`природный`</em></a>).</p>\n<p>Любые физические материальные компоненты и стоимость предоставляются при создании свитка, так что вам не требуется предоставлять их при сотворении заклинания со свитка. Для этого заклинания, вы должны заменить любой требуемый материальный компонент на жестовый. Если заклинание требует фокуса, то он должен быть у вас, чтобы колдовать со свитка.</p>\n<hr />\n<p><em>Заметка: Чтобы создать свиток или палочку определенного заклинания, перетащите заклинание из компендиума или поисковика компендиума в инвентарь игрового персонажа, персонажа мастера или лист добычи.</em></p>"
+                },{
+	                "id": "UJHtK1neKIjKHxEH",
+                    "name": "Свиток Магический снаряд (Ранг 1)",
+                    "description": "<p>@UUID[Compendium.pf2e.spells-srd.69L70wKfGDY66Mk9]</p><hr /><p>Сотворение заклинания со свитка требует держать свиток в одной руке и активировать его с помощью активности @UUID[Compendium.pf2e.actionspf2e.aBQ8ajvEBByv45yz]{Сотворение заклинания} используя обычно количество действие для этого заклинания.</p>\n<p>Чтобы \"Сотворить заклинание\" со свитка, оно должно присутствовать в вашем списке заклинаний. Так как вы тот, кто колдует заклинание, используется ваш показатель атаки заклинанием и КС заклинания. Заклинание так же получает признак соответствующего обычая колдовства (<a href=https://clck.ru/jjcSG><em>`аркана`</em></a>, <a href=https://clck.ru/kjA84><em>`сакральный`</em></a>, <a href=https://clck.ru/kj9U5><em>`оккультный`</em></a> или <a href=https://clck.ru/jjeJw><em>`природный`</em></a>).</p>\n<p>Любые физические материальные компоненты и стоимость предоставляются при создании свитка, так что вам не требуется предоставлять их при сотворении заклинания со свитка. Для этого заклинания, вы должны заменить любой требуемый материальный компонент на жестовый. Если заклинание требует фокуса, то он должен быть у вас, чтобы колдовать со свитка.</p>\n<hr />\n<p><em>Заметка: Чтобы создать свиток или палочку определенного заклинания, перетащите заклинание из компендиума или поисковика компендиума в инвентарь игрового персонажа, персонажа мастера или лист добычи.</em></p>"
+                },{   
+                    "id": "WleXrmwuJHjNteWU",
+                    "name": "Заклинание школы волшебника"
+			    },{
+                    "id": "qW9Vb98JkZ54TPRY",
+                    "name": "Подготовленные арканные заклинания"
+		        },{
+                    "id": "E9BOLfuxvsYMD4l7",
+                    "name": "Пляшущие огоньки",
+                    "description": "<p>Вы создаете вплоть до 4 парящих огней, так, что ни один из которых не находится более чем в 10 футах друг от друга. Каждый из них светится, как факел. Когда вы делаете @UUID[Compendium.pf2e.actionspf2e.Item.3f5DMFu8fPiqHpRg]{Поддержание заклинания}, то можете перемещать любое количество огней на расстояние вплоть до 60 футов. Каждый огонек должен оставаться в пределах 120 футов от вас и в пределах 10 футов от всех остальных, иначе он погаснет.</p>"
+                },{
+                    "id": "ekYKpKFJ9slPx7Sz",
+                    "name": "Магическая рука",
+                    "description": "<p>Вы создаете одну магическую руку, невидимую или призрачную, которая хватает целевой объект и медленно перемещает его на расстояние вплоть до 20 футов. Поскольку объект левитирует, вы можете перемещать его в любом направлении. Когда вы используете @UUID[Compendium.pf2e.actionspf2e.Item.3f5DMFu8fPiqHpRg]{Поддержание заклинания}, то можете переместить объект на дополнительные 20 футов. Если объект находится в воздухе, когда заклинание заканчивается, то он падает.</p>\n<hr />\n<p><strong>Усиление (3-й):</strong> Вы можете выбирать целью ничейный объект Массой 1 или менее.</p>\n<p><strong>Усиление (5-й):</strong> Дистанция увеличивается до 60 футов, и вы можете выбирать целью ничейный объект Массой 1 или менее.</p>\n<p><strong>Усиление (7-й):</strong> Дистанция увеличивается до 60 футов, и вы можете выбирать целью ничейный объект Массой 2 или менее.</p>"
+			    },{
+                    "id": "YYSSYiFUqnJ5QnnX",
+                    "name": "Магический снаряд",
+                    "description": "<p>Вы посылаете дротик силы, летящий в существо, которое вы можете видеть. Он автоматически попадает и наносит 1d4+1 урона силой. За каждое дополнительное действие потраченное на @UUID[Compendium.pf2e.actionspf2e.Item.aBQ8ajvEBByv45yz]{Сотворение заклинания}, увеличьте количество выпускаемых снарядов на 1, до максимума в 3 снаряда за 3 действия. Вы выбираете цель для каждого снаряда отдельно. Если вы выпускаете более одного снаряда в одну цель, сложите урон до применения бонусов или штрафов к урону, сопротивлений, слабостей и т.д.</p>\n<hr />\n<p><strong>Усиление (+2):</strong> Вы выпускаете 1 дополнительный снаряд за каждое потраченное действие.</p>"
+                },{
+                    "id": "4oIfd0ml2hvTmmyc",
+                    "name": "Ослабляющий луч",
+                    "description": "<p>Из вашей руки сверкает луч, способный лишить противника силы. Совершите дистанционную атаку заклинанием по цели. В случае вашего успеха существо совершает спасбросок Стойкости, чтобы определить эффект заклинания. Если ваш бросок атаки критически успешный, то цель использует результат своего спасброска на одну ступень хуже.</p>\n<hr />\n<p><strong>Критический успех:</strong> Цель невредима</p>\n<p><strong>Успех:</strong> Цель получает состояние @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Ослаблен 1}.</p>\n<p><strong>Провал:</strong> Цель получает состояние @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Ослаблен 2}.</p>\n<p><strong>Критический провал:</strong> Цель получает состояние @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Ослаблен 3}.</p>"
+                },{
+                    "id": "Uiut5QPLUl7827mi",
+                    "name": "Верный удар",
+                    "description": "<p>Взгляд в будущее гарантирует, что ваш следующий удар будет точным. Следующий раз, когда вы совершаете бросок атаки до конца вашего хода, бросьте кости на атаку дважды и используйте лучший результат. Эта атака игнорирует штрафы обстоятельства на бросок атаки и любые требуемые чистые проверки, если цель @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Скрыта} или @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Спрятана}.<br />@UUID[Compendium.pf2e.spell-effects.Item.fpGDAz2v5PG0zUSl]{Эффект заклинания: Верный удар}</p>"
+                },{
+                    "id": "ASkYHxbsYMDrnIdB",
+                    "name": "Непроглядный туман",
+                    "description": "<p>Вы вызываете облако тумана. Все существа внутри тумана становятся @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Скрыты}, а все существа вне тумана становятся <em>`скрыты`</em> для существ внутри него. Вы можете @UUID[Compendium.pf2e.actionspf2e.Item.AjLSHZSWQ90exdLo]{Развеять} облако.</p>"
+                }
+            ]
+        },
+		"Ardissa's Porter": {
+			"name": "Подручный Ардиссы(*)",
+			"Cdescription": "",
+			"CdescriptionGM": "",
+			"items": [
+                {
+			        "id": "UIzEQKR9ybtGXVUY",
+                    "name": "Погрузочный крюк"
+                },{
+                    "id": "9ae4RQxt5mottkm6",
+                    "name": "Подцепить споткнувшегося",
+                    "description": "<p><strong>Требования:</strong> Подручный держит погрузочный крюк</p>\n<p><strong>Триггер:</strong> Враг, находящийся в досягаемости подручного, критически промахивается по нему атакой;</p>\n<hr />\n<p><strong>Эффект:</strong> Подручный Ардиссы передвигает врага на 5 футов в выбранном подручным направлении.</p>"
+				},{
+                    "id": "eeJyq98pt4IgbtwT",
+                    "name": "Ночное зрение",
+                    "description": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]</p>"
+				},{
+				    "id": "rFMVvKWq4mkC3STf",
+                    "name": "Погрузочный крюк",
+					"description":"<p>Легкий клевец это модифицированный инструмент горной добычи, с деревянной рукоятью заканчивающейся навершием кирки, изготовленной больше для того, чтобы пробивать доспехи и плоть, а не колоть камни.</p>"
+                }
+            ]
+        },
+		"Ashen Swale": {
+			"name": "Ashen Swale",
+			"Cdescription": "",
+			"CdescriptionGM": "",
+			"language": "телепатия 100 футов (только Idovik)",
+			"items": [{}]
+		},
+		"Azi": {
+			"name": "Azi",
+			"Cdescription": "",
+			"CdescriptionGM": "",
+			"items": [{}]
+		},
+		"Bargott": {
+			"name": "Bargott",
+			"Cdescription": "",
+			"CdescriptionGM": "",
+			"language": "разговор с растениями",
+			"items": [{}]
+		},
+		"Beaver": {
+			"name": "Beaver",
+			"Cdescription": "<p>Beavers are stocky, herbivorous rodents that live in freshwater ecosystems throughout Avistan. They live in lodges, which they construct from logs, grass, rocks, and mud.</p>\n<p>A typical beaver can grow up to 4 feet long and weigh up to 65 pounds.</p>",
+			"CdescriptionGM": "",
+			"items": [{}]
+		},
+		"Bone Warrior": {
+			"name": "Bone Warrior",
+			"Cdescription": "",
+			"CdescriptionGM": "",
+			"ac": "(23 с поднятым щитом)",
+			"items": [{}]
+		},
+		"Burnbearer": {
+			"name": "Опаленный(*)",
+			"Cdescription": "",
+			"CdescriptionGM": "",
+			"items": [
+                {
+                    "id": "TB0ri9VyOKQ0khqx",
+                    "name": "Дубинка"
+                },{
+                    "id": "8SOXXxwy5u14f5sV",
+                    "name": "Факел"
+                },{
+                    "id": "Cnjy4xCVO3DLsrck",
+                    "name": "Дубинка"
+				},{
+                    "id": "6hrGh6pWDI5pqWnO",					
+                    "name": "Подожги и беги",
+                    "description": "<p><strongТребования:</strong> Опаленный берет существо в тиски</p><hr>Опаленный поджигает отвлеченного противника. Опаленный совершает @UUID[Compendium.pf2e.actionspf2e.VjxZFuUXrCU94MWR]{Удар} факелом по взятому в тиски существу, а затем делает @UUID[Compendium.pf2e.actionspf2e.UHpkTuCtyaPqiCAB]{Шаг}. Если Удар опаленного наносит урон взятому в тиски существу, оно дополнительно получает @Damage[1[persistent,fire]]{1 продолжительного урона огнем}.</p>"
+                },{
+                    "id": "jk8BQA0VXUSZ70rJ",
+                    "name": "Подгоняемый смертью",
+					"description": "<p><strong>Триггер:</strong> Союзник в пределах 30 футов снижает ОЗ существа до 0;</p>\n<hr />\n<p><strong>Эффект:</strong> Опаленный совершает @UUID[Compendium.pf2e.actionspf2e.UHpkTuCtyaPqiCAB]{Шаг} или @UUID[Compendium.pf2e.actionspf2e.Bcxarzksqt9ezrs6]{Перемещение}.</p>"
+                }]
+		},
+		"Burning Mammoth Commando": {
+			"name": "Burning Mammoth Commando",
+			"Cdescription": "",
+			"CdescriptionGM": "",
+			"items": [{}]
+		},
+		"Burning Mammoth Hunter": {
+			"name": "Охотник Пылающих Мамонтов(*)",
+			"Cdescription": "",
+			"CdescriptionGM": "",
+			"items": [
+			{
+				"id": "QChHqDQVJoomcpkT",
+				"name": "Копье"
+			},{
+				"id": "bWBe9e8TV3MEgfVK",
+				"name": "Праща"
+			},{
+				"id": "UJdkXZHUsLln2A5w",
+				"name": "Копье"
+			},{	
+				"id": "sRwTyFJSOBNlYBMe",
+				"name": "Надрез мышцы",
+				"description": "<p>Когда охотник совершает критическое попадание, его цель становится @UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{Застигнута врасплох} до конца своего следующего хода.</p>"
+			},{
+				"id": "aOn2yL9PMJOifDVy",
+				"name": "Подгоняемый смертью",
+				"description": "<p><strong>Триггер:</strong> Союзник в пределах 30 футов снижает ОЗ существа до 0;</p>\n<hr />\n<p><strong>Эффект:</strong> Охотник совершает @UUID[Compendium.pf2e.actionspf2e.UHpkTuCtyaPqiCAB]{Шаг} или @UUID[Compendium.pf2e.actionspf2e.Bcxarzksqt9ezrs6]{Перемещение}.</p>"
+			},{
+				"id": "RN5NidY0s4fle8zs",
+				"name": "Спичка",
+				"description": "<p><strong>Активация:</strong> <span class=\"pf2-icon\">A</span> @UUID[Compendium.pf2e.actionspf2e.pvQ5rY2zrtPI614F]{Взаимодействовать}</p>\n<p>Алхимическое вещество, нанесенное на один конец этой крошечной деревянной палочки, воспламеняется при ударе о шероховатую поверхность. Зажигать пламя с помощью спички куда быстрее чем с помощью огнива. Вы можете зажечь спичку и коснуться легковоспламеняющегося объекта как часть того же действия @UUID[Compendium.pf2e.actionspf2e.pvQ5rY2zrtPI614F]{Взаимодействовать}.</p>"
+			}]
+	},
+		"Burning Mammoth Longshield": {
+			"name": "Щитоносец Пылающих Мамонтов(*)",
+			"Cdescription": "",
+			"CdescriptionGM": "",
+			"ac": "(17 с поднятым щитом)",
+			"items": [
+                {
+                    "id": "hQI5suP2tBgFJA4V",
+                    "name": "Копье"
+                },{
+                    "id": "OtwFVg3Ek90L2Ayb",
+                    "name": "Умбон"
+                },{
+                    "id": "harS8mdB4Mkx98fx",
+                    "name": "Копье"
+                },{
+                    "id": "Q1Vi5YJu3qSjuZv1",
+                    "name": "Ззащитная возможность",
+                    "description": "<p><strong>Триггер:</strong> Щитоносец попадает Ударом умбоном;</p><hr><p><strong>Эффект:</strong>Щитоносец @UUID[Compendium.pf2e.actionspf2e.xjGwis0uaC2305pm]{Поднимает щит}.</p>"
+                },{
+                    "id": "2tJAZBWfNh13dK49",
+                    "name": "Толчок щитом",
+                    "description": "<p><strong>Частота:</strong> Раз в раунд</p>\n<p><strong>Требования:</strong> У щитоносца поднят щит.</p>\n<hr />\n<p><strong>Эффект:</strong> Щитоносец совершает проверку Атлетики, чтобы @UUID[Compendium.pf2e.actionspf2e.7blmbDrQFNfdT731]{Толкнуть} существо в пределах досягаемости. Если при броске щитоносец получает провал, то вместо этого он получает успех, а если при броске он получал успех, то вместо этого он получает критический успех. После этого щит опускается.</p>"
+                },{
+                    "id": "s6Tu6erLi6i2NPPZ",
+                    "name": "Подгоняемый смертью",
+                    "description": "<p><strong>Триггер:</strong> Союзник в пределах 30 футов снижает ОЗ существа до 0;</p>\n<hr />\n<p><strong>Эффект:</strong> Щитоносец совершает @UUID[Compendium.pf2e.actionspf2e.UHpkTuCtyaPqiCAB]{Шаг} или @UUID[Compendium.pf2e.actionspf2e.Bcxarzksqt9ezrs6]{Перемещение}.</p>"
+                },{
+                    "id": "G3Eu22OfY1deIC5Q",
+                    "name": "Блок щитом",
+                    "description": "<p>@Localize[PF2E.NPC.Abilities.Glossary.ShieldBlock]</p>"
+                },{
+                    "id": "xJYilJz1MoUAlxWe",
+                    "name": "Вечный факел",
+			        "description": "<p><em>Вечный факел</em> это одно из распространенных применений постоянной магии. Этот факел постоянно отбрасывает свет, не требуя кислород и не выделяя тепла. Это пламя может быть накрыто или спрятано, но не может быть приглушено или погашено.</p>"
+                },{
+                    "id": "Qyd2CYEgayJvSX23",
+                    "name": "Полированный топаз"
+                }
+            ]
+        },
+		"Burning Mammoth Reaver": {
+			"name": "Опустошитель Пылающих Мамонтов(*)",
+			"Cdescription": "",
+			"CdescriptionGM": "",
+			"items": [
+                {
+                    "name": "Сальная бомба",
+                    "id": "w368xHnDwNRwj4V9"
+                },{
+                    "id": "5sdhz99y9R4cFHrX",
+                    "name": "Боевой топор"
+                },{
+                    "id": "kEpGsRBXY0d9aYMJ",
+                    "name": "Метательное копье"
+				},{
+                    "name": "Вой опустошителя",
+                    "description": "<p>Когда опустошитель совершает проверку Запугивания для @UUID[Compendium.pf2e.actionspf2e.2u915NdUyQan6uKF]{Деморализации}, он сравнивает результат проверки Запугивания с КС Воли каждого существа в пределах 30 футов, не являющегося Пылающим Мамонтом, определяя эффект для каждого существа отдельно. Вой опустошителя игнорирует обычный штраф обстоятельства к проверке Запугивания для целей, не говорящих на том же языке.</p>",
+                    "id": "DBXOMG8jXM1wIm82"
+                },{
+                    "name": "Сразить",
+                    "description": "<p>Когда опустошитель попадает по существу Ударом боевым топором, цель должна преуспеть в спасброске @Check[type:fortitude|dc:16]{Стойкости}, иначе упадет @UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{Ничком}. При критическом провале цель также получает [[/r 1d6[bludgeoning]]]{1d6 дробящего урона} при падении ничком.</p>",
+                    "id": "Nf0SXZcX1obqcW6x"
+                },{
+					"id": "8xcPOqIDYhEAbrZQ",
+					"name": "Подгоняемый смертью",
+					"description": "<p><strong>Триггер:</strong> Союзник в пределах 30 футов снижает ОЗ существа до 0;</p>\n<hr />\n<p><strong>Эффект:</strong> Опустошитель совершает @UUID[Compendium.pf2e.actionspf2e.UHpkTuCtyaPqiCAB]{Шаг} или @UUID[Compendium.pf2e.actionspf2e.Bcxarzksqt9ezrs6]{Перемещение}.</p>"
+                }
+            ]
+        },
+		"Cairn Wight (G4)": {
+			"name": "Каирновое умертвие (G4)(*)",
+			"Cdescription": "<p>Каирновые умертвия - ревностные стражи гробниц, курганов и усыпальниц, обычно появляющиеся на свет в результате некромантических ритуалов. Для тех смертных, которые не могут смириться с мыслью о разлуке со своим земным имуществом, может быть заманчивым существование в виде нежити, предлагаемое превращением в каирновое умертвие. Возможно, так же часто, особенно скупые и богатые королевские особы или купцы ищут жертв для превращения в таких умертвий, чтобы те вечно охраняли их драгоценные богатства.</p>\n<p>Лишь в редчайших случаях жадность смертного достаточно сильна, чтобы спонтанно превратить его в каирновое умертвие без темного ритуала или заступничества могущественного божественного существа. Однако, в таких случаях, получившееся умертвие проявляет злобу не имеющую себе равных и, скорее всего, владеет поистине редким сокровищем.</p>\n<p>Как хранители материальных ценностей, каирновые умертвия сверхъестественно связаны с оружием, которое они носили во время ритуала при их создании. Они могут распространять силу своей некромантии на оружие, которым владеют. Удар меча каирнового умертвия вытягивает жизнь из жертвы.</p>",
+			"CdescriptionGM": "",
+			"hp": "исцеление пустотой",
+			"items": [
+                {
+                    "id": "OMTKXoF2bm81nkS5",
+                    "name": "Дубинка"
+                },{
+				    "id": "jToSRHKjIQK8vQjE",
+                    "name": "Коготь"
+                },{
+                    "id": "7vospEMyP1inBifC",
+                    "name": "Дубинка"
+			    },{	
+                    "id": "aWo3aVa2XXkGsrLY",
+                    "name": "Финальная злость",
+                    "description": "<p><strong>Триггер:</strong> ОЗ каирнового умертвия снижены до 0;</p>\n<hr />\n<p><strong>Эффект:</strong> Перед уничтожением каирновое умертвие наносит <em>\"Удар\"</em>. При этом <em>\"Ударе\"</em>, оно не получает временных ОЗ от <em>\"Истощения жизни\"</em>.</p>"
+                },{
+                    "id": "eG5iE2SpiXdvquWh",
+                    "name": "Погребальная панихида",
+                    "description": "<p>Каирновое умертвие напевает тихую, призрачную мелодию. Живые существа в пределах @Template[type:emanation|distance:50]{50 футов} должны совершить спасбросок @Check[type:will|dc:21]{Воли}.</p>\n<p>Каирновое умертвие не может напевать новую <em>\"Погребальную панихиду\"</em> [[/br 1d4 #Перезарядка Погребальной панихиды]]{1d4 раунда}.</p>\n<hr />\n<p><strong>Критический успех:</strong> Существо невредимо.</p>\n<p><strong>Успех:</strong> Существо @UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{Напугано 1}.</p>\n<p><strong>Провал:</strong> Существо @UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{Напугано 2}.</p>\n<p><strong>Критический провал:</strong> Существо @UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{Напугано 2} и получает штраф состояния -2 к спасброскам против <em>\"Истощения жизни\"</em></p>"
+                },{
+                    "name": "Порождение каирнового умертвия",
+                    "description": "<p>Живой гуманоид убитый <em>\"Ударом\"</em> когтей или оружия каирнового умертвия, восстает @UUID[Compendium.pf2e.pathfinder-bestiary-2.sMNqIHHxcVBXG08h]{Порождением умертвия} через [[/br 1d4 #Трансформация в порождение]]{1d4 раунда}. Это порождение управляется убившим его каирновым умертвием. У него нет умений <em>\"Истощение жизни\"</em> или <em>\"Порождение каирнового умертвия\"</em> и оно @UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{Неуклюже 2} пока является порожденным умертвием. Если создатель этого порождения умирает, порождение становится полноценным, самостоятельным каирновым умертвием; оно восстанавливает свободу воли, получает <em>\"Истощение жизни\"</em> и <em>\"Порождение каирнового умертвия\"</em>, и перестает быть <em>`неуклюжим`</em>.</p>",
+                    "id": "gixaFzYqsyV9bsLi"
+                },{
+                    "id": "KTxjm0shb9zyrh0z",
+                    "name": "Истощение жизни",
+                    "description": "<p>Когда каирновое умертвие наносит живому существу урон своим <em>\"Ударом\"</em> связаным оружием или безоружной атакой, то получает [[/r 5 #Temporary Hit Points]]{5 ВОЗ} и существо должно совершить успешный спасбросок @Check[type:fortitude|dc:18]{Стойкости}, иначе будет @UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{Истощено 1}. Дальнейший урон, наносимый каирновым умертвием, при провале спасброска увеличивает состояние <em>`истощения`</em> на 1, до максимального <em>`истощен 4`</em>.</p>"
+			    },{
+                    "id": "3an6oXu4pkFGWJ8M",
+                    "name": "Ночное зрение",
+				    "description": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]</p>"
+                },{
+                    "id": "nl6UYgRrmefbxWK0",
+                    "name": "Исцеление пустотой"
+                }
+            ]
+        },
+		"Calcifda": {
+			"name": "Calcifda",
+			"Cdescription": "",
+			"CdescriptionGM": "",
+			"senses": "gemsight",
+			"items": [{}]
+		},
+		"Castoroides": {
+			"name": "Castoroides",
+			"Cdescription": "<p>Beavers are stocky, herbivorous rodents that live in freshwater ecosystems throughout Avistan. They live in lodges, which they construct from logs, grass, rocks, and mud.</p>\n<p>Castoroides are bear-sized beavers that build their lodges on land near a water source rather than in the water.</p>",
+			"CdescriptionGM": "",
+			"items": [{}]
+		},
+		"Cave-in": {
+			"name": "Cave-in",
+			"Hdescription": "The tunnel collapses, filling the passage with stone.",
+			"disable": "<p>@Check[type:survival|dc:25|name:Prop up ceiling] (trained) to prop up the tunnel ceiling without triggering a collapse</p>",
+			"stealth": "(обучен)",
+			"items": [{}]
+		},
+		"Corrupted Elder Tree": {
+			"name": "Развращенное старейшее дерево(*)",
+			"Cdescription": "<p>Денроиды регенты - их еще называют трентами - это громоздкие одинокие существа, отвечающие за охрану целого леса. Они смотрят на дела особенно долго и никогда не действуют нагло или необдуманно. Время от времени они собираются в небольшие группы, называемые рощами, чтобы поделиться новостями и передать свою мудрость дендроидам надзирателям, проросших под их присмотром. Во времена серьезной опасности все рощи в регионе могут собраться на многомесячное совещание, чтобы спланировать и, в конечном счете, принять меры в случае угрозы.</p>\n<p>Типичный дендроид регент в высоту 30 футов, ствол диаметром 2 фута и весит 4.5000 фунтов.</p>\n<hr />\n<p>Дендроиды - хранители леса и представители деревьев. Такие же долгожители, как и леса, которые они охраняют, дендроиды считают себя родителями и пастырями деревьев, а не их садовниками. Поэтому, хотя дендроиды, как правило медлительны и методичны, они ужасающе быстры, когда им приходится сражаться, защищая лес. Хотя дендроиды редко ищут общения с недолговечными народами - даже эльфы в глазах дендроидов выглядят мимолетными - и с присущим им недоверием относятся к переменам, они терпимо относятся к тем, кто стремится учиться у них, читая длинные и бессвязные монологи, особенно если такие ученики также выражают желание защищать лесные земли. Против тех, кто угрожает их царству, например лесорубов, желающих заготовить древесину, или поселенцев, стремящихся заложить пашни или город, дендроиды гневаются непоколебимо и разрушительно. Возможно, по иронии судьбы, дендроиды умеют разрушать то, что строят другие - эта черта хорошо помогает мстительным представителям их рода.</p>",
+			"CdescriptionGM": "<h2>Срубленные дендроиды</h2>\n<p>Дендроиды с большим уважением относятся к погибшим представителям своего вида. Их сложные ритуалы погребения включают в себя укладывание павшего дендроида на моховую подстилку в центре рощи саженцев. Разлагающийся дендроид питает саженцы, обеспечивая рост нового поколения деревьев.</p>\n<h2>Грибковая сеть</h2>\n<p>Особо старые дендроиды регенты и другие могущественные дендроиды могут подключаться к обширной грибковой сети, соединяющей корни всех деревьев в лесу. Благодаря этому дендроид может узнавать об угрозах по всему лесу, даже находясь за много миль от него.</p>\n<h2>Позднецветущие</h2>\n<p>Хотя дендроиды растут быстрее деревьев, им требуются десятилетия, чтобы достичь зрелости. Первые годы они проводят укоренившись на месте, развивая сродство с флорой своей родины и подстраиваясь под ее ритмы, в то время как взрослые дендроиды внимательно следят за их развитием. После первого столетия молодые дендроиды становятся более подвижными, часто подрабатывают у старших дендроидов на своей территории, принимая мантию хранителя леса.</p>",
+			"language": "разговор с растениями",
+			"items": [{
+				"id": "qqqYIHulqpSQmjAc",
+				"name": "Врожденные природные заклинания"
+			},{
+				"id": "JgLAUNOR58PPWtCz",
+				"name": "Разговор с растениями (постоянное)",
+				"description": "<p>Вы можете задавать вопросы и получать ответы от растений и грибков, но заклинание не делает их дружелюбнее или умнее, чем обычно. Большинство нормальных растений имеют особый взгляд на окружающий мир, поэтому они не распознают детали о существах или знают что-либо о мире за пределами их непосредственной окрестности. Хитрые растительные монстры, скорее всего, будут немногословны и уклончивы, в то время как менее умные часто говорят что-то бессмысленное.</p>\n<hr />\n<p><strong>Усиление (4-й):</strong> Продолжительность увеличивается до 8 часов.</p>"
+			},{
+				"id": "oSq2qYAln4B4sFY0",
+				"name": "Ветка"
+			},{
+				"id": "WeXirhh6gD0DCTGB",
+				"name": "Корень"
+			},{
+				"id": "2T8gBoUiFYXYQ2wp",
+				"name": "Камень"
+			},{
+				"id": "gRnmV8LgZS6qZ09j",
+				"name": "Сумеречное зрение"
+			},{
+				"id": "DM0bCE11AyauvvEH",
+				"name": "Постоянные заклинания"
+			},{
+				"id": "esNHCG2RP8SOfTuA",
+				"name": "Слабость к топорам",
+				"description": "<p>Дендроид регент получает 5 дополнительного урона от топоров.</p>"
+			},{
+				"id": "9ROgeFg0LqFYjWto",
+				"name": "Пробуждение дерева",
+				"description": "<p>Дендроид регент заставляет дерево в радиусе 180 футов выкорчевать себя и сражаться как <a href=https://clck.ru/jr9rZ><em>`миньон`</em></a>, используя статистику @UUID[Compendium.pf2e.pathfinder-bestiary.Actor.oBMIc2S8ekmDgPpi]. Дендроид регент может контролировать до двух пробужденных деревьев одновременно и отдавать команды обоим деревьям в качестве одного действия, которое имеет признаки <a href=https://clck.ru/jjU4o><em>`концентрация`</em></a> и <a href=https://clck.ru/sXZwX><em>`слуховой`</em></a>.</p>"
+			},{
+				"id": "0BMCA9P7mLMAMs10",
+				"name": "Разрушение предметов",
+				"description": "<p>Когда дендроид регент наносит предмет предмету или структуре, он наносит дополнительные 2d10 урона.</p>"
+			},{
+				"id": "QcXlYliyTvqiEDHM",
+				"name": "Бросок камня"
+			}]
+		},
+		"Crawling Hand Swarm": {
+			"name": "Crawling Hand Swarm",
+			"Cdescription": "",
+			"CdescriptionGM": "",
+			"language": "Can't speak any language",
+			"hp": "исцеление пустотой",
+			"items": [{}]
+		},
+		"Death's Slumber Ward": {
+			"name": "Оберег смертного сна(*)",
+			"Hdescription": "<p>Вихрь из четырех эфемерных магических нитей развеивает нежить и погружает живых в вечный сон.</p>",
+			"disable": "<p>@Check[type:religion|dc:23|name:Развеять одну из нитей|traits:hazard,magical,trap,complex] (эксперт) или @Check[type:performance|dc:21|name:Развеять одну из нитей|traits:hazard,magical,trap,complex] (обучен) чтобы развеять одну из нитей. Персонажи, которые провалили или критически провалили проверку Выступления во время похорон Праотца Эйвы в Главе 1, успели поразмыслить нал случившимся; такие персонажи получают бонус обстоятельства +2 к Выступлению для отключения этой ловушки.</p>\n<p>Ловушка уничтожается, когда четыре нити будут развеяны.</p>",
+			"reset": "<p>Призрак отключается через 1 минуту после того, как в радиусе 100 футов не будет ни одного живого существа или существа-нежити, а затем сбрасывается.</p>",
+			"routine": "<p>(4 действия) Каждая нить проходит через случайное живое существо или существо-<a href=https://clck.ru/pvLyk><em>`нежить`</em></a> в пределах 60 футов, нанося @Damage[4d6[void]]{4d6 урона пустотой}@Check[type:will|dc:22|basic:true|name:Оберег смертного сна|traits:hazard,magical,trap,complex]</p>\n<p>Нить наносит @Damage[4d6[void]] первым и @Damage[4d6[vitality]]{4d6 урона жизненностью} вторым. Нити проходят через рзных существ, если это возможно. Каждая рассеянная нить уменьшает количество действий ловушки на 1.</p>",
+			"stealth": "<p>(эксперт')</p>",
+			"items": [
+                {
+                "id": "lqxXkqOVfZo2v6BE",
+                "name": "Дыхание Фаразмы",
+				"description": "<p><strong>Триггер:</strong> Живое существо или существо-нежить открывает сундук;</p>\n<hr />\n<p><strong>Эффект:</strong> Эфемерный вихрь возникает, вытягивая энергию. Все живые и существа и сушества-нежить в пределах @Template[type:emanation|distance:60]{60 футов} должны преуспеть в спасброске @Check[type:will|dc:22|traits:hazards,trap,complex,magical]{Воли} или стать @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Замедленными 1} (@UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Замедленными 2} при критическом провале). Затем ловушка кидает инициативу.</p>" 
+                }
+            ]
+        },
+		"Desiak": {
+			"name": "Desiak",
+			"Cdescription": "",
+			"CdescriptionGM": "",
+			"items": [{}]
+		},
+		"Elk": {
+			"name": "Elk",
+			"Cdescription": "<p>Powerful and swift land mammals, elk range through the plains, hills, and forests of the wilderness.</p>\n<p>Their size, strength, and antlers (for the males) enable common elk to contend with most of their environment's dangers, though herds generally favor flight over combat. Most elk stand between 3 and 5 feet tall and weigh between 350 and 550 pounds, with females slighter than the males.</p>",
+			"CdescriptionGM": "",
+			"items": [{}]
+		},
+		"Everburning Mammoth": {
+			"name": "Everburning Mammoth",
+			"Cdescription": "",
+			"CdescriptionGM": "",
+			"hp": "исцеление пустотой",
+			"items": [{}]
+		},
+		"Falling Stalactites": {
+			"name": "Falling Stalactites",
+			"Hdescription": "Unstable stalactites fall from the ceiling.",
+			"disable": "<p>@Check[type:survival|dc:20|name:Safely remove Stalactite|traits:hazard,environmental] (trained) to remove a stalactite without triggering a fall</p>",
+			"stealth": "(trained)",
+			"items": [{}]
+		},
+		"Fiendish Arboreal": {
+			"name": "Бесовской дендроид(*)",
+			"Cdescription": "<p>Дендроиды надзиратели - это рейнджеры общества дендроидов. Эти странствующие личности обладают врожденным интересом к лесам, в которых они обитают, и редко останавливаются, чтобы прижиться и отдохнуть в одной и той же части леса дважды. Эта жажда странствий делает надзирателей идеальными лесными патрульными и разведчиками. Несмотря на то, что они умеют сражаться, им лучше не вступать в бой с опасными противниками в одиночку. Вместо этого они сообщают о любой опасности дендроидам регентам. В редких случаях большие группы дендроидов собираются вместе, образуя рощу. Рощи отправляются за пределы леса, чтобы исследовать области за пределами леса и собрать сведения о потенциальных угрозах, а затем возвращаются, чтобы сообщить о своих находках. Дендроиды не претендуют на понимание мотивов других существ - как и большинство сил природы, они неоднозначно относятся к делам смертных, не связанных с их лесом.</p>\n<hr />\n<p>Дендроиды - хранители леса и представители деревьев. Такие же долгожители, как и леса, которые они охраняют, дендроиды считают себя родителями и пастырями деревьев, а не их садовниками. Поэтому, хотя дендроиды, как правило медлительны и методичны, они ужасающе быстры, когда им приходится сражаться, защищая лес. Хотя дендроиды редко ищут общения с недолговечными народами - даже эльфы в глазах дендроидов выглядят мимолетными - и с присущим им недоверием относятся к переменам, они терпимо относятся к тем, кто стремится учиться у них, читая длинные и бессвязные монологи, особенно если такие ученики также выражают желание защищать лесные земли. Против тех, кто угрожает их царству, например лесорубов, желающих заготовить древесину, или поселенцев, стремящихся заложить пашни или город, дендроиды гневаются непоколебимо и разрушительно. Возможно, по иронии судьбы, дендроиды умеют разрушать то, что строят другие - эта черта хорошо помогает мстительным представителям их рода.</p>",
+			"CdescriptionGM": "<h2>Срубленные дендроиды</h2>\n<p>Дендроиды с большим уважением относятся к погибшим представителям своего вида. Их сложные ритуалы погребения включают в себя укладывание павшего дендроида на моховую подстилку в центре рощи саженцев. Разлагающийся дендроид питает саженцы, обеспечивая рост нового поколения деревьев.</p>\n<h2>Грибковая сеть</h2>\n<p>Особо старые дендроиды регенты и другие могущественные дендроиды могут подключаться к обширной грибковой сети, соединяющей корни всех деревьев в лесу. Благодаря этому дендроид может узнавать об угрозах по всему лесу, даже находясь за много миль от него.</p>\n<h2>Позднецветущие</h2>\n<p>Хотя дендроиды растут быстрее деревьев, им требуются десятилетия, чтобы достичь зрелости. Первые годы они проводят укоренившись на месте, развивая сродство с флорой своей родины и подстраиваясь под ее ритмы, в то время как взрослые дендроиды внимательно следят за их развитием. После первого столетия молодые дендроиды становятся более подвижными, часто подрабатывают у старших дендроидов на своей территории, принимая мантию хранителя леса.</p>",
+			"ac": "(22 с поднятым щитом)",
+			"items": [{
+				"id": "LDw297Vz4uENjRYC",
+				"name": "Каменный длинный меч",
+				"description": "<p>Длинный меч может быть с односторонним клинком или обоюдоострым. Их клинки тяжелые и длиной между 3 и 4 футами.</p>"
+			},{
+				"id": "atS4s8EW4fvN6Zz5",
+				"name": "Большой щит из коры"
+			},{
+				"id": "svh3YWWgNYDh2wu5",
+				"name": "Каменный длинный меч"
+			},{
+				"id": "dD0COaIGpOldIcFD",
+				"name": "Удар щитом"
+			},{
+				"id": "w6BFsw2xw1ZKxz55",
+				"name": "Сумеречное зрение"
+			},{
+				"id": "r1b2EOtm5LT3mHWK",
+				"name": "Возможность для атаки"
+			},{
+				"id": "uRZywk7870Tfgxnp",
+				"name": "Слабость к топорам",
+				"description": "<p>Бесовской дендроид получает 5 дополнительного урона от топоров.</p>"
+			},{
+				"id": "cZc6wNhJDpipF2uK",
+				"name": "Блок щитом"
+			},{
+				"id": "ZWzIyAxYv8ApHu3K",
+				"name": "Толчок щитом",
+				"description": "<p>Бесовской дендроид \"Перемещается\", а затем наносит \"Удар\" щитом. Если атака попадает, цель отталкивается на 10 футов.</p>"
+			}]
+		},
+		"Final Flight": {
+			"name": "Final Flight",
+			"Hdescription": "A creature experiences the death of a priest carried off by griffons and fed to their chicks.",
+			"disable": "<p>@Check[type:diplomacy|dc:22|name:Soothe the restless spirits|traits:hazard,haunt] (trained) to soothe the restless spirits, or @Check[type:religion|dc:24|name:Honor the deceased|traits:hazard,haunt] (trained) to recite a prayer honoring the deceased; two successful checks are required to disable the haunt</p>",
+			"reset": "The haunt deactivates 1 minute after all living creatures leave the Lea of Honored Souls. Ten minutes after deactivating, the haunt resets.",
+			"stealth": "(expert)",
+			"items": [{}]
+		},
+		"Footsteps Of Legends": {
+			"name": "Footsteps Of Legends",
+			"Hdescription": "The characters witness Burning Mammoths walking this mountain pass in ages long past.",
+			"disable": "<p>@Check[type:diplomacy|dc:26|name:Convince the spirits to remain dormant|traits:hazard,haunt] (trained) to convince the spirits to remain dormant, or @Check[type:religion|dc:26|name:Ritually silence the spirits|traits:hazard,haunt] (trained) to ritually silence the spirits</p>",
+			"reset": "1 hour",
+			"stealth": "(expert)",
+			"items": [{}]
+		},
+		"Forest Fire": {
+			"name": "Forest Fire",
+			"Hdescription": "<p>A @Template[type:line|distance:10|width:10]{10‑foot‑by‑10‑foot} bonfire spreads to the surrounding forest on each of its turns.</p>",
+			"disable": "<p>A successful @Check[type:athletics|dc:22|name:Smother a square|traits:hazard,complex,environmental,fire], @Check[type:nature|dc:22|name:Smother a square|traits:hazard,complex,environmental,fire], or @Check[type:survival|dc:22|name:Smother a square|traits:hazard,complex,environmental,fire] check from an adjacent square is sufficient to smother one 5‑foot‑square of fire; each attempt is an Interact action. Dousing the flames automatically extinguishes one or more sections of fire, with no check. Water typically clears a 5‑foot square if the amount is small (such as from a spell like create water or hydraulic push). Larger amounts of water, such as a full bucket, typically douse a 10‑foot‑by‑10‑foot area (or 4 squares in some other shape). Throwing a bucket of water on flames requires an Interact action. A waterskin doesn't contain enough water to put out even 1 square of fire. Cold can also put out fire, but only if the cold can affect an area; cold is less effective than water, so a frost vial puts out only 1 square of fire, and a ray of frost is ineffective.</p>",
+			"routine": "<p>On its turn, the fire spreads into a number of additional squares equal to half the number of squares the fire currently occupies (minimum 1 square). You determine the squares the fire spreads into. Any creature that ends its turn next to the flames takes @Damage[(2d8+5)[fire]] damage, or @Damage[(4d8+10)[fire]] damage if it ended its turn within the flames (@Check[type:reflex|dc:25|traits:hazard,complex,environmental,fire|basic:true] in either case). A creature can take damage from the forest fire only once per round.</p>",
+			"stealth": "",
+			"items": [{}]
+		},
+		"Gathganara": {
+			"name": "Гатганара(*)",
+			"Cdescription": "<p>Наяды охраняют ручьи, пруды, родники и другие естественные водоемы с пресной водой. Хотя большинство наяд ведут уединенную жизнь вблизи выбранного ими места обитания, иногда эти нимфы собираются в группы, похожие на ковен, в местах слияния речных притоков, творя великую магию и благословляя воды земли. Поскольку связь наяд с водоемами позволяет им быть более гибкими, они чаще других нимф взаимодействуют с гуманоидами и даже иногда посещают их поселения. В отличие от других нимф, наяды иногда становятся искателями приключений, особенно когда темные силы стремятся опустошить природу или иным образом угрожают земле, и объединяют свои силы с другими, чтобы предотвратить разорение природы.</p>\n<hr />\n<p>Нимфы - это семейство фей, которые принимают облик прекрасных гуманоидов с эльфийскими чертами и имеют глубокую связь с миром природы. Самые распространенные из них - дриады, духи, воплощающие великие деревья, но существует и множество других видов нимф, в том числе наяды, стерегущие водоемы. Все нимфы являются хранительницами какого-либо элемента природы, обычно определенного дерева или водоема, или даже - в случае нимф-королев - целых лесов или огромных водоемов.</p>",
+			"CdescriptionGM": "",
+			"language": "Разговор с животными",
+			"items": [
+                {
+					"id": "WIHK77N13bnY09Iq",
+                    "name": "Водяной кулак"
+                },{
+				    "id": "qd9QFtwsgr9c7yLU",
+                    "name": "Исцеление водой",
+                    "description": "<p>Находясь в связанном с ней водоеме, наяда исцеляет [[/r 1[healing]]]{1 ОЗ} каждые 10 минут.</p>"
+                },{
+			        "id": "5ukZ5DtCV1PrY7n7",
+                    "name": "Подземная наяда",
+                    "description": "<p>Гангарта обладает ночным зрением вместо сумеречного зрения.</p>"
+				},{
+			        "id": "go3VqYkAdxWM2T59",
+                    "name": "Ночное зрение",
+                    "description": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]</p>"
+                },{
+                    "id": "XQKbqAKqILs3dbvQ",
+					"name": "Зависимость от воды",
+                    "description": "<p>Наяда устанавливает связь с родником, заводью, прудом или аналогичному по размеру водоемом. Находясь в пределах 300 футов от связанного с ней водоема, наяда может по желанию сотворять заклинание @UUID[Compendium.pf2e.spells-srd.Item.iAnpxrLaBU4V6Sej]. Отдыхая дальше этого расстояния от водоема, она не исцеляет ОЗ и не уменьшает состояние @UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{Истощения}. В отличие от большинства других нимф, она не получает штрафов за нахождение вдали от связанного с ней водоема. Наяда может провести 24-часовой ритуал, чтобы установить связь с новым водоемом.</p>"
+                },{
+                    "id": "rL7A4RH2uX8GGbWM",
+                    "name": "Дикая эмпатия",
+                    "description": "<p>Гатганара может использовать Дипломатию, чтобы @UUID[Compendium.pf2e.actionspf2e.Item.OX4fy22hQgUHDr0q] на <a href=\"https://clck.ru/jzd2W\"><em>`животных`</em></a> и делать простые @UUID[Compendium.pf2e.actionspf2e.Item.DCb62iCBrJXy0Ik6]{Просьбы}.</p>"
+				},{
+                    "id": "4yIIumzL17bhMy0T",
+                    "name": "Врожденные природные заклинания"
+			    },{
+                    "id": "x69E9pxULR3rw0Uf",
+                    "name": "Разговор с животными (постоянное)",
+                    "description": "<p>Вы можете задавать вопросы, получать ответы и использовать навык Дипломатии с животными. Заклинание не делает их более дружелюбными чем обычно. Хитрые животные, скорее всего, будут немногословны и уклончивы, в то время как менее умные часто делают бессмысленные комментарии.</p>"
+                }
+            ]
+        },
+		"Giant Tapir": {
+			"name": "Гигантский тапир(*)",
+			"Cdescription": "<p>Обладая вытянутым, плоским на конце хоботом и приземистым телосложением, гигантские тапиры напоминают нечто среднее между слоном и кабаном, хотя на самом деле они более близки к лошадям и носорогам. Тапиры живут свободными стадами, которые пасутся у рек и озер. Они любят пресную воду не только из-за пышных растений, растущих по берегам, которые они поедают в огромных количествах, но и из-за защиты, которую обеспечивает вода. При приближении хищников тапиры уходят в воду и прячутся, едва поднимая носы над поверхностью, чтобы дышать. Также бризы и запахи вокруг ручьев и рек маскируют мускус тапиров, когда они путешествуют вдоль этих водных путей. Несмотря на неуклюжесть движений, тапиры обладают удивительной уверенностью в лапах, легко преодолевая грязь и другие подобные участки местности благодаря широким пальцам.</p>\n<p>Гуманоиды часто охотятся на гигантских тапиров ради их мяса и прочных шкур. Однако такая охота далеко не стабильна: тапиры могут бегать не менее быстро, чем те, кто на них охотится, и большинство из этих животных будут драться, если их загнать в угол. Эти послушные гиганты делают все возможное, чтобы по возможности избежать столкновения. Если гигантские тапиры чувствуют приближение опасности, они издают громкий свистящий звук, чтобы предупредить других тапиров о хищниках. Тот, кто подружится со стадом тапиров или одомашнит его, может использовать эту привычку свистеть в качестве системы предупреждения о приближении врагов.</p>\n<p>Гигантские тапиры обычно довольно спокойны, но могут внушать страх, если их разозлить. Их передние зубы, похожие на бивни, пригодны для того, чтобы раздирать нападающих, а тапир, которому удастся вцепиться в руку или ногу врага, может использовать свои тупые коренные зубы для перемалывания плоти. У тапиров хороший слух и отличное обоняние, но, как и у многих других хищных животных, слабое зрение. В хаосе борьбы с многочисленными врагами гигантские тапиры могут быть ошеломлены и растеряны, бросаясь как на союзников, так и на врагов или же вовсе убегая с места схватки.</p>",
+			"CdescriptionGM": "",
+			"speed": "копыта с пальцами",
+			"items": [
+                {
+                    "id": "ufKEXiY6gsGihaSl",
+                    "name": "Челюсти"
+				},{
+					"id": "jrAb0ixnl7c5vtgN",
+                    "name": "Перемалывающий укус",
+                    "description": "<p><strong>Требования:</strong> Предыдущим действием гигантского тапира был успешный @UUID[Compendium.pf2e.actionspf2e.VjxZFuUXrCU94MWR]{Удар} челюстями.</p><hr><p><strong>Эффект:</strong> Тапир разгрызает плоть и мышцы цели своими тупыми зубами. Существо должно совершить спасбросок @Check[type:fortitude|dc:18]{Стойкости}.</p><hr><p><strong>Критический успех:</strong> Существо невредимо</p>\n<p><strong>Успех:</strong> Существо получает состояние @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{Ослаблен 1} до начала своего следующего хода</p>\n<p><strong>Провал:</strong> Существо получает @Damage[2d4[bludgeoning]]{2d4 дробящего урона} и состояние @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{Ослаблен 1} до начала своего следуюшего хода</p>\n<p><strong>Критический провал:</strong> Существо получает @Damage[4d4[bludgeoning]]{4d4 дробящего урона} и состояние @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{Ослаблен 1} на 1 минуту</p>"
+                },{
+			        "id": "WvLtpXVlG5DAgE4A",
+                    "name": "Копыта с пальцами",
+                    "description": "<p>Гигантский таапир игнорируют сложную местность из-за грязи и мелководья.</p>"
+			    },{
+				    "id": "gefSzVpXYjyut6p2",
+				    "name": "Нюх (неточное) 30 футов",
+				    "description": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Scent]</p>"
+				},{
+				    "id": "4ewlVB0adYMPwD4b",
+				    "name": "Сумеречное зрение",
+				    "description": "<p>@Localize[PF2E.NPC.Abilities.Glossary.LowLightVision]</p>"
+                }
+            ]
+        },
+		"Giant Tapir (Snared)": {
+			"name": "Гигантский тапир [Пойманный](*)",
+			"Cdescription": "<p>Обладая вытянутым, плоским на конце хоботом и приземистым телосложением, гигантские тапиры напоминают нечто среднее между слоном и кабаном, хотя на самом деле они более близки к лошадям и носорогам. Тапиры живут свободными стадами, которые пасутся у рек и озер. Они любят пресную воду не только из-за пышных растений, растущих по берегам, которые они поедают в огромных количествах, но и из-за защиты, которую обеспечивает вода. При приближении хищников тапиры уходят в воду и прячутся, едва поднимая носы над поверхностью, чтобы дышать. Также бризы и запахи вокруг ручьев и рек маскируют мускус тапиров, когда они путешествуют вдоль этих водных путей. Несмотря на неуклюжесть движений, тапиры обладают удивительной уверенностью в лапах, легко преодолевая грязь и другие подобные участки местности благодаря широким пальцам.</p>\n<p>Гуманоиды часто охотятся на гигантских тапиров ради их мяса и прочных шкур. Однако такая охота далеко не стабильна: тапиры могут бегать не менее быстро, чем те, кто на них охотится, и большинство из этих животных будут драться, если их загнать в угол. Эти послушные гиганты делают все возможное, чтобы по возможности избежать столкновения. Если гигантские тапиры чувствуют приближение опасности, они издают громкий свистящий звук, чтобы предупредить других тапиров о хищниках. Тот, кто подружится со стадом тапиров или одомашнит его, может использовать эту привычку свистеть в качестве системы предупреждения о приближении врагов.</p>\n<p>Гигантские тапиры обычно довольно спокойны, но могут внушать страх, если их разозлить. Их передние зубы, похожие на бивни, пригодны для того, чтобы раздирать нападающих, а тапир, которому удастся вцепиться в руку или ногу врага, может использовать свои тупые коренные зубы для перемалывания плоти. У тапиров хороший слух и отличное обоняние, но, как и у многих других хищных животных, слабое зрение. В хаосе борьбы с многочисленными врагами гигантские тапиры могут быть ошеломлены и растеряны, бросаясь как на союзников, так и на врагов или же вовсе убегая с места схватки.</p>",
+			"CdescriptionGM": "",
+			"speed": "копыта с пальцами",
+			"items": [
+                {
+                    "id": "ufKEXiY6gsGihaSl",
+                    "name": "Челюсти"
+				},{
+                    "name": "Перемалывающий укус",
+                    "description": "<p><strong>Требования:</strong> Предыдущим действием гигантского тапира был успешный @UUID[Compendium.pf2e.actionspf2e.VjxZFuUXrCU94MWR]{Удар} челюстями.</p><hr><p><strong>Эффект:</strong> Тапир разгрызает плоть и мышцы цели своими тупыми зубами. Существо должно совершить спасбросок @Check[type:fortitude|dc:18]{Стойкости}.</p><hr><p><strong>Критический успех:</strong> Существо невредимо</p>\n<p><strong>Успех:</strong> Существо получает состояние @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{Ослаблен 1} до начала своего следующего хода</p>\n<p><strong>Провал:</strong> Существо получает @Damage[2d4[bludgeoning]]{2d4 дробящего урона} и состояние @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{Ослаблен 1} до начала своего следуюшего хода</p>\n<p><strong>Критический провал:</strong> Существо получает @Damage[4d4[bludgeoning]]{4d4 дробящего урона} и состояние @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{Ослаблен 1} на 1 минуту</p>",
+                    "id": "jrAb0ixnl7c5vtgN"
+                },{
+                    "name": "Копыта с пальцами",
+                    "description": "<p>Гигантский таапир игнорируют сложную местность из-за грязи и мелководья.</p>",
+                    "id": "WvLtpXVlG5DAgE4A"
+                },{
+                    "name": "Пойманный",
+                    "description": "<p>Из-за ядовитых колючек, застрявших в копытах гигантский тапир не может совершать @UUID[Compendium.pf2e.actionspf2e.Bcxarzksqt9ezrs6]{Перемещение} более чем на 10 футов.</p>",
+                    "id": "wUxWhZr4tteO3Xvc"
+                },{
+				    "id": "gefSzVpXYjyut6p2",
+				    "name": "Нюх (неточное) 30 футов",
+				    "description": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Scent]</p>"
+				},{
+				    "id": "4ewlVB0adYMPwD4b",
+				    "name": "Сумеречное зрение",
+				    "description": "<p>@Localize[PF2E.NPC.Abilities.Glossary.LowLightVision]</p>"
+                }
+            ]
+        },
+		"Glyptodon": {
+			"name": "Глиптодон(*)",
+			"Cdescription": "<p>Глиптодоны - огромные, похожие на броненосцев представители мегафауны, которые бродят по песчаным берегам рек и древним лесам в поисках своей любимой пищи - прибрежной травы и нежных саженцев. Угрюмые и подозрительные, глиптодоны избегают плотоядных зверей не из защитного инстинкта - их бронированная шкура защищает их от большинства хорошо приспособленных хищников - а потому, что они просто предпочитают, чтобы их оставили в покое и они спокойно добывали себе пропитание. Несмотря на свои огромные размеры, глиптодоны могут выживать на удивительно малом количестве пищи, и они готовы есть практически все. В результате их чаще, чем других крупных травоядных, можно встретить бродящими по обширной тундре или пустыне, выглядящими как одинокий, громоздкий горб на фоне ровного горизонта.</p>\n<p>Щитки глиптодона - толстые костные пластины его панциря - растут в виде характерных узоров и легко покрываются шрамами, что позволяет не-глиптодонам легко определять отдельных животных. У глиптодонов плохое зрение, даже для кормовых животных, и они полагаются на свое обоняние, чтобы передвигаться, а также определять угрозы и друг друга. В бою они полагаются в первую очередь на свои толстые панцири, защищающие их от нападающих.</p>\n<p>Хотя южные купцы время от времени совершают попытки создать торговую сеть с использованием глиптодонов, езда на этих гигантах - сплошное разочарование, поскольку их округлые шкуры мало подходят для ног гуманоидов или седел. Однако некоторые жители равнин с перепончатыми лапами, включая группы ящеролюдов, могут удерживаться в седлах на глиптодонах благодаря их сильным, гибким, когтистым лапам. Другие родословные рассматривают глиптодонов в первую очередь как источник мяса и прочных шкур, из которых получаются отличные импровизированные убежища и речные лодки.</p>\n<p>Загнанный в угол, глиптодон использует свои мощные когти, чтобы оцарапать или отпугнуть нападающих. Глиптодоны могут использовать хвост для защиты от мелких хищников, но обычно делают это только в крайнем случае.</p>",
+			"CdescriptionGM": "",
+			"items": [
+                {
+				    "id": "Jtu0twXKsUAmnaBZ",
+                    "name": "Коготь"
+                },{
+                    "id": "TwGABTDtMQPC6fhL",
+                    "name": "Хвост"
+				},{	
+                    "id": "vecbUczXVotwnIR8",
+                    "name": "Блок панцирем",
+                    "description": "<p><strong>Триггер</strong>: Находящееся рядом существо целится в глиптодона атакой;</p>\n<hr />\n<p><strong>Эффект:</strong> Глиптодон поворачивается, блокируя атаку своим панцирем и толкая свое громоздкое тело в сторону атакующего. Он получает бонус обстоятельства +2 КБ против спровоцировавшей атаки. Если атака будет критическим провалом, глиптодон пытается @UUID[Compendium.pf2e.actionspf2e.7blmbDrQFNfdT731]{Толкнуть} атакующего.</p>"
+                },{
+                    "id": "CikNOq92o7EWYi0p",		
+                    "name": "Молотящий хвост",
+                    "description": "<p>Жесткий хвост глиптодона - его сильнейшее оружие. Когда глиптодон критически попадает Ударом хвоста, цель становится @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Застигнута врасплох} на 1 раунд.</p>"
+                },{
+                    "id": "ofDdFQIne95yw1SH",		
+                    "name": "Нюх (неточное) 30 футов"
+                }
+            ]
+        },
+		"Graylok Ambusher": {
+			"name": "Graylok Ambusher",
+			"Cdescription": "",
+			"CdescriptionGM": "",
+			"items": [{}]
+		},
+		"Graylok Artillerist": {
+			"name": "Graylok Artillerist",
+			"Cdescription": "",
+			"CdescriptionGM": "",
+			"speed": "ice stride",
+			"items": [{}]
+		},
+		"Graylok Gatebreaker": {
+			"name": "Graylok Gatebreaker",
+			"Cdescription": "",
+			"CdescriptionGM": "",
+			"ac": "(30 с поднятым щитом, 32 за укрытием)",
+			"items": [{}]
+		},
+		"Groplit": {
+			"name": "Гроплит(*)",
+			"Cdescription": "<<p>Гроплит — это приземистое маленькое животное, имеющее форму капли воды, с выпуклым задним конечностями и похожим на угря лицом, выступающим из узкого черепа. Его задние ноги более мускулистые, чем передние, которые он в основном использует для равновесия, что придает ему походку и вид жабы. Гроплиты наиболее известны своей жирной кожей и тошнотворными гигиеническими привычками: они проводят большую часть дня, используя два длинных языка, чтобы глотать собственные маслянистые выделения или аналогичные вязкие субстанции растений или других животных. Хотя они предпочитают жить в северных заболоченных местах и влажных пещерах, гроплиты могут процветать во всех средах обитания, кроме самых бесплодных. Они едят все, что угодно, хотя предпочитают маленьких хрустящих животных, таких как жуки и птицы.</p>\n<p>Гроплиты известны как верные и очень общительные компаньоны, и из них получаются преданные, хотя и несколько странные домашние животные. Их можно научить простым командам, и они, кажется, очень гордятся тем, что подчиняются им, выполняя трюки даже перед лицом очевидной опасности. Недобросовестный хозяин может выдрессировать гроплита с намерением пожертвовать им в случае опасности, и гроплит с радостью примет такую судьбу. Из-за столь целеустремленного послушания и медленной репродуктивной способности гроплиты довольно редко встречаются в дикой природе.</p>\n<p>Из-за структуры их костей гроплиты демонстрируют невозмутимую улыбку, своего рода физическую черту, которую одни считают жуткой (или приводящей в ярость), а другие - милой. Благодаря своему вечному ликованию эти существа получили прозвище «ухмыляющиеся жабы» в некоторых частях мира.</p>\n<p>Поскольку они любят лакать маслянистые вещества всех видов, гроплитов естественным образом привлекают жирные животные, такие как @UUID[Compendium.pf2e.pathfinder-bestiary.Actor.eHLDsL1LG3jQ1H6Y]{сларки} и @UUID[Compendium.pf2e.pathfinder-bestiary-2.Actor.g1htYgARxNKxc7MV]{гигантские слизни}. По большей части такие животные редко возражают против компании дружелюбно настроенного гроплита, хотя бесплатной еды не бывает; гроплиты, которые теряют бдительность в кругу своей новообретенной семьи, часто оказываются не на той стороне кишечного тракта своих товарищей.</p>",
+			"CdescriptionGM": "",
+			"items": [
+                {
+					"id": "FhQig97mvb9RdLNH",
+                    "name": "Челюсти"
+                },{
+					"id": "Qa0URJiCp4W9hndd",
+                    "name": "Язык"
+                },{    
+					"id": "U7hCDoEloVFYtOGS",
+                    "name": "Маслянистое скольжение",
+                    "description": "<p><strong>Триггер:</strong> Существо промахивается по гроплиту Ударом ближнего боя;</p>\n<hr />\n<p><strong>Эффект:</strong> Гроплит совершает @UUID[Compendium.pf2e.actionspf2e.Bcxarzksqt9ezrs6]{Перемещение} или @UUID[Compendium.pf2e.actionspf2e.c8TGiZ48ygoSPofx]{Плывёт} на расстояние до 10 футов. Это движение не провоцирует реакции.</p>"
+                },{
+                    "id": "ZBCRWhu1yCwQ29R7",
+                    "name": "Прыгучий рывок",
+                    "description": "<p>Гроплит дважды совершает @UUID[Compendium.pf2e.actionspf2e.Bcxarzksqt9ezrs6]{Перемещение}, дважды @UUID[Compendium.pf2e.actionspf2e.d5I6018Mci2SWokk]{Прыгает}, либо один раз совершает Перемещение и один раз Прыгает. Затем он совершает Удар челюстями в конце движения.</p>"
+
+                },{
+                    "name": "Горючий жир",
+                    "description": "<p>КС чистой проверки восстановления от продолжительного урона огнем гроплита увеличен на 2 (обычно с 15 до 17).</p>",
+                    "id": "Tyz0ijQmv8rfYPrA"
+                },{
+                    "id": "2TdBhijmOje8ALgT",
+                    "name": "Воспламеняющиеся выделения",
+                    "description": "<p>Существа, которые попадают по гроплиту, оказываются вымазаны его горючим жиром. На 1 минуту или до тех пор, пока существо не очистится от жиры одиночным действием @UUID[Compendium.pf2e.actionspf2e.pvQ5rY2zrtPI614F]{Взаимодействия}, его КС чистых проверок восстановления от продолжительного урона огнем увеличивается на 2.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.Z6cOCgyVwTr5t3yQ]{Эффект: Воспламеняющиеся выделения}</p>"
+                },{
+                    "id": "z1ldLWPJW03UKRZI",
+                    "name": "Ночное зрение",
+                    "description": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]</p>"
+                }
+            ]
+        },
+		"Hail of Razor Stones": {
+			"name": "Град острых камней(*)",
+			"Hdescription": "<p>Когда задет спрятанный шнур, несколько острых камней падают в пространство, в котором он находится.</p>",
+			"disable": "<p>@Check[type:thievery|dc:18|name:Перерезать растяжку|traits:hazard,mechanical,trap] (обучен) чтобы безопасно перерезать растяжку</p>",
+			"stealth": "(обучен)",
+			"items": [
+                {
+                    "id": "Vhb7DC7sstGvRHUb",
+                    "name": "Обвал",
+                    "description": "<p><strong>Триггер:</strong> Существо входит в пространство с растяжкой;</p>\n<hr />\n<p><strong>Эффект:</strong> Падающие камни наносят @Damage[4d8[slashing]]{4d8 рубящего урона} (простой спасбросок @Check[type:reflex|dc:19|basic:true]{Рефлекса}) всем существам в квадрате, возможно пригвождая их к земле. При провал существо падает @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Ничком}, а при критическом провале оно становится @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Обездвижено} (@UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Вырваться} КС 17).</p>\n<p>Находящееся рядом существо может совершить проверку @Check[type:athletics|dc:19]{Атлетики}, чтобы сдвинуть камни в сторону и освободить обездвиженное существо.</p>"
+                }
+            ]
+        },
+		"Hall Of Fiery Doom": {
+			"name": "Hall Of Fiery Doom",
+			"Hdescription": "While the roof is on fire and collapsing timbers crush those within the hall, demons fly down from the sky to pluck victims from the flames.",
+			"disable": "<p>Two @Check[type:athletics|dc:32] or @Check[type:diplomacy|dc:32] checks to douse the flames; Athletics to do the work yourself or Diplomacy to muster the ghostly soldiers. This reduces the hazard's actions by 1 and prevents it from using Burning Timbers. Banish the demons with up to two @Check[type:arcana|dc:35], @Check[type:occultism|dc:35], or @Check[type:religion|dc:35]checks; each success reduces the hazard's actions by 1, and two successes prevent it from using Demonic Abduction. When the hazard loses all 3 actions, Burning Timbers, and Demonic Abduction, it's disabled.</p>",
+			"reset": "The hall falls quiet for 24 hours, after which it can trigger again.",
+			"routine": "<p>(3 actions) The haunt spends 1 action to fill the hall with burning timbers falling from above, and 2 actions to pluck up random victims and drop them to their deaths.</p>",
+			"stealth": "(master)",
+			"items": [{}]
+		},
+		"Hegremon": {
+			"name": "Hegremon",
+			"Cdescription": "",
+			"CdescriptionGM": "",
+			"items": [{}]
+		},
+		"Hobji": {
+			"name": "Хобджи(*)",
+			"Cdescription": "",
+			"CdescriptionGM": "",
+			"allSaves": "+2 состояния ко всем спасброскам против болезней и ядов",
+			"items": [
+                {
+                    "id": "BoqD3dGWBYizH8HR",
+                    "name": "Боевой молот"
+				},{
+                    "id": "8Oo7LqL5ZfGMymvk",
+                    "name": "Кулак"
+				},{
+                    "id": "rQNPEmnQdaPshJMk",
+                    "name": "Удушающая хватка",
+                    "description": "<p><strong>Триггер:</strong> Хобджи попадает существу Среднего или меньшего размера Ударом кулака;</p>\n<hr />\n<p><strong>Эффект:</strong> Существо становится @UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{Схвачено}, и хобджи начинает его душить. Существо @UUID[Compendium.pf2e.journals.JournalEntry.S55aqwWIzpQRFhcq.JournalEntryPage.G1Rje9eYCFEByzjg#tonutь-i-zadyhatьsya]{Задыхается} и не может говорить. Оно не может @UUID[Compendium.pf2e.actionspf2e.aBQ8ajvEBByv45yz]{Сотворять заклинания} со словесным компонентом и активировать предметы командой.</p>"
+ 
+                },{
+                    "id": "Ua1c4CiwpUBzMYBq",
+                    "name": "+2 состояния ко всем спасброскам от болезней и ядам"
+                },{
+                    "id": "foyMcXQRZnkR8ikE",
+                    "name": "Внезапная атака",
+                    "description": "<p>Хобджи наносит дополнительные 1d6 точного урона @UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{Застигнутым врасплох} существам.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SneakAttack]</p>"
+                },{
+                    "id": "KhQkg77LktJ5fLA9",
+                    "name": "Неожиданная атака",
+				    "description": "<p>В первый раунд боя, существа, которые еще не действовали считаются для Хобджи @UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{Застигнутыми врасплох}.</p>"
+				},{
+                    "id": "rKLSXpKM75fP6usY",
+                    "name": "Ночное зрение",
+                    "description": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]</p>"
+                },{
+                    "id": "NIwvxz701PLyMb1j",
+                    "name": "Боевой молот +1",
+                    "description": "<p>Это оружие имеет деревянную рукоять, заканчивающуюся большим тяжелым металлическим навершием. Навершие молота может быть односторонним или двусторонним, но оно всегда способно наносить мощные дробящие удары.</p>"
+                }
+            ]
+        },
+		"Idovik": {
+			"name": "Idovik",
+			"Cdescription": "",
+			"CdescriptionGM": "",
+			"language": "telepathy 100 feet (Ashen Swale only)",
+			"items": [{}]
+		},
+		"Ivarsa": {
+			"name": "Ivarsa",
+			"Cdescription": "",
+			"CdescriptionGM": "",
+			"items": [{}]
+		},
+		"Jesseri The Hailstorm": {
+			"name": "Jesseri The Hailstorm",
+			"Cdescription": "",
+			"CdescriptionGM": "",
+			"items": [{}]
+		},
+		"Kadlaka": {
+			"name": "Кадлака",
+			"Cdescription": "<p>Кадлаки - сильные жилистые гуманоиды с вороньими чертами лица - сочетают в себе самые грозные качества талантливых охотников и воздушных разведчиков, не говоря уже о мощной магической силе грома и молнии. Хотя кадлаки сторонятся большинства гуманоидов, они охотно заводят дружбу с воронами и другими птицами, а иногда заключают временные союзы с людьми, которые проявляют себя как достойные хранители диких животных и естественного порядка вещей. Когда кадлаки устраивают гнездо - на один сезон или на всю жизнь - они часто позиционируют себя как защитники природных объектов или местных стай. Поскольку естественный облик кадлак может напугать путешественников-гуманоидов, они часто принимают облик человека или представителя другой обычной двуногой родословной, чтобы получать информацию и передавать предупреждения.</p>",
+			"CdescriptionGM": "",
+			"items": [
+                {                
+                    "id": "0IjGkzeG2DNH3j75",
+                    "name": "Клюв"
+				},{
+                     "id": "sDtGw98TVAJiw6m4",
+                    "name": "Длинное копье"
+				},{
+                    "id": "Vvxfm3l2xc80Csbu",
+                    "name": "Эхо молнии"
+                },{
+				    "id": "AhUw0A3P4MhmeQoz",
+                    "name": "Изменение формы",
+                    "description": "<p>Кадлака может принять внешность любого <a href=https://clck.ru/puvRd><em>`гуманоида`</em></a> среднего размера. Это не изменяет ее Скорость или бонусы атаки и урона \"Ударов\", но может изменить тип урона, наносимого ее \"Ударами\" (обычно на дробящий). Находясь в форме гуманоида, кадлака не может совершать \"Взмах крыльев\". У каждой кадлаки фиксированная гуманоидная форма - они не могут принимать другую внешность при каждом использовании этого умения.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
+                },{
+                    "id": "xiZgTtpPtqtQ0MOo",
+                    "name": "Взмах крыльев",
+                    "description": "<p>Кадлака бьет крыльями, призывая мощный раскат грома. Существа в @Template[type:emanation|distance:15]{15-футовой эманации} получают урон @Damage[5d6[sonic]]{5d6 урона звуком} (простой спасбросок @Check[type:fortitude|dc:21|basic:true]{Стойкости}). При провале существо также отталкивается от кадлаки на футов. Кадлака не может снова использовать \"Взмах крыльев\" в течение [[/br 1d4 #Перезарядка Взмаха крыльев]]{1d4 раундов}.</p>"
+                },{
+                    "id": "xH8Yvi3uG6AjwvN1",
+                    "name": "Бесшумная молния",
+                    "description": "<p>Движения кадлаки практически бесшумны. Против существ, полагающихся только на слух, она получает бонус обстоятельства +4 к Скрытности</p>"
+				},{
+                    "id": "lPGycMOtYg7qKuc8",
+                    "name": "Сумеречное зрение",
+				    "description": "<p>@Localize[PF2E.NPC.Abilities.Glossary.LowLightVision]</p>"
+                },{
+                    "id": "yq568I7d6ZxuCM4q",
+                    "name": "Плавное падение",
+			        "description": "<p><strong>Триггер:</strong> Существо в пределах дистанции падает</p>\n<hr />\n<p>Вы заставляете сам воздух останавливать падение. Падение цели замедляется до 60 футов за раунд, и часть падения во время действия заклинания не учитывается при расчете урона от падения. Если цель достигает земли во время действия эффекта, она не получает урон от падения. Заклинание заканчивается как только цель приземляется.</p>"
+				},{
+                    "id": "PPRPQ3mDUpprMWLJ",
+                    "name": "Плавное падение",
+			        "description": "<p><strong>Триггер:</strong> Существо в пределах дистанции падает</p>\n<hr />\n<p>Вы заставляете сам воздух останавливать падение. Падение цели замедляется до 60 футов за раунд, и часть падения во время действия заклинания не учитывается при расчете урона от падения. Если цель достигает земли во время действия эффекта, она не получает урон от падения. Заклинание заканчивается как только цель приземляется.</p>"
+				},{
+                    "id": "13MJE5Vub1NCDtiW",
+                    "name": "Плавное падение",
+			        "description": "<p><strong>Триггер:</strong> Существо в пределах дистанции падает</p>\n<hr />\n<p>Вы заставляете сам воздух останавливать падение. Падение цели замедляется до 60 футов за раунд, и часть падения во время действия заклинания не учитывается при расчете урона от падения. Если цель достигает земли во время действия эффекта, она не получает урон от падения. Заклинание заканчивается как только цель приземляется.</p>"
+                },{
+                    "id": "6HTwb4RPQajkwLau",
+                    "name": "Бесследный шаг (постоянное)",
+                    "description": "<p>Вы скрываете оставляемые позади следы, делая их неясными, и затрудняете другим возможность найти вас. КС проверок для @UUID[Compendium.pf2e.actionspf2e.Item.EA5vuSgJfiHH7plD]{Выслеживание} вас, получает бонус состояния +4 или равен вашему КС заклинания, в зависимости от того, что больше. Вы единовременно можете получать преимущество только от одного <em>бесследного шага</em>.</p>\n<hr />\n<p><strong>Усиление (2-й):</strong> Продолжительность увеличивается до 8 часов.</p>\n<p><strong>Усиление (4-й):</strong> Продолжительность увеличивается до 8 часов. Заклинание имеет дистанцию 20 футов и область @Template[type:emanation|distance:20]{20-футовую эманацию}, действуя на вплоть до 10 существ по вашему выбору в этой области.</p>"
+                },{
+                    "id": "PRvtEln0Vj1Y4CFQ",
+			        "name": "Зверь-посланник (только вороны)",
+			        "description": "<p>Вы предлагаете еду, и обычное крошечное дикое животное в пределах досягаемости приближается, чтобы съесть ее. Вы запечатлеваете в животного образ, направление и расстояние очевидного места или ориентира, хорошо известного вам. Вы можете прикрепить к нему маленький объект или записку легкой Массы. Животное делает все возможное, чтобы добраться до места назначения; если оно добирается туда, то ждет поблизости, и позволяет невраждебным существам приблизиться к нему и снять прикрепленный объект. Заклинание заканчивается через 24 часа или когда сообщение доставлено, в зависимости от того, что произойдет раньше.</p>\n<p>Если в радиусе использования заклинания нет Крошечных диких животных, оно пропадает.</p>"				
+                }
+            ]
+        },
+		"Lagofir": {
+			"name": "Lagofir",
+			"Cdescription": "<p>Lagofirs are semiaquatic omnivores that resemble a rabbit the size of a large dog. They're social creatures, playful but territorial and protective of their kin. Lagofirs live in family units and gather in larger groups as often as their environment allows. They're commonly found in northern Avistan, congregating along rivers, lakes, and coasts, where they subsist on fish, crustaceans, marine plants, and small mammals.</p>\n<p>Lagofirs have a stout body, rounded back, large hind legs, long ears, and a short, fluffy tail. Their powerful incisors are capable of cracking through clam shells, chitin, and bone. Both their front and back paws are webbed, and their front paws are highly dexterous, enabling them to grasp objects and perform simple manual tasks.</p>\n<p>Lagofirs secrete a thick, sweet-smelling, flammable oil that coats their fur. Warm to the touch, this oil keeps them insulated and comfortable in frigid water and cold climates. Lagofirs mark their territory by brushing against solid surfaces, coating them in oil that, to other lagofirs, identifies an individual. This makes their lairs, known as burrows or forms, incredibly hazardous. A single spark in a lagofir form can cause an explosion.</p>",
+			"CdescriptionGM": "",
+			"items": [{}]
+		},
+		"Loblobi": {
+			"name": "Лоблоби(*)",
+			"Cdescription": "<p>Течение рек в Первом Мире реки не всегда предсказуемо, иногда они разливаются вспять, вверх или просто исчезают в тумане и вновь появляются в другом месте. Феи, обитающие в таких реках, обычно столь же своенравны. Это особенно характерно для лоблоби - хитрых хищников, похожих на маленьких, пухлых человечков с головами и крыльями хохлатых цапель.</p>\n<p>Эти злобные обманщики обожают устраивать разного рода проказы, в результате которых другие существа оказываются в опасности, страдают или даже тонут. Самая обычная их \"шалость\" - наложить заклинание @UUID[Compendium.pf2e.spells-srd.Item.Seaah9amXg70RKw2]{Хождение по воде} на того, кто надеется пересечь реку, а затем развеять эффект, когда жертва преодолеет половину пути. В обратном же случае - когда над ними подшучивают - большинство лоблоби легко выходят из себя. Хорошо известно, что немногие существа могут затаить столь сильную обиду, как лоблоби.</p>\n<p>Будучи крайне тщеславными, лоблоби постоянно пытаются выстаить на показ свое оперение. Если не сделать комплимент внешнему виду лоблоби, вечная вражда с ним обеспечане, однако же лесть может выиграть достаточно времени, чтобы ускользнуть от этих злых фей.</p>",
+			"CdescriptionGM": "",
+			"items": [
+                {
+                    "id": "UxmywTIT8UmcNp4u",
+                    "name": "Клюв"
+				},{
+                    "id": "ZDzz6wFZnGMBzxMF",
+                    "name": "Высокомерное прихорашивание",
+                    "description": "<p>Лоблоби приводит в порядок свой покрытый перьями гребень, чтобы выглядеть невероятно царственно. Каждое существо в пределах 30 футов, не являющееся <a href=https://clck.ru/k3WUD><em>`феей`</em></a>, должно совершить спасбросок @Check[type:will|dc:17]{Воли}, после чего становится временно иммунно к \"Высокомерному прихорашиванию\" на 1 час.</p>\n<hr />\n<p><strong>Критический успех:</strong> Цель невредима</p>\n<p><strong>Успех:</strong> Цель отвлекается на прихорашивание и не может совершать реакции до начала своего следующего хода</p>\n<p><strong>Провал:</strong> Цель @UUID[Compendium.pf2e.conditionitems.Item.AdPVz7rbaVSRxHFg]{Заворожена} лоблоби и не может совершать реакции в течение 1 минуты</p>\n<p><strong>Критический провал:</strong> Как провал. Помимо этого пока существо @UUID[Compendium.pf2e.conditionitems.Item.AdPVz7rbaVSRxHFg]{Заворожено}, любые враждебные действия со стороны лоблоби не снимают состояния завороженности, а позволяют цели попытаться повторно совершить спасбросок Воли в начале ее следующего хода, чтобы избавиться от состояния завороженности.</p>"
+                },{
+                    "id": "eCySTKuCMmk9D179",
+                    "name": "Непомерное самомнение",
+                    "description": "<p>Когда лоблоби получает успех при спасброске от эффекта <a href=https://clck.ru/jsFaZ><em>`эмоций`</em></a> или эффекта, который сделал бы его @UUID[Compendium.pf2e.conditionitems.9qGBRpbX9NEwtAAr]{Под контролем}, он получает критический успех. Если лоблоби получает критический провал против такого эффекта, то вместо этого он получает обычный провал.</p>\n<p>Однако лоблоби падок на лесть. Он получает штраф -4 к своим КС Воли и КС Восприятия против полагающихся на лесть проверок Обман и Дипломатии, чтобы @UUID[Compendium.pf2e.actionspf2e.ewwCglB7XOPLUz72]{Лгать}, @UUID[Compendium.pf2e.actionspf2e.OX4fy22hQgUHDr0q]{Произвести впечатление} или совершить @UUID[Compendium.pf2e.actionspf2e.DCb62iCBrJXy0Ik6]{Просьбу}.</p>"
+				},{
+                    "id": "ZsVXTJ2qMjQAF6i9",
+                    "name": "Сумеречное зрение",
+                    "description": "<p>@Localize[PF2E.NPC.Abilities.Glossary.LowLightVision]</p>"
+                },{
+                    "id": "Ybnk59j0egjb09RM",
+                    "name": "Престидижитация (только для перемещения, чистки или загрязнения небольшого участка воды)",
+                    "description": "<p>Простая магия сделает все за вас. Вы можете совершать простые магические эффекты до тех пор, пока способны @UUID[Compendium.pf2e.actionspf2e.Item.3f5DMFu8fPiqHpRg]{Поддерживать} это заклинание. Каждый раз <em>\"Поддерживая\"</em> это заклинание, вы можете выбрать один из 4 вариантов:</p><ul><li><strong>Готовка:</strong> Охлаждаете, подогреваете или придаете вкус 1 фунту (~453 грамма) неживой материи.</li><li><strong>Поднять:</strong> Медленно поднимаете ничейный объект легкой Массы или менее, на 1 фут от земли.</li><li><strong>Создать:</strong> Создаете временный объект незначительной Массы, сделанный из застывшей магической материи. Объект выглядит грубо и искусственно, очень хрупок, и не может быть использован как инструмент, оружие или компонент заклинания.</li><li><strong>Уборка:</strong> Измените цвет, очистите или запачкайте объект легкой Массы или менее. Вы можете воздействовать на объект Массой 1 на протяжении 10 раундов концентрации, и на бо́льших объектах по 1 минуте за единицу Массы.</li></ul><p><em>Престидижитация</em> не может наносить урон или вызывать неблагоприятные состояния. Любое существенное изменение объекта (помимо описанных выше) сохраняется только пока вы <em>\"Поддерживаете\"</em> это заклинание.</p>"
+                },{
+                    "id": "dUFz3O3QbeSn86y9",
+                    "name": "Пляшущие огоньки",
+			        "description": "<p>Вы создаете вплоть до 4 парящих огней, так, что ни один из которых не находится более чем в 10 футах друг от друга. Каждый из них светится, как факел. Когда вы делаете @UUID[Compendium.pf2e.actionspf2e.Item.3f5DMFu8fPiqHpRg]{Поддержание заклинания}, то можете перемещать любое количество огней на расстояние вплоть до 60 футов. Каждый огонек должен оставаться в пределах 120 футов от вас и в пределах 10 футов от всех остальных, иначе он погаснет.</p>"
+                },{
+                    "id": "97tEA9iMpxxuYIjJ",
+                    "name": "Хождение по воде (по желанию)(лоблоби может развеять)",
+                    "description": "<p><p>Цель может ходить по поверхности воды и других жидкостей, не проваливаясь. Она может уйти под воду, если пожелает, но в этом случае, она должна @UUID[Compendium.pf2e.actionspf2e.Item.c8TGiZ48ygoSPofx]{Плыть} как обычно. Заклинание не дает возможности дышать под водой.</p><hr><p><strong>Усиление (4-й):</strong> Дистанция заклинания увеличивается до 30 футов, продолжительность увеличивается до 1 часа, и вы можете выбрать целями вплоть до 10 существ.</p></p>"
+                }
+            ]
+        },
+		"Lomok": {
+			"name": "Lomok",
+			"Cdescription": "",
+			"CdescriptionGM": "",
+			"ac": "(32 с поднятым щитом)",
+			"allSaves": "+1 vs. disease",
+			"items": [{}]
+		},
+		"Long-horned Bison": {
+			"name": "Long-horned Bison",
+			"Cdescription": "<p>Much like their smaller bison cousins, long-horned bison are bovines with short faces, two horns, a shaggy coat, and a noticeable hump on their back. Despite their relation to more placid bovines, however, long-horned bison are ill-tempered and territorial. Their tread shakes the ground, while the thunder of their stampedes can be mistaken for an earthquake. Long-horned bison weigh upwards of 4,500 pounds and measure up to 9 feet tall and 16 feet long. Their horns, measured tip to tip, can be almost as wide as the bison are tall.</p>",
+			"CdescriptionGM": "",
+			"items": [{}]
+		},
+		"Long-horned Bison Beheaded": {
+			"name": "Long-horned Bison Beheaded",
+			"Cdescription": "",
+			"CdescriptionGM": "",
+			"hp": "исцеление пустотой",
+			"items": [{}]
+		},
+		"Megaloceros": {
+			"name": "Megaloceros",
+			"Cdescription": "<p>The megaloceros is similar in form to the elk, but far superior in size. The average male's antlers weigh nearly 100 pounds and can be wider than his body is long. Megaloceroses stand up to 9 feet tall, weigh 1,500 pounds, and grow antlers over 12 feet wide.</p>",
+			"CdescriptionGM": "",
+			"items": [{}]
+		},
+		"Methane Flue": {
+			"name": "Methane Flue",
+			"Hdescription": "<p>Invisible but highly flammable natural gas has built up beneath the ground, where geological pressure can ignite it.</p>",
+			"disable": "<p>@Check[type:survival|dc:28|name:Diffuse the Flames|traits:environmental,hazard] to dig around the vent in a way that diffuses the fumes</p>",
+			"stealth": "(expert) to hear hissing gas",
+			"items": [{}]
+		},
+		"Metuak": {
+			"name": "Metuak",
+			"Cdescription": "",
+			"CdescriptionGM": "",
+			"items": [{}]
+		},
+		"Necrohusk": {
+			"name": "Necrohusk",
+			"Cdescription": "<p>Necrohusks are skittering, undead monstrosities, created when a humanoid is purposefully twisted into a new creature through necromantic experimentation. Unlike fleshwarps and recipients of successful necrografts, prospective necrohusks never survive the procedure. After reanimation, they're cunning, animalistic creatures that follow their creator's orders without question.</p>\n<p>Creating a necrohusk is an incredibly difficult endeavor, fraught with error. Most attempts result in lumps of useless, rotten slurry or malformed undead no more cunning or dangerous than a mundane zombie. The costs in time, experimental subjects, and expensive spell components lead some would-be necromancers to conclude that the results aren't worth the risk. Occasionally, spellcasters can harness the power of the Void during the process, which lessens the monetary cost but vastly increases the danger, often producing a deadly backlash resulting in the creator's death and a masterless necrohusk.</p>\n<p>Among the Sutaki, only Ashen Swale and his lieutenants, Turkek and Azi, have the skill and knowledge to create necrohusks with any regularity, although Turkek's interests often lead him away from such gruesome endeavors. Necrohusks are created from volunteers in Ashen Swale's cult or from traitorous Sutaki whom Ashen Swale wants to punish with a ghastly fate.</p>",
+			"CdescriptionGM": "",
+			"language": "Can't speak",
+			"hp": "исцеление пустотой",
+			"items": [{}]
+		},
+		"Oil Explosion": {
+			"name": "Oil Explosion",
+			"Hdescription": "The flammable oil catches flame and explodes, burning up in a ball of fire.",
+			"disable": "<p>@Check[type:survival|dc:25|name:Neutralize the oil|traits:hazard,environmental,fire] (trained) or @Check[type:crafting|dc:23|name:Neutralize the oil|traits:hazard,environmental,fire] to neutralize the oil without setting it alight</p>",
+			"stealth": "(trained)",
+			"items": [{}]
+		},
+		"Pakano": {
+			"name": "Пакано(*)",
+			"Cdescription": "",
+			"CdescriptionGM": "",
+			"ac": "(21 с поднятым щитом)",
+			"items": [
+                {
+                    "id": "Kz93j6dThh5o1qKB",
+                    "name": "Копье"
+                },{
+                    "id": "KuPdUEa7oeXo6LYx",
+                    "name": "Копье"
+                },{
+                    "id": "2EYIvdhzhuLnfjFM",
+                    "name": "Сальная бомба"
+				},{	
+                    "id": "A2qkCuXMmGz80r2y",
+                    "name": "Блок щитом",
+                    "description": "<p>@Localize[PF2E.NPC.Abilities.Glossary.ShieldBlock]</p>"
+                },{
+					"id": "qUKMuVdvLIBeqJta",
+                    "name": "Копейщик",
+                    "description": "<p>Копье Пакано имеет признак <a href=https://clck.ru/qGVmk><em>`парирование`</em></a> и его Удары копьем наносят дополнительные [[/r {1d6}]]{1d6 урона}. Если Пакано критически попадает по существу копьем, существо становится @UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{Неуклюжим 1} до начала следующего хода Пакано.</p>"
+                    
+                },{
+					"id": "B9H07GySQIMpEcZ0",
+					"name": "Выслеживать добычу",
+				    "description": "<p>Пакано обозначает 1 существо, которое может видеть и слышать или которое @UUID[Compendium.pf2e.actionspf2e.EA5vuSgJfiHH7plD]{Выслеживает}, как свою добычу.</p>\n<p>Пакано получает бонус обстоятельства +2 к проверкам Восприятия на @UUID[Compendium.pf2e.actionspf2e.BlAOM2X92SI6HMtJ]{Поиск} добычи и проверкам Выживания на @UUID[Compendium.pf2e.actionspf2e.EA5vuSgJfiHH7plD]{Выслеживание} добычи.</p>\n<p>Когда Пакано попадает по добыче первый раз за раунд, то наносит дополнительные 1d8 точного урона. Еще Пакано игнорирует штраф за совершение дистанционных атак во втором шаге дистанции.</p>\n<p>Эти эффекты длятся пока Пакано снова не использует <em>\"Выслеживание добычи\"</em>.</p>"
+				},{
+					"id": "qula0uMKfWBhmoBB",
+					"name": "Реагирующий удар",
+				    "description": "<p><strong>Триггер:</strong> Существо в пределах досягаемости монстра использует действие с признаком <a href=\"https://clck.ru/jjR6e\"><em>`движение`</em></a> или <a href=\"https://clck.ru/jjLHP\"><em>`воздействие`</em></a>, совершает дистанционную атаку, или покидает квадрат во время используемого действия с признаком <a href=\"https://clck.ru/jjR6e\"><em>`движение`</em></a>;</p><hr><p>Монстр совершает \"Удар\" ближнего боя по спровоцировавшему существу. Если атака является критическим попаданием, и спровоцировавшее действие имело признак <a href=\"https://clck.ru/jjLHP\"><em>`воздействие`</em></a>, монстр прерывает это действие. Штраф множественной атаки не применяется к этому \"Удару\", и сам он не увеличивает штраф множественной атаки монстра.</p>"
+				},{
+					"id": "KEtKcl13XiRDDkbq",
+					"name": "Подгоняемый смертью",
+				    "description": "<p><strong>Триггер:</strong> Союзник в пределах 30 футов снижает ОЗ существа до 0;</p>\n<hr />\n<p><strong>Эффект:</strong> Пакано совершает @UUID[Compendium.pf2e.actionspf2e.UHpkTuCtyaPqiCAB]{Шаг} или @UUID[Compendium.pf2e.actionspf2e.Bcxarzksqt9ezrs6]{Перемещение}.</p>"
+				},{					
+					"id": "sCFMVnixo91dTL5G",
+                    "name": "Уловка безумного мамонта",
+                    "description": "<p><strong>Активация:</strong> <span class=\"pf2-icon\">F</span> вообразить</p> <p><strong>Триггер:</strong> Вы должны пострадать от эффекта, который вас погребет - такой как лавина или обрушение туннеля;</p><p><strong>Требования:</strong> Вы эксперт Акробатики</p><hr><p>Этот маленький, хрупкий бивень принадлежал очень молодому мамонту. Он заполнен морозной ледниковой водой и увенчан резным кусочком слоновой кости. Когда вы раздавливаете бивень, вода мгновенно окутывает вас, и вы со сверхъестественной скоростью избегаете надвигающейся катастрофы. Вы телепортируетесь в незанятое пространство в радиусе 200 футов, которое можете видеть, и берете с собой все свое снаряжение. Вы не можете взять с собой ни одно другое существо, даже в<a href=\"https://clck.ru/jrtBQ\"><em>`межпространственном`</em></a> кармане.</p>"             
+                }
+            ]
+        },
+		"Pakano (Level 12)": {
+			"name": "Pakano (Level 12)",
+			"Cdescription": "",
+			"CdescriptionGM": "",
+			"items": [{}]
+		},
+		"Pouncing Tiger Haunt": {
+			"name": "Призрак прыгающего тигра(*)",
+			"Hdescription": "<p>Наскальный рисунок, изображающий огромного кота, оживает и спрыгивает со стены, чтобы напасть.</p>",
+			"disable": "<p>@Check[type:nature|dc:18|name:Усмирить духа|traits:hazard,haunt] (обучен) или @Check[type:religion|dc:18|name:Усмирить духа|traits:hazard,haunt] (обучен) чтобы усмирить дух</p>",
+			"reset": "<p>Если наскальный рисунок не уничтожен, призрак сбрасывается через 1 день.</p>",
+			"stealth": "(обучен)",
+			"items": [
+                {
+                    "id": "nYZ0bBUL99y0pOOt",
+                    "name": "Тигриный порез",
+                    "description": "<p><strong>Триггер:</strong> Живое существо приближается на расстояние 5 футов к наскальному рисунку</p>\n<hr />\n<p><strong>Эффект:</strong> Призрак наносит [[/r 4d8[slashing]]]{4d8 рубящего урона} полуматериальными когтями (простой спасбросок @Check[type:will|dc:18|basic:true|traits:hazard,haunt]{Воли}). При провале существо также становится @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Напугано 1} и обращается в  @UUID[Compendium.pf2e.conditionitems.Item.sDPxOjQ9kx2RZE8D]{Бегство} на 1 раунд (или напугано 2 и обращается в бегство на 1 минуту при критическом провале).</p>"
+                }
+            ]
+        },
+		"Punishing Altar": {
+			"name": "Punishing Altar",
+			"Hdescription": "The bowl releases a wave of negative energy when a living creature approaches without displaying a religious symbol of Venexus.",
+			"disable": "<p>@Check[type:thievery|dc:22|name:Remove the bowl|traits:hazard,magical,necromancy,void,trap] (expert) to remove the bowl without triggering the magic, or <em>@UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic}</em> (2nd level, counteract DC 20) to counteract the runes</p>",
+			"stealth": "(trained) to notice the bowl is the center point for a magical trap",
+			"items": [{}]
+		},
+		"Rhino Warriors": {
+			"name": "Rhino Warriors",
+			"Cdescription": "",
+			"CdescriptionGM": "",
+			"items": [{}]
+		},
+		"Rime Sludge": {
+			"name": "Морозная жижа(*)",
+			"Cdescription": "<p>Гниение и разложение играют естественную роль в болотах любого климата, а скрытая магическая энергия или другие странные явления могут превращать разлагающуюся материю в слизь и других чудовищных существ, состоящих из живой грязи. Тундровые болота не являются исключением из этого принципа. Хуже того, в таких регионах быстрое похолодание может не дать вредоносной жиже распасться, а долгие годы коротких сезонных оттепелей могут сжимать гниль за гнилью, пока ядовитая масса не оживет в виде известкового ила. Эти редкие вредоносные сочащиеся организмы жадно ищут и потребляют любые органические вещества, которые попадаются им в местах обитания на севере страны.</p>\n<p>Как и большинство слизей, морозная жижа состоит в основном из протоплазмы, но ее консистенция более схожа со слякотью, с вкраплениями мерзких частей неперевариваемой материи - окаменевшей древесины, зазубренных наконечников стрел, окаменелостей животных. Протоплазма морозной слизи восстанавливается за счет поглощения растений и животных, а также поддержания баланса полузамороженного разложения в мутирующей форме.</p>\n<p>Морозня жижа является одним из немногих видов, которые процветают в холодном климате, поскольку избыток тепла ускоряет их естественное разложение. Морозные жижи не могут выживать при температурах выше нуля более нескольких дней. Повышение температуры заставляет их мигрировать в более холодный климат или в прохладные подземные области.</p>\n<p>Мало кто из разумных существ, обитающих в холодном климате, захочет иметь дело с морозной жижей. Этот вид слизи не поддается дрессировке, склонен к беспорядочному блужданию и источает неприятный тоскичный запах при малейшем намеке на тепло. Некоторые изобретательные существа пытаются запирать морозную жижу в ямах и использовать для утилизации пленников или остатков пищи. Из-за сильного зловония эти ямы, как правило, довольно глубоки.</p>",
+			"CdescriptionGM": "",
+			"speed": "жидкая консистенция",
+			"items": [
+                {
+                    "id": "qKLjJAhtJDOnp4Jc",
+					"name": "Ложноножка"
+                },{
+                    "id": "J5EQsz5ScS5djw5T",
+					"name": "Тлетворное испарение",
+                    "description": "<p>В первый раз каждый раунд, когда морозная жижа получает урон огнем, облако тошнотворного запаха разложения вырывается наружу, нанося [[/r 2d6[poison]]]{2d6 урона ядом} всем существам в пределах @Template[type:emanation|distance:10]{10 футов} (простой спасбросок@Check[type:fortitude|dc:17|basic:true]{Стойкости}). Существо, которое проваливает этот спасбросок, получает состояние @UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{Тошнота 1} (или @UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{Тошнота 3} при критическом провале).</p>"
+                },{
+                    "id": "42yvufWkXpbQRCrE",
+                    "name": "Жидкая консистенция",
+                    "description": "<p>Морозная жижа игнорирует сложную и особо сложную местность из-за льда и снега. Существо не может упасть @UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{Ничком} во время передвижения по льду.</p>"
+                },{
+                    "id": "g7nKIafpypXq1fDV",
+                    "name": "Чувствительность к движению 60 футов",
+                    "description": "<p>Морозная жижа может ощущать движение поблизости благодаря через вибрации и движение воздуха.</p>"
+                }
+            ]
+        },
+		"Rockfall Ceiling": {
+			"name": "Rockfall Ceiling",
+			"Hdescription": "A load of rocks, held up by a rope pulley, is dropped on the cavern's lower level.",
+			"disable": "<p>@Check[type:thievery|dc:25|name:Pin the pulley in place|traits:hazard,mechanical,trap] (trained) to pin the pulley in place</p>",
+			"stealth": "(trained)",
+			"items": [{}]
+		},
+		"Roru": {
+			"name": "Roru",
+			"Cdescription": "<p>Rorus, sometimes called hunter demons, are brutal fiends that arise from the souls of mortals who mutilated animal corpses. As demons, these individuals don animal pelts, then infiltrate packs or herds to corrupt entire swaths of animals, turning their victims bloodthirsty and feral.</p>",
+			"CdescriptionGM": "",
+			"language": "Speak with Animals, Telepathy 100 feet",
+			"items": [{}]
+		},
+		"Shattering Rune": {
+			"name": "Shattering Rune",
+			"Hdescription": "A magical rune is inscribed on the tarry earth at the entrance to the hut, buried beneath snow, with an @UUID[Compendium.pf2e.conditionitems.Item.zJxUflt9np0q4yML]{Invisible} sensor that detects creatures within a 10-foot-radius sphere.",
+			"disable": "<p>@Check[type:thievery|dc:30|name:Erase the Rune|traits:hazard] (master) to erase the rune without triggering the sensor or <em>@UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic}</em> (5th level; counteract DC 28) to dispel the rune</p>",
+			"stealth": "(master)",
+			"items": [{}]
+		},
+		"Skeletal Woolly Rhinoceros": {
+			"name": "Skeletal Woolly Rhinoceros",
+			"Cdescription": "",
+			"CdescriptionGM": "",
+			"hp": "исцеление пустотой",
+			"items": [{}]
+		},
+		"Soul Draining Cage": {
+			"name": "Soul Draining Cage",
+			"Hdescription": "Necromantic runes inscribed on the cage bars and lock drain the vitality of living creatures who interact with the cage.",
+			"disable": "<p>@Check[type:thievery|dc:25|name:Drain the rune's power|traits:hazard,magical,necromancy,void,trap] (expert) to drain the runes' power harmlessly or <em>@UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic}</em> (3rd level; counteract DC 22) to counteract the rune</p>",
+			"stealth": "<p>(expert) or <em>@UUID[Compendium.pf2e.spells-srd.Item.gpzpAAAJ1Lza2JVl]{Detect Magic}</em></p>",
+			"items": [{}]
+		},
+		"Spectral Archers": {
+			"name": "Spectral Archers",
+			"Hdescription": "Ghostly soldiers wielding crossbows manifest within the towers that flank the gatehouse and rain bolts down upon intruders.",
+			"disable": "<p>@Check[type:intimidation|dc:31|traits:haunt,hazard] (expert) to cow the archers into fleeing or @Check[type:religion|dc:28|name:Banish the Spirits|traits:haunt,hazard] (expert) to temporarily banish the spirits</p>",
+			"reset": "The haunt vanishes permanently if the graveknights are destroyed. Otherwise, it returns after 1 hour.",
+			"stealth": "(expert)",
+			"items": [{}]
+		},
+		"Summer Hora": {
+			"name": "Summer Hora",
+			"Cdescription": "",
+			"CdescriptionGM": "<p>Summer horai appear constantly bathed in sunlight, with skin and clothing of red, orange, and yellow, like the sunlight of high summer.</p>\n<p>The Summer Hora is under the constant effects of <em>@UUID[Compendium.pf2e.spells-srd.Item.BBvV7qoXGdw09q1C]{Speak with Animals}</em> and <em>@UUID[Compendium.pf2e.spells-srd.Item.qvwIwJ9QBihy8R0t]{Speak with Plants}</em>.</p>",
+			"language": "разговор с животными, разговор с растениями",
+			"items": [{}]
+		},
+		"Summer Hora Queen": {
+			"name": "Summer Hora Queen",
+			"Cdescription": "",
+			"CdescriptionGM": "<p>Hora queens rule over wide stretches of land, nourishing and protecting native animals and plants. Most hora queens watch over their regions in pairs: one summer and one winter, or one autumn and one spring.</p>\n<p>The Summer Hora Queen is under the constant effects of <em>@UUID[Compendium.pf2e.spells-srd.Item.BBvV7qoXGdw09q1C]{Speak with Animals}</em> and <em>@UUID[Compendium.pf2e.spells-srd.Item.qvwIwJ9QBihy8R0t]{Speak with Plants}</em>.</p>",
+			"language": "разговор с животными, разговор с растениями",
+			"items": [{}]
+		},
+		"Syarstik Painted-Tiger": {
+			"name": "Расписной тигр Съярстик(*)",
+			"Cdescription": "",
+			"CdescriptionGM": "",
+			"hp": " исцеление пустотой, восстановление",
+			"items": [
+                {
+                    "id": "5N6r9FxxWLT2wXR2",	
+                    "name": "Призрачные клыки"
+                },{
+                    "id": "XaDeyv9dVpjvbE1I",
+                    "name": "Призрачный коготь"
+                },{
+                    "id": "o62LCgpDL6DMAzcC",
+                    "name": "Пробуждение рисунков",
+                    "description": "<p>Съярстик на 10 минут оживляет наскальные рисунки в радиусе 60 футов. Движения рисунков повторяют движения Съярстика, так что связь между призраком и пробужденными рисунками становится очевидна. Существа кроме Съярстика, находящиеся в пределах 10 футах от пробужденных рисунков, @UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{Застигигнуты врасплох}, из-за их зловещих движений. Съярстик может наносить <em>\"Удары\"</em> призрачными клыками по любому существу в пределах 10 футов от пробужденных рисунков; для таких Ударов бонусы, получаемые от @UUID[Compendium.pf2e.journals.JournalEntry.S55aqwWIzpQRFhcq.JournalEntryPage.tJllU1E8g7W1QxYe]{Укрытия} и @UUID[Compendium.pf2e.journals.JournalEntry.S55aqwWIzpQRFhcq.JournalEntryPage.Edn6qQNVcEVpkhPl]{Сокрытия} рассчитываются по отношению к пробужденным рисункам, а не к Съярстику.</p>\n<p>Существо, находящееся рядом с пробужденными рисунками, могут потратить 2 действия на @UUID[Compendium.pf2e.actionspf2e.cYdz2grcOcRt4jk6]{Отключения устройства}, совершив проверку @Check[type:occultism|dc:18|name:Усмирить пробужденный рисунок|traits:concentrate|overrideTraits:true]{Оккультизма} или @Check[type:religion|dc:18|name:Усмирить пробужденный рисунок|traits:concentrate|overrideTraits:true]{Религии}, чтобы усмирить пробужденный рисунок, либо же @Check[type:crafting|dc:20|name:Замазать наскальный рисунок|traits:concentrate|overrideTraits:true]{Ремесла} или @Check[type:thievery|dc:20|name:Замазать наскальный рисунок|traits:concentrate|overrideTraits:true]{Воровства}, чтобы тщательно замаэать наскальный рисунок. В случае успеха рисунок будет уничтожен и оживление прекращается. При любом из вариантов это действие имеет признак <a href=https://clck.ru/jjU4o><em>`концентрация`</em></a>.</p>\n<p>Уничтожение трех оживших рисунков усмиряет гнев Съярстика, после чего огромный кот перестает атаковать.</p>"
+                },{
+                    "id": "ZkS7nI0zLurF7Xme",
+                    "name": "Связь с местом",
+                    "description": "<p>Съярстик не может покидать Пещеру Красного Кота и редко когда покидает область <strong>E9</strong>.</p>\n<hr />\n<p>Типичное привидение может отдалиться лишь на небольшое расстояние от места, где оно было убито, или от места, которое он населяет. Типичное ограничение - 120 футов. Вместо этого, некоторые привидения привязаны не к месту, а к комнате, зданию, предмету или существу, которое было для них особенным.</p>"
+                },{
+                    "id": "f6O8qNUgosIgY1yk",
+                    "name": "Восстановление",
+                    "description": "<p>Когда Съярстик уничтожен, он формируется заново через [[/r 2d4 #дни]]{2d4 дня} в области <strong>E9</strong>, полностью исцеленным. Съярстик может быть окончательно уничтожен владельцем Первозданного Пламени, который не одержим.</p>"
+                },{
+                    "id": "ovOf7Rh0bpjfGF8N",
+				    "name": "Внезапная атака",
+				    "description": "<p>Съярстик наносит дополнительные 1d6 точного урона по застигнутым врасплох существам.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SneakAttack]</p>"
+                },{
+                    "id": "nUh87uESFguWFhMG",
+                    "name": "Наскок",
+                    "description": "<p>Съярстик @UUID[Compendium.pf2e.actionspf2e.Bcxarzksqt9ezrs6]{Перемещается} и в конце этого передвижения совершает @UUID[Compendium.pf2e.actionspf2e.VjxZFuUXrCU94MWR]{Удар}. Если он начал это действие @UUID[Compendium.pf2e.conditionitems.iU0fEDdBp3rXpTMC]{Спрятанным}, то остается спрятанным до окончания <em>\"Удара\"</em> этого умения.</p>"
+                },{
+                    "id": "bKpBsbW6f3wn89rn",
+                    "name": "Нюх (неточное) 60 футов"
+				},{
+                    "id": "wSlIZKjTD1AeVQSh",
+                    "name": "Ночное зрение",
+					"description": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]</p>"
+                },{
+                    "id": "Sqc75tREqpUrrkMC",
+                    "name": "Исцеление пустотой"
+                }
+            ]
+        },
+		"Tar Ooze": {
+			"name": "Tar Ooze",
+			"Cdescription": "",
+			"CdescriptionGM": "",
+			"items": [{}]
+		},
+		"Tar Pit": {
+			"name": "Tar Pit",
+			"Hdescription": "A 15-foot-wide patch of tar covered with dirt and leaves attempts to capture creatures that step onto it.",
+			"disable": "<p>@Check[type:survival|dc:25|name:Reveal the Tar Pit|traits:environmental,hazard] (expert) to disturb the surface and reveal the tar pit</p>",
+			"reset": "Though the hazard still captures anyone who touches it, the surface doesn't become hidden again until it settles, which takes 24 hours.",
+			"routine": "<p>(1 action) On its initiative, the tar pit pulls down each creature within it, thick tar adhering to the creature's body. A creature that was submerged up to its waist becomes submerged up to its neck, and a creature that was submerged up to its neck is pulled under and must hold its breath to avoid suffocation. A creature in the tar pit can attempt a @Check[type:athletics|dc:33] check to @UUID[Compendium.pf2e.actionspf2e.Item.pprgrYQ1QnIDGZiy]{Climb} to either raise itself by one step (if it's submerged to its neck or full submerged) or to move 5 feet if it's submerged only up to its waist. On a critical failure, the creature is pulled down one step. Other creatures can Aid the creature, typically by using a rope or similar aid or by attempting to pull the creature out with their own @Check[type:athletics|dc:33] check, with the same results as if the creature attempted the check. In addition to the usual results, a character adjacent to the tar pit who critically fails while Aiding moves into the tar pit. A creature that Climbs out of the tar pit escapes the hazard and lands @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} in an adjacent space.</p>",
+			"stealth": "(expert)",
+			"items": [{}]
+		},
+		"Tar Zombie Mammoth": {
+			"name": "Tar Zombie Mammoth",
+			"Cdescription": "",
+			"CdescriptionGM": "<p>Slow A tar zombie is permanently @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} and can't use reactions.</p>",
+			"hp": "исцеление пустотой",
+			"items": [{}]
+		},
+		"Tar Zombie Predator": {
+			"name": "Tar Zombie Predator",
+			"Cdescription": "",
+			"CdescriptionGM": "<p>Slow A tar zombie is permanently @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} and can't use reactions.</p>",
+			"hp": "исцеление пустотой",
+			"items": [{}]
+		},
+		"Tar Zombie Snatcher": {
+			"name": "Tar Zombie Snatcher",
+			"Cdescription": "",
+			"CdescriptionGM": "<p>Slow A tar zombie is permanently @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} and can't use reactions.</p>",
+			"hp": "исцеление пустотой",
+			"items": [{}]
+		},
+		"Throttled Blindheim": {
+			"name": "Раненый блайндхейм(*)",
+			"Cdescription": "<p>Будучи обитателями сырых подземных пещер, блайндхеймы напоминают приземистых гуманоидов с огромными, похожими на лягушачьи, головами и выпученными глазами. Их глаза всегда излучают мягкое свечение, но блайндхейм может оттянуть тяжелую мембрану, которая обычно их прикрывает, и тогда они излучают интенсивный свет, яркий как дневной. Эти простые существа используют свое свечение, чтобы привлечь или дезориентировать добычу: в основном мелких животных, таких как ящерицы, грызуны или рыбы. Однако они могут охотиться и на более крупную дичь, если пытаются накормить свое потомство. Когда они сталкиваются с существами своего размера или крупнее, то отступают, при необходимости сверкая глазами, чтобы облегчить бегство. Они часто охотятся парами или небольшими стаями. Используя свой свет, чтобы координировать действия на расстоянии, они медленно приближаются к существам, на которых охотятся. Одна из распространенных схем охоты - один блайндхейм ныряет на глубину и с помощью своего света гонит рыбу к поверхности, в то время как другой, находящийся выше, подхватывает ее и выбрасывает на сушу, чтобы потом съесть.</p>\n<p>Блайндхеймам угрожают не только животные. Подземные народы считают этих существ полезными и пытаются отлавливать их для особых целей. Дуэргары используют их в качестве \"лягушек для набегов\", надевая на головы слепней тяжелые капюшоны и внезапно срывая их во время набегов, чтобы ослепить врагов. Иногда они посылают этих существ вместе со своими рабами, лишенными ночного зрения, в шахты в качестве источника света. Дроу используют их для тех же целей, а некоторые вельможи, говорят, обращаются с этими существами как с простыми фонарями, подвешивая их к потолку в своих залах. Ни дуэргары, ни дроу не заботятся о пленных существах, поэтому блайндхеймы редко долго живут в неволе.</p>",
+			"CdescriptionGM": "",
+			"items": [
+                {
+                    "id": "AmgNn4ZAhXxVpdtv",
+                    "name": "Челюсти"
+                },{
+                    "id": "eFL7EhhQB0m79mqu",
+                    "name": "Коготь"
+                },{
+                    "id": "7MiqMH6uob5zPB4e",		
+                    "name": "Ослепительный свет",
+                    "description": "<p>Глаза блайндхейма источают яркий свет в @Template[type:emanation|distance:30]{30-футовой эманации} (также создавая тусклый свет до 60 футах). Каждое существо, находящееся в ярком свете, когда блайндхейм совершает это действие, или вошедшее в него, пока свет остается, должно совершить спасбросок @Check[type:fortitude|dc:18]{Стойкости}. Этот свет сохраняется до тех пор, пока блайндхейм не прикроет свои глаза, снова использовав это действие. После этого цель становится временно иммунной на 1 час.</p><hr><p><strong>Критический успех:</strong> Существо невредимо</p>\n<p><strong>Успех:</strong> Существо @UUID[Compendium.pf2e.conditionitems.TkIyaNPgTZFBCCuh]{Ослеплено} на 1 раунд</p>\n<p><strong>Провал:</strong> Существо @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Слепнет} на [[/r 1d4]]{1d4 раундов}</p>\n<p><strong>Критический провал:</strong> Существо слепнет на 1 час</p>"
+                },{
+                    "id": "Tsk4ium6s48Ww2fz",
+                    "name": "Повреждённая трахея",
+                    "description": "<p>Блайндхейм не может издавать звуки и @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Замедлен 1} до тех пор, пока его шея не исцелится.</p>"
+			    },{
+                    "id": "8g9m2H7zav2ekCFO",
+                    "name": "Ночное зрение",
+                    "description": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]</p>"
+                }
+            ]
+        },
+		"Turkek": {
+			"name": "Turkek",
+			"Cdescription": "",
+			"CdescriptionGM": "",
+			"senses": "bloodsense (imprecise) 30 feet",
+			"hp": "исцеление пустотой",
+			"allSaves": "+2 circumstance to all saves vs. disease",
+			"items": [{}]
+		},
+		"Varilyn \"Vare\" Eridge": {
+			"name": "Varilyn \"Vare\" Eridge",
+			"Cdescription": "",
+			"CdescriptionGM": "",
+			"items": [{}]
+		},
+		"Venexus": {
+			"name": "Venexus",
+			"Cdescription": "",
+			"CdescriptionGM": "",
+			"senses": "storm vision",
+			"allSaves": "+1 status to all saves vs. magic",
+			"speed": "ice climb 30 feet",
+			"items": [{}]
+		},
+		"Venexus's Chosen": {
+			"name": "Venexus's Chosen",
+			"Cdescription": "",
+			"CdescriptionGM": "",
+			"items": [{}]
+		},
+		"Venexus's Wyrmling": {
+			"name": "Venexus's Wyrmling",
+			"Cdescription": "",
+			"CdescriptionGM": "",
+			"senses": "snow vision",
+			"speed": "Ice climb 30",
+			"items": [{}]
+		},
+		"Weykoward": {
+			"name": "Weykoward",
+			"Cdescription": "",
+			"CdescriptionGM": "",
+			"items": [{}]
+		},
+		"Yana No-trail": {
+			"name": "Yana No-trail",
+			"Cdescription": "",
+			"CdescriptionGM": "",
+			"language": "Speak With Animals",
+			"items": [{}]
+		},
+		"Zombie Mammoth": {
+			"name": "Zombie Mammoth",
+			"Cdescription": "",
+			"CdescriptionGM": "",
+			"hp": "исцеление пустотой",
+			"items": [{}]
+		},
+		"Zombie Megaloceros": {
+			"name": "Zombie Megaloceros",
+			"Cdescription": "<p>The megaloceros is similar in form to the elk, but far superior in size. The average male's antlers weigh nearly 100 pounds and can be wider than his body is long. Megaloceroses stand up to 9 feet tall, weigh 1,500 pounds, and grow antlers over 12 feet wide.</p>",
+			"CdescriptionGM": "",
+			"hp": "исцеление пустотой",
+			"speed": ""
+		}
+	}
+}

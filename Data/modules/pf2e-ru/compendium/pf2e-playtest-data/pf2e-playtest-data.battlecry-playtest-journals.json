@@ -1,0 +1,43 @@
+{
+    "label": "Журналы",
+    "entries": {
+        "Tactics": {
+            "name": "Тактики",
+            "pages": {
+                "Mobility Tactics": {
+                    "name": "Тактики мобильности",
+                    "text": "<p>Эти тактики позволяют вашему отряду эффективнее перемещаться по полю боя.</p><ul><li><p>@UUID[Compendium.pf2e-playtest-data.battlecry-playtest-actions.Item.Sv20w0a6YiJJPhqV]</p></li><li><p>@UUID[Compendium.pf2e-playtest-data.battlecry-playtest-actions.Item.NNe3nmxvHRKq7pLZ]</p></li><li><p>@UUID[Compendium.pf2e-playtest-data.battlecry-playtest-actions.Item.xhKTAviKlSejEcjv]</p></li><li><p>@UUID[Compendium.pf2e-playtest-data.battlecry-playtest-actions.Item.4ZqPPkujC6jEAywn]</p></li><li><p>@UUID[Compendium.pf2e-playtest-data.battlecry-playtest-actions.Item.svyN9jvVjhUCpdCM]</p></li></ul>"
+                },
+                "Tactics": {
+                    "name": "Тактики",
+                    "text": "<p>Ниже приведены основные стратегии войны, используемые многими полководцами. Когда вы впервые получаете фолиант полководца на 1-м уровне, выберите четыре тактики из списка ниже; по мере повышения уровня (или если вы возьмете способность класса @UUID[Compendium.pf2e-playtest-data.battlecry-playtest-class-feats.Item.8WArTn7SsR0zW9Io]), вы получаете дополнительные тактики.</p>"
+                },
+                "Offensive Tactics": {
+                    "name": "Наступательные тактики",
+                    "text": "<p>Эти тактики помогут вашим союзникам атаковать, передислоцировать или противостоять вражеским силам.</p><ul><li><p>@UUID[Compendium.pf2e-playtest-data.battlecry-playtest-actions.Item.Nro2w7tdNgJjbIDd]</p></li><li><p>@UUID[Compendium.pf2e-playtest-data.battlecry-playtest-actions.Item.NJF1F4hOg6FhU0Ui]</p></li><li><p>@UUID[Compendium.pf2e-playtest-data.battlecry-playtest-actions.Item.RpNX2jgfAnZwutyM]</p></li><li><p>@UUID[Compendium.pf2e-playtest-data.battlecry-playtest-actions.Item.E2HAKKPFCLwnR9I3]</p></li><li><p>@UUID[Compendium.pf2e-playtest-data.battlecry-playtest-actions.Item.cahp1N1uYPwnX9GG]</p></li><li><p>@UUID[Compendium.pf2e-playtest-data.battlecry-playtest-actions.Item.ZuMvrjijQ6ou1fzS]</p></li><li><p>@UUID[Compendium.pf2e-playtest-data.battlecry-playtest-actions.Item.EI19Z7zrb4j86MnQ]</p></li></ul>"
+                },
+                "Expert Tactics": {
+                    "name": "Тактики эксперта",
+                    "text": "<p>Вы можете выбрать одну из этих тактик при добавлении новой тактики в свой фолиант, если у вас есть особенность класса @UUID[Compendium.pf2e-playtest-data.battlecry-playtest-class-features.Item.kTdOwsfhf4g5AU2s].</p><ul><li><p>@UUID[Compendium.pf2e-playtest-data.battlecry-playtest-actions.Item.cu2tUjuOGCdQPR6P]</p></li><li><p>@UUID[Compendium.pf2e-playtest-data.battlecry-playtest-actions.Item.7L2ahcmJR8V93BS3]</p></li></ul>"
+                },
+                "Master Tactics": {
+                    "name": "Тактики мастера",
+                    "text": "<p>Вы можете выбрать одну из этих тактик при добавлении новой тактики в свой фолиант, если у вас есть особенность класса @UUID[Compendium.pf2e-playtest-data.battlecry-playtest-class-features.Item.jH3IFSytL2uH98cH].</p><ul><li><p>@UUID[Compendium.pf2e-playtest-data.battlecry-playtest-actions.Item.scXmGuWIigC9v6g2]</p></li><li><p>@UUID[Compendium.pf2e-playtest-data.battlecry-playtest-actions.Item.bFyd9BjOO7unubMN]</p></li></ul>"
+                },
+                "Legendary Tactics": {
+                    "name": "Легендарные тактики",
+                    "text": "<p>Вы можете выбрать одну из этих тактик при добавлении новой тактики в свой фолиант, если у вас есть особенность класса @UUID[Compendium.pf2e-playtest-data.battlecry-playtest-class-features.Item.HnocT6RD3bzpRNQN].</p><ul><li><p>@UUID[Compendium.pf2e-playtest-data.battlecry-playtest-actions.Item.jwvF4O4L1S88Zx9v]</p></li><li><p>@UUID[Compendium.pf2e-playtest-data.battlecry-playtest-actions.Item.IhSLrl8uJk3DXaDh]</p></li></ul>"
+                }
+            }
+        },
+        "Welcome to the playtest!": {
+            "name": "Welcome to the playtest!",
+            "pages": {
+                "Welcome": {
+                    "name": "Добро пожаловать в плейтест!",
+                    "text": "<p>Привет, Мастера!</p><p>Мы надеемся, что вам понравится модуль плейтеста Pathfinder. Вы можете найти оригинальные документы по плейтесту и оставить отзывы о самих классах на <a href=\"https://paizo.com/pathfinderplaytest\">paizo.com/pathfinderplaytest</a>. Если у вас есть отзывы о модуле, вы можете связаться с нами через <a href=\"https://discord.gg/pf2e\">наш Discord</a>,но имейте в виду, что после окончания плейтеста мы не будем обновлять модуль.</p><p>Если вам понравился этот модуль или любая другая работа по системе Pathfinder второй редакции для Foundry, пожалуйста, посетите нашу страницу <a href=\"https://www.extra-life.org/team/PF2e\">Extra Life</a>, где мы помогаем собирать деньги для благотворительной организации Extra Life. В этом году мы еще не добавили стимулы на наши страницы, но у нас есть несколько запланированных, и мы думаем, что они вам всем понравятся. В прошлом году, например, иммунитет, слабость и сопротивление были частью наших поощрений и помогли нам собрать более 10 000 долларов.</p><p>Спасибо и приятного времяпрепровождения!</p><img src=\"modules/pf2e-playtest-data/assets/gameday.webp\" ></img><p></p>"
+                }
+            }
+        }
+    }
+}

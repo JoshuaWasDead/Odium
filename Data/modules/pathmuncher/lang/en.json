@@ -1,0 +1,147 @@
+{
+  "pathmuncher": {
+    "ModuleName": "Pathmuncher",
+    "Settings": {
+      "Reset": {
+        "Title": "Reset settings to default",
+        "Label": "Reset Pathmuncher Settings",
+        "Hint": "This will reset all of the module's settings back to their defaults."
+      },
+      "RestrictToTrusted": {
+        "Name": "Restrict Import to trusted users?",
+        "Hint": "Only trusted users will be able to import"
+      },
+      "AddVisionFeats": {
+        "Name": "Add vision feats?",
+        "Hint": "If selected, Darkvision and Low-Light Vision will be added as feats to character sheet. Doesn't affect sense values."
+      },
+      "LogLevel": {
+        "Name": "Log Level",
+        "Hint": "The level of logs to place into the console.",
+        "debug": "DEBUG - Lots of details",
+        "info": "INFO - Informative messages",
+        "warn": "WARN - Warnings & warnings only",
+        "error": "ERROR - Errors only",
+        "off": "OFF"
+      },
+      "UseCustomCompendiumMappings": {
+        "Title": "Use custom compendium mappings?",
+        "Label": "Custom Compendium Mappings",
+        "Hint": "This is useful for things like Battlezoo or Cleric+ modules, or even if you have your own compendium of custom feats."
+      }
+    },
+    "Dialogs": {
+      "ResetSettings": {
+        "Title": "Pathmuncher | Reset Settings",
+        "Content": "Are you sure you want to reset all of the Pathmuncher module settings' to their defaults?",
+        "Confirm": "Reset Module Settings",
+        "Cancel": "Cancel"
+      },
+      "PathmuncherImporter": {
+        "Title": "Pathmuncher | Import a character from Pathbuilder",
+        "Button": "Import",
+        "StepOne": "<b>Step 1:</b> Export your character using \"Export JSON\" from Pathbuilder via the burger menu",
+        "StepTwo": "<b>Step 2:</b> Enter the 6 digit user ID number from the pathbuilder export dialog below",
+        "Problems": "Please report any problems on <a href=\"https://discord.gg/EzKAwngjKn\">Discord</a>.",
+        "Ask": {
+          "Feats": "Feats and Specials?",
+          "Equipment": "Equipment?",
+          "Money": "Money?",
+          "Spells": "Spells?",
+          "BlendedSlots": "Adjust for blended slots?",
+          "DeleteAll": "Delete all?",
+          "Name": "Name?",
+          "Class": "Class?",
+          "Weapons": "Weapons?",
+          "Armor": "Armor?",
+          "Treasure": "Treasure?",
+          "Lores": "Lores?",
+          "Deity": "Deity?",
+          "Background": "Background?",
+          "Heritage": "Heritage?",
+          "Ancestry": "Ancestry?",
+          "Pets": "Pets?",
+          "Familiars": "Familiars?",
+          "Formulas": "Formulas? (e.g. Formulas for an Alchemist book)",
+          "Choices": "(Deprecated) When munching features with choices, present choice dialogue in Foundry. If unchecked Pathmuncher will do it's best to guess the right choice. If it's unable to determine an option it will still prompt you for a choice."
+        },
+        "PathBuilderId": "Your Pathbuilder ID number",
+        "PathBuilderJSON": "Paste your Pathbuilder JSON data here",
+        "Munching": "Munching..."
+      },
+      "Pathmuncher": {
+        "FetchFailed": "Unable to fetch a character with Pathbuilder id {pathbuilderId}!",
+        "NoId": "No Pathbuilder Id detected!",
+        "MissingItemsOpen": "The following could not be added. They may have a slightly different name or cannot be matched to a foundry item. You may be able to find them with a manual search. If it is marked as \"Special\", Pathmuncher has been unable to determine if it needs to do something with this. It might be a choice value, or may not be needed in the Foundry implementation.",
+        "CompletedWithNotes": "Import completed with some notes.",
+        "CompletedSuccess": "Import completed successfully.",
+        "ImportNotes": "Pathmuncher Import Notes"
+      },
+      "CompendiumSelector": {
+        "Select": "Select lookup type...",
+        "Title": "Compendium Selector",
+        "Add": "Add",
+        "Remove": "Remove",
+        "Up": "Up",
+        "Down": "Down",
+        "Enable": "Enable Custom Compendium Lookups",
+        "Reset": "Reset Compendium Choices"
+      }
+    },
+    "Chat": {},
+    "Notifications": {
+      "CreateActorPermission": "Pathmuncher requires the CREATE ACTOR permission for your user."
+    },
+    "Labels": {
+      "Character": "Character details",
+      "Feats": "Feats",
+      "Equipment": "Equipment",
+      "Money": "Money",
+      "Spells": "Spells",
+      "Name": "Name",
+      "Class": "Class",
+      "Weapons": "Weapons",
+      "Armor": "Armor",
+      "Treasure": "Treasure",
+      "Lores": "Lores",
+      "Deity": "Deity",
+      "Background": "Background",
+      "Heritage": "Heritage",
+      "Ancestry": "Ancestry",
+      "Formula": "Formula",
+      "Spellcasting": "Spellcasting",
+      "Pet": "Pet",
+      "Pets": "Pets",
+      "FeatureRec": "Feature Reconciliation",
+      "Familiar": "Familiar",
+      "Familiars": "Familiars",
+      "Finished": "Finished",
+      "Cancel": "Cancel",
+      "Computing": "Computing",
+      "Cooking": "Cooking",
+      "Shopping": "Shopping",
+      "Preparing": "Preparing",
+      "Eating": "Eating",
+      "Clearing": "Clearing up",
+      "Specials": "Specials"
+    },
+    "Folders": {
+      "Familiar": "Familiars",
+      "Familiars": "Familiars"
+    },
+    "CompendiumGroups": {
+      "feats": "Feats",
+      "ancestryFeatures": "Ancestry Features",
+      "classFeatures": "Class Features",
+      "actions": "Actions",
+      "spells": "Spells",
+      "classes": "Classes",
+      "ancestries": "Ancestries",
+      "heritages": "Heritages",
+      "equipment": "Equipment",
+      "formulas": "Formulas",
+      "deities": "Deities",
+      "backgrounds": "Backgrounds"
+    }
+  }
+}

@@ -1,0 +1,30 @@
+i.key.fa-solid.fa-key {
+    font-family: "Font Awesome 6 Pro";
+}
+
+#kingmaker-hex-hud p.item span {
+    align-self: center;
+    font-size: 30px;
+}
+
+span.pf2e-ru-inline-trait {
+    text-decoration: underline;
+}
+
+span.pf2e-ru-inline-unit {
+    text-decoration: underline;
+}
+
+span.pf2e-ru-inline-condition {
+    font-style: italic;
+}
+
+span.pf2e-ru-inline-condition::before {
+    font-style: italic;
+    content: '`';
+}
+
+span.pf2e-ru-inline-condition::after {
+    font-style: italic;
+    content: '`';
+}

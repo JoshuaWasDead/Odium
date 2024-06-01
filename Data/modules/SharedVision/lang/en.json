@@ -1,0 +1,29 @@
+{
+    "SharedVision.Sett.Help": "Help",
+    
+    "SharedVision.CtrlBtn.Enable": "Enable Global Shared Vision",
+    "SharedVision.CtrlBtn.DisableAll": "Disable All Vision Sharing",
+    
+    "SharedVision.VisionConf.Title": "Vision Config",
+    "SharedVision.VisionConf.Global.Note": "Configure whether this actor should share its vision with all users when the 'Enable Shared Vision' control button is enabled.",
+    "SharedVision.VisionConf.Global.Label": "Global Shared Vision",
+    "SharedVision.VisionConf.Hidden.Note": "Share vision if the token is hidden/invisible.",
+    "SharedVision.VisionConf.Hidden.Label": "Share Hidden",
+    "SharedVision.VisionConf.User.Label": "User Settings",
+    "SharedVision.VisionConf.User.Note": "Configure whether this actor should always share its vision, location or fog of war reveal with specific users. 'Token' and 'Fog' are automatically enabled when 'Vision' is enabled",
+    "SharedVision.VisionConf.Save": "Save",
+    "SharedVision.VisionConf.UserName": "User",
+    "SharedVision.VisionConf.Token": "Token",
+    "SharedVision.VisionConf.Vision": "Vision",
+    "SharedVision.VisionConf.Fog": "Fog",
+
+    "SharedVision.Conf.Title": "Configuration",
+    "SharedVision.Conf.Note": "Configure whether tokens with specific ownership or disposition should share their vision, location or fog of war reveal with specific users. 'Token' and 'Fog' are automatically enabled when 'Vision' is enabled",
+    "SharedVision.Conf.PermDisp.Label": "Ownership & Disposition",
+    "SharedVision.Conf.Permission.Label": "Ownership",
+    "SharedVision.Conf.Disposition.Label": "Disposition",
+    "SharedVision.Conf.Combat.Label": "Combat",
+    "SharedVision.Conf.Combat.Note": "Configure how Shared Vision should be configured when combat starts and ends. These settings can always be overridden by the control buttons",
+    "SharedVision.Conf.CombatStart.Label": "Start",
+    "SharedVision.Conf.CombatEnd.Label": "End"
+}

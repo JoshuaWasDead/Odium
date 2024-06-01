@@ -1,0 +1,70 @@
+<form autocomplete="off" onsubmit="event.preventDefault();">
+    {{#each settings as |setting|}}
+        <div class="form-group">
+            <label for="{{setting.key}}">{{localize setting.name}}</label>
+            <div class="form-fields">
+                {{#if setting.isCheckbox}}
+                    <input type="checkbox" name="{{setting.key}}" {{checked setting.value}} />
+                {{/if}}
+            </div>
+        </div>
+    {{/each}}
+
+    {{#each homebrewReactions as |homebrewReaction|}}
+        <fieldset class="row">
+            <div class="form-group">
+                <label>UUID</label>
+                <input type="text" name="homebrewReaction.{{homebrewReaction.idx}}.uuid" value="{{homebrewReaction.uuid}}"/>
+                <button type="button" class="homebrew-reaction-delete" data-idx={{homebrewReaction.idx}}><i class="fas fa-trash"></i></button>
+            </div>
+            <button type="button" class="add-reaction-trigger" data-idx={{homebrewReaction.idx}}><i class="fas fa-add"></i>{{localize "pf2e-reaction.SETTINGS.addTrigger"}}</button>
+            <button type="button" class="add-reaction-requirement" data-idx={{homebrewReaction.idx}}><i class="fas fa-add"></i>{{localize "pf2e-reaction.SETTINGS.addRequirement"}}</button>
+            {{#each homebrewReaction.triggers as |t|}}
+                <div class="form-group" style="border:1px solid black">
+                    <label>Trigger</label>
+                    <select name="homebrewReaction.{{homebrewReaction.idx}}.triggers.{{t.idx}}.name" class="homebrew-reaction-trigger" data-idx={{t.idx}} data-parent={{homebrewReaction.idx}}>
+                        {{#each t.choices as |v k|}}
+                            <option value="{{k}}" {{#if (eq k t.name)}} selected {{/if}}>{{localize v}}</option>
+                        {{/each}}
+                    </select>
+                    <label>Reach value</label>
+                    <input type="number" min="0" name="homebrewReaction.{{homebrewReaction.idx}}.triggers.{{t.idx}}.reachValue" value="{{t.reachValue}}"/>
+                    <label>Reach</label>
+                    <input type="checkbox" name="homebrewReaction.{{homebrewReaction.idx}}.triggers.{{t.idx}}.reach" {{#if t.reach}} checked {{/if}}/>
+                    <label>Adjacent</label>
+                    <input type="checkbox" name="homebrewReaction.{{homebrewReaction.idx}}.triggers.{{t.idx}}.adjacent" {{#if t.adjacent}} checked {{/if}}/>
+                    <label>Trait</label>
+                    <input type="text" name="homebrewReaction.{{homebrewReaction.idx}}.triggers.{{t.idx}}.trait" value="{{t.trait}}"  {{#unless (eq "EnemyUsesTrait" t.name)}} disabled {{/unless}}/>
+                    <button type="button" class="trigger-reaction-delete" data-parent={{homebrewReaction.idx}} data-idx={{t.idx}}><i class="fas fa-trash"></i></button>
+                </div>
+            {{/each}}
+            {{#each homebrewReaction.requirements as |r|}}
+                <div class="form-group" style="border:1px solid black">
+                    <label>Requirement</label>
+                    <select name="homebrewReaction.{{homebrewReaction.idx}}.requirements.{{r.idx}}.name" class="homebrew-reaction-requirement" data-idx={{r.idx}} data-parent={{homebrewReaction.idx}}>
+                        {{#each r.choices as |v k|}}
+                            <option value="{{k}}" {{#if (eq k r.name)}} selected {{/if}}>{{localize v}}</option>
+                        {{/each}}
+                    </select>
+                    <label>Effect slug</label>
+                    <input type="text" name="homebrewReaction.{{homebrewReaction.idx}}.requirements.{{r.idx}}.effect" value="{{r.effect}}" {{#if (eq "TargetHasEffect" r.name)}} {{else}} {{#if (eq "ActorHasEffect" r.name)}} {{else}} disabled {{/if}} {{/if}}  />
+                    <label>Item slug</label>
+                    <input type="text" name="homebrewReaction.{{homebrewReaction.idx}}.requirements.{{r.idx}}.item" value="{{r.item}}" {{#if (eq "ActorHoldsItem" r.name)}} {{else}} {{#if (eq "TargetHoldsItem" r.name)}} {{else}} disabled {{/if}} {{/if}}/>
+                    <label>Trait</label>
+                    <input type="text" name="homebrewReaction.{{homebrewReaction.idx}}.requirements.{{r.idx}}.trait" value="{{r.trait}}" {{#if (eq "ActorHoldsItem" r.name)}} {{else}} {{#if (eq "TargetHoldsItem" r.name)}} {{else}} disabled {{/if}} {{/if}}/>
+                    <button type="button" class="requirement-reaction-delete" data-parent={{homebrewReaction.idx}} data-idx={{r.idx}}><i class="fas fa-trash"></i></button>
+                </div>
+            {{/each}}
+        </fieldset>
+    {{/each}}
+
+    <footer class="sheet-footer flexrow">
+        <button type="button" class="add-reaction"><i class="fas fa-add"></i>{{localize "pf2e-reaction.SETTINGS.addReaction"}}</button>
+    </footer>
+
+    <div class="form-group buttons">
+        <button type="submit" name="submit">
+            <i class="far fa-save"></i> {{localize "SETTINGS.Save"}}
+        </button>
+    </div>
+</form>

@@ -1,0 +1,77 @@
+{
+	"label": "Состояния",
+	"entries": {
+		"Suppressed": {
+			"name": "Подавление",
+			"description": "<p>Вы подверглись мощному обстрелу или же особо опасной атаке, что заставило вас действовать менее эффективно ради вашей собственной безопасности. Вы получаете штраф обстоятельств -1 к броскам атаки и штраф состояния -5 футов к своим Скоростям.</p>"
+		},
+		"Glitching": {
+			"name": "Сбоящий",
+			"description": "<p>Сбоящий - это состояние, которое влияет на объекты или существа с признаком 'технический', и оно всегда имеет значение. Сбоящее существо или объект испытывает сочетание ослабляющих эффектов и моментов заедания. Если у вас есть сбоящее снаряжение и вы предпринимаете любое действие с его использованием, вы должны совершить @Check[type:flat|dc:10], чтобы узнать, что произойдет. Если состояние действует непосредственно на вас, вы должны совершать эту чистую проверку в начале каждого раунда.</p>\n<hr />\n<p><strong>Критический успех:</strong> Уменьшите значение этого состояния на 1.</p>\n<p><strong>Успех:</strong> Вы действуете как обычно или используете снаряжение как обычно. </p>\n<p><strong>Провал:</strong> Вы получаете штраф предмете ко всем своим проверкам и КС, равный значению состояния 'сбоящий' действующего на предмет, который вы пытаетесь использовать.</p>\n<p><strong>Критический провал:</strong> Вы считаетесь @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Ошеломленным 1} на этот раунд. Или же объект, который вы пытались использовать, не сработал, и вы теряете действия, которые потратили на попытку его использовать.</p>"
+		},
+		"Spell Effect: Reorient": {
+			"name": "Эффект заклинания: Восстановить равновесие",
+			"description": "<p>Цель теряет состояние @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Застигнут врасплох}, если оно у нее есть. Цель становится иммунной к состоянию @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Застигнут врасплох} до начала своего следующего хода, даже если оно накладывается в связи с обстоятельствами, такими как взятие в тиски или падение @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Ничком}.</p>"
+		},
+		"Spell Effect: Wild Bond": {
+			"name": "Эффект заклинания: Дикая связь",
+			"description": "<p>Предоставляется @UUID[Compendium.starfinder-field-test-for-pf2e.spells.Item.3r9Xrt8qqTQbcw26]{Дикой связью}</p>\n<hr />\n<p>Обращаясь к универсальному коду жизни, вы вливаете в цель первородную сущность другого живого существа и наделяете ее одним из следующих умений.</p>\n<ul>\n<li>Скорость рытья 15 футов</li>\n<li>Скорость карабканья 20 футов</li>\n<li>Скорость полета 20 футов</li>\n<li>Скорость плавания 25 футов</li>\n<li>Скорость 40 футов</li>\n<li>Безоружная атака челюстями, которая наносит @Damage[1d8[piercing]]{1d8 колющего урона}</li>\n<li>Безоружная атака когтем, которая наносит @Damage[1d6[slashing]]{1d6 рубящего урона}, обладающая признаками @UUID[Compendium.pf2e.journals.JournalEntry.S55aqwWIzpQRFhcq.JournalEntryPage.dnbUao9yk8Bs99eT#bystroe]{Быстрая} и @UUID[Compendium.pf2e.journals.JournalEntry.S55aqwWIzpQRFhcq.JournalEntryPage.dnbUao9yk8Bs99eT#tochnoe]{Точная}</li>\n<li>@UUID[Compendium.pf2e.ancestryfeatures.HHVQDp61ehcpdiU8]{Ночное зрение}</li>\n</ul>\n<p>@UUID[Compendium.starfinder-field-test-for-pf2e.conditions.Item.aFR3wmqJ83sccJ1p]{Эффект заклинания: Дикая связь}</p>\n<hr />\n<p><strong>Усиление (+1):</strong> Вы можете сделать целью 1 дополнительное готовое существо, связанное с вами. Это усиление дополняется следующим.</p>\n<p><strong>Усиление (5-й):</strong> Урон, наносимый атаками, увеличивается до двух костей.</p>"
+		},
+		"Spell Effect: Motivating Ringtone": {
+			"name": "Эффект заклинания: Мотивирующий рингтон",
+			"description": "<p>Предоставляется @UUID[Compendium.starfinder-field-test-for-pf2e.spells.Item.jCr8Airvs1u5D1yR]{Мотивирующим рингтоном}</p>\n<hr />\n<p>Владеющее целью существо получает бонус состояния +5 футов ко всем Скоростям и бонус состояния +1 к спасброскам против эффектов страха на время продолжительности, пока коммуникатор продолжает воспроизводить рингтон.</p>"
+		},
+		"Spell Effect: Song of the Spheres": {
+			"name": "Эффект заклинания: Песнь Сфер",
+			"description": "<p>Granted by <em>@UUID[Compendium.starfinder-field-test-for-pf2e.spells.Item.L5xqxo9onL2zcMCe]{Song of the Spheres}</em></p>\n<hr />\n<p><strong>Critical Success</strong> As success, except the effect lasts 3 rounds.</p>\n<p><strong>Success</strong> You and all bonded allies gain a +1 status bonus to attack rolls and damage rolls for 1 round.</p>\n<p><strong>Failure</strong> As success, except this only affects you and one selected bonded ally within range.</p>\n<p><strong>Critical Failure</strong> The spell has no effect.</p>"
+		},
+		"Effect: Relentless Endurance": {
+			"name": "Эффект: Беспредельная выносливость",
+			"description": "<p>Вы получаете 1d8+4 временных Очков Здоровья и ещё 1d8+4 за каждые 4 ваших уровня после 2-го.</p>"
+		},
+		"Effect: Memory Bank": {
+			"name": "Эффект: Блок памяти",
+			"description": "<p>Отслеживает доступный на текущий момент объем блока памяти.</p>"
+		},
+		"Effect: Bolstered by Battle": {
+			"name": "Эффект: Воодушевление битвой",
+			"description": "<p>Вы получаете количество временных Очков Здоровья, равное вашему уровню.</p>"
+		},
+		"Effect: Vitality Network": {
+			"name": "Эффект: Жизненная сеть",
+			"description": "<p>Отслеживает доступный на текущий момент запас жизненной сети.</p>"
+		},
+		"Effect: Vital Boost": {
+			"name": "Эффект: Прилив жизненной силы",
+			"description": "<p>Вы получаете бонус +1 к спровоцировавшему спасброску.</p>"
+		},
+		"Effect: Nanite Form": {
+			"name": "Эффект: Форма нанитов",
+			"description": "<p>Вы превращаетесь в рой нанитов на 1 минуту или до тех пор, пока не потратите одиночное действие,(<span class=\"pf2-icon\">1</span>), чтобы вернуться в свою обычную форму. Вы становитесь Огромного размера, получаете признак <a href=https://clck.ru/39QZKq><em>`рой`</em></a> и Скорость полета 40 футов. Как рой, вы обладаете следующими характеристиками:</p>\n<ul>\n<li>Вы иммунны к состояниям @UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{Схвачен}, @UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{Ничком} и @UUID[Compendium.pf2e.conditionitems.VcDeM8A5oI6VqhbM]{Сдерживаем}.</li>\n<li>У вас слабость 5 к урону по области и урону <a href=https://clck.ru/jpspq><em>`брызгами`</em></a>.</li>\n<li>Вы можете занимать тоже пространство, что и другие существа и должны так делать для применения своих умений наносящих урон.</li>\n<li>Активностью в 2 действия (<span class=\"pf2-icon\">2</span>) вы можете нанести @Damage[10d6[acid]]{10d6 урона кислотой} всем существам в пространствах которых вы находитесь (@Check[type:reflex|dc:resolve(@actor.attributes.classOrSpellDC.value)|basic:true] против вашего КС класса или КС заклинания, в зависимости от того, что больше).</li>\n<li>Вы не можете говорить, @UUID[Compendium.pf2e.actionspf2e.aBQ8ajvEBByv45yz]{Сотворять заклинания}, использовать действия <a href=https://clck.ru/jjLHP><em>`воздействия`</em></a> требующие ваших рук, <a href=https://clck.ru/aiMdK>Активировать</a> магические предметы или наносить какие-либо @UUID[Compendium.pf2e.actionspf2e.VjxZFuUXrCU94MWR]{Удары} своим обычным телом.</li>\n<li>Вы не получаете умение @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.baA0nSMhQyFyJIia]{Разум роя}, поэтому <a href=https://clck.ru/jtTne><em>`ментальные`</em></a> эффекты действуют на вас как обычно.</p>"
+		},
+		"Effect: Get 'Em!": {
+			"name": "Эффект: Взять их!",
+			"description": "<p>Существо получает штраф обстоятельства -1 к КБ.</p>"
+		},
+		"Effect: Get 'Em! (Lead by Example)": {
+			"name": "Эффект: Взять их! (Личный пример)",
+			"description": "<p>Вы получаете бонус обстоятельства +1 к броскам урона против этой цели. С ростом  уровня посланника увеличивается и этот урон. На 5-м, 10-м, 15-м и 20-м уровнях этот урон увеличивается на 1.</p>"
+		},
+		"Effect: Get in There!": {
+			"name": "Эффект: Давай туда!",
+			"description": "<p>Вы получаете бонус состояния +5 футов к Скорости. С ростом уровня посланника увеличивается и это значение. На 7-м, 12-м и 17-м уровнях бонус увеличивается еще на 5 футов.</p>"
+		},
+		"Effect: Mark Asset": {
+			"name": "Эффект: Метка визави",
+			"description": "<p>Вы получаете бонус обстоятельства +1 к проверкам Обмана, Дипломатии, Запугивания и Восприятия, сделанным против вашего визави или касающиеся вашего визави, если цель его, а также бонус обстоятельства +1 к попыткам @UUID[Compendium.pf2e.actionspf2e.1OagaWtBpVXExToo] о своем визави.</p>"
+		},
+		"Effect: Search High and Low": {
+			"name": "Эффект: Искать везде и всюду",
+			"description": "<p>Вы получаете бонус обстоятельства +2 к проверкам Восприятия на @UUID[Compendium.pf2e.actionspf2e.Item.BlAOM2X92SI6HMtJ]. С ростом уровня посланника увеличивается и этот бонус. Увеличьте бонус до +3 на 7-м уровне, +4 на 12-м уровне и +5 на 17-м уровне.</p>"
+		},
+		"Effect: Watch Out!": {
+			"name": "Эффект: Берегись!",
+			"description": "<p>Вы получаете бонус обстоятельства +2 к КБ против спровоцировавшей атаки.</p>"
+		}
+	}
+}

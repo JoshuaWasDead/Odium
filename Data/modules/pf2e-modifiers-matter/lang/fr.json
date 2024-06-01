@@ -1,0 +1,47 @@
+{
+  "pf2e-modifiers-matter": {
+    "Settings": {
+      "always-show-highlights-to-everyone": {
+        "name": "Montrer le soulignement défensif à tous",
+        "hint": "S'il est réglé sur vrai, le soulignement défensif comme\"Pris au dépourvu -2\" sera montré à tous, pas seulement au MJ."
+      },
+      "always-show-defense-conditions": {
+        "name": "Montrer le soulignement défensif tout le temps",
+        "hint": "S'il est défini sur vrai, les faits saillants de la défense seront affichés en permanence, même s'ils n'ont pas d'importance."
+      },
+      "ignore-crit-fail-over-fail-on-attacks": {
+        "name": "Ignorer l'échec critique lors des Attaques",
+        "hint": "S'il est réglé sur vrai, le module ne soulignera pas les changements qui ont changé un échec simple en échec critique ou vice versa. C'est utile car il n'y a pas de différence entre les deux cas lors des attaques ;  cependant, il peut y avoir des exceptions à cette règle, comme avec Coup final assuré."
+      },
+      "additional-ignored-labels": {
+        "name": "Libellés ignorés supplémentaires",
+        "hint": "Insérez le texte séparé par des points-virgules (;). Chacun des libellés de modificateur sera ignoré. Si vous pensez qu'un modificateur existant dans les règles doit être ignoré par défaut, vous pouvez le suggérer sur Github/Discord."
+      }
+    },
+    "Message": {
+      "CasterHas": "Caster has:",
+      "ActorHas": "Actor has:",
+      "TargetHas": "La cible a :"
+    },
+    "IgnoredModifiers": {
+      "DeviseAStratagem": "Concevoir un Stratagème",
+      "HuntersEdgeFlurry1": "Spécialisation du chasseur : Déluge",
+      "HuntersEdgeFlurry2": "Déluge",
+      "HuntersEdgeFlurry3": "Effet : Spécialisation du chasseur, déluge",
+      "SpellAttackHouserule": "Spell attack houserule",
+      "SpellPotency1": "Spell Potency",
+      "SpellPotency2":  "Spell potency",
+      "SkillPotency1": "Skill Potency",
+      "SkillPotency2":  "Skill potency",
+      "BattleForm1": "Incarnation de la nature",
+      "BattleForm2": "Forme de diable de Pointesable",
+      "BattleForm3": "Incarnation élémentaire",
+      "BattleForm4": "Avatar",
+      "DrakeheartMutagen": "Mutagène de cœur de drake"
+    },
+    "IgnoredModifiers3p": {
+      "pf2e-flatten_pwol": "Proficiency Without Level",
+      "pf2e-flatten_pwol_half": "1/2 Level Proficiency"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "name": "troubles-in-otari-remade-maps",
+  "title": "Troubles in Otari maps remake",
+  "description": "<p>My collection of maps for Paizo Publishing's Pathfinder Second Edition TROUBLES IN OTARI.</p>",
+  "version": "1.0.9",
+  "compatibility": {
+	"minimum": "0.8.0",
+	"verified": "11"
+  },
+  "authors": [
+    {
+    "name": "Narchy"
+    }
+    ],
+
+  "packs": [
+    {
+      "name": "troubles-in-otari-maps-remake-by-narchy",
+      "label": "Troubles in Otari maps remake by Narchy",
+      "path": "/packs/troubles-in-otari-maps-remake-by-narchy.db",
+      "type": "Scene"
+    }      
+  
+  ],
+  
+  "url": "https://gitlab.com/narchy-maps/troubles-in-otari-remade-maps",
+  "manifest": "https://gitlab.com/narchy-maps/troubles-in-otari-remade-maps/-/raw/main/module.json",
+  "download": "https://gitlab.com/narchy-maps/troubles-in-otari-remade-maps/-/archive/main/troubles-in-otari-remade-maps.zip"
+}

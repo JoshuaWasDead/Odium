@@ -1,0 +1,38 @@
+{
+    "id": "easy-ruler-scale",
+    "title": "Easy Ruler Scale",
+    "description": "",
+    "version": "2.0.4",
+    "library": "false",
+    "manifestPlusVersion": "1.0.0",
+    "minimumCoreVersion": "0.8.5",
+    "compatibleCoreVersion": "11",
+    "compatibility": {
+        "minimum": "11",
+        "verified": "11"
+    },
+    "authors": [
+        {
+            "name": "enso",
+            "discord": "enso#0361"
+        }
+    ],
+    "esmodules": [
+        "/scripts/rulerScale.js"
+    ],
+    "relationships": {
+        "requires": [
+            {
+                "id": "lib-wrapper",
+                "type": "module",
+                "compatibility": {
+                    "minimum": "1",
+                    "verified": "1.12.13.0"
+                }
+            }
+        ]
+    },
+    "url": "https://github.com/jessev14/easy-ruler-scale",
+    "manifest": "https://github.com/jessev14/easy-ruler-scale/releases/latest/download/module.json",
+    "download": "https://github.com/jessev14/easy-ruler-scale/releases/download/2.0.4/module.zip"
+}

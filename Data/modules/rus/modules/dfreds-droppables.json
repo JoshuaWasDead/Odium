@@ -1,0 +1,23 @@
+{
+  "Droppables.DropActorsFolder": "Сброс папки Участников",
+  "Droppables.DropButton": "Сброс",
+  "Droppables.DropStyle": "Стиль сброса",
+  "Droppables.DropExplanation": "Как вы бы хотели расположить участников в папке на холсте?",
+  "Droppables.StackedUp": "Сложенные в стопку",
+  "Droppables.Randomly": "Случайным образом",
+  "Droppables.HorizontalLine": "Линия слева направо",
+  "Droppables.VerticalLine": "Линия сверху вниз",
+  "Droppables.Elevation": "Высота",
+  "Droppables.ElevationOptional": "Высота (опционально)",
+
+  "Droppables.DropJournalFolder": "Удалить папку журнала",
+  "Droppables.DropJournalFolderExplanation": "Удалить все записи журнала в {folderName} в виде заколок?",
+
+  "Droppables.SettingDropStyle": "Стиль сброса",
+  "Droppables.SettingDropStyleHint": "Вот так элементы в папке будут помещены на холст. Выбор \"Диалог\" будет каждый раз запрашивать у вас один из вариантов.",
+  "Droppables.SettingDropStyleDialog": "Диалог",
+  "Droppables.SettingDropStyleStack": "Стопка",
+  "Droppables.SettingDropStyleRandom": "Случайно",
+  "Droppables.SettingDropStyleHorizontalLine": "Горизонтальная линия",
+  "Droppables.SettingDropStyleVerticalLine": "Вертикальная линия"
+}

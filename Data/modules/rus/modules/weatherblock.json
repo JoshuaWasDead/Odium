@@ -1,0 +1,5 @@
+{
+    "weatherblock.sceneconfig.invertMask.name": "Инвертировать блок погоды",
+    "weatherblock.sceneconfig.invertMask.hint": "Вместо блокировки погоды в обозначенных полигонах показывать погоду только в полигонах.",
+    "weatherblock.drawingconfig.blockWeather.name": "Блок погоды"
+}

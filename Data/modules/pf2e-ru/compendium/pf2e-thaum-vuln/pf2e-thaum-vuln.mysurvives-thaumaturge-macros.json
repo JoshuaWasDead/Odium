@@ -1,0 +1,48 @@
+{
+	"label": "Макросы MySurvive's для Тауматурга",
+	"folders": {
+		"Intensify Vulnerability": "Усиление уязвимости"
+	},
+	"entries": {
+		"Recall Knowledge (Esoteric Lore)": {
+			"name": "Вспомнить информацию (Эзотерические знания)",
+			"command": "game.pf2eThaumVuln.recallEsotericKnowledge();"
+		},
+		"Twin Weakness": {
+			"name": "Двойная слабость",
+			"command": "game.pf2eThaumVuln.twinWeakness();"
+		},
+		"Force EV": {
+			"name": "Насильно ЭУ",
+			"command": "game.pf2eThaumVuln.forceEVTarget();"
+		},
+		"Share Weakness": {
+			"name": "Поделиться слабостью",
+			"command": "game.pf2eThaumVuln.shareWeakness();"
+		},
+		"Cursed Effigy": {
+			"name": "Проклятое чучело",
+			"command": "game.pf2eThaumVuln.cursedEffigy();"
+		},
+		"Exploit Vulnerability": {
+			"name": "Эксплуатировать уязвимость",
+			"command": "game.pf2eThaumVuln.exploitVuln();"
+		},
+		"Intensify Vulnerability: Amulet": {
+			"name": "Усиление уязвимости: Амулет",
+			"command": "game.pf2eThaumVuln.amuletIntensify();"
+		},
+		"Intensify Vulnerability: Tome": {
+			"name": "Усиление уязвимости: Фолиант",
+			"command": "game.pf2eThaumVuln.tomeIntensify();"
+		},
+		"Root to Life": {
+			"name": "Корень к жизни",
+			"command": "game.pf2eThaumVuln.rootToLife()"
+		},
+		"Intensify Vulnerability: Lantern": {
+			"name": "Усиление уязвимости: Фонарь",
+			"command": "game.pf2eThaumVuln.lanternIntensify();"
+		}
+	}
+}

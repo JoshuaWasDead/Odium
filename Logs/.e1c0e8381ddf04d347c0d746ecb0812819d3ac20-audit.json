@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": false,
+        "amount": 5
+    },
+    "auditLog": "C:\\Users\\JoshuaWasDead\\AppData\\Local\\FoundryVTT\\Logs\\.e1c0e8381ddf04d347c0d746ecb0812819d3ac20-audit.json",
+    "files": [
+        {
+            "date": 1716895683953,
+            "name": "C:\\Users\\JoshuaWasDead\\AppData\\Local\\FoundryVTT\\Logs\\debug.2024-05-28.log",
+            "hash": "6fe5e5fb651cf82e09d5fac88d68c37e926997a6d338041fcf78d4b28755c06c"
+        }
+    ],
+    "hashType": "sha256"
+}

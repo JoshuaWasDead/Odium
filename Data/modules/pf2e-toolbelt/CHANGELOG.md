@@ -1,0 +1,847 @@
+# 2.4.5
+
+-   made extra checks accross the features to avoid missing elements errors
+
+# 2.4.4
+
+-   `Hero Actions`:
+    -   fixed a parsing issue when using a custom table pointing to a custom compendium pack journal
+
+# 2.4.3
+
+-   `Merge Damage`:
+    -   avoid `null` degree of sucess for merged damages
+
+# 2.4.2
+
+-   `Merge Damage`:
+    -   make sure long instances of damage do not stretch the message outside of its bounds
+
+# 2.4.1
+
+-   `Actionable`:
+    -   fixed error with passive actions
+
+# 2.4.0
+
+-   added a new `Actionable` Feature:
+    -   this lets you link a macro to a character action
+    -   compatible with both regular and feat actions
+    -   simply drag & drop a macro in the `Details` tab of the action the same way you would for a self-applied effect
+    -   a `use` button will be generated to execute the macro (compatible with the `Use Button` feature)
+    -   the macro is executed with the character as `actor` parameter
+
+# 2.3.1
+
+-   `Target Helper`:
+    -   now adds hazards & vehicles as targets
+-   `Template Helper`:
+    -   now targets hazards & vehicles
+    -   still doesn't target "hidden" tokens
+
+# 2.3.0
+
+-   `Use Button`:
+    -   `Add To Actions` no longer creates a second `use` button to actions that already have one (because they have a self-applied effect), it now instead piggy back on the existing button to consume a charge on use
+    -   `Add To Consumables`
+        -   no longer adds a button for ammunition
+        -   now constructs a more in-depth message depending on the consumable
+            -   scrolls/wands doesn't change
+            -   items with a formula will now have their description above the roll
+            -   other items will have their description used instead of the generic system message
+            -   the `use` button and footer are stripped from the items description when used that way
+
+# 2.2.0
+
+-   `Better Merchant`:
+    -   you can now disable the default filters
+        -   the default filter will never be chosen as the filter for the transaction if disabled
+        -   this won't change the `Use Default Purse` behaviour of the other filters and will still make sure the default purse has enough gold for the transaction
+-   `Share Data`:
+    -   a master can now share its hero points with another character actor
+-   `Target Helper`:
+    -   re-formatted the save tooltip structure based on the different metagame settings (let's hope i got it right this time)
+    -   GMs can now roll an inline save private and its result won't be shown to the players
+        -   by having your global roll mode set to private/blind/self at the time of rolling the save
+        -   by having your modifiers window roll mode set to private/blind/self
+        -   by holding `ctrl` while clicking on the inline save
+        -   reroll will keep the private state of the original roll
+
+# 2.1.1
+
+-   `Hero Actions`:
+    -   fixed error when trying to `give` hero actions manually and not using the `draw with replacement` option in the table
+
+# 2.1.0
+
+-   `Hero Actions`:
+    -   added a new gm-only `Give` button to manually give actions to a character
+-   `Shared Data`:
+    -   it is now possible for a master to have more than one linked actor
+    -   non-"linked" actors can now also select a master (NPCs & Characters only)
+    -   NPCs cannot use the `Skills Proficiencies` or `Weapon Runes` options
+-   `Target Helper`:
+    -   no longer shows the result of the die if the `Show Check Outcomes` metagame setting is disabled
+
+# 2.0.2
+
+-   `Better Merchant`:
+    -   fixed error when the merchant had any container in their inventory
+-   `Stances`:
+    -   fixed error with missing actions that are associated with a stance
+
+# 2.0.1
+
+-   `Better Merchant`:
+    -   fixed actors not receiving coins from selling items to a merchant
+    -   fixed not being able to set a buy purse to `0` to prevent the merchant from buying items.
+
+# 2.0.0
+
+-   the module has been completely remade from scratch
+-   the module no longer contains compendium packs
+-   the `Inventory`, `Npc Lore Knowledges` and `Multi-Cast` features have been retired
+-   the settings have received an overhaul
+    -   everything has been reset
+    -   some settings have been added or split into more settings
+    -   all settings are now grouped by feature (with a title for each feature)
+    -   some settings are now enabled/set by default (only the ones that are dependent on a feature-enabling setting)
+    -   no longer has settings that could be hidden when another setting is disabled
+-   `Better Merchant`:
+    -   complete rework of the feature
+    -   removed individual `Infinite Stock`
+    -   selling ratio now works off filters like buying does
+    -   selling items doesn't add coins to the inventory, it instead keep track of it in the filters
+    -   buying/selling filters now use a modified version of the compendium browser
+    -   for GM: price numbers of a ratio other than 1 will be colored and can be hovered over to see which filter changed it and at which ratio
+-   `Effects Panel`:
+    -   no longer add the `Condition-Sheet Icon` to persistent damage conditions
+-   `Giveth`:
+    -   no longer allows to drag & drop effects/conditions onto unowned actors, the feature is strictly reserved for giving "equipment"
+-   `Hero Actions`:
+    -   revisited the design and ergonomics of the sheet UI
+    -   some styling improvement were made to the different dialogs used
+    -   you can now "safely" use the `Private` and `Allow Trade` settings together
+        -   users who don't own targetted characters will not be shown the list of their actions (and therefor can't select which one they want to receive)
+        -   when receiving a trade request, the user will have to select which action they want to give without knowing what they are offered
+    -   a new `Hero Set Variant` setting has been added
+        -   when set to 0, the feature will work as before: a character is allowed to have 1 hero action per hero point available
+        -   when set to any number, the feature functions differently and instead have characters draw a set amount of cards (equal to the setting number) and can use any of them by spending a hero point without being forced to discard or draw any action
+-   `Hide Damage`:
+    -   this new setting lets you hide the damage value of non-player owned creature from players, it can be particularly useful paired with the target helper feature so player don't know if they should reroll or not a save just by seeing some big number in the chat message
+-   `Merge Damages`:
+    -   material is now propagated to the all the damage instances of the same type instead of splitting them into multiple instances (which was basically creating issues with IWR instead of fixing them)
+    -   details will now be hidden from players when merging damages for non-player owned creatures (when necessary)
+    -   merged message will now use the targets from the original messages instead of using current targets
+    -   if merged damages have more than on roll (usually for splash), those rolls will be added to the merged message as extra rolls
+-   `Share Health Pool` is now `Shared Data`:
+    -   the option to select a master is now limited to GMs
+    -   a master must be a "linked" character actor to be selected
+    -   only "linked" actors can select a master
+    -   an actor can now take advantage of turn start/end if their master is in combat
+        -   effects/conditions on the actor will trigger/expire as if it was in the encounter
+        -   if the actor is already in the encounter, nothing special will be done
+    -   an actor can use its master's skills proficiencies
+    -   an actor can use its master's invested handwraps/weapon fundamental & property runes
+    -   an actor can use its master's invested armor/bracers potency & resilient runes
+-   `Spells Summary`:
+    -   even though the end user experience hasn't changed much, it now works very similarly to the regular spellcasting tab (it is also now an actual tab)
+    -   spell `uses` are now directly available in the spell rows instead of having to hover over them
+    -   mousing over the `category` of a spell will show the name of the spellcasting entry in a tooltip
+-   `Target Helper`:
+    -   now can use substitute rolls
+    -   a new icon that can be hovered over shows up if a save roll results in having notes
+    -   no longer disables the chat message when a roll is inbound
+    -   no longer show target rows on private messages
+-   `Template Helper`:
+    -   added a new `Auto Dismiss` settings which will remove the template after setting the targets (or cancelled)
+        -   `Orphan Only` refers to templates that do not originate from spell messages (no little trash icon to remove them)
+-   `Use Button`:
+    -   new feature that either add new use buttons or enhance existing ones
+
+# 1.43.0
+
+-   `Spells Summary` updates:
+    -   is now compatible with the version `3.0.0` of `PF2e Dailies`
+    -   no longer compatible with previous versions of `PF2e Dailies`
+    -   no longer offer backward compatibility support for `PF2e Staves`
+    -   fixed issue with flexible spellcasting uses showing even not hovered
+
+# 1.42.2
+
+-   `Target Token Helper` updates:
+    -   fixed error on chat render when a registered targets no longer exist in the scene
+
+# 1.42.1
+
+-   `Target Token Helper` updates:
+    -   fixed `enrichHTML` not handling synchronous calls
+    -   fixed small buttons line height issue with some browsers
+
+# 1.42.0
+
+-   `Target Token Helper` updates:
+    -   now show degree of success adjustment in the save tooltip if any
+    -   fixed error when adding targets linked to an actor no longer existing
+
+# 1.41.4
+
+-   `Spells Summary` updates:
+    -   fixed feature not properly unregistering itself when disabled
+    -   fixed character sheets not being re-rendered on setting change
+-   `Target Token Helper` updates:
+    -   `Roll All Saves` will now always skip the modifiers dialog
+
+# 1.41.3
+
+-   `Target Token Helper` updates:
+    -   fixed not being able to use the `Block` button when equipped with more than one shield
+
+# 1.41.2
+
+-   `Target Token Helper` updates:
+    -   fixed closing the `Check Modifiers Dialog` without rolling not giving back access to the chat message
+
+# 1.41.1
+
+-   `Target Token Helper` updates:
+    -   the module will now roll ghosted dice with `Dice So Nice` when rolling a save check with the `Show Roll Breakdowns` metagame setting disabled
+
+# 1.41.0
+
+-   this is a `5.14.0` release
+-   updated the module to maintain compatibility with the latest system version
+-   readme as been updated at long last
+-   improved management of settings across the different features
+    -   fixed some fringe quirks
+    -   can hide settings in relation to another one being disabled
+        -   the only one for now is `Target Token Helper` client setting
+-   split up `Template Targeting` from `Target Token Helper`, this is now its own separate feature, there was no reason for it to be disabled when the `Target Token Helper` was turned off as it is a client side feature entirely that doesn't interact with the rest
+-   `Giveth` updates:
+    -   updated the transfer item popup
+    -   updated the giveth message to look more fancy
+-   `Spells Summary`:
+    -   updated all the broken stylings
+    -   now shows the spells specific roll options above the spells list
+    -   fixed prepare spell toggle showing for cantrips
+-   `Better Merchant` updates:
+    -   updated the buy message to look more fancy
+    -   complete rework of the `From Browser` feature
+        -   it now works directly from a modified version of the compendium browser
+        -   the name filter field has been removed, it was interfering too much with the feature
+        -   you can now pick which items among the ones present in the browser up to a limit of 100
+-   `Target Token Helper` updates:
+    -   no longer roll `Dice So Nice` on save check when the `Show Roll Breakdowns` metagame setting is disabled
+    -   you can now drag & drop save-check inline links onto a damage chat message
+        -   this will add the save directly into the damage message
+        -   only links that have a DC and are of type reflex, will or fortitude will be draggable
+        -   the damage message musn't already have a `save` module entry
+        -   you must be the author of the damage message (or GM)
+
+# 1.40.2
+
+-   `Better Merchant` updates:
+    -   added more actor types allowed to sell items (with conditions associated to them)
+    -   fixed filter data being modified while editing a filter and changing its traits
+
+# 1.40.1
+
+-   `Automatic Rune Progression` updates:
+    -   fixed check for handwraps being equipped/invested not always working depending on the order the data is processed by the system
+
+# 1.40.0
+
+-   added a new `Hero Actions - Give Actions` macro (it was already in the API)
+-   `Better Merchant` updates:
+    -   added a new `Buy Items` feature
+        -   once the feature enabled, it will block the transfer if the trade is rejected for any reason
+        -   it uses filters processed from top to bottom, they are the same as the ones in the compendium browser
+        -   a filter is selected if it matches the item data and have enough gold remaining in its allocated purse (or have infinite gold)
+        -   once a filter is selected, its ratio will be used for the purchase
+        -   if no filter is selected, the ratio of the default filter will be used unless the `All Items` setting is disabled, in that case, the buy will be rejected
+        -   if the total gold purse cannot afford the buy, the trade will be rejected
+        -   if the selected filter purse cannot afford the buy and the `All Items` setting is disabled, the trade will be rejected
+        -   the gold purse of the selected filter will see its amount deducted by the calculated price (unless infinite)
+        -   the total gold purse is always used to check if an item can be purchased (unless infinite)
+        -   the total gold purse is always deducted by the calculated price (unless infinite)
+
+# 1.39.1
+
+-   `Better Merchant` updates:
+    -   fixed players not being able to buy items
+    -   fixed trying to modify html that doesn't exist on players client
+
+# 1.39.0
+
+-   `Better Merchant` updates:
+    -   added a new `Pull from Browser` combo of buttons
+        -   the magnifier one will open the browser to the `Equipment` tab
+        -   the other button will offer the possibility to add the resulting list of items from the browser
+        -   the browser doesn't need to be rendered on screen
+        -   the browser doesn't need to have the `Equipment` tab opened
+        -   the `Equipment` tab needs to have been generated at one point before
+        -   a limit of `100` items to be added has been set
+    -   properly clamp the price ratio both in the displayed value and in its actual calculation
+    -   fixed quantity `-` and `+` buttons always being removed
+-   `Multi Cast` updates:
+    -   fixed the popup title not containing the actor's name
+-   `Target Token Helper` updates:
+    -   optimized the `Block` button behaviour for the target rows
+
+# 1.38.0
+
+-   `Better Merchant` updates:
+    -   added an infinity icon which enables `Infinite Stock` for a singular item
+        -   the `Infinite Stocks` option must be disabled for the icon to show up
+        -   the merchant's inventory and bulk will be nullified in the sheet as soon as one item has infinite stock
+        -   same issue about item quantity applies with this
+
+# 1.37.0
+
+-   added a new `Better Merchant` world setting:
+    -   adds custom features to the default system `merchant`
+    -   everything reverts back when switching to `loot` (exception may be item quantity, see `Infinite Stocks`)
+    -   `Price Ratio` let you set a global ratio for the merchant (between `0.1` and `5`)
+        -   new calculated price is only applied when the item is in the merchant's inventory
+        -   once the item is added to another actor's inventory, the regular price is back
+    -   `Receive No Coins` will not add coins to the merchant when an item is sold to another actor
+    -   `Infinite Stocks` will set the quantity of every item in the merchant inventory to `9999`
+        -   `Treasure` items will not be modified by this
+        -   the merchant's inventory and bulk will be nullified in the sheet
+        -   the `+` and `-` quantity buttons will be removed from the items (except for `Treasure` items)
+        -   the displayed quantity is fictional until one item is sold (on a per item bases)
+        -   once an item is sold, the quantity is deducted by the system and is updated in the item for good
+        -   because of that, the quantity cannot be reverted anymore when disabling `Infinite Stocks` or switching the actor to `Loot`
+
+# 1.36.4
+
+-   `Target Token Helper` updates:
+    -   fixed issue with the adjusted damage popup when holding `shift`
+
+# 1.36.3
+
+-   `Target Token Helper` updates:
+    -   changed the "hidden" icon to be the same as the regular one but not filled in
+    -   updated support for spells originating from consumables, the system data having changed
+        -   saves won't appear on damage messages that originated from a consumable spell description (only an issue from the activations tab), there is no way to link the message to the original spell currently
+
+# 1.36.2
+
+-   `Target Token Helper` updates:
+    -   fixed unowned target names always ending up being `Unnamed` regardless of the `Tokens Determine NPC Name Visibility` setting
+    -   fixed target sorting for player not always showing owned targets above unowned ones
+
+# 1.36.1
+
+-   `Target Token Helper` updates:
+    -   fixed some setup issues
+
+# 1.36.0
+
+-   `Target Token Helper` updates:
+    -   the `Target Token Helper` world setting now requires a reload on change
+    -   added a `Roll All Saves` context menu option to chat messages
+        -   will only appear for the GM and on messages that have targets and a save
+        -   only roll saves for non-owned targets, players will have to roll for their own actors
+        -   will only appear if there are actual saves to roll left (it deduct already rolled saves)
+
+# 1.35.3
+
+-   `Target Token Helper` updates:
+    -   fixed players unable to reroll a save because of the anti-spam feature
+
+# 1.35.2
+
+-   removed `Custom Stances` setting, it hasn't been of use for a while now
+
+# 1.35.1
+
+-   `Target Token Helper` updates:
+    -   always show die result to owned targets save
+
+# 1.35.0
+
+-   removed the `Hide Modifiers` feature now that the system handles it
+-   `Spells Summary` updates:
+    -   replaced the `Consumable` spell category with the appropriate `Wand` or `Scroll`
+-   `Target Token Helper` updates:
+    -   players will now see all visible targets, sorted as follow
+        -   players: owned -> player owned -> unowned
+        -   gm: unowned -> owned
+    -   icons representing owned and unowned targets have been added before their name (a special icon is shown for targets that are "hidden" from players)
+    -   respects all 3 metagame settings `Show Check DCs`, `Show Check Outcomes` and `Show Roll Breakdowns`
+    -   only the last 10 messages in the chat will be processed on reload
+-   `Merge Damage` updates:
+    -   fixed issue with damage traits not working once merged (such as `Holy`)
+
+# 1.34.0
+
+-   this is a `5.13.1` release
+-   `Spells Summary` updates:
+    -   added description for rituals
+    -   added support for wands and scrolls
+        -   their type label is `Consumable`
+        -   you must first `Draw` the item before being able to `Cast` it
+        -   you can modify and reset its charges
+    -   fixed reset icon not being vertically centered
+
+# 1.33.0
+
+-   this is a `5.13.0` release
+-   updated the different helpers and data changes made in the system
+-   `Target Token Helper` updates:
+    -   made possible to use the `Target Self` option for inline templates
+-   `Spells Summary` updates:
+    -   do not display the sub tabs added by the system with the alternate version
+    -   fixed the `Range` label
+    -   properly restore the alternate tab scroll position on sheet render
+
+# 1.32.0
+
+-   `Target Token Helper` updates:
+    -   added support for `Dice So Nice` when rolling inline saves
+    -   added an anti-spam to prevent users from clicking more than once on an inline save button
+
+# 1.31.1
+
+-   now use a custom localization key for the `Open Sheet` tooltip
+
+# 1.31.0
+
+-   `Automatic Rune Progression` updates:
+    -   added exception for `Shield Boss` and `Shield Spikes` to the shield exception (so they get the runes)
+
+# 1.30.1
+
+-   fixed an error with `Dice So Nice`
+
+# 1.30.0
+
+-   this is a `5.12.0` release
+-   `Spells Summary` updates:
+    -   updated to use the new system data
+    -   added the prepared toggle button to cantrips as is now done in the system
+    -   now grey out expended spell images
+    -   fixed focus spell category label
+    -   fixed overall broken styling
+-   `Multi Cast` updates:
+    -   updated to use the new system data
+-   `Merge Damage` updates:
+    -   fixed error with formulas with hyphened damage types, the error wasn't preventing the feature from working but was still an eyesore in the console
+-   added a new `Inventory` client setting:
+    -   this is a work in progress and is more of a gimmick than an actual useful feature
+    -   it offers the ability to toggle between the regular and an alternate version of the character sheet's `Inventory` tab at any moment by clicking once more on the tab icon
+    -   you can drag & drop item icons around to rearrange them or directly equip/invest them depending on where they are dropped
+
+# 1.29.2
+
+-   due to issues with settings migration, some settings needed to be completely reset to their default value:
+    -   `Automatic Rune Progression`
+    -   `Target Token Helper - Chat`
+
+# 1.29.1
+
+-   fixed runes dropdowns reappearing on item sheet refresh
+
+# 1.29.0
+
+-   `Automatic Rune Progression` updates:
+    -   the setting is now a multi-choice instead of an enabled/disabled
+    -   `Force Update` will always update the runes to be based on the actor's level
+    -   `Keep Highest` will only update the runes if they are currently lower than what they should be at that level, allowing the use of higher tier runes
+    -   if you previously had the setting enabled, it will automatically be replaced by the `Force Update` option
+    -   when the `Force Update` option is chosen, the potency, striking and resilient dropdowns in the item sheet will be removed
+
+# 1.28.0
+
+-   added a `Un-Target` client setting, it will remove all the user's targets at turn/round change
+-   added a `Force Un-Target` world setting, it will forcibly remove the targets of all users at turn/round change
+-   `Spells Summary` updates:
+    -   fixed spell name over style
+    -   fixed spell description not showing up on click
+
+# 1.27.3
+
+-   reduce the foundry version requirement to `11.311`
+
+# 1.27.2
+
+-   `Target Token Helper` updates:
+    -   updated styling of the "big" healing-only button to look like the one from the system
+
+# 1.27.1
+
+-   added try/catch on all the `prepareBaseData`, `prepareDerivedData` and `prepareEmbeddedDocuments` wrappers of the module to avoid migration errors with the system
+
+# 1.27.0
+
+-   `Target Token Helper` updates:
+    -   the concerned actor of fast-healing and regeneration messages will now automatically be added as a target
+
+# 1.26.0
+
+-   this is a `5.11.0` release
+-   fixed breaking errors with `Automatic Rune Progression`
+-   fixed styling for `Hero Actions`
+-   fixed attack message modifiers still showing when using `Hide Modifiers`
+
+# 1.25.1
+
+-   staff spellcasting entry spells will now be shown as expended when appropriate, taking into account possible use of spontaneous spell slots
+
+# 1.25.0
+
+-   this is a `5.10.5` release
+-   `Spells Summary` updates:
+    -   added support for the `Preparing a Staff` feature of `PF2e Dailies`
+    -   fixed rituals labels
+    -   fixed disabled cast button styling
+    -   fixed issue with spell slot index when prepared spellcasting entry had empty slots in between spells
+
+# 1.24.6
+
+-   fixed heal button error when trying to heal an actor with bonus healing when using `Target Token Helper`
+
+# 1.24.5
+
+-   fixed issue with `Handwraps of Mighty Blows` not always providing the runes to unarmed strikes when using `Automatic Rune Progression`
+
+# 1.24.4
+
+-   fixed settings migration only working for the GM
+
+# 1.24.3
+
+-   `Target Token Helper` updates:
+    -   increased the font size of the save result
+    -   increased contrast between failure and critical failure colors for the save result
+
+# 1.24.2
+
+-   fixed `Target Token Helper` adding targets to persistent damage, fast-healing and regeneration messages
+
+# 1.24.1
+
+-   fixed the module always disabling the system's `Automatic Bonus Progression` variant rule even when the `Automatic Rune Progression` setting was disabled
+
+# 1.24.0
+
+-   this is a `5.10.0` release
+-   migrated the `Target Token Helper - Chat` setting that was changed in the `1.20.0` update to avoid it showing as `disabled` even though it is enabled with the `small` default option selected
+-   `Automatic Rune Progression` updates:
+    -   weapons/strikes belonging to the `shield` group will not receive any weapon potency/striking runes
+    -   weapons/strikes belonging to the `unarmed` category will not receive any weapon potency/striking runes, those will come from the invested `Handwraps of Mighty Blows`
+
+# 1.23.0
+
+-   `Target Token Helper` updates:
+    -   will now be opinionated when it comes to damage messages with splash damage
+        -   applying splash damage to a target will blur out both rows for that target
+        -   applying combined damage to a target will blur out both rows for that target
+        -   applying combined damage to a target will blur out the combined damage row for all the other targets as well
+        -   fixed blurring of damage rows not working when initiated by players
+
+# 1.22.2
+
+-   `Target Token Helper` updates:
+    -   fixed chat log not properly scrolling to bottom (again)
+    -   now also handle scroll-to-bottom for chat-log popouts
+    -   now properly refresh message popouts that have extras elements injected from this feature
+
+# 1.22.1
+
+-   `Target Token Helper` updates:
+    -   removed highlights for non-save damage rolls (this was nonsensical)
+
+# 1.22.0
+
+-   `Target Token Helper` updates:
+    -   damage buttons rows will now be blurred out when damage has been applied to the target (or when the basic save was a critical success)
+    -   now highlight the `Damage` and `Double` buttons for non-save damage rolls based on their outcome (`Hit` or `Critical Hit`)
+
+# 1.21.0
+
+-   `Target Token Helper` updates:
+    -   save reroll is no longer limited to using hero points, the dialog now offers a selection of reroll types to choose from
+    -   now respects the system metagame setting `Show DCs on Attacks and Saves` when generating the tooltip for players
+    -   fixed? chat not properly scrolling to bottom when updating chat messages
+
+# 1.20.0
+
+-   `Target Token Helper` updates:
+    -   removed the `Target Token Helper - Saves` world setting
+    -   changed the `Target Token Helper - Chat` into a multi-choices setting
+        -   you can now select to use small or big (regular) sized buttons in the damage chat message
+    -   now hide the original damage buttons when there is at least one target damage row visible
+    -   added a new button to expand/collapse the original damage buttons
+    -   remade the tooltip showing when hovering over a save, it now gives a lot more information
+    -   characters can now reroll save checks using hero points
+        -   if you have `PF2e Workbench` active and its setting `Keeley's Hero Point Rule` enabled, the same implementation of the rule will be used
+-   `Merge Damage` updates:
+    -   persistent damages will no longer stack with each other, the one with the highest mean will be chosen
+    -   fixed targets being re-created for the purpose of displaying them in the damage chat message of `Target Token Helper`
+
+# 1.19.1
+
+-   fixed template targeting not working on all grid sizes when using `Target Token Helper`
+
+# 1.19.0
+
+-   `Target Token Helper` updates:
+    -   renamed the `Add targets to message` button to `Set targets for message`
+    -   removed the `Select All Targeted Tokens` button from damage chat messages
+    -   added a `Set targets for message` button to damage chat messages (works the same as the one in the spell message)
+    -   fixed error with save-less damage messages
+    -   fixed inline saves not showing up for anyone if the actor using wands/scrolls didn't have the `Target Token Helper - Chat` enabled
+
+# 1.18.0
+
+-   this is a `5.9.5` release
+-   added the die result (in the tooltip) for inline save checks when using `Target Token Helper`
+-   only show an inline save check if the actor actually has one when using `Target Token Helper`
+-   template targeting of `Target Token Helper` no longer targets tokens that are hidden (not the condition but foundry visibility state)
+-   template targeting of `Target Token Helper` now only target creatures, hazards and vehicles
+-   fixed tiny creatures not always being targeted when using `Target Token Helper` template targeting
+-   fixed not being able to roll inline save checks for spells generated by scrolls/wands when using `Target Token Helper`
+-   fixed `Multi Cast` with spells generated by scrolls/wands
+
+# 1.17.2
+
+-   fixed chat log not scrolling properly on extended damage messages modified by `Target Token Helper` (though i couldn't make it work for the spell card)
+
+# 1.17.1
+
+-   fixed players not being able to use inline save rolls on messages they were not the author of when using `Target Token Helper`
+-   fixed missing roll options on inline save rolls when using `Target Token Helper`
+
+# 1.17.0
+
+-   damage buttons are now highlighted depending on the result of the inline save check for spells in damage chat messages when using `Target Token Helper`
+-   added a `Add targets to message` button to spell cards for spells that have a save and don't deal damage when `Target Token Helper` is enabled
+    -   adding targets to the message will show the list of owned targets in said message and allow inline save check rolls
+-   fixed pricing of runeless items when using `Automated Rune Progression` (again!)
+
+# 1.16.6
+
+-   fixed template dialog from `Target Token Helper` showing up on all users
+-   fixed template targeting from `Target Token Helper` not being broadcasted to all users
+
+# 1.16.5
+
+-   fixed `Automated Rune Progression` pricing of items that have yet to gain any rune
+
+# 1.16.4
+
+-   fixed error with item-less messages when using `Target Token Helper`
+
+# 1.16.3
+
+-   changed the default options of the template dialog from `Target Token Helper`
+
+# 1.16.2
+
+-   allow the use of `shift + click` on the inline save checks in the extra rows from `Target Token Helper`
+
+# 1.16.1
+
+-   console spam is bad
+
+# 1.16.0
+
+-   added a `fortitude`/`reflex`/`will` icon to the damage chat messages extra rows from `Target Token Helper` for spells that have a save check
+    -   clicking on the icon will automatically roll the save check against the original spell
+    -   once rolled, the result will be displayed next to the icon using the regular system's color coding for the degree of success
+-   added `Target Token Helper - Saves` world setting (enabled by default): when a damage chat message with multiple targets is created from a spell, should the inline save rolls also generate the regular chat messages
+
+# 1.15.0
+
+-   changed `Target Token Helper`, this is no longer a GM only feature, it now enables the global feature to your world but requires client settings to enable its different parts
+-   added `Target Token Helper - Chat` client setting: damage chat messages will have extra application damage rows for each owned token that was targeted during the roll
+-   added a new `Select All Targeted Tokens` button to damage chat messages that have more than one owned targeted token
+-   added `Target Token Helper - Template` client setting: when placing a template on the board, a new dialog will pop allowing you to target all the tokens inside the template (with various criterias)
+
+# 1.14.0
+
+-   added `Target Token Helper`, GM only feature where damage chat messages will have extra application damage rows for each token that was targeted during the roll
+-   fixed `Spells Summary` spell description broken styling
+-   fixed an issue with module flags, this will only really affect the `Npc Lore Knowledges` feature, you will have to redo them (sorry)
+
+# 1.13.1
+
+-   fixed not being able to use `Multi Cast`
+-   fixed `Multi Cast` not properly using heightened damages
+-   fixed item traits not being provided to the `Merge Damage` chat message, sadly, the only way of doing it is to merge the traits of all the original chat messages, which could result in occasional false positives when using different weapons
+
+# 1.13.0
+
+-   this is a `5.9.1` release
+-   fixed `Automatic Rune Progression` price manipulation for items that cost less than 1 gold
+-   fixed `Spells Summary` spell row styling
+-   fixed `Spells Summary` cast button styling
+-   fixed `Spells Summary` spell category label
+
+# 1.12.1
+
+-   fixed `Permanent Condition Effect` macro issue with badge-less conditions
+
+# 1.12.0
+
+-   renamed the module to `PF2e Toolbelt`
+-   added a compendium pack for macros containing the following
+    -   `Hero Action - Create Table`
+    -   `Hero Actions - Remove Hero Actions`
+    -   `Permanent Condition Effect`
+        -   helps you generate (or directly add to an actor) an effect setting a permanent condition
+        -   it automatically sets the name and image of the effect
+        -   you can select the badge value for the condition
+        -   you can select if the permanent effect is unidentified, making it impossible for the players to remove the condition
+
+# 1.11.0
+
+-   added `Share Health Pool` feature/setting
+    -   this feature let you link 2 actors together in a "master" and "slave" relationship to share their HP/SP
+    -   you can find the option to select a "master" for a creature in the `Configure` menu of the actor sheet
+        -   a "master" cannot also have a "master"
+        -   a "master" can have multiple "slave"
+        -   a "slave" cannot also be a "master"
+    -   the `Force Refresh` option should only be used if you notice some modules getting out of sync with the "slave" creatures
+
+# 1.10.1
+
+-   prevent `Dice so Nice` from rolling the dice on `Merge Damage`
+
+# 1.10.0
+
+-   this is a `5.8.3` release
+-   fixed localization for spells headers that were changed in the last system update
+
+# 1.9.1
+
+-   fixed traits not showing up in `Merge Damage` chat message
+
+# 1.9.0
+
+-   added "only character" warnings to `heroActions` API functions
+-   added "only GM" warnings to `heroActions` API functions
+-   added new `heroActions` API functions
+    -   `getDeckTable` which returns the table used by the feature, looking for the table in that order
+        -   a table in your world with the UUID specified in the settings
+        -   a default `Hero Point Deck` table in your world
+        -   the default `Hero Point Deck` from the compendium
+    -   `giveHeroActions` which opens a menu allowing you to manually grant hero actions to a character
+    -   `createChatMessage` generates a chat message with a label and a list of actions
+-   moved the API doc to the github [wiki](https://github.com/reonZ/pf2e-toolbelt/wiki#api) instead of the `README`
+
+# 1.8.2
+
+-   added missing chinese localization (thanks to [LiyuNodream](https://github.com/LiyuNodream))
+
+# 1.8.1
+
+-   fixed error with `Merge Damage`
+
+# 1.8.0
+
+-   added `Weightless Coins` setting/feature
+
+# 1.7.1
+
+-   added exception for `Inspiring Marshal Stance`
+
+# 1.7.0
+
+-   this is a `5.7.0` release
+-   reworked the `Merge Damage` feature
+    -   you can now merge damages from any source as long the messages have the same originating actor and the same target
+    -   improved the newly created merged damage chat message, showing all the different damage sources and their outcomes
+    -   added a new `Split back to original messages` icon on merged damage messages which reverts the merging process
+-   fixed the `No Dropped Bulk` error that was introduced in this system version
+
+# 1.6.1
+
+-   added exception for `Dread Marshal Stance`
+
+# 1.6.0
+
+-   added `Hide Modifiers` setting
+    -   messages generated by non-player owned actors will see their modifiers tags hidden from players
+    -   can also hide the traits tags on those same messages
+-   the `Stances` feature has been reworked, it now only uses the actor's data instead of looking and comparing with compendium stances
+-   removed the `Custom Stances` setting, no longer needed with the new implementation of the feature
+-   made sure that stances are added/removed automatically only once even if more than one owning player is online
+
+# 1.5.5
+
+-   the `Merge Damage` icon will now move itself next to the `PF2e Target Damage` collapse/expand button when present
+    -   firefox users will have to enable the `:has` feature for it to work because firefox still hasn't made it core
+
+# 1.5.4
+
+-   fixed `Cobra Envenom` stance (which has a limited use of once per minute) always replacing `Cobra Stance`
+-   fixed missing `actionID` in returned data preventing third party from displaying the right description in chat
+
+# 1.5.3
+
+-   added missing french localization (thanks to [rectulo](https://github.com/rectulo))
+
+# 1.5.2
+
+-   added missing api functions
+
+# 1.5.1
+
+-   fixed cn localization file error
+
+# 1.5.0
+
+-   added `Hero Actions` setting, this feature replaces the `PF2e Hero Actions`
+    -   it uses the same data as the standalone module, therefore, nothing will be lost when switching
+    -   you will need to provide the UUID of your table in the settings if you had one in the standalone module
+    -   the module doesn't have any compendium pack for the macros, they are still exposed in the API and are easy to setup
+-   added `Stances` setting, this feature replaces the `PF2e Stances` module but works a bit differently now that the system has changed
+    -   stance feats/features are no longer hardcoded into the module, it now looks at the system's compendium
+    -   you can now add custom compendiums and world feat/features as long as they respect the following
+        -   the feats/features must have the `Stance` trait
+        -   the feats/features must have a self-applied effect
+-   now sort settings by scope for the GM (`world` then `client`) and added a `Client Settings` header in the module settings tab
+
+# 1.4.0
+
+-   added `Giveth` setting, this feature replaces the `PF2e Giveth` module
+
+# 1.3.0
+
+-   added `Spells Summary` setting, this feature replaces the `PF2e Spells Summary` module
+
+# 1.2.1
+
+-   `Multi-Cast` button and `Merge Damage` icon will only be shown if you are the author of the message (or the GM)
+
+# 1.2.0
+
+-   completely remove event hook when both `Remove Effect Shortcut` & `Condition Sheet Icon` are disabled
+-   added `Multi-Cast` setting, it adds a new damage button for spells to directly roll multiple instances of the spell in one roll
+-   added `Merge Damage` setting which allows you to merge multiple damage roll messages into a single one, useful for actions that require you to add the damage before applying `weakness` and `resistance`
+    -   the module will look at the 5 messages above it to find a matching message
+    -   the other message needs to have been initiated from the same `Item` (and therefore `Actor`)
+    -   the other message needs to have the same target (or both no target)
+
+# 1.1.0
+
+-   module conflict warnings are only shown to the GM
+-   Remove Effect Shortcut: no longer accepts `Ctrl + Right Click`
+
+# 1.0.0
+
+this module adds some utilities that are not big enough to warrant standalone modules:
+
+-   `No Dropped Bulk`: Dropped equipment in an actor's inventory won't be accounted for bulk value calculation
+
+it will also overlap with some other modules (it is meant to replace them):
+
+-   PF2e Unided
+-   PF2e Automatic Rune Progression
+-   PF2e Npc Knowledges
+-   PF2e Effect Description
+
+when such module is active in your world, the GM will receive a warning for each one of them

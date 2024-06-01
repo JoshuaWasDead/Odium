@@ -1,0 +1,127 @@
+{
+    "id": "token-action-hud-pf2e",
+    "title": "Token Action HUD Pathfinder 2e",
+    "description": "Token Action HUD is a repositionable HUD of actions for a selected token",
+    "authors": [
+        {
+            "name": "Larkinabout",
+            "url": "https://github.com/Larkinabout"
+        },
+        {
+            "name": "Drental"
+        },
+        {
+            "name": "^ and stick"
+        }
+    ],
+    "url": "https://github.com/Larkinabout/fvtt-token-action-hud-pf2e",
+    "flags": {},
+    "version": "1.5.15",
+    "compatibility": {
+        "minimum": "10",
+        "verified": "11.315"
+    },
+    "esmodules": [
+        "./scripts/token-action-hud-pf2e.min.js"
+    ],
+    "scripts": [],
+    "styles": [
+        "./styles/tah-pf2e.css"
+    ],
+    "languages": [
+        {
+            "lang": "en",
+            "name": "English",
+            "path": "languages/en.json"
+        },
+        {
+            "lang": "ko",
+            "name": "Korean",
+            "path": "languages/ko.json"
+        },
+        {
+            "lang": "pt-BR",
+            "name": "Português (Brasil)",
+            "path": "languages/br.json"
+        },
+        {
+            "lang": "es",
+            "name": "Spanish",
+            "path": "languages/es.json"
+        },
+        {
+            "lang": "fr",
+            "name": "French",
+            "path": "languages/fr.json"
+        },
+        {
+            "lang": "pl",
+            "name": "Polish",
+            "path": "languages/pl.json"
+        },
+        {
+            "lang": "ja",
+            "name": "日本語",
+            "path": "languages/ja.json"
+        },
+        {
+            "lang": "cn",
+            "name": "中文",
+            "path": "languages/cn.json"
+        },
+        {
+            "lang": "it",
+            "name": "italiano",
+            "path": "languages/it.json"
+        },
+        {
+            "lang": "de",
+            "name": "Deutsch",
+            "path": "languages/de.json"
+        },
+        {
+            "lang": "zh-tw",
+            "name": "正體中文",
+            "path": "languages/zh-tw.json"
+        }
+    ],
+    "packs": [],
+    "relationships": {
+        "systems": [
+            {
+                "id": "pf2e",
+                "type": "system",
+                "compatibility": [
+                    {
+                        "minimum": "5.15.0",
+                        "verified": "5.15.0"
+                    }
+                ]
+            }
+        ],
+        "requires": [
+            {
+                "id": "token-action-hud-core",
+                "type": "module",
+                "compatibility": [
+                    {
+                        "minimum": "1.5.0",
+                        "maximum": "1.5",
+                        "verified": "1.5.4"
+                    }
+                ]
+            }
+        ],
+        "optional": [],
+        "flags": {
+            "optional": []
+        }
+    },
+    "socket": false,
+    "manifest": "https://github.com/Larkinabout/fvtt-token-action-hud-pf2e/releases/latest/download/module.json",
+    "download": "https://github.com/Larkinabout/fvtt-token-action-hud-pf2e/releases/download/1.5.15/module.zip",
+    "readme": "https://github.com/Larkinabout/fvtt-token-action-hud-pf2e#readme",
+    "protected": false,
+    "coreTranslation": false,
+    "library": false
+}

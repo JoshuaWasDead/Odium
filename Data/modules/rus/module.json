@@ -1,0 +1,128 @@
+{
+  "id": "rus",
+  "title": "Альтернативный русский перевод интерфейса",
+  "description": "Модуль добавляет перевод интерфейса VTT Foundry на русском языке. Устанавливать, если вас не устраивает перевод Феномена - <a href=\"https://github.com/Phenomen/foundry-vtt-ru\">https://github.com/Phenomen/foundry-vtt-ru</a>",
+  "authors": [
+    {
+      "name": "Doctor",
+      "discord": "doktor_dank",
+      "flags": {}
+    }
+  ],
+  "url": "https://gitlab.com/gnuraco/rus",
+  "version": "3.0.0",
+  "compatibility": {
+    "minimum": "11",
+    "verified": "11.311",
+    "maximum": "12"
+  },
+  "languages": [
+    {
+      "lang": "ru",
+      "name": "Russian",
+      "path": "interface.json",
+      "flags": {}
+    },
+    {
+      "lang": "ru",
+      "path": "modules/advanced-macros.json",
+      "module": "advanced-macros",
+      "name": "ru",
+      "flags": {}
+    },
+    {
+      "lang": "ru",
+      "path": "modules/betterroofs.json",
+      "module": "betterroofs",
+      "name": "ru",
+      "flags": {}
+    },
+    {
+      "lang": "ru",
+      "path": "modules/colorsettings.json",
+      "module": "colorsettings",
+      "name": "ru",
+      "flags": {}
+    },
+    {
+      "lang": "ru",
+      "path": "modules/dfreds-droppables.json",
+      "module": "dfreds-droppables",
+      "name": "ru",
+      "flags": {}
+    },
+    {
+      "lang": "ru",
+      "path": "modules/drag-ruler.json",
+      "module": "drag-ruler",
+      "name": "ru",
+      "flags": {}
+    },
+    {
+      "lang": "ru",
+      "path": "modules/easy-target.json",
+      "module": "easy-target",
+      "name": "ru",
+      "flags": {}
+    },
+    {
+      "lang": "ru",
+      "path": "modules/enhanced-terrain-layer.json",
+      "module": "enhanced-terrain-layer",
+      "name": "ru",
+      "flags": {}
+    },
+    {
+      "lang": "ru",
+      "path": "modules/initiative-double-click.json",
+      "module": "initiative-double-click",
+      "name": "ru",
+      "flags": {}
+    },
+    {
+      "lang": "ru",
+      "path": "modules/levels.json",
+      "module": "levels",
+      "name": "ru",
+      "flags": {}
+    },
+    {
+      "lang": "ru",
+      "path": "modules/split-journal.json",
+      "module": "split-journal",
+      "name": "ru",
+      "flags": {}
+    },
+    {
+      "lang": "ru",
+      "path": "modules/terrain-ruler.json",
+      "module": "terrain-ruler",
+      "name": "ru",
+      "flags": {}
+    },
+    {
+      "lang": "ru",
+      "path": "modules/wall-height.json",
+      "module": "wall-height",
+      "name": "ru",
+      "flags": {}
+    },
+    {
+      "lang": "ru",
+      "path": "modules/weatherblock.json",
+      "module": "weatherblock",
+      "name": "ru",
+      "flags": {}
+    },
+    {
+      "lang": "ru",
+      "path": "modules/dungeon-draw.json",
+      "module": "dungeon-draw",
+      "name": "ru",
+      "flags": {}
+    }
+  ],
+  "manifest": "https://gitlab.com/gnuraco/rus/-/raw/V11/module.json",
+  "download": "https://gitlab.com/gnuraco/rus/-/archive/V11/rus-V11.zip",
+  "coreTranslation": true
+}

@@ -1,0 +1,647 @@
+{
+	"label": "Дары реликвий",
+	"folders": {
+		"Minor Gifts": "Малые дары",
+		"Major Gifts": "Большие дары",
+		"Grand Gifts": "Великие дары",
+		"Air": "Воздух",
+		"Artistry": "Artistry",
+		"Beast": "Зверь",
+		"Celestial": "Небеса",
+		"Death": "Смерть",
+		"Dragon": "Дракон",
+		"Earth": "Земля",
+		"Emotion": "Emotion",
+		"Fiends": "Бес",
+		"Fire": "Огонь",
+		"Forge": "Кузница",
+		"Intelligent Relic Gifts": "Intelligent Relic Gifts",
+		"Life": "Жизнь",
+		"Luck": "Luck",
+		"Metal": "Metal",
+		"Mind": "Разум",
+		"Plant": "Растение",
+		"Shadow": "Тень",
+		"Soul": "Душа",
+		"Time": "Time",
+		"Water": "Вода",
+		"Fiendish Defiance": "Бесовское неповиновение",
+		"Lashing Currents": "Бьющие потоки",
+		"Breath of Dragons": "Дыхание драконов",
+		"Draconic Resistance": "Драконье сопротивление",
+		"Track of the Beast": "След зверя",
+		"Apothecary's Garden": "Сад аптекаря",
+		"Muse": "Muse",
+		"Artistic Perfection": "Artistic Perfection"
+	},
+	"entries": {
+		"Absorb Injury": {
+			"name": "Поглощение раны",
+			"description": "<p><strong>Аспект:</strong> душа</p>\n<p><strong>Активация:</strong> <span class=\"pf2-icon\">R</span> вообразить</p>\n<p><strong>Частота:</strong> раз в день</p>\n<p><strong>Триггер:</strong> Союзник в пределах 30 футов получает урон</p>\n<hr />\n<p><strong>Эффект:</strong> Вы образуете канал с душой своего союзника и поглощаете рану, чтобы защитить его. Вы получаете урон вместо союзника; вы также получаете любые дополнительные эффекты связанные с передаваемым уроном, такие как яд на клинке, состояния или продолжительный урон огнем от критического попадания огненной руны.</p>"
+		},
+		"Against All Odds": {
+			"name": "Against All Odds",
+			"description": "<p><strong>Аспект:</strong> luck</p>\n<p><strong>Активация:</strong> <span class=\"action-glyph\">R</span> вообразить</p>\n<p><strong>Частота:</strong> once per 10 minutes</p>\n<p><strong>Триггер:</strong> You attempt a skill check with a DC that is at least 15 higher than your bonus in the skill</p>\n<hr />\n<p><strong>Эффект:</strong> You roll twice and take the better result.</p>"
+		},
+		"All Will Decay": {
+			"name": "All Will Decay",
+			"description": "<p><strong>Аспект:</strong> metal</p>\n<p>Your relic's link to the Plane of Metal tunes it in to the inevitability of rust and decay. You can cast 5th-rank @UUID[Compendium.pf2e.spells-srd.Item.yy2K51kK3a60rRIe]{Rust Cloud} at will as an innate spell.</p>\n<p><strong>Активация:</strong> <span class=\"pf2-icon\">2</span> (aura, concentrate)</p>\n<p><strong>Частота:</strong> раз в день</p>\n<hr />\n<p><strong>Эффект:</strong> Rusted flakes swirl in a cloud around you, creating a @Template[type:emanation|distance:15] that lasts for 1 minute. You're @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed} to anyone outside the cloud. An enemy that starts its turn in the cloud takes @Damage[15[slashing]] damage with a basic Fortitude save. If the target has the metal trait or is primarily made of metal, the damage is 30 instead. Unattended non-magical metal items within the cloud automatically become broken.</p>"
+		},
+		"Ancestors' Call": {
+			"name": "Зов предков(*)",
+			"description": "<p><strong>Аспект:</strong> разум</p>\n<p>Духи дварфов тяготеют к этой реликвии, и вы можете призвать их, чтобы они вселились в вас и ваших союзников и поведали секреты предков. Когда вы получаете этот дар, выберите три обычных способности родословной дварфа 1-го уровня.</p>\n<p><strong>Активация:</strong> <span class=\"pf2-icon\">1</span> вообразить</p>\n<p><strong>Частота:</strong> раз в час</p>\n<hr />\n<p><strong>Эффект:</strong> Выберите одну из трех способностей родословной. Вы и все союзники в радиусе @Template[type:burst|distance:10] от вас, получаете эту способность и признак <a href=https://clck.ru/36vMqS><em>`дварф`</em></a> на 1 минуту.</p>"
+		},
+		"Angelic Vessel": {
+			"name": "Ангельский сосуд",
+			"description": "<p><strong>Аспект:</strong> небесный</p>\n<p><strong>Частота:</strong> раз в день</p>\n<p><strong>Активация:</strong> <span class=\"pf2-icon\">2</span> команда, @UUID[Compendium.pf2e.actionspf2e.Item.pvQ5rY2zrtPI614F]</p>\n<hr />\n<p><strong>Эффект:</strong> По вашему приглашению небожитель наделяет ваше тело божественными силами. Вы получаете дополнительные 50 ОЗ, увеличивая свои максимальные текущие ОЗ, а также слабость 10 к unholy урону. Если реликвия обладает даром @UUID[Compendium.pf2e-relics.relic-gifts.Item.BwJPNMfwWKcbinLC], то текущая активация еще дает эффекты этого дара не тратя его дневное использование. Вы можете @UUID[Compendium.pf2e.actionspf2e.Item.AjLSHZSWQ90exdLo] этот эффект. Если вы это делаете, то выпускаете волну святой силы, заставляя реликвию сотворить <em>@UUID[Compendium.pf2e.spells-srd.Item.sX2o0HH4RjJDAZ8C]</em>, только с признаком `holy`.</p>"
+		},
+		"Apothecary's Garden": {
+			"name": "Сад аптекаря",
+			"description": "<p><strong>Аспект:</strong> растение</p>\n<hr />\n<p>Ваша реликвия выращивает сильнодействующие природные лекарства. Каждую ночь из вашей реликвии вырастает 2 медицинских растения (или других трав) и их можно безопасно собрать во время ежедневных приготовлений. Живое существо может съесть траву действием @UUID[Compendium.pf2e.actionspf2e.Item.pvQ5rY2zrtPI614F], восстанавливая [[/r 1d8[healing]] ОЗ за каждые 2 уровня реликвии (минимум 1d8). На 9-м уровне, каждую ночь реликвия выращивает 3 растения, а на 17-м - 4 растения. Травы увядают через 1 день после сбора.</p>\n<p>@UUID[Compendium.pf2e-relics.relic-gifts.Item.Ir5KeJGBeaeMHXW8]{Apothecary's Medicinal Herb}</p>\n<p><em><strong>Editor's Note: </strong>Drag and drop the \"Apothecary's Medicinal Herb\" into your inventory to receive your herbs each daily preparation.</em></p>"
+		},
+		"Apothecary's Medicinal Herb": {
+			"name": "Медицинское растение аптекаря",
+			"description": "<p>Живое существо может съесть траву действием @UUID[Compendium.pf2e.actionspf2e.Item.pvQ5rY2zrtPI614F], восстанавливая [[/r (max(1,floor((@actor.level)/2)))d8[healing]]] ОЗ.</p>"
+		},
+		"Artistic Perfection": {
+			"name": "Artistic Perfection",
+			"description": "<p><strong>Аспект:</strong> artistry</p>\n<hr />\n<p>Your relic enhances your skill with Crafting or Performance. (Choose one.) If you succeed at a check with the chosen skill, you get a critical success instead.</p>\n<p><em><strong>Editor's Note:</strong> Ignore this ability, as this serves as the original \"base\" of the Artistic Perfection ability. There are seprate abilities made for Crafting and Performance, which have modified text for consistency.</em></p>"
+		},
+		"Artistic Perfection (Crafting)": {
+			"name": "Artistic Perfection (Crafting)",
+			"description": "<p><strong>Аспект:</strong> artistry</p>\n<hr />\n<p>Your relic enhances your skill with Crafting. If you succeed at a check with the chosen skill, you get a critical success instead.</p>"
+		},
+		"Artistic Perfection (Performance)": {
+			"name": "Artistic Perfection (Performance)",
+			"description": "<p><strong>Аспект:</strong> artistry</p>\n<hr />\n<p>Your relic enhances your skill with Performance. If you succeed at a check with the chosen skill, you get a critical success instead.</p>"
+		},
+		"Beast Senses": {
+			"name": "Звериные чувства",
+			"description": "<p><strong>Аспект:</strong> зверь</p>\n<p><strong>Предварительные условия:</strong> Реликвия является надеваемым предметом</p>\n<hr />\n<p>Реликвия наделяет вас острым чутьем животного, пока вы ее носите. Вы получаете сумеречное зрение. Если у вас уже есть сумеречное зрение, вместо этого вы получаете ночное зрение. На 10-м уровне реликвия наделяет вас неточным нюхом с радиусом 10 футов.</p>"
+		},
+		"Beginner's Luck": {
+			"name": "Beginner's Luck",
+			"description": "<p><strong>Аспект:</strong> luck</p>\n<p><strong>Активация:</strong> <span class=\"action-glyph\">r</span> вообразить</p>\n<p><strong>Частота:</strong> раз в день</p>\n<p><strong>Триггер:</strong> You attempt a d20 roll you're untrained in</p>\n<hr />\n<p><strong>Эффект:</strong> You treat your proficiency bonus as equal to half your level, or if the relic is 7th level or higher, as equal to your level. Then, roll twice, taking the better of the two results. This doesn't allow you to use a skill's trained actions.</p>"
+		},
+		"Bestow Life": {
+			"name": "Наделение жизнью",
+			"description": "<p><strong>Аспект:</strong> жизнь</p>\n<p><strong>Частота:</strong> раз в день</p>\n<p><strong>Активация:</strong> <span class=\"action-glyph\">2</span> команда, вообразить</p>\n<hr />\n<p><strong>Эффект:</strong> Вливание позитивной энергии из вашей реликвии может временно оживить неживой объект. Вы превращаете находящийся рядом неживой объект в <em>@UUID[Compendium.pf2e.spells-srd.Item.sLzPzk7DJnfuORJ0]{Оживленный объект}</em> уровня равного половине уровня реликвии и подходящего для этого объекта (например метла становится @UUID[Compendium.pf2e.pathfinder-bestiary.Actor.ETwmjdnmSkqGdD5r]{Ожившей метлой}). Объект следует одной простой небоевой задаче, которую вы обозначает при использовании \"Наделения жизнью\", игнорируя любые последующие команды. Этот объект является <a href=https://clck.ru/32BFFi><em>`неразумным`</em></a> и выполняет задачу прямо и без творческого подхода. Объект остается оживленным 1 час.</p>"
+		},
+		"Blazing Soul": {
+			"name": "Пылающая душа",
+			"description": "<p><strong>Аспект:</strong> огонь</p>\n<p>Магия огня наполняет ваше тело и душу, защищая от меньшего пламени и позволяя вам разжигать даже самые маленькие искры в мощное инферно. Вы получаете сопротивление 10 огню. Каждый час, первый раз, когда вы являетесь целью огненного эффекта наносящего урон, то вместе с получением урона, вы восстанавливаете [[/r 1d8]] за каждый уровень противодействия эффекта.</p>\n<hr />\n<p><strong>Активация:</strong> <span class=\"action-glyph\">R</span> вообразить</p>\n<p><strong>Триггер:</strong> По существу в пределах 60 футов критически попали <a href=https://clck.ru/jompy><em>`огненным`</em></a> эффектом или оно критически проваливает спасбросок против огненного эффекта и ОЗ не снижаются до 0</p>\n<hr />\n<p><strong>Эффект:</strong> От спровоцировавшего существа вырывается пламя, нанося всем существам в @Template[type:burst|distance:15] с центром на нем @Damage[6d6[fire]], в том числе этому существу (@Check[type:reflex|dc:resolve(@actor.system.attributes.classOrSpellDC.value)|basic:true]). Эта активация не влияет на вас, но влияет на ваших союзников. Если этот урон снижает спровоцировавшее существо до 0 ОЗ, то она превращается в пепел, но его снаряжение остается. Вы не можете снова использовать эту активацию [[/br 1d4 #Recharge]].</p>"
+		},
+		"Borrow Time": {
+			"name": "Borrow Time",
+			"description": "<p><strong>Аспект:</strong> time</p>\n<p><strong>Активация:</strong> <span class=\"pf2-icon\">2</span> команда, @UUID[Compendium.pf2e.actionspf2e.Item.pvQ5rY2zrtPI614F]</p>\n<hr />\n<p><strong>Эффект:</strong> You point the relic at a creature within 30 feet, imbuing it with urgency. The creature gains the @UUID[Compendium.pf2e.conditionitems.Item.nlCjDvLMf2EkV2dl]{Quickened} condition for 1 round. After the condition ends, the creature is @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} for 1 round and temporarily immune to this gift until you next perform your daily preparations.</p>\n<p><em><strong>Editor's Note of Clarity </strong>Because there is not a specified action for the granted quickened condition, the target simply gains an additional action they can use for anything, including actions that requires more than 1 action, provided you still have the necessary amount of actions.</em></p>"
+		},
+		"Bottomless Reservoir": {
+			"name": "Бездонный резервуар",
+			"description": "<p><strong>Аспект:</strong> вода</p>\n<p><strong>Активация:</strong> <span class=\"pf2-icon\">1</span> @UUID[Compendium.pf2e.actionspf2e.Item.pvQ5rY2zrtPI614F]</p>\n<hr />\n<p><strong>Эффект:</strong> Ваша реликвия может поглощать и выпускать воду, сохраняя ее в нескончаемом резервуаре. Вы либо касаетесь реликвией водоема находящегося рядом и поглощаете в ее резервуар 1 галлон (~3.785 л), либо выпускаете 1 галлон жидкости из резервуара. Вы можете добавить к активации еще действие, чтобы поглотить воду состоящего полностью из воды существа, которого коснулись, как например водный элементаль. Если вы так делаете, оно получает 1d6 за уровень реликвии: @Damage[(max(1,floor(@actor.level)))d6] (@Check[type:fortitude|dc:resolve(@actor.system.attributes.classOrSpellDC.value)|basic:true]).</p>\n<p><strong>Активация:</strong> <span class=\"pf2-icon\">R</span> @UUID[Compendium.pf2e.actionspf2e.Item.pvQ5rY2zrtPI614F]</p>\n<p><strong>Триггер:</strong> Вы являетесь целью <a href=https://clck.ru/jpgVi><em>`кислотного`</em></a> или <a href=https://clck.ru/jp2WH><em>`водного`</em></a> эффекта</p>\n<hr />\n<p><strong>Эффект:</strong> Ваша реликвия пытается противодействовать этому эффекту, расходуя 1 галлон сохраненной жидкости. На усмотрение Мастера, вы можете использовать это умение на эффектах, сделанных из других жидкостей, таких как кровь.</p>"
+		},
+		"Breath of Dragons (BASE)": {
+			"name": "Дыхание драконов (*Базовое*)",
+			"description": "<p><strong>Аспект:</strong> дракон</p>\n<p><strong>Активация:</strong> <span class=\"action-glyph\">2</span> команда, вообразить<strong>Эффект:</strong> Вы выдыхаете конус или линию энергии. Вы наносите всем существам в @Template[type:cone|distance:30] или @Template[type:line|distance:80], 2d6 урона за каждые 2 уровня семени души: @Damage[(2*max(1,floor((@actor.level)/2)))d6[untyped]], с @Check[type:reflex|dc:resolve(@actor.system.attributes.classOrSpellDC.value)|basic:true]. Форма, как и тип урона являются соответствующими драконьему происхождению семени души. Это умение имеет признак соответствующий типу урона.</p>"
+		},
+		"Breath of Dragons (Black)": {
+			"name": "Дыхание драконов (Черный)",
+			"description": "<p><strong>Аспект:</strong> дракон</p>\n<p><strong>Активация:</strong> <span class=\"action-glyph\">2</span> команда, вообразить<strong>Эффект:</strong> Вы выдыхаете линию энергии. Вы наносите всем существам в @Template[type:line|distance:80] 2d6 урона кислотой за каждые 2 уровня семени души: @Damage[(2*max(1,floor((@actor.level)/2)))d6[acid]], с @Check[type:reflex|dc:resolve(@actor.system.attributes.classOrSpellDC.value)|basic:true].</p>"
+		},
+		"Breath of Dragons (Blue)": {
+			"name": "Дыхание драконов (Синий)",
+			"description": "<p><strong>Аспект:</strong> дракон</p>\n<p><strong>Активация:</strong> <span class=\"action-glyph\">2</span> команда, вообразить<strong>Эффект:</strong> Вы выдыхаете линию энергии. Вы наносите всем существам в @Template[type:line|distance:80] 2d6 урона электричеством за каждые 2 уровня семени души: @Damage[(2*max(1,floor((@actor.level)/2)))d6[electricity]], с @Check[type:reflex|dc:resolve(@actor.system.attributes.classOrSpellDC.value)|basic:true].</p>"
+		},
+		"Breath of Dragons (Brass)": {
+			"name": "Дыхание драконов (Латунный)",
+			"description": "<p><strong>Аспект:</strong> дракон</p>\n<p><strong>Активация:</strong> <span class=\"action-glyph\">2</span> команда, вообразить<strong>Эффект:</strong> Вы выдыхаете линию энергии. Вы наносите всем существам в @Template[type:line|distance:80] 2d6 урона огнем за каждые 2 уровня семени души: @Damage[(2*max(1,floor((@actor.level/2))))d6[fire]], с @Check[type:reflex|dc:resolve(@actor.system.attributes.classOrSpellDC.value)|basic:true].</p>"
+		},
+		"Breath of Dragons (Brine)": {
+			"name": "Дыхание драконов (Водный)",
+			"description": "<p><strong>Аспект:</strong> дракон</p>\n<p><strong>Активация:</strong> <span class=\"action-glyph\">2</span> команда, вообразить<strong>Эффект:</strong> Вы выдыхаете линию энергии. Вы наносите всем существам в @Template[type:line|distance:80] 2d6 урона кислотой за каждые 2 уровня семени души: @Damage[(2*max(1,floor((@actor.level)/2)))d6[acid]], с @Check[type:reflex|dc:resolve(@actor.system.attributes.classOrSpellDC.value)|basic:true].</p>"
+		},
+		"Breath of Dragons (Bronze)": {
+			"name": "Дыхание драконов (Бронзовый)",
+			"description": "<p><strong>Аспект:</strong> дракон</p>\n<p><strong>Активация:</strong> <span class=\"action-glyph\">2</span> команда, вообразить<strong>Эффект:</strong> Вы выдыхаете линию энергии. Вы наносите всем существам в @Template[type:line|distance:80] 2d6 урона электричеством за каждые 2 уровня семени души: @Damage[(2*max(1,floor((@actor.level)/2)))d6[electricity]], с @Check[type:reflex|dc:resolve(@actor.system.attributes.classOrSpellDC.value)|basic:true].</p>"
+		},
+		"Breath of Dragons (Cloud)": {
+			"name": "Дыхание драконов (Облачный)",
+			"description": "<p><strong>Аспект:</strong> дракон</p>\n<p><strong>Активация:</strong> <span class=\"action-glyph\">2</span> команда, вообразить<strong>Эффект:</strong> Вы выдыхаете конус энергии. Вы наносите всем существам в @Template[type:cone|distance:30] 2d6 урона электричеством за каждые 2 уровня семени души: @Damage[(2*max(1,floor((@actor.level)/2)))d6[electricity]], с @Check[type:reflex|dc:resolve(@actor.system.attributes.classOrSpellDC.value)|basic:true].</p>"
+		},
+		"Breath of Dragons (Copper)": {
+			"name": "Дыхание драконов (Медный)",
+			"description": "<p><strong>Аспект:</strong> дракон</p>\n<p><strong>Активация:</strong> <span class=\"action-glyph\">2</span> команда, вообразить<strong>Эффект:</strong> Вы выдыхаете линию энергии. Вы наносите всем существам в @Template[type:line|distance:80] 2d6 урона кислотой за каждые 2 уровня семени души: @Damage[(2*max(1,floor((@actor.level)/2)))d6[acid]], с @Check[type:reflex|dc:resolve(@actor.system.attributes.classOrSpellDC.value)|basic:true].</p>"
+		},
+		"Breath of Dragons (Gold)": {
+			"name": "Дыхание драконов (Золотой)",
+			"description": "<p><strong>Аспект:</strong> дракон</p>\n<p><strong>Активация:</strong> <span class=\"action-glyph\">2</span> команда, вообразить<strong>Эффект:</strong> Вы выдыхаете конус энергии. Вы наносите всем существам в @Template[type:cone|distance:30] 2d6 урона огнем за каждые 2 уровня семени души: @Damage[(2*max(1,floor((@actor.level/2))))d6[fire]], с @Check[type:reflex|dc:resolve(@actor.system.attributes.classOrSpellDC.value)|basic:true].</p>"
+		},
+		"Breath of Dragons (Green)": {
+			"name": "Дыхание драконов (Зеленый)",
+			"description": "<p><strong>Аспект:</strong> дракон</p>\n<p><strong>Активация:</strong> <span class=\"action-glyph\">2</span> команда, вообразить<strong>Эффект:</strong> Вы выдыхаете конус энергии. Вы наносите всем существам в @Template[type:cone|distance:30] 2d6 урона ядом за каждые 2 уровня семени души: @Damage[(2*max(1,floor((@actor.level)/2)))d6[poison]], с @Check[type:reflex|dc:resolve(@actor.system.attributes.classOrSpellDC.value)|basic:true].</p>"
+		},
+		"Breath of Dragons (Red)": {
+			"name": "Дыхание драконов (Красный)",
+			"description": "<p><strong>Аспект:</strong> дракон</p>\n<p><strong>Активация:</strong> <span class=\"action-glyph\">2</span> команда, вообразить<strong>Эффект:</strong> Вы выдыхаете конус энергии. Вы наносите всем существам в @Template[type:cone|distance:30] 2d6 урона огнем за каждые 2 уровня семени души: @Damage[(2*max(1,floor((@actor.level/2))))d6[fire]], с @Check[type:reflex|dc:resolve(@actor.system.attributes.classOrSpellDC.value)|basic:true].</p>"
+		},
+		"Breath of Dragons (Silver)": {
+			"name": "Дыхание драконов (Серебряный)",
+			"description": "<p><strong>Аспект:</strong> дракон</p>\n<p><strong>Активация:</strong> <span class=\"action-glyph\">2</span> команда, вообразить<strong>Эффект:</strong> Вы выдыхаете конус энергии. Вы наносите всем существам в @Template[type:cone|distance:30] 2d6 урона холодом за каждые 2 уровня семени души: @Damage[(2*max(1,floor((@actor.level)/2)))d6[cold]], с @Check[type:reflex|dc:resolve(@actor.system.attributes.classOrSpellDC.value)|basic:true].</p>"
+		},
+		"Breath of Dragons (Sovereign)": {
+			"name": "Дыхание драконов (Монарший)",
+			"description": "<p><strong>Аспект:</strong> дракон</p>\n<p><strong>Активация:</strong> <span class=\"action-glyph\">2</span> команда, вообразить<strong>Эффект:</strong> Вы выдыхаете конус энергии. Вы наносите всем существам в @Template[type:cone|distance:30] 2d6 ментального урона за каждые 2 уровня семени души: @Damage[(2*max(1,floor((@actor.level)/2)))d6[mental]], с @Check[type:reflex|dc:resolve(@actor.system.attributes.classOrSpellDC.value)|basic:true].</p>"
+		},
+		"Breath of Dragons (Umbral)": {
+			"name": "Дыхание драконов (Теневой)",
+			"description": "<p><strong>Аспект:</strong> дракон</p>\n<p><strong>Активация:</strong> <span class=\"action-glyph\">2</span> команда, вообразить<strong>Эффект:</strong> Вы выдыхаете конус энергии. Вы наносите всем существам в @Template[type:cone|distance:30] 2d6 урона пустоты за каждые 2 уровня семени души: @Damage[(2*max(1,floor((@actor.level)/2)))d6[void]], с @Check[type:reflex|dc:resolve(@actor.system.attributes.classOrSpellDC.value)|basic:true].</p>"
+		},
+		"Breath of Dragons (White)": {
+			"name": "Дыхание драконов (Белый)",
+			"description": "<p><strong>Аспект:</strong> дракон</p>\n<p><strong>Активация:</strong> <span class=\"action-glyph\">2</span> команда, вообразить<strong>Эффект:</strong> Вы выдыхаете конус энергии. Вы наносите всем существам в @Template[type:cone|distance:30] 2d6 урона холодом за каждые 2 уровня семени души: @Damage[(2*max(1,floor((@actor.level)/2)))d6[cold]], с @Check[type:reflex|dc:resolve(@actor.system.attributes.classOrSpellDC.value)|basic:true].</p>"
+		},
+		"Call of the Wild": {
+			"name": "Зов дикой природы",
+			"description": "<p><strong>Аспект:</strong> зверь</p>\n<p><strong>Активация:</strong> <span class=\"action-glyph\">2</span> команда, @UUID[Compendium.pf2e.actionspf2e.Item.pvQ5rY2zrtPI614F]</p>\n<hr />\n<p><strong>Эффект:</strong> Ваша реликвия призывает существо сражаться за вас, сотворяя <em>@UUID[Compendium.pf2e.spells-srd.Item.4YnON9JHYqtLzccu]</em> с рангом, равным половине уровня предмета, округленного до большего. Вы можете @UUID[Compendium.pf2e.actionspf2e.Item.3f5DMFu8fPiqHpRg] эту Активацию как если бы это было заклинание.</p>"
+		},
+		"Charming": {
+			"name": "Charming",
+			"description": "<p><strong>Аспект:</strong> artistry</p>\n<p><strong>Частота:</strong> раз в день</p>\n<p><strong>Активация:</strong> <span class=\"action-glyph\">2</span> команда, вообразить</p>\n<hr />\n<p><strong>Эффект:</strong> You speak briefly about your craft or enact a short performance. The relic casts @UUID[Compendium.pf2e.spells-srd.Item.vLA0q0WOK2YPuJs6]{Charm} at a rank equal to half its item level.</p>"
+		},
+		"Clean Luck": {
+			"name": "Clean Luck",
+			"description": "<p><strong>Аспект:</strong> luck</p>\n<p><strong>Активация:</strong> <span class=\"action-glyph\">R</span></p>\n<p><strong>Частота:</strong>once per 10 minutes</p>\n<p><strong>Trigger </strong>you attempt a d20 roll affected by a misfortune effect</p>\n<hr />\n<p><strong>Эффект:</strong>Negate the misfortune effect. Any other fortune effect still applies.</p>"
+		},
+		"Cleanse Soul": {
+			"name": "Очищение души",
+			"description": "<p><strong>Аспект:</strong> душа</p>\n<p><strong>Активация:</strong> 1 минута (команда, вообразить)</p>\n<p><strong>Частота:</strong> раз в день</p>\n<hr />\n<p><strong>Эффект:</strong> Вы очищаете душу от проклятий. Семя души пытается @UUID[Compendium.pf2e.journals.JournalEntry.S55aqwWIzpQRFhcq.JournalEntryPage.mmfWcV3Iyql5nzTo]{Противодействовать} всем <a href=https://clck.ru/jrjN6><em>`проклятиям`</em></a> на вас или другом существе, которого вы касаетесь во время активации. Душа цели укрепляется против дальнейших проклятий, и они на 1 час получают бонус состояния +2 к спасброскам против <a href=https://clck.ru/jrjN6><em>`проклятий`</em></a>.</p>"
+		},
+		"Command Legion": {
+			"name": "Управление легионом",
+			"description": "<p><strong>Аспект:</strong> бесовской</p>\n<p><strong>Частота:</strong> раз в день</p>\n<p><strong>Активация:</strong> <span class=\"action-glyph\">3</span> команда, вообразить</p>\n<hr />\n<p><strong>Эффект:</strong> Ваша реликвия открывает внутри себя врата, сокрушая ваших врагов бесами. Вы сотворяете <em>@UUID[Compendium.pf2e.spells-srd.Item.29ytKctjg7qSW2ff]</em> 6-го ранга, но призываете 2 бесов вместо одного, и можете управлять ими обоими 1 действием @UUID[Compendium.pf2e.actionspf2e.Item.3f5DMFu8fPiqHpRg]. Если эта реликвия обладает даром @UUID[Compendium.pf2e-relics.relic-gifts.Item.ll3vBFxxOTJD6spG], то данная активация еще дает эффекты этого дара, не тратя его дневное использование. На следующую минуту вы можете использовать следующую активацию.</p>\n<p><strong>Активация:</strong> <span class=\"action-glyph\">F</span> вообразить<strong>Триггер:</strong> Один из призванных \"Управлением легионом\" бесов, изгнан;</p>\n<p><strong>Эффект:</strong> Вы вновь призываете того же беса в соседнее пространство. Этот бес возвращается с полными ОЗ, всеми состояниями, заклинаниями и другими эффектами которые у него были до момента его повторного призыва. Однако это не восстанавливает никакие из его умений с ограниченным количеством использований, таких как врожденные заклинания или умения с записью Частота.</p>"
+		},
+		"Curse Wound": {
+			"name": "Проклятая рана",
+			"description": "<p><strong>Аспект:</strong> бесовской</p>\n<p><strong>Предварительные условия:</strong> Реликвия является оружием</p>\n<p><strong>Активация:</strong> <span class=\"action-glyph\">R</span> команда</p>\n<p><strong>Триггер:</strong> Ваш \"Удар\" реликвией наносит урон существу в пределах 60 футов</p>\n<hr />\n<p><strong>Эффект:</strong> Зло внутри вашей реликвии проклинает рану врага, чтобы не дать исцелить ее. Спровоцировавшее существо должно совершить успешный спасбросок @Check[type:will|dc:resolve(@actor.data.data.attributes.classOrSpellDC.value)], иначе до следующих ежедневных приготовлений будет неспособно восстановить ОЗ потерянные от урона спровоцировавшего Удара. Если вы используете \"Проклятую рану\" на существо которое уже подвержено вашей \"Проклятой ране\", то ваше предыдущее применение заканчивается.</p>"
+		},
+		"Dancing Shadow": {
+			"name": "Танцующая тень",
+			"description": "<p><strong>Аспект:</strong> тень</p>\n<p><strong>Предварительные условия:</strong> Реликвия является оружием.</p>\n<p><strong>Активация:</strong> <span class=\"pf2-icon\">2</span> команда, @UUID[Compendium.pf2e.actionspf2e.Item.pvQ5rY2zrtPI614F]</p>\n<p><strong>Частота:</strong> раз в час</p>\n<hr />\n<p><strong>Эффект:</strong> Тень вашей реликвии отсоединяется от нее и танцует в воздухе атакуя врага. Когда вы Активируете реликвию, обозначьте цель. Тень реликвии пролетает вплоть до 60 футов, пока не окажется рядом с этим врагом и потом совершает по нему \"Удар\", в случае успеха нанося @Damage[5d8[untyped]], или двойной урон при критическом попадании; тип урона такой же, как и обычно наносимый реликвией. Тень использует ваш бонус атаки с реликвией, а также использует ваш штраф множественной атаки и увеличивает его. Когда эта активация действует, вы можете использовать одиночное действие имеющее признаки <a href=https://clck.ru/k2ihC><em>`атака`</em></a> и <a href=https://clck.ru/jjU4o><em>`концентрация`</em></a>, чтобы мысленно направить тень на совершение другого \"Удара\" по той же цели. Тень остается пока ОЗ цели не опустятся до 0, цель удалится от вас более чем на 400 футов, или цель переместится в область где не отбрасываются тени, например, область тьмы, в зависимости от того, что случится раньше.</p>\n<p>Тень не занимает пространство, не дает тиски или обладает какими-либо другими атрибутами существа, и она автоматически следует за выбранным противником. Тень не может совершать атак кроме \"Удара\", а способности или заклинания действующие на оружие не применимы к ней.</p>"
+		},
+		"Dark Roads": {
+			"name": "Темные дороги",
+			"description": "<p><strong>Аспект:</strong> тень</p>\n<p><strong>Активация:</strong> <span class=\"pf2-icon\">2</span> команда, вообразить</p>\n<hr />\n<p><strong>Эффект:</strong> Ваша реликвия создает путь из вашей тени до ближайшей, телепортируя вас и любые надетые или удерживаемые предметы из текущего места в незанятое в пределах 30 футов, которое вы можете видеть. Вы не можете снова использовать дар \"Темных дорог\" [[/br 1d4 #Recharge the dark roads gift]]{1d4 раундов}.</p>\n<p>Если место назначения не в пределах области яркого света, то вместо этого радиус 60 футов. Если это переместит с вами другое существо даже, если оно в межпространственном контейнере, то дар проваливается.</p>"
+		},
+		"Deadly Spark": {
+			"name": "Смертельная искра",
+			"description": "<p><strong>Аспект:</strong> воздух</p>\n<p><strong>Активация:</strong> <span class=\"action-glyph\">2</span> команда, @UUID[Compendium.pf2e.actionspf2e.Item.pvQ5rY2zrtPI614F]</p>\n<hr />\n<p><strong>Эффект:</strong> Из реликвии вылетает искра, направленная на существо в пределах 20 футов. Эта искра наносит 1d12 урона электричеством: @Damage[(1+max(0,floor((@actor.level -2)/4)))d12[electricity]] (@Check[type:reflex|dc:resolve(@actor.system.attributes.classOrSpellDC.value)|basic:true]). Урон увеличивается на 1d12 на 6-м уровне и на 1d12 каждые 4 уровня после этого.</p>"
+		},
+		"Death Gaze": {
+			"name": "Взгляд смерти",
+			"description": "<p><strong>Аспект:</strong> смерть</p>\n<p><strong>Активация:</strong> <span class=\"action-glyph\">2</span> команда, @UUID[Compendium.pf2e.actionspf2e.Item.pvQ5rY2zrtPI614F]</p>\n<hr />\n<p><strong>Эффект:</strong> Ваш пристальный взгляд заставляет плоть существа гнить и увядать. Выберите целью существо в пределах 30 футов, которое вы можете видеть. Ваш взгляд наносит существу 1d6 негативного урона за каждые 2 уровня реликвии: @Damage[(max(1,floor((@actor.level)/2)))d6[void]] (минимум 1d6; @Check[type:fortitude|dc:resolve(@actor.system.attributes.classOrSpellDC.value)|basic:true]). <a href=https://clck.ru/saoNC><em>`Нежить`</em></a> или другое существо с негативным исцелением выбранное целью, вместо этого восстанавливает 1d6 ОЗ за уровень реликвии: [[/r (max(1,floor(@actor.level)))d6[healing]]] и временно иммунно к этому эффекту на 10 минут.</p>"
+		},
+		"Divine Retribution": {
+			"name": "Божественное возмездие",
+			"description": "<p><strong>Аспект:</strong> небесный</p>\n<p><strong>Предварительные условия:</strong> Реликвия является оружием.</p>\n<p><strong>Активация:</strong> <span class=\"action-glyph\">2</span> команда</p>\n<hr />\n<p><strong>Эффект:</strong> Используя божественную ярость, вы выбираете цель, которая за прошедший раунд нанесла урон вам или союзнику, и наполняете свою реликвию божественной местью по отношению к ней. Совершите \"Удар\" по этому противнику, при попадании нанося дополнительную кость урона. Если цель злая, то при попадании она еще @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Ослаблена 1} до начала вашего следующего хода (или @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Ослаблена 2} при крит.попадании).</p>"
+		},
+		"Dominant Emotion": {
+			"name": "Dominant Emotion",
+			"description": "<p><strong>Аспект:</strong> emotion</p>\n<p><strong>Частота:</strong> раз в час</p>\n<p><strong>Активация:</strong> <span class=\"action-glyph\">R</span> вообразить</p>\n<p><strong>Триггер:</strong> You would be adversely affected by an emotion effect</p>\n<hr />\n<p><strong>Эффект:</strong> The relic tries to neutralize the triggering effect with its own emotion, attempting a counteract check. If the check succeeds, you feel a sudden rush of the relic's emotion and the counteracted effect doesn't take hold of you.</p>"
+		},
+		"Draconic Arrogance": {
+			"name": "Драконье высокомерие",
+			"description": "<p><strong>Аспект:</strong> дракон</p>\n<p><strong>Частота:</strong> раз в день</p>\n<p><strong>Активация:</strong> <span class=\"action-glyph\">R</span> команда, вообразить</p>\n<p><strong>Триггер:</strong> Вы готовы кидать спасбросок</p>\n<hr />\n<p><strong>Эффект:</strong> Вы усмехаетесь перед судьбой и упиваешься своим драконьим высокомерием. При критически успешном броске спасброска вы можете попытаться @UUID[Compendium.pf2e.actionspf2e.Item.2u915NdUyQan6uKF]{Деморализовать} существо, которое создало эффект заставивший вас кидать спасбросок (если оно было). Если вы при броске получаете успех, то вместо этого получаете критический успех. Если вы при броске получаете провал (но не критический), то вместо этого получаете успех. Однако, если вы при броске получаете критический провал, то вам придется столкнуться со своей гордыней, становясь @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Напуганным 2}.</p>"
+		},
+		"Draconic Ascendance": {
+			"name": "Драконье вознесение",
+			"description": "<p><strong>Аспект:</strong> дракон</p>\n<p><strong>Частота:</strong> раз в час</p>\n<p><strong>Активация:</strong> <span class=\"action-glyph\">2</span> команда, вообразить</p>\n<hr />\n<p><strong>Эффект:</strong> Семя души сотворяет <em>@UUID[Compendium.pf2e.spells-srd.Item.5c692cCcTDXjSEzk]</em> 8-го ранга выбирая вас целью; вы должны принять форму дракона, соответствующую драконьему происхождению семени души.</p>\n<p><em><strong>Примечание редактора:</strong> Форма дракона не имеет всех применимых типов драконов. Если вы выбрали эту способность и выбрали тип дракона для своего семени души, не предусмотренный обычными параметрами заклинания, поработайте со своим Мастером над выбором соответствующего типа и созданием пользовательского эффекта заклинания для вашего конкретного типа.</em>\n</p>"
+		},
+		"Draconic Resistance (*Base*)": {
+			"name": "Драконье сопротивление (*Базовое*)",
+			"description": "<p><strong>Аспект:</strong> дракон</p>\n<p>Вы отращиваете чешуйки, которые ограждают вас от драконьих атак. Вы получаете бонус состояния +1 к КБ против атак от драконов и сопротивление типу энергии соответствующее происхождению семени души дракона (например, огненное сопротивление у красного дракона), равное половине уровня реликвии (минимум сопротивление 1).</p>\n<p><em><strong>Примечание редактора:</strong> Поскольку единственное на что влияют типы драконов - это сопротивление урону, варианты были упрощены до конкретных типов сопротивлений, а не для типов драконов.</em></p>"
+		},
+		"Draconic Resistance (Acid)": {
+			"name": "Драконье сопротивление (Кислота)",
+			"description": "<p><strong>Аспект:</strong> дракон</p>\n<p>Вы отращиваете чешуйки, которые ограждают вас от драконьих атак. Вы получаете бонус состояния +1 к КБ против атак от драконов и сопротивление типу энергии соответствующее происхождению семени души дракона (например, огненное сопротивление у красного дракона), равное половине уровня реликвии (минимум сопротивление 1).</p>\n<p><em><strong>Примечание редактора:</strong> Поскольку единственное на что влияют типы драконов - это сопротивление урону, варианты были упрощены до конкретных типов сопротивлений, а не для типов драконов.</em></p>"
+		},
+		"Draconic Resistance (Cold)": {
+			"name": "Драконье сопротивление (Холод)",
+			"description": "<p><strong>Аспект:</strong> дракон</p>\n<p>Вы отращиваете чешуйки, которые ограждают вас от драконьих атак. Вы получаете бонус состояния +1 к КБ против атак от драконов и сопротивление типу энергии соответствующее происхождению семени души дракона (например, огненное сопротивление у красного дракона), равное половине уровня реликвии (минимум сопротивление 1).</p>\n<p><em><strong>Примечание редактора:</strong> Поскольку единственное на что влияют типы драконов - это сопротивление урону, варианты были упрощены до конкретных типов сопротивлений, а не для типов драконов.</em></p>"
+		},
+		"Draconic Resistance (Electricity)": {
+			"name": "Драконье сопротивление (Электричество)",
+			"description": "<p><strong>Аспект:</strong> дракон</p>\n<p>Вы отращиваете чешуйки, которые ограждают вас от драконьих атак. Вы получаете бонус состояния +1 к КБ против атак от драконов и сопротивление типу энергии соответствующее происхождению семени души дракона (например, огненное сопротивление у красного дракона), равное половине уровня реликвии (минимум сопротивление 1).</p>\n<p><em><strong>Примечание редактора:</strong> Поскольку единственное на что влияют типы драконов - это сопротивление урону, варианты были упрощены до конкретных типов сопротивлений, а не для типов драконов.</em></p>"
+		},
+		"Draconic Resistance (Fire)": {
+			"name": "Драконье сопротивление (Огонь)",
+			"description": "<p><strong>Аспект:</strong> дракон</p>\n<p>Вы отращиваете чешуйки, которые ограждают вас от драконьих атак. Вы получаете бонус состояния +1 к КБ против атак от драконов и сопротивление типу энергии соответствующее происхождению семени души дракона (например, огненное сопротивление у красного дракона), равное половине уровня реликвии (минимум сопротивление 1).</p>\n<p><em><strong>Примечание редактора:</strong> Поскольку единственное на что влияют типы драконов - это сопротивление урону, варианты были упрощены до конкретных типов сопротивлений, а не для типов драконов.</em></p>"
+		},
+		"Draconic Resistance (Mental)": {
+			"name": "Драконье сопротивление (Ментальный)",
+			"description": "<p><strong>Аспект:</strong> дракон</p>\n<p>Вы отращиваете чешуйки, которые ограждают вас от драконьих атак. Вы получаете бонус состояния +1 к КБ против атак от драконов и сопротивление типу энергии соответствующее происхождению семени души дракона (например, огненное сопротивление у красного дракона), равное половине уровня реликвии (минимум сопротивление 1).</p>\n<p><em><strong>Примечание редактора:</strong> Поскольку единственное на что влияют типы драконов - это сопротивление урону, варианты были упрощены до конкретных типов сопротивлений, а не для типов драконов.</em></p>"
+		},
+		"Draconic Resistance (Poison)": {
+			"name": "Драконье сопротивление (Яд)",
+			"description": "<p><strong>Аспект:</strong> дракон</p>\n<p>Вы отращиваете чешуйки, которые ограждают вас от драконьих атак. Вы получаете бонус состояния +1 к КБ против атак от драконов и сопротивление типу энергии соответствующее происхождению семени души дракона (например, огненное сопротивление у красного дракона), равное половине уровня реликвии (минимум сопротивление 1).</p>\n<p><em><strong>Примечание редактора:</strong> Поскольку единственное на что влияют типы драконов - это сопротивление урону, варианты были упрощены до конкретных типов сопротивлений, а не для типов драконов.</em></p>"
+		},
+		"Draconic Resistance (Void)": {
+			"name": "Драконье сопротивление (Пустота)",
+			"description": "<p><strong>Аспект:</strong> дракон</p>\n<p>Вы отращиваете чешуйки, которые ограждают вас от драконьих атак. Вы получаете бонус состояния +1 к КБ против атак от драконов и сопротивление типу энергии соответствующее происхождению семени души дракона (например, огненное сопротивление у красного дракона), равное половине уровня реликвии (минимум сопротивление 1).</p>\n<p><em><strong>Примечание редактора:</strong> Поскольку единственное на что влияют типы драконов - это сопротивление урону, варианты были упрощены до конкретных типов сопротивлений, а не для типов драконов.</em></p>"
+		},
+		"Dragon Strike": {
+			"name": "Драконий удар",
+			"description": "<p><strong>Аспект:</strong> дракон</p>\n<p><strong>Активация:</strong> <span class=\"action-glyph\">1</span> команда, вообразить</p>\n<hr />\n<p><strong>Эффект:</strong> Вокруг ваших рук формируются призрачные образы драконьих когтей и вытягиваются в воздухе когда вы атакуете. На 1 минуту, когда успешно совершаете безоружный \"Удар\" ближнего боя, то наносите дополнительные 1d6 рубящего урона.</p>\n<p>На 11-м уровне, вы можете использовать это умение раз в 10 минут, вместо 1 раза в час.</p>"
+		},
+		"Ease Burden": {
+			"name": "Облегчить бремя",
+			"description": "<p><strong>Аспект:</strong> земля</p>\n<hr />\n<p>Ваша реликвия черпает силу из земли под ногами, чтобы облегчить вашу ношу. Пока ваша реликвия при вас и вы стоите на земле, вы можете нести на 1 Массу больше, чем обычно, прежде чем станете @UUID[Compendium.pf2e.conditionitems.Item.D5mg6Tc7Jzrj6ro7], и увеличиваете свою максимальную Массу на 2. На 6-м уровне и каждые 4 уровня после этого, увеличивайте Массу, переносимую до перегрузки на 1, а максимальную Массу на 2.</p>"
+		},
+		"Emotion Conduit": {
+			"name": "Emotion Conduit",
+			"description": "<p><strong>Аспект:</strong> emotion</p>\n<p><strong>Активация:</strong> <span class=\"action-glyph\">2</span> команда, @UUID[Compendium.pf2e.actionspf2e.Item.pvQ5rY2zrtPI614F]</p>\n<hr />\n<p><strong>Эффект:</strong> You channel your relic's emotion at a target within 30 feet, overpowering an emotion effect on that creature. The relic attempts a counteract check. If the check succeeds, the target feels a sudden rush of the relic's emotion, and the counteracted effect ends on the target. The target is temporarily immune to your relic's emotion conduit until you make your next daily preparations.</p>"
+		},
+		"Emotion Surge": {
+			"name": "Emotion Surge",
+			"description": "<p><strong>Аспект:</strong> emotion</p>\n<p><strong>Частота:</strong> раз в час</p>\n<p><strong>Активация:</strong> <span class=\"action-glyph\">1</span> команда</p>\n<hr />\n<p><strong>Эффект:</strong> A surge of emotion emanates from your relic, granting a +1 status bonus to skill checks determined by the relic's emotion. This bonus lasts for 1 minute.</p>\n<p><strong>Anger</strong> Athletics checks<br /><strong>Awe</strong> Performance checks<br /><strong>Dedication</strong> Checks to Recall Knowledge<br /><strong>Fear</strong> Stealth checks<br /><strong>Hatred</strong> Intimidation checks<br /><strong>Joy </strong>Diplomacy checks<br /><strong>Love </strong>Medicine checks<br /><strong>Misery </strong>Survival checks<br /><strong>Pride</strong> Society checks<br /><strong>Remorse</strong> Deception checks</p>\n<p><em><strong>Editor's Note </strong>You pick one emotion for your Relic. A tip would be to write in parentheses which emotion you picked for your Relic in the name of this ability and erase all the irrelevant emotiosn from the list above. The effect has a toggle for the sake of ease.</em></p>"
+		},
+		"Encompassing Darkness": {
+			"name": "Охватывающая тьма",
+			"description": "<p><strong>Аспект:</strong> тень</p>\n<hr />\n<p>Тени под вашими ногами могут держать объекты. Вы можете @UUID[Compendium.pf2e.actionspf2e.Item.pvQ5rY2zrtPI614F] со своей тенью, чтобы сложить в нее объекты или убрать их, как если бы это был обычный контейнер. Ваша тень может вмещать 3 Массы объектов, которые не учитываются в переносимой вами Массе. На 6-м уровне и каждые 4 уровня после этого, вы можете убрать в свою тень 1 дополнительную Массу объектов. Пока предметы в вашей тени и могут быть обнаружены как обычно, вы получаете бонус обстоятельства +4 к проверкам Скрытности для @UUID[Compendium.pf2e.actionspf2e.Item.qVNVSmsgpKFGk9hV], если только кто-то не знает, что надо проверить вашу тень на наличие предметов.</p>"
+		},
+		"Enhancing Circuitry": {
+			"name": "Enhancing Circuitry",
+			"description": "<p><strong>Аспект:</strong> metal</p>\n<p>Your relic is engraved with nodes and elements only visible from up close, lacking only a source of current for its machinations. You gain resistance to electricity equal to half the level of your relic (minimum 1).</p>\n<hr />\n<p><strong>Activate—Complete the Circuit </strong><span class=\"pf2-icon\">R</span> (manipulate)</p>\n<p><strong>Триггер:</strong> You are targeted by or are in the area of an electricity effect</p>\n<hr />\n<p><strong>Эффект:</strong> Your relic uses the triggering effect to complete its circuit. You choose which path the electricity takes down the circuit, gaining the corresponding benefit.</p>\n<ul>\n<li><strong>Capacitor </strong>You become electrically charged, gaining a +1 status bonus to attack and damage rolls until the end of your next turn.</li>\n<li><strong>Inductor </strong>Your resistance against electricity damage increases to the level of your relic until the end of your next turn.</li>\n<li><strong>Resistor</strong> Your relic attempts to counteract the effect. On a failure, your relic overheats, dealing fire damage to you equal to the counteract rank of the effect (or double the counteract rank on a critical failure).</li>\n</ul>"
+		},
+		"Enthralling": {
+			"name": "Enthralling",
+			"description": "<p><strong>Аспект:</strong> artistry</p>\n<p><strong>Частота:</strong> раз в день</p>\n<p><strong>Активация:</strong> <span class=\"action-glyph\">2</span> команда, вообразить</p>\n<hr />\n<p><strong>Эффект:</strong> You speak at length about or demonstrate your craft, or you enact a performance. The relic casts @UUID[Compendium.pf2e.spells-srd.Item.IihxWhRfpsBgQ5jS]{Enthrall} at a rank equal to half its item level. If you have legendary proficiency in Crafting or Performance, creatures can't critically succeed on their saves against this spell. You can use Sustain an Activation to sustain the effect as you would the spell.</p>"
+		},
+		"Fascinating": {
+			"name": "Fascinating",
+			"description": "<p><strong>Аспект:</strong> artistry</p>\n<hr />\n<p>You gain the @UUID[Compendium.pf2e.feats-srd.Item.7LB00jkh6JaJr3vS]{Fascinating Performance} skill feat while wearing or wielding the relic, even if you don't meet its prerequisites. If you critically succeed against an observer, that target doesn't become temporarily immune to this effect.</p>\n<p><em><strong>Editor's Note: </strong>You will need to add the feat manually as a Bonus Feat.</em></p>"
+		},
+		"Feather Steps": {
+			"name": "Шаги пёрышка",
+			"description": "<p><strong>Аспект:</strong> воздух</p>\n<p><strong>Предварительные условия:</strong> Реликвия является надеваемым предметом</p>\n<hr />\n<p>Нося эту реликвию, вы не провоцируете срабатывание ловушек, использующих в качестве спускового механизма вес или нажимные плиты. Кроме того, когда падаете, вы уменьшаете урон от падения на уровень реликвии. Если это уменьшает урон от падения до 0, вы приземляетесь на ноги и не падаете @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]. Реликвия дает бонус предмета +1 к проверкам Атлетики для @UUID[Compendium.pf2e.actionspf2e.Item.JUvAvruz7yRQXfz2]/@UUID[Compendium.pf2e.actionspf2e.Item.2HJ4yuEFY1Cast4h], увеличивающийся до +2 на 9-м уровне и +3 на 17-м.</p>"
+		},
+		"Feral Claws": {
+			"name": "Дикие когти",
+			"description": "<p><strong>Аспект:</strong> зверь</p>\n<p><strong>Предварительные условия:</strong> Реликвия является надеваемым предметом</p>\n<p><strong>Активация:</strong> <span class=\"action-glyph\">1</span> команда</p>\n<hr />\n<p><strong>Эффект:</strong> Ваши руки превращаются в пару когтей. Это дает вам безоружную атаку когтями, которая наносит 1d6 рубящего урона и обладает признаками @UUID[Compendium.pf2e.journals.JournalEntry.S55aqwWIzpQRFhcq.JournalEntryPage.dnbUao9yk8Bs99eT#bystroe]{Быстрое} и @UUID[Compendium.pf2e.journals.JournalEntry.S55aqwWIzpQRFhcq.JournalEntryPage.dnbUao9yk8Bs99eT#tochnoe]{Точное}. Этот эффект длится пока вы не @UUID[Compendium.pf2e.actionspf2e.Item.AjLSHZSWQ90exdLo]{Развеете} его.</p>"
+		},
+		"Fervent Spell": {
+			"name": "Fervent Spell",
+			"description": "<p><strong>Аспект:</strong> emotion</p>\n<p><strong>Предварительные условия:</strong> fervor gift</p>\n<hr />\n<p>While the relic's fervor gift lasts, you have access to the spell provided by the emotional state, which you can cast using your own spell slots. You also have access to the following activation.<br /><br /><strong>Активация:</strong> <span class=\"action-glyph\">1</span> команда, @UUID[Compendium.pf2e.actionspf2e.Item.pvQ5rY2zrtPI614F]</p>\n<hr />\n<p><strong>Эффект:</strong> The relic Casts the Spell associated with its emotional fervor at the spell's lowest level.</p>"
+		},
+		"Fervor": {
+			"name": "Fervor",
+			"description": "<p><strong>Аспект:</strong> emotion</p>\n<p><strong>Активация:</strong> <span class=\"action-glyph\">1</span> команда</p>\n<hr />\n<p><strong>Эффект:</strong> You gain the emotional fervor benefits for your relic's emotional state for the next 3 rounds, but ignore the spell associated with the fervor. The feeling wears off quickly, so you experience no emotional fallout.</p>\n<p>@UUID[Compendium.pf2e.feat-effects.Item.JysvElDwGZ5ABQ6x]{Effect: Emotional Fervor}</p>\n<p><em><strong>Editor's Note </strong>You pick one emotion for your Relic. A tip would be to write in parentheses which emotion you picked for your Relic in the name of this ability and erase all the irrelevant emotiosn from the list above. The effect has a toggle for the sake of ease.</em></p>"
+		},
+		"Fiendish Bargain": {
+			"name": "Бесовская сделка",
+			"description": "<p><strong>Аспект:</strong> бесовской</p>\n<p><strong>Частота:</strong> раз в час</p>\n<p><strong>Активация:</strong> <span class=\"action-glyph\">1</span> команда</p>\n<hr />\n<p><strong>Эффект:</strong> Вы торгуетесь за помощь со злой силой, наделившей вашу реликвию силой, однако вы должны дать что-то взамен. Выберите одно из следующих преимуществ.</p>\n<ul>\n<li>Ваша реликвия пытается противодействовать действующему на вас вредному состоянию.</li>\n<li>Вы восстанавливаете [[/r (3d8+16)[healing]]] ОЗ. Это <a href=https://clck.ru/pvY8V><em>`исцеляющий`</em></a> эффект.</li>\n<li>Вы на 1 минуту получаете бонус состояния +2 к броскам атак. @UUID[Compendium.pf2e-relics.relic-effects.Item.b2ld3FEnHBKl9EX7]</li>\n</ul>\n<p>В качестве вашей платы, после применения преимущества, происходит один из следующих случайных эффектов.</p>\n<ul>\n<li>Вы на 1 минуту @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Одурманены 1}.</li>\n<li>Вы на 1 минуту @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Неуклюжи 1}.</li>\n<li>Вы теряете @Damage[1d8[untyped]] ОЗ.</li>\n<li>Вы на 1 минуту получаете штраф -1 к броскам урона. @UUID[Compendium.pf2e-relics.relic-effects.Item.kxrPNJwabHP9p4Se]</li>\n</ul>"
+		},
+		"Fiendish Defiance (*BASE*)": {
+			"name": "Бесовское неповиновение (*Базовое*)",
+			"description": "<p><strong>Аспект:</strong> бесовской</p>\n<p><strong>Предварительные условия:</strong> Реликвия является надеваемым предметом</p>\n<hr />\n<p>Бесовская сила вашей реликвии дает вам больше защиты от небожителей и позволяет игнорировать вред. Нося эту реликвию, вы получаете бонус состояния +1 к КБ против атак небожителей и сопротивление типу энергии связанной с происхождением бесовской реликвии (например сопротивление огню от дьявола). Сопротивление равно половине уровня реликвии (минимум 1).</p>\n<p>Исходя из имеющихся бесов, эти типы энергии являются следующими:</p>\n<ul>\n<li>Кислота</li>\n<li>Холод</li>\n<li>Электричество</li>\n<li>Огонь</li>\n<li>Яд</li>\n<li>Пустота</li>\n</ul>\n<p>Чтобы определить, какой тип энергии подходит, посмотрите на иммунитет беса и выберите один из них (или сопротивление, если в иммунитете нет правильного выбора. Если среди иммунитетов или сопротивлений нет подходящего варианта, выберите один, в идеале - что-то подходящее.</p>"
+		},
+		"Fiendish Defiance (Acid)": {
+			"name": "Бесовское неповиновение (Кислота)",
+			"description": "<p><strong>Аспект:</strong> бесовской</p>\n<p><strong>Предварительные условия:</strong> Реликвия является надеваемым предметом</p>\n<hr />\n<p>Бесовская сила вашей реликвии дает вам больше защиты от небожителей и позволяет игнорировать вред. Нося эту реликвию, вы получаете бонус состояния +1 к КБ против атак небожителей и сопротивление кислоте. Сопротивление равно половине уровня реликвии (минимум 1).</p>"
+		},
+		"Fiendish Defiance (Cold)": {
+			"name": "Бесовское неповиновение (Холод)",
+			"description": "<p><strong>Аспект:</strong> бесовской</p>\n<p><strong>Предварительные условия:</strong> Реликвия является надеваемым предметом</p>\n<hr />\n<p>Бесовская сила вашей реликвии дает вам больше защиты от небожителей и позволяет игнорировать вред. Нося эту реликвию, вы получаете бонус состояния +1 к КБ против атак небожителей и сопротивление холоду. Сопротивление равно половине уровня реликвии (минимум 1).</p>"
+		},
+		"Fiendish Defiance (Fire)": {
+			"name": "Бесовское неповиновение (Огонь)",
+			"description": "<p><strong>Аспект:</strong> бесовской</p>\n<p><strong>Предварительные условия:</strong> Реликвия является надеваемым предметом</p>\n<hr />\n<p>Бесовская сила вашей реликвии дает вам больше защиты от небожителей и позволяет игнорировать вред. Нося эту реликвию, вы получаете бонус состояния +1 к КБ против атак небожителей и сопротивление огню. Сопротивление равно половине уровня реликвии (минимум 1).</p>"
+		},
+		"Fiendish Defiance (Poison)": {
+			"name": "Бесовское неповиновение (Яд)",
+			"description": "<p><strong>Аспект:</strong> бесовской</p>\n<p><strong>Предварительные условия:</strong> Реликвия является надеваемым предметом</p>\n<hr />\n<p>Бесовская сила вашей реликвии дает вам больше защиты от небожителей и позволяет игнорировать вред. Нося эту реликвию, вы получаете бонус состояния +1 к КБ против атак небожителей и сопротивление яду. Сопротивление равно половине уровня реликвии (минимум 1).</p>"
+		},
+		"Fiendish Defiance (Void)": {
+			"name": "Бесовское неповиновение (Пустота)",
+			"description": "<p><strong>Аспект:</strong> бесовской</p>\n<p><strong>Предварительные условия:</strong> Реликвия является надеваемым предметом</p>\n<hr />\n<p>Бесовская сила вашей реликвии дает вам больше защиты от небожителей и позволяет игнорировать вред. Нося эту реликвию, вы получаете бонус состояния +1 к КБ против атак небожителей и сопротивление пустоте. Сопротивление равно половине уровня реликвии (минимум 1).</p>"
+		},
+		"Flare Bolt": {
+			"name": "Огненный снаряд",
+			"description": "<p><strong>Аспект:</strong> огонь</p>\n<p><strong>Активация:</strong> <span class=\"action-glyph\">2</span> команда, @UUID[Compendium.pf2e.actionspf2e.Item.pvQ5rY2zrtPI614F]</p>\n<hr />\n<p><strong>Эффект:</strong> Из реликвии вырывается снаряд пламени. Совершите бросок атаки заклинанием своей реликвией по цели в пределах 30 футов. Снаряд наносит 1d6 урона огнем за каждые 2 уровня реликвии (минимум 1d6): @Damage[(max(1,floor((@actor.level)/2)))d6[fire]]</p>\n<p><strong>Критический успех:</strong> Снаряд наносит двойной урон, а также @Damage[(@actor.level)[persistent,fire]], равный уровню реликвии.</p>\n<p><strong>Успех:</strong> Снаряд наносит полный урон.</p>"
+		},
+		"Flowing Footsteps": {
+			"name": "Струящиеся шаги",
+			"description": "<p><strong>Аспект:</strong> вода</p>\n<hr />\n<p>Ваша реликвия гарантирует, что никакая вода не помешает вашему передвижению. Вы получаете эффекты заклинания <em>@UUID[Compendium.pf2e.spells-srd.Item.Seaah9amXg70RKw2]</em> и возможность дышать под водой. Еще вы получаете Скорость плавания, равную вашей Скорости или 15 футов, в зависимости от того, что больше.</p>"
+		},
+		"Force Blast": {
+			"name": "Силовой взрыв",
+			"description": "<p><strong>Аспект:</strong> душа</p>\n<p><strong>Активация:</strong> <span class=\"pf2-icon\">2</span> команда, вообразить</p>\n<hr />\n<p><strong>Эффект:</strong> Взрыв силы оборачивает выбранное вами существо в пределах 30 футов. Этот взрыв наносит 1d6 урона силой: @Damage[(1d6 + floor((@actor.level - 1) / 2)d6)[force]], с @Check[type:fortitude|dc:resolve(@actor.system.attributes.classOrSpellDC.value)|basic:true]. Урон увеличивается на 1d6 на 3-м уровне и каждые 2 уровня после этого.</p>"
+		},
+		"Forge Weld": {
+			"name": "Кузнечная сварка(*)",
+			"description": "<p><strong>Аспект:</strong> кузница</p>\n<p><strong>Частота:</strong> раз в день</p>\n<p><strong>Активация:</strong> <span class=\"action-glyph\">2</span> команда, @UUID[Compendium.pf2e.actionspf2e.Item.pvQ5rY2zrtPI614F]</p>\n<hr />\n<p><strong>Эффект:</strong> Вы ударяете реликвией по немагическому металлическому предмету с Массой 4 или меньше, ремонтируя его. Грани предмета светятся белым жаром, и вы восстанавливаете 5 ОЗ предмета за уровень реликвии: [[/r (max(5,floor((@actor.level)*5)))]]. Если при этом предмет восстанавливается выше Порога Поломки, он больше не @UUID[Compendium.pf2e.conditionitems.Item.6dNUvdb1dhToNDj3]{Сломан}. Эта способность не может заменить утраченные части или восстановить полностью разрушенную вещь.</p>\n<p></p>"
+		},
+		"Form of Fury": {
+			"name": "Форма ярости",
+			"description": "<p><strong>Аспект:</strong> зверь</p>\n<p><strong>Предварительные условия:</strong> Реликвия является надеваемым предметом</p>\n<p><strong>Частота:</strong> 2 раза в день</p>\n<p><strong>Активация:</strong> <span class=\"action-glyph\">2</span> команда, вообразить</p>\n<hr />\n<p><strong>Эффект:</strong> Призывая свою внутреннюю звериную сущность, вы меняетесь в форму животного. Реликвия накладывает на вас <em>@UUID[Compendium.pf2e.spells-srd.Item.wp09USMB3GIW1qbp]</em> каждый раз превращая в одну и ту же форму животного, которая выбирается при получении дара; уровень заклинания равен половине уровня предмета, округленного до меньшего целого.</p>\n<p>На 11-м уровне заклинание 5-го ранга, а ранг заклинания после этого поднимается на 1 каждые 2 уровня.</p>"
+		},
+		"Form of Vengeance": {
+			"name": "Форма возмездия",
+			"description": "<p><strong>Аспект:</strong> зверь</p>\n<p><strong>Предварительные условия:</strong> дар @UUID[Compendium.pf2e-relics.relic-gifts.Item.4TsGEgoeqhT2jJCH]</p>\n<hr />\n<p>Когда вы используете активацию дара \"Форма ярости\", она может сотворять <em>@UUID[Compendium.pf2e.spells-srd.Item.NzXpEzcZAjuDTZjK]</em> или <em>@UUID[Compendium.pf2e.spells-srd.Item.KhM8MhoUgoUjBMIz]</em> вместо <em>@UUID[Compendium.pf2e.spells-srd.Item.wp09USMB3GIW1qbp]</em>. Как и заклинание формы ярости, эти заклинания тоже превращают вас каждый раз в одно и тоже животное (так что, у вас всего есть 3 формы, по одной на каждое заклинание). Ранг заклинания такой же, как определено формой ярости.</p>\n<p>В превращении, вы можете меняться из одной формы в другую @UUID[Compendium.pf2e.actionspf2e.Item.3f5DMFu8fPiqHpRg] эту Активацию. Это не меняет ее продолжительности.</p>"
+		},
+		"Grappling Vine": {
+			"name": "Цепкая лоза",
+			"description": "<p><strong>Аспект:</strong> растение</p>\n<p><strong>Активация:</strong> <span class=\"pf2-icon\">1</span> @UUID[Compendium.pf2e.actionspf2e.Item.pvQ5rY2zrtPI614F]</p>\n<hr />\n<p><strong>Эффект:</strong> Ваша реликвия запускает липкую, многожильную лозу в цель в пределах 50 футов. Совершите бросок атаки как если бы вы использовали @UUID[Compendium.pf2e.equipment-srd.Item.6DCy7tEF1cxaIJMy], но при критическом провале проверки для зацепления вы получаете просто провал. Как только лоза прикреплена, существа получают бонус состояния +1 к проверкам Атлетики, чтобы @UUID[Compendium.pf2e.actionspf2e.Item.pprgrYQ1QnIDGZiy] по лозе, а также бонус состояния +5 футов к расстоянию, которое они преодолевают при успешной проверке \"Карабканья\" по этой лозе.</p>\n<p>Лоза остается на 1 день, или пока вы снова не используете \"Цепкую лозу\", после чего старая лоза увядает.</p>"
+		},
+		"Grim Specter": {
+			"name": "Мрачный призрак",
+			"description": "<p><strong>Аспект:</strong> смерть</p>\n<p><strong>Частота:</strong> раз в день</p>\n<p><strong>Активация:</strong> <span class=\"action-glyph\">2</span> команда, вообразить</p>\n<hr />\n<p><strong>Эффект:</strong> Вы можете призвать ужасающие силы, питающие вашу реликвию, чтобы превратить себя в призрак смерти. Вы становитесь <a href=https://clck.ru/qFEp5><em>`бестелесным`</em></a>, не имея физического тела. Вы иммунны к эффектам, требующим физического тела, включая точный урон, а также к воздействию большинства <a href=https://clck.ru/35GSZa><em>`болезней`</em></a> и <a href=https://clck.ru/pvXWi><em>`ядов`</em></a>. Еще у вас есть сопротивление всему урону, равное половине уровня реликвии; урон силой, пустотой, жизненностью и @UUID[Compendium.pf2e.equipment-srd.Item.JQdwHECogcTzdd8R] игнорируют это сопротивление, а против немагического урона это сопротивление удваивается.</p>\n<p>Вы можете проходить через твердые объекты. Когда вы внутри объекта, то не можете воспринимать, атаковать или @UUID[Compendium.pf2e.actionspf2e.Item.pvQ5rY2zrtPI614] со всем, что за его пределами, и вы всегда @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Замедлены 1} в те ходы, которые начинаете внутри объекта. Бестелесные существа могут проходить сквозь вас, но не могут заканчивать свое передвижение в вашем пространстве. Вы не можете совершать проверки на основе Силы против материальных существ или объектов, если только эти объекты не имеют руны свойства \"Призрачное касание\". Аналогично, материальные существа не могут выполнять против вас проверки основанные на Силе.</p>\n<p>Вы можете @UUID[Compendium.pf2e.actionspf2e.Item.3f5DMFu8fPiqHpRg] эту Активацию вплоть до 1 минуты.</p>"
+		},
+		"Healing Wave": {
+			"name": "Исцеляющая волна",
+			"description": "<p><strong>Аспект:</strong> жизнь</p>\n<p><strong>Частота:</strong> раз в час</p>\n<p><strong>Активация:</strong> <span class=\"pf2-icon\">2</span> вообразить</p>\n<hr />\n<p><strong>Эффект:</strong> Вы выпускаете в @Template[type:cone|distance:15], волну энергии жизненности. Вы и все живые цели в области восстанавливаете 1d4 ОЗ за уровень реликвии: [[/r (max(1,floor(@actor.level)))d4[healing]]</p>"
+		},
+		"Heaven's Grace": {
+			"name": "Милость небес",
+			"description": "<p><strong>Аспект:</strong> небесный</p>\n<p><strong>Предварительные условия:</strong> Реликвия является надеваемым предметом</p>\n<hr />\n<p>Небеса защищают вас от вреда. Нося эту реликвию вы получаете бонус состояния +1 к КБ против атак бесов и сопротивление типу энергии соответствующему небесному происхождению реликвии (например, звуку от хорального ангела). Сопротивление равно половине уровня реликвии (минимум 1).</p>\n<p><em><strong>Примечание редактора:</strong> Из-за неясной природы урона, которому вы сопротивляетесь, вам придется вводить и обновлять сопротивление вручную.</em></p>"
+		},
+		"Incandescent Sight": {
+			"name": "Раскаленный взор",
+			"description": "<p><strong>Аспект:</strong> огонь</p>\n<p><strong>Частота:</strong> раз в день</p>\n<p><strong>Активация:</strong> <span class=\"pf2-icon\">2</span> команда, вообразить</p>\n<hr />\n<p><strong>Эффект:</strong> Ваши глаза становятся настроены на тепловые сигнатуры, так как ваше зрение расширяется до инфракрасного, давая вам на 1 минуту точное тепловое зрение. Ваше тепловое зрение может видеть температурные градиенты в пределах 30 футов, что позволяет вам обнаруживать живых существ и теплые объекты даже во тьме. Теплые объекты блокируют ваше тепловое зрение даже если они прозрачны, как например горячая вода.</p>"
+		},
+		"Inextinguishable": {
+			"name": "Неугасаемый",
+			"description": "<p><strong>Аспект:</strong> жизнь</p>\n<hr />\n<p>Благодаря вашей связи с жизненной силой, вас труднее уничтожить, чем других. Вы умираете когда ваше состояние при смерти становится \"при смерти 5\", вместо \"при смерти 4\". Если вы при броске спасброска против эффекта <a href=https://clck.ru/35HhCm><em>`смерти`</em></a> или эффекта <a href=https://clck.ru/35HhGQ><em>`пустоты`</em></a> получаете успех, то вместо этого получаете критический успех.</p>"
+		},
+		"Inspiring": {
+			"name": "Inspiring",
+			"description": "<p><strong>Аспект:</strong> artistry</p>\n<p><strong>Активация:</strong><span class=\"action-glyph\"> 1</span> varies</p>\n<hr />\n<p><strong>Эффект:</strong> You create a vision (envision) of a token you could have crafted or make a short performance (command) to inspire an ally within 60 feet. This otherwise works as the @UUID[Compendium.pf2e.spells-srd.Item.f0Z5mqGA6Yu79B8x]{Inspire Competence} cantrip.</p>"
+		},
+		"Intelligent Relic": {
+			"name": "Intelligent Relic",
+			"description": "<p><strong>Аспект:</strong> intelligent relic</p>\n<hr />\n<p>Your relic becomes an intelligent item. It has an alignment within one step of yours on each axis if not matching yours. It gains an alignment trait matching its alignment. The relic possesses precise sight at a range of 30 feet and imprecise hearing at a range of 30 feet. It is trained in Perception, increasing its proficiency when you increase yours. Choose whether it can speak aloud or communicate with you telepathically. It knows languages fitting its backstory, usually from among those you know. The relic is also trained in three skills, increasing one skill's proficiency each time the relic gains a new gift. Your relic's mental ability scores begin at +3, +2, and +1, arranged as you choose. The relic is also trained in Will saves, and its proficiency increases as yours does. Each time you gain a new gift, increase one of the relic's mental ability scores by 2 or two by 1. The relic otherwise functions as normal for an intelligent item.</span></div>\n</div>\n</div>\n</div>\n<div id=\"footer\" class=\"footer\"></div>"
+		},
+		"Jet Propulsion": {
+			"name": "Реактивная тяга",
+			"description": "<p><strong>Аспект:</strong> огонь</p>\n<p><strong>Частота:</strong> раз в час</p>\n<p><strong>Активация:</strong><span class=\"pf2-icon\">1</span> вообразить</p>\n<hr />\n<p><strong>Эффект:</strong> Пламя от вашей реликвии проходит через ваше тело, вырываясь из ног, рук или других конечностей с силой, достаточной для того, чтобы оторвать вас от земли и поднять в воздух. На 1 минуту вы получаете бонус состояния +10 футов к своей Скорости, а также Скорость полета равную вашей обновленной Скорости или 20 футам, в зависимости от того, что больше. Вы должны заканчивать свой ход на твердой поверхности, иначе падаете.</p>"
+		},
+		"Lashing Currents": {
+			"name": "Бьющие потоки",
+			"description": "<p><strong>Аспект:</strong> вода</p>\n<p><strong>Предварительные условия:</strong> Реликвия является оружием.</p>\n<hr />\n<p>Вода собирается на кончике вашей реликвии. Вы можете скорректировать вашу хватку реликвии действием @UUID[Compendium.pf2e.actionspf2e.Item.pvQ5rY2zrtPI614F], чтобы наносить оружием \"Удары\" бьющих потоков, которые наносят @Damage[1d4[bludgeoning]] damage; have the disarm, finesse, reach 10, trip, and versatile S traits; and are in the flail group. Your lashing current Strikes gain the benefit of your relic's fundamental and property runes, though any property runes that would not be applicable to the lashing currents are not applied. You can use another Interact action to return to your normal grip and make Strikes with the relic.</p>\n<p>@UUID[Compendium.pf2e-relics.relic-macros.Macro.5r1DBtXjxDeWB5fX]{Lashing Currents}</p>"
+		},
+		"Life Everlasting": {
+			"name": "Жизненная вечность",
+			"description": "<p><strong>Аспект:</strong> жизнь</p>\n<p><strong>Частота:</strong> раз в день</p>\n<p><strong>Активация:</strong><span class=\"pf2-icon\">2</span></span> вообразить</p>\n<hr />\n<p><strong>Эффект:</strong> Выплескивается огромное количество энергии жизненности. Вы 1 минуту излучаете энергию жизненности в @Template[type:emanation|distance:10] с собой в центре. В конце вашего хода, вы (если вы живое существо) и союзные живые существа в эманации восстанавливаете [[/r 10[healing]]] ОЗ. Если вы или союзное существо умрете от увеличения значения при смерти, то вы можете @UUID[Compendium.pf2e.actionspf2e.Item.AjLSHZSWQ90exdLo] эту активацию свободным действием, чтобы предотвратить смерть; если вы так делаете, то их значение \"при смерти\" не увеличивается.</p>\n<p><em><strong>Примечание редактора:</strong> Аура и эффект служат исключительно для управления измерением и определения того, кто находится в вашей эманации, они не применяют исцеление автоматически.</em></p>"
+		},
+		"Lightning Storm": {
+			"name": "Грозовой шторм",
+			"description": "<p><strong>Аспект:</strong> воздух</p>\n<p><strong>Активация:</strong> <span class=\"action-glyph\">2</span> команда</p>\n<hr />\n<p><strong>Эффект:</strong> Реликвия окружает вас штормом из ветра, дождя и молний в @Template[type:emanation|distance:30]. Этот шторм является сложной местностью для существ, помимо вас. Любое существо, кроме вас, которое попадает в шторм или начинает в нем свой ход, получает @Damage[1d12[electricity]] с @Check[type:reflex|dc:resolve(@actor.system.attributes.classOrSpellDC.value)|basic:true] (@Damage[2d12[electricity]] на 15-м уровне). Вы можете @UUID[Compendium.pf2e.actionspf2e.Item.3f5DMFu8fPiqHpRg] эту Активацию вплоть до 1 минуты.</p>"
+		},
+		"Linguistics Nexus": {
+			"name": "Языковой нексус",
+			"description": "<p><strong>Аспект:</strong> разум</p>\n<p>Ваша реликвия наделяет вас мощной нейропластичностью, в результате чего вы можете легче изучать языки. Вы изучаете дополнительный язык по своему выбору за каждые 2 уровня реликвии (минимум 1). Вы можете переизучить один из языков от реликвии всего за 1 неделю отдыха.</p>"
+		},
+		"Little Helper": {
+			"name": "Маленький помощник",
+			"description": "<p><strong>Аспект:</strong> бесовской</p>\n<hr />\n<p>У вашей реликвии пробуждается разум, развивая личность (обычно такую, которая противоречит вашей собственной). Ваша реликвия имеет мировоззрение соответствующее виду беса связанного с предметом, точное зрение и неточный слух, оба в 30-футовом радиусе, способность понимать и говорить на одном известном вам языке, а также модификаторы Интеллекта, Мудрости и Харизмы +0. Общие модификаторы Восприятия и Воли предмета равны вашим соответствующим модификаторам мастерства. Он обучен Знаниям связанным с этим видом бесов (как например Знания демонов), с общим модификатором 2 + уровень реликвии. В отличие от большинства разумных предметов, эта реликвия не имеет действий или реакций и не может использовать никакие из своих собственных активностей.</p>"
+		},
+		"Living Death": {
+			"name": "Живая смерть",
+			"description": "<p><strong>Аспект:</strong> смерть</p>\n<hr />\n<p>Вы стоите на пороге между жизнью и смертью. Если вы совершаете спасбросок против эффекта который нанесет вам урон пустотой, как например @UUID[Compendium.pf2e.spells-srd.Item.wdA52JJnsuQWeyqz], то ваш результат становится на одну ступень лучше, чем при броске. Если вы при броске получили критический успех и эффект способен исцелять <a href=https://clck.ru/saoNC><em>`нежить`</em></a>, то вы восстанавливаете ОЗ, равные половине полного урона заклинания. Любое заклинание <a href=https://clck.ru/35GVoN><em>`жизненное`</em></a> или эффект, который исцелил бы вас, дает только половину от своего обычного эффекта. Все эти эффекты применяются только если вы живое существо.</p>\n<p><em><strong>Примечание редактора:</strong> Автоматизирована только настройка степени успеха.</em></p>"
+		},
+		"Living Forge": {
+			"name": "Живая кузница(*)",
+			"description": "<p><strong>Аспект:</strong> кузница</p>\n<p><strong>Активация:</strong> <span class=\"pf2-icon\">2</span> команда, @UUID[Compendium.pf2e.actionspf2e.Item.pvQ5rY2zrtPI614F]</p>\n<p><strong>Частота:</strong> раз в день</p>\n<hr />\n<p><strong>Эффект:</strong> Реликвия впитывается в ваше тело, и вы превращаетесь в элементальное существо из раскаленной стали. Вы получаете эффекты <em>@UUID[Compendium.pf2e.spells-srd.Item.1K6AYGisvo9gqdhs]</em> 7-го ранга и используете статистику боевой формы кузницы. В этой форме вы можете превращать свои конечности в различные предметы, например в клинок или молот, используя действие Взаимодействовать. Изменяя конечности таким образом, вы можете выбирать между колющим, рубящим или дробящим уроном.</p>\n<ul>\n<li><strong>Скорость:</strong> 30 футов; сопротивление 10 к огню, слабость 5 к холоду и воде; <strong>Ближний бой:</strong> <span class=\"action action-glyph\" title=\"Single Action\" aria-label=\"Single Action\">1</span> удар кузницы, <strong>Урон:</strong> 1d10 модульный; 1d4 продолжительного урона огнем.</li>\n</ul>\n<p><strong>Примечание редактора:</strong> В связи с системными ограничениями, эта способность не может быть автоматизирована в настоящее время</p>"
+		},
+		"Living Statue": {
+			"name": "Живая статуя",
+			"description": "<p><strong>Аспект:</strong> земля</p>\n<hr />\n<p>Энергия вашей реликвии дала вам контроль над границей между плотью и камнем. Вы можете сотворять <em>@UUID[Compendium.pf2e.spells-srd.Item.znv4ECL7ZtuiagtA]</em> и <em>@UUID[Compendium.pf2e.spells-srd.Item.Pr1ruNTbzGn3H9w5]</em> как врожденные заклинания 6-го ранга, каждое раз в день. Пока вы стоите на земле, ваше тело рефлекторно каменеет в момент удара, давая вам сопротивление 5 физическому урону (кроме адамантина). В пещерах или подземном окружении это значение увеличивается до 8.</p>"
+		},
+		"Living Storm": {
+			"name": "Живой шторм",
+			"description": "<p><strong>Аспект:</strong> воздух</p>\n<hr />\n<p>Реликвия дает вам Скорость полета равную наземной или 60 футов, в зависимости от того, что больше. Кроме того, существо Ударившее (Strike) вас атакой ближнего боя получает @Damage[5[electricity]], и вы можете сотворять <em>@UUID[Compendium.pf2e.spells-srd.Item.9AAkVUCwF6WVNNY2]</em> как врожденное заклинание 5-го ранга.</p>\n<p><em><strong>Примечание редактора:</strong> Придется добавить врожденное заклинание вручную.</em></p>"
+		},
+		"Megaflora": {
+			"name": "Мегафлора",
+			"description": "<p><strong>Аспект:</strong> растение</p>\n<p><strong>Активация:</strong> <span class=\"pf2-icon\">2</span> команда, @UUID[Compendium.pf2e.actionspf2e.Item.pvQ5rY2zrtPI614F]</p>\n<p><strong>Частота:</strong> раз в день</p>\n<hr />\n<p><strong>Эффект:</strong> С импульсом природной энергии, ваша реликвия мгновенно выращивает огромные растения. Мегафлора относится к одному из следующих типов, выбираемых Мастером когда реликвия получает этот дар. Мегафлора появляется в незанятом 10-футовом пространстве в пределах 30 футов и имеет 50 ОЗ, слабость к огню 5, 37 КБ, Рефлекс [[/r 1d20+20]]{+20}, и Стойкость [[/r 1d20+30]]{+30}. Она остается на 1 минуту или пока ее ОЗ не снизятся до 0.</p>\n<ul>\n<li><strong>Трупоцвет:</strong> В выбранном месте вырастает 1 цветок с гнилостным запахом. Пока цветок существует, каждый раунд в конце вашего хода, все существа, кроме вас, в @Template[type:burst|distance:20] в центре с растением, должны совершить успешный спасбросок @Check[type:fort|dc:resolve(@actor.system.attributes.classOrSpellDC.value)], иначе получат @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Тошноту 2} (при критическом провале еще @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Ошеломлен 2}). Это эффект <a href=https://clck.ru/pvXWi><em>`яда`</em></a>.</li>\n<li><strong>Колючки:</strong> В выбранном месте вырастает колючее растение или стебель бамбука высотой 10 футов. Пока стебель остается, каждый раунд в конце вашего хода из земли вырываются острые колья, нанося всем существам, кроме вас, в @Template[type:burst|distance:20] в центре с растением, @Damage[6d8[piercing]] (@Check[type:reflex|dc:resolve(@actor.system.attributes.classOrSpellDC.value)|basic:true])</li>\n<li><strong>Древо жизни:</strong> В выбранном месте вырастает дерево дающее живительные фрукты. Пока дерево остается, живые существа в пределах досягаемости могут использовать действие @UUID[Compendium.pf2e.actionspf2e.Item.pvQ5rY2zrtPI614F], чтобы взять и съесть один из фруктов, восстанавливая [[/r (2d8+5)[healing]]] ОЗ; если сорвать фрукт и не съесть его, то он мгновенно пропадает. Это эффект <a href=https://clck.ru/pvY8V><em>`исцеления`</em></a>, а существа могут исцелиться от дерева только 1 раз в раунд.</li>\n</ul>"
+		},
+		"Mental Bastion": {
+			"name": "Ментальный бастион",
+			"description": "<p><strong>Аспект:</strong> разум</p>\n<hr />\n<p>Ваша реликвия берет на себя некоторые из ваших умственных процессов и усиливает другие. Вы получаете телепатию; если у вас уже есть телепатия, то вы вместо этого увеличиваете ее дальность на 30 футов. Всякий раз, когда вы стали бы <em>`одурманены`</em>, снизьте это значение на 1. Вы постоянно @UUID[Compendium.pf2e.conditionitems.Item.nlCjDvLMf2EkV2dl]{Ускорены} и можете использовать это дополнительное действие для @UUID[Compendium.pf2e.actionspf2e.Item.1OagaWtBpVXExToo].</p>"
+		},
+		"Molten Crucible": {
+			"name": "Расплавленный тигель(*)",
+			"description": "<p><strong>Аспект:</strong> кузница</p>\n<p><strong>Частота:</strong> раз в день</p>\n<p><strong>Активация:</strong> <span class=\"action-glyph\">3</span> команда, @UUID[Compendium.pf2e.actionspf2e.Item.pvQ5rY2zrtPI614F]</p>\n<hr />\n<p><strong>Эффект:</strong> Вы ударяете своей реликвией по оружию, доспехам или щиту из металла. Предмет раскаляется докрасна и в течение следующих 10 минут превращается в другой базовый предмет из той же категории. При этом базовая форма предмета меняется, а все материалы, руны и магические свойства остаются прежними. Оба базовых предмета должны быть 1 уровня или ниже, а оружие должно требовать одинакового количества рук. Конкретные магические предметы не могут быть изменены таким образом, если только Мастер не разрешит этого. Например, <em>+2 булава из холодного железа</em> может стать <em>+2 длинным мечом из холодного железа</em> или <em>кольчуга может стать полулатами</em>, но <em>лунная кольчужная рубаха</em> не может быть изменена таким образом.</p>"
+		},
+		"Monsoon Curtain": {
+			"name": "Муссонная завеса",
+			"description": "<p><strong>Аспект:</strong> вода</p>\n<p><strong>Активация:</strong> <span class=\"pf2-icon\">3</span> команда, вообразить</p>\n<p><strong>Частота:</strong> раз в день</p>\n<hr />\n<p><strong>Эффект:</strong> Вы призываете завесу неистового дождя, в место находящееся в пределах 120 футов. Это стена @Template[type:line|distance:30], высотой вплоть до 30 футов и продолжающаяся 1 минуту. Стена стоит вертикально, но вы можете сформировать ее путь. Стена имеет следующие эффекты.</p>\n<ul>\n<li>Если <a href=https://clck.ru/jompy><em>`огненный`</em></a> эффект пересекает стену, то он либо использует результат на одну ступень хуже чем при его броске атаки, либо цели используют результат спасброска на одну ступень лучше чем при броске, соответственно.</li>\n<li>Существа со слабостью к воде, пересекающие стену или начинающие в ней свой ход, получают урон равный их слабости.</li>\n<li>Стена накладывает штраф состояния -2 к проверкам Восприятия, чтобы ощущать существ или объекты по другую сторону.</li>\n</ul>"
+		},
+		"Muse": {
+			"name": "Muse",
+			"description": "<p><strong>Аспект:</strong> artistry</p>\n<p><strong>Предварительные условия:</strong> The relic is 3rd level or higher</p>\n<hr />\n<p>The relic guides you in your art like a muse, giving you inspirational ideas and providing an item bonus to Crafting or Performance checks. (Choose one. If your relic allows you to do so, you can take this gift again to choose the other.) If the relic is 3rd level or higher, you gain a +1 item bonus. Once the relic attains 9th level, the bonus increases to +2. The bonus increases to +3 when the relic is 17th level.</p>\n<p><em><strong>Editor's Note:</strong> Ignore this ability, as this serves as the original \"base\" of the Muse ability. There are seprate abilities made for Crafting and Performance, which have modified text for consistency.</em></p>"
+		},
+		"Muse (Crafting)": {
+			"name": "Muse (Crafting)",
+			"description": "<p><strong>Аспект:</strong> artistry</p>\n<p><strong>Предварительные условия:</strong> The relic is 3rd level or higher</p>\n<hr />\n<p>The relic guides you in your art like a muse, giving you inspirational ideas and providing an item bonus to Crafting checks. If the relic is 3rd level or higher, you gain a +1 item bonus. Once the relic attains 9th level, the bonus increases to +2. The bonus increases to +3 when the relic is 17th level.</p>"
+		},
+		"Muse (Performance)": {
+			"name": "Muse (Performance)",
+			"description": "<p><strong>Аспект:</strong> artistry</p>\n<p><strong>Предварительные условия:</strong> The relic is 3rd level or higher</p>\n<hr />\n<p>The relic guides you in your art like a muse, giving you inspirational ideas and providing an item bonus to Performance checks. If the relic is 3rd level or higher, you gain a +1 item bonus. Once the relic attains 9th level, the bonus increases to +2. The bonus increases to +3 when the relic is 17th level.</p>"
+		},
+		"Obscure": {
+			"name": "Незаметность",
+			"description": "<p><strong>Аспект:</strong> тень</p>\n<hr />\n<p>Ваша реликвия поглощает свет и окутывает вас тенью, скрывая во тьме. Пока вы в тусклом свете в области теней, вы можете совершать проверку Скрытности, чтобы @UUID[Compendium.pf2e.actionspf2e.Item.XMcnh4cSI32tljXa], даже если вы не @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Скрыты} от существа, например от существа с ночным зрением.</p>"
+		},
+		"Overflowing Life": {
+			"name": "Переполняющая жизнь",
+			"description": "<p><strong>Аспект:</strong> жизнь</p>\n<hr />\n<p>Жизненная сила течет через вас, и позитивная энергия заставляет вашу жизненную сущность вырываться сквозь кожу, как бусины жидкого света. Вы получаете бонус предмета, равный половине уровня реликвии (минимум 1) к восстанавливаемым у вас ОЗ от позитивных исцеляющих заклинаний; этот бонус применяется только к первому исцелению от сотворения на вас каждого отдельного заклинания.</p>"
+		},
+		"Perception Filter": {
+			"name": "Фильтрация восприятия",
+			"description": "<p><strong>Аспект:</strong> разум</p>\n<p><strong>Активация:</strong> <span class=\"action-glyph\">2</span> вообразить</p>\n<p><strong>Частота:</strong> раз в день</p>\n<hr />\n<p><strong>Эффект:</strong> Ваша реликвия проникает в сознания ближайших существ и блокирует ваше присутствие от их восприятия. В течение следующих 10 минут, существо вошедшее в @Template[type:emanation|distance:120], с вами в центре, должно совершить тайный спасбросок @Check[type:will|dc:resolve(@actor.system.attributes.classOrSpellDC.value)|traits:secret], после чего существо временно иммунно на 1 день.</p>\n<hr />\n<p><strong>Критический успех:</strong> Существо невредимо.</p>\n<p><strong>Успех:</strong> Существо получает штраф состояния -2 к проверкам Восприятия, чтобы @UUID[Compendium.pf2e.actionspf2e.Item.BlAOM2X92SI6HMtJ]{Искать} или как-то иначе обнаруживать вас.</p>\n<p><strong>Провал:</strong> Вы фильтруете все чувства существа, чтобы ему стало трудно заметить вас. Когда вы @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Спрятаны} или @UUID[Compendium.pf2e.conditionitems.Item.VRSef5y1LmL2Hkjf]{Необнаружены} от существа, оно не замечает вас, пока вы не сделаете что-то помимо @UUID[Compendium.pf2e.actionspf2e.Item.XMcnh4cSI32tljXa], @UUID[Compendium.pf2e.actionspf2e.Item.VMozDqMMuK5kpoX4] или @UUID[Compendium.pf2e.actionspf2e.Item.UHpkTuCtyaPqiCAB]. Если оно кидает проверку Восприятия, чтобы @UUID[Compendium.pf2e.actionspf2e.Item.BlAOM2X92SI6HMtJ]{Искать} или как-либо иначе обнаружить вас, то оно получает результат на одну ступень хуже, чем при броске, а если вы кидаете проверку Скрытности, чтобы \"Спрятаться\", \"Красться\" или как-то иначе избегать его внимания, то вы получаете результат на одну степень лучше, чем при броске против этого существа. Если вы используете враждебное действие по отношению к этому существу, то для него этот эффект заканчивается после завершения данного враждебного действия.</p>\n<p><strong>Критический провал:</strong> Как провал, но если вы используете враждебное действие, то для этого существа эффект не заканчивается.</p>"
+		},
+		"Petal Dance": {
+			"name": "Танец лепестков",
+			"description": "<p><strong>Аспект:</strong> растение</p>\n<p><strong>Активация:</strong> <span class=\"pf2-icon\">2</span> вообразить</p>\n<p><strong>Частота:</strong> раз в час</p>\n<hr />\n<p><strong>Эффект:</strong> Вы превращаетесь в облако лепестков и листьев. Это дает вам признак <a href=https://clck.ru/36vCCU><em>`рой`</em></a>, иммунитет к урону от падения, сопротивление 5 дробящему и рубящему урону, и слабость 5 к урону по области и урона брызгами. Вы можете вместиться в пространстве шириной лишь нескольких дюймов, перемещая составляющие вас лепестки через зазор. Вы не получаете умение @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.baA0nSMhQyFyJIia], поэтому вы все еще можете подвергаться <a href=https://clck.ru/nKoej><em>`ментальным`</em></a> эффектам. В виде роя, вы не можете говорить, творить заклинания, использовать действия <a href=https://clck.ru/jjLHP><em>`воздействия`</em></a> требующие рук, активировать свои магические предметы или совершать любой из своих \"Ударов\" нормального тела. Вы остаетесь в этой форме 1 минуту или пока не @UUID[Compendium.pf2e.actionspf2e.Item.AjLSHZSWQ90exdLo]{Развеете} эту активацию. На 13-м уровне, реликвия получает реакцию, которая срабатывает когда вы падаете или получаете урон, применяя сопротивления, слабости и иммунитеты этого дара к урону от падения или спровоцировавшему эффекту.</p>"
+		},
+		"Pierce the Veil": {
+			"name": "Прорыв завесы",
+			"description": "<p><strong>Аспект:</strong> смерть</p>\n<p><strong>Предварительные условия:</strong> дар @UUID[Compendium.pf2e-relics.relic-gifts.Item.uVM6meIQtwzGdlnn]</p>\n<hr />\n<p>Эта реликвия позволяет вам пронзить завесу между жизнью и смертью. Пока вы держите или носите эту реликвию, вы обладаете негативным исцелением (как если бы вы были <a href=https://clck.ru/saoNC><em>`нежитью`</em></a>; позитивная энергия вредит вам, а негативная исцеляет). Кроме того, всякий раз, когда вас исцеляет заклинание <a href=https://clck.ru/35HhGQ><em>`пустоты`</em></a> или эффект, вы до начала своего следующего хода получаете сопротивление 5 всему урону (кроме силы, позитивного и @UUID[Compendium.pf2e.equipment-srd.Item.JQdwHECogcTzdd8R]). Наконец, пока вы являетесь носителем реликвии, получаете бонус предмета +2 к любым спасброскам против эффектов смерти; этот бонус увеличивается до бонуса предмета +3 на 13-м уровне.</p>"
+		},
+		"Pollen Spray": {
+			"name": "Распыление пыльцы",
+			"description": "<p><strong>Аспект:</strong> растение</p>\n<p><strong>Активация:</strong> <span class=\"pf2-icon\">2</span> команда, @UUID[Compendium.pf2e.actionspf2e.Item.pvQ5rY2zrtPI614F]</p>\n<hr />\n<p><strong>Эффект:</strong> Из реликвии распыляются пыльца и ядовитые споры, нанося всем существам в @Template[type:cone|distance:15] 1d6 урона ядом за каждые 2 уровня реликвии: @Damage[(max(1,floor((@actor.level)/2)))d6[poison]], с @Check[type:fortitude|dc:resolve(@actor.data.data.attributes.classOrSpellDC.value)|basic:true]. ри критическом провале, цели еще @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Ослеплены} на 1 раунд. Вы не можете снова использовать \"Распыление пыльцы\" [[/br 1d4 #Recharge Pollen Spray]]{1d4 раундов}.</p>"
+		},
+		"Precious Anodization": {
+			"name": "Precious Anodization",
+			"description": "<p><strong>Аспект:</strong> metal</p>\n<p><strong>Активация:</strong> <span class=\"pf2-icon\">1</span> (concentrate)</p>\n<p><strong>Частота:</strong> раз в день</p>\n<hr />\n<p><strong>Эффект:</strong> For one minute, your relic is affected by a clad in metal spell of a rank equal to half the relic's level, rounded up. You can choose uncommon metals in addition to common ones.</p>"
+		},
+		"Precognition": {
+			"name": "Precognition",
+			"description": "<p><strong>Аспект:</strong> time</p>\n<p><strong>Активация:</strong> <span class=\"pf2-icon\">R</span> вообразить</p>\n<p><strong>Частота:</strong> раз в день</p>\n<p><strong>Триггер:</strong> Your turn starts</p>\n<hr />\n<p><strong>Эффект:</strong> You analyze diverging time streams to determine the best course of action. Resolve two turns as if they occurred, then choose which one happens. The other does not occur.</p>"
+		},
+		"Profane Fervor": {
+			"name": "Оскверненный пыл",
+			"description": "<p><strong>Аспект:</strong> бесовской</p>\n<p><strong>Частота:</strong> раз в день</p>\n<p><strong>Активация:</strong> <span class=\"action-glyph\">2</span> команда, @UUID[Compendium.pf2e.actionspf2e.Item.pvQ5rY2zrtPI614F]</p>\n<hr />\n<p><strong>Эффект:</strong> Оскверненные энергии искажают ваши оружия, наполняя их яростью ко всему доброму. На 1 минуту, ваши атаки оружием и безоружные атаки получают руну оружия @UUID[Compendium.pf2e.equipment-srd.Item.gmMrJREf4JSHd2dZ], пока вы держите его. Если оружие уже имеет лимит рун свойств, то вы можете выбрать у оружия 1 руну свойств, которая будет неактивна, пока действует нечестивая руна. Кроме того, любые успешные \"Удары\" ваших союзников, совершенные в радиусе 30 футов от вас, приобретают признак `unholy`.</p>"
+		},
+		"Propelling Winds": {
+			"name": "Движущие ветры",
+			"description": "<p><strong>Аспект:</strong> воздух</p>\n<p><strong>Активация:</strong> <span class=\"action-glyph\">2</span> команда, @UUID[Compendium.pf2e.actionspf2e.Item.pvQ5rY2zrtPI614F]</p>\n<p><strong>Частота:</strong> раз в час</p>\n<hr />\n<p><strong>Эффект:</strong> Реликвия сотворяет <em>@UUID[Compendium.pf2e.spells-srd.Item.A2JfEKe6BZcTG1S8]</em> выбирая вас целью.</p>"
+		},
+		"Psychic Scream": {
+			"name": "Психический крик",
+			"description": "<p><strong>Аспект:</strong> разум</p>\n<p><strong>Активация:</strong> <span class=\"pf2-icon\">2</span> вообразить</p>\n<hr />\n<p><strong>Эффект:</strong> Ваши мысли накапливаются, прежде чем вылиться в мощный телепатический крик. Враги в пределах @Template[type:burst|distance:20] с вами в центре, должны совершить @Check[type:will|dc:resolve(@actor.system.attributes.classOrSpellDC.value)|basic:true]), иначе получат 1d10 ментального урона за каждые 2 уровня реликвии: @Damage[(max(1,floor((@actor.level)/2)))d10[mental]]. При критическом провале, они еще @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Одурманены 1} на 1 минуту.</p>"
+		},
+		"Quickening Emotion": {
+			"name": "Quickening Emotion",
+			"description": "<p><strong>Аспект:</strong> emotion</p>\n<p><strong>Активация:</strong> <span class=\"pf2-icon\">R</span> вообразить</p>\n<p><strong>Триггер:</strong> You are the target of an emotion effect from a hostile source</p>\n<hr />\n<p><strong>Эффект:</strong> The relic attempts a counteract check. If the check succeeds, the relic absorbs the effect completely, negating it. Instead, you're @UUID[Compendium.pf2e.conditionitems.Item.nlCjDvLMf2EkV2dl]{Quickened} for up to 1 minute, but no longer than the triggering effect's duration. You then become temporarily immune to this effect for 1 hour.</p>"
+		},
+		"Rail Dash": {
+			"name": "Rail Dash",
+			"description": "<p><strong>Аспект:</strong> metal</p>\n<p><strong>Активация:</strong> <span class=\"pf2-icon\">2</span></p>\n<p><strong>Частота:</strong> раз в час</p>\n<hr />\n<p><strong>Эффект:</strong> Your relic conjures a guideway of magnets beneath you, creating a frictionless path for you to rush forward at high speeds. You Stride up to three times in a straight line. If you end your final Stride adjacent to an object or creature, you ram into it, dealing @Damage[1d12[bludgeoning]] damage for every 2 levels of the relic, with a basic Reflex save.</p>"
+		},
+		"Raise Ramparts": {
+			"name": "Возведение валов",
+			"description": "<p><strong>Аспект:</strong> земля</p>\n<p><strong>Активация:</strong> <span class=\"action-glyph\">2</span> команда, @UUID[Compendium.pf2e.actionspf2e.Item.pvQ5rY2zrtPI614F]</p>\n<p><strong>Частота:</strong> раз в день</p>\n<hr />\n<p><strong>Эффект:</strong> Ваша реликвия изменяет форму земли вокруг вас. Вы сотворяете <em>@UUID[Compendium.pf2e.spells-srd.Item.kOa055FIrO9Smnya]</em> 5-го ранга.</p>"
+		},
+		"Recalculate": {
+			"name": "Перерасчет",
+			"description": "<p><strong>Аспект:</strong> разум</p>\n<p><strong>Активация:</strong> <span class=\"pf2-icon\">R</span> вообразить</p>\n<p><strong>Триггер:</strong> Вы проваливаете бросок атаки</p>\n<hr />\n<p><strong>Эффект:</strong> После промазавшей атаки, от реликвии в ваш разум перетекает анализ углов, вероятностей и мириад других факторов, готовя вас к следующей. Вы получаете бонус обстоятельства +1 к своему следующему броску атаки против цели по которой промахнулись, если эта атака будет сделана до начала вашего следующего хода.</p>"
+		},
+		"Repository of Knowledge": {
+			"name": "Хранилище знаний",
+			"description": "<p><strong>Аспект:</strong> разум</p>\n<hr />\n<p>Ваша реликвия наполнена психическими впечатлениями минувших лет. Когда реликвия у вас, вы обучены 3 дополнительным навыкам Знаний на выбор Мастера, которые подходят истории реликвии и определяются в момент получаяния дара. Если реликвия 9-го уровня, то вы вместо этого имеете мастерство эксперта в этих Знаниях, а если реликвия 17-го уровня, то мастера.</p>"
+		},
+		"Righteous Call": {
+			"name": "Праведный зов",
+			"description": "<p><strong>Аспект:</strong> небесный</p>\n<p><strong>Частота:</strong> раз в день</p>\n<p><strong>Активация:</strong> <span class=\"pf2-icon\">2</span> команда, @UUID[Compendium.pf2e.actionspf2e.Item.pvQ5rY2zrtPI614F]</p>\n<hr />\n<p><strong>Эффект:</strong> Святая магия наполняет ваше вооружение, делая его истинным оружием против зла. На 1 минуту, ваши атаки оружием и безоружные атаки получают руну оружия @UUID[Compendium.pf2e.equipment-srd.Item.DH0kB9Wbr5pDeunX] пока вы держите его. Если оружие уже имеет лимит рун свойств, то вы можете выбрать у оружия 1 руну свойств, которая будет неактивна, пока действует святая руна. Кроме того, любые успешные \"Удары\" ваших союзников, совершенные в радиусе 30 футов от вас, приобретают признак `holy`.</p>\n<p><em><strong>Примечание редактора:</strong> Из-за странного взаимодействия между рунами, вам придется вручную удалять одну из рун свойства оружия, если она достигла своего предела.</em></p>"
+		},
+		"Ripples and Waves": {
+			"name": "Рябь и волны",
+			"description": "<p><strong>Аспект:</strong> вода</p>\n<p>Вы становитесь настроены на приливы и отливы всего. Вы получаете @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.VdSMQ6yRZ3YXNXHL] на 60 футов как точное чувство, и можете по желанию сотворять <em>@UUID[Compendium.pf2e.spells-srd.Item.jfVCuOpzC6mUrf6f]</em> 5-го ранга как врожденное заклинание.</p>\n<p><strong>Активация:</strong> <span class=\"pf2-icon\">2</span> команда, вообразить</p>\n<p><strong>Частота:</strong> раз в день</p>\n<hr />\n<p><strong>Эффект:</strong> От вас исходит вода, на 1 минуту по щиколотки затапливая @Template[type:emanation|distance:60] с вами в центре. Враги в пределах области, не имеющие Скорости плавания считают ее сложной местностью для наземного передвижения. Пока присутствует этот эффект, вы можете заставить любые производимые вами водные эффекты появляться из любой точки внутри эманации, в дополнение к их обычным области и дистанции.</p>"
+		},
+		"Rolling Geode": {
+			"name": "Катающийся жеод",
+			"description": "<p><strong>Аспект:</strong> земля</p>\n<p><strong>Частота:</strong> раз в час</p>\n<p><strong>Активация:</strong> <span class=\"action-glyph\">2</span> команда, вообразить</p>\n<hr />\n<p><strong>Эффект:</strong> Камни и кристаллы формируют шар, который преследует ваших противников. Вы создаете жеод в незанятом квадрате в пределах 30 футов. Вы можете потратить одиночное действие имеющее признак концентрация, чтобы передвинуть жеод вдоль земли на расстояние вплоть до 30 футов. Если жеод попадает в пространство существа, оно должно успешно совершить @Check[type:reflex|dc:resolve(@actor.system.attributes.classOrSpellDC.value)|basic:true], иначе получает @Damage[2d6[bludgeoning]]; существо может получить урон таким образом только 1 раз в ход, даже, если вы прокатили жеод по его пространству несколько раз. Жеод существует вплоть до 1 минуты, пока его не уничтожат или вы не @UUID[Compendium.pf2e.actionspf2e.Item.AjLSHZSWQ90exdLo]{Развеете} его; у него 5 КБ, Твердость 10 и 40 ОЗ, и он иммунен к критическим попаданиям и точному урону.</p>"
+		},
+		"Sacred Glow": {
+			"name": "Священное сияние",
+			"description": "<p><strong>Аспект:</strong> небесный</p>\n<p><strong>Активация:</strong> <span class=\"action-glyph\">2</span> команда, @UUID[Compendium.pf2e.actionspf2e.Item.pvQ5rY2zrtPI614F]</p>\n<hr />\n<p><strong>Эффект:</strong> Ваша реликвия сияет священным светом. Это создает яркий свет в @Template[type:emanation|distance:30] вокруг предмета. `Unholy` существа в области @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Напуганы 1} и не могут снизить величину этого состояния ниже 1, пока остаются в этом свете. <a href=https://clck.ru/349qey><em>`Бесы`</em></a> в этой области увеличивают любую слабость к `holy` на 5. Вы можете @UUID[Compendium.pf2e.actionspf2e.Item.3f5DMFu8fPiqHpRg] эту активацию до 1 минуты.</p>\n<p><em><strong>Примечание редактора:</strong> В то время как состояние напуган будет отслеживаться самостоятельно, слабость к `holy` для бесов не увеличивается.</em></p>"
+		},
+		"Sands of the Hourglass": {
+			"name": "Sands of the Hourglass",
+			"description": "<p><strong>Аспект:</strong> time</p>\n<p><strong>Предварительные условия:</strong> The relic is 5th level or higher.</p>\n<p>Activate <span class=\"pf2-icon\">2</span> команда, @UUID[Compendium.pf2e.actionspf2e.Item.pvQ5rY2zrtPI614F]</p>\n<p><strong>Частота:</strong> раз в час</p>\n<hr />\n<p><strong>Эффект:</strong> You target one creature within 30 feet, temporarily imposing the decrepitude of time on it. The target must attempt a Fortitude saving throw. The clumsy and enfeebled conditions last 1 minute.</p>\n<hr />\n<p><strong>Критический успех:</strong> The target is unaffected.</p>\n<p><strong>Успех:</strong> The target becomes @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1} and @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1}.</p>\n<p><strong>Провал:</strong> The target becomes @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 2}, @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2}, and @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1}.</p>\n<p><strong>Критический провал:</strong> The target becomes @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 3}, @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 3}, and @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 2}.</p>"
+		},
+		"Scrap Shot": {
+			"name": "Scrap Shot",
+			"description": "<p><strong>Аспект:</strong> metal</p>\n<p><strong>Активация:</strong> <span class=\"pf2-icon\">2</span> (concentrate, manipulate)</p>\n<hr />\n<p><strong>Эффект:</strong> Magnetic repulsion sends a sharp chunk of metal scrap flying from your relic. Make a spell attack roll with your relic against a target within 30 feet. The chunk deals @Damage[1d6[piercing]] damage for every 2 levels the relic has (minimum 1d6). If the target is wearing metal armor or is made of metal, you gain a +1 circumstance bonus to your spell attack roll, and the target becomes @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1} until the start of your next turn as the scrap adheres to the target. If your relic is made of a precious metal, the shot is also made of or coated in that metal, bypassing resistances and the like accordingly. The scrap left behind by the shot rusts or crumbles quickly and isn't worth anything if sold.</p>\n<p>@Damage[(max(1,floor((@actor.level)/2)))d6[piercing]]{Leveled Piercing Damage}</p>"
+		},
+		"Searing Wave": {
+			"name": "Опаляющая волна",
+			"description": "<p><strong>Аспект:</strong> огонь</p>\n<p><strong>Активация:</strong> <span class=\"pf2-icon\">2</span> команда, @UUID[Compendium.pf2e.actionspf2e.Item.pvQ5rY2zrtPI614F]</p>\n<hr />\n<p><strong>Эффект:</strong> Вы позволяете части огненной магии вселиться в вашу реликвию, чтобы выпустить ее в направлении по своему выбору. Вы наносите всем существам в @Template[type:cone|distance:30] @Damage[1d10[fire]] 1d10 урона огнем за каждые 2 уровня реликвии: @Damage[(max(1,floor((@actor.level)/2)))d10[fire]] (@Check[type:reflex|dc:resolve(@actor.system.attributes.classOrSpellDC.value)|basic:true]). Вы не можете снова использовать \"Опаляющую волну\" [[/br 1d4 #Recharge]]{1d4 раундов}.</p>"
+		},
+		"Shadow Smith": {
+			"name": "Теневой кузнец",
+			"description": "<p><strong>Аспект:</strong> тень</p>\n<p><strong>Активация:</strong> <span class=\"pf2-icon\">1</span> @UUID[Compendium.pf2e.actionspf2e.Item.pvQ5rY2zrtPI614F]</p>\n<hr />\n<p><strong>Эффект:</strong> Ваша реликвия тянется к ближайшим теням, скручивая их в форму простого оружия, либо простого инструмента или предмета, например, веревки или лома. Он сохраняется пока не использован для одной активности, пока вы снова не используете \"Теневого кузнеца\", или 1 минуту, в зависимости от того, что произойдет раньше, после чего предмет распадается.</p>"
+		},
+		"Shattered Earth": {
+			"name": "Раздробленная земля",
+			"description": "<p><strong>Аспект:</strong> земля</p>\n<p><strong>Частота:</strong> раз в час</p>\n<p><strong>Активация:</strong> <span class=\"pf2-icon\">2</span> команда, @UUID[Compendium.pf2e.actionspf2e.Item.pvQ5rY2zrtPI614F]</p>\n<hr />\n<p><strong>Эффект:</strong> Сейсмические импульсы от вашей реликвии прокатываются по близлежащей земле, вытряхивая на поверхность острые осколки. Кусок почвы или камня 10-футового радиуса в пределах 60 футов, превращается в сложную местность. Существо, попавшее в такой квадрат во время действия движения должно совершить успешную проверку @Check[type:acrobatics|dc:resolve(@actor.system.attributes.classOrSpellDC.value)] или @Check[type:reflex|dc:resolve(@actor.system.attributes.classOrSpellDC.value)], иначе получает 1d6 колющего урона: @Damage[(1+max(0,floor((@actor.level -2)/4)))d6[piercing]]; ему нужно сделать только 1 бросок за действие движения, даже если оно прошло через несколько квадратов. На 6-м уровне и каждые 4 уровня после этого, урон увеличивается на 1d6.</p>"
+		},
+		"Shroud of the Afterlife": {
+			"name": "Пелена загробной жизни",
+			"description": "<p><strong>Аспект:</strong> смерть</p>\n<p><strong>Частота:</strong> раз в день</p>\n<p><strong>Активация:</strong> <span class=\"pf2-icon\">1</span> команда, @UUID[Compendium.pf2e.actionspf2e.Item.pvQ5rY2zrtPI614F]</p>\n<hr />\n<p><strong>Эффект:</strong> Вы на 1 минуту окутываете себя силой из-за пределов царства живых. Пока эта пелена активна, у вас бледная внешность и вы получаете сопротивление яду, равное половине уровня реликвии и бонус состояния +1 к спасброскам против эффектов <a href=https://clck.ru/35HhCm><em>`смерти`</em></a>, <a href=https://clck.ru/35GSZa><em>`болезней`</em></a>, <a href=https://clck.ru/pvXWi><em>`яда`</em></a>, <a href=https://clck.ru/pvXmB><em>`сна`</em></a> и эффектов делающих вас @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]. Кроме того, КС ваших проверок восстановления 9 + величина при смерти, вместо 10 + величина при смерти.</p>"
+		},
+		"Soul Magic": {
+			"name": "Духовная магия",
+			"description": "<p><strong>Аспект:</strong> душа</p>\n<p><strong>Активация:</strong> <span class=\"pf2-icon\">1</span> вообразить</p>\n<p><strong>Частота:</strong> раз в день</p>\n<hr />\n<p><strong>Эффект:</strong> Вы насыщаете себя или готовое существо, которого касаетесь духовной энергией. Это имеет эффект <em>@UUID[Compendium.pf2e.spells-srd.Item.KtTGLbLG9nqMbUYL]</em>.</p>"
+		},
+		"Soul Puppet": {
+			"name": "Духовная марионетка",
+			"description": "<p><strong>Аспект:</strong> душа</p>\n<p><strong>Активация:</strong> <span class=\"pf2-icon\">3</span> команда, вообразить</p>\n<p><strong>Частота:</strong> раз в день</p>\n<hr />\n<p><strong>Эффект:</strong> Вы связываете свободные души, ненадолго оживляя нежить. Семя души сотворяет <em>@UUID[Compendium.pf2e.spells-srd.Item.9WGeBwIIbbUuWKq0]</em> рангом, равным половине уровня семя души, округленного до большего целого. Вы можете @UUID[Compendium.pf2e.actionspf2e.Item.3f5DMFu8fPiqHpRg] эту Активацию как если бы это было заклинание.</p>"
+		},
+		"Spirit Blink": {
+			"name": "Духовное мерцание",
+			"description": "<p><strong>Аспект:</strong> душа</p>\n<p><strong>Активация:</strong> <span class=\"pf2-icon\">2</span> команда, вообразить</p>\n<p><strong>Частота:</strong> раз в день</p>\n<hr />\n<p><strong>Эффект:</strong> Вы мерцаете между царством смертных и Эфирным Планом. Это дает вам эффекты <em>@UUID[Compendium.pf2e.spells-srd.Item.zR67Rt3UMHKC5evy]</em>, но сопротивление равно не 5, а уровню семени души.</p>"
+		},
+		"Sprout Ally": {
+			"name": "Проросший союзник",
+			"description": "<p><strong>Аспект:</strong> растение</p>\n<p><strong>Активация:</strong> <span class=\"pf2-icon\">2</span> команда, @UUID[Compendium.pf2e.actionspf2e.Item.pvQ5rY2zrtPI614F]</p>\n<p><strong>Частота:</strong> раз в день</p>\n<hr />\n<p><strong>Эффект:</strong> Ваша реликвия быстро выращивает и оживляет растение неподалеку в союзника сражающегося вместе с вами, сотворяя <em>@UUID[Compendium.pf2e.spells-srd.Item.jSRAyd57kd4WZ4yE]</em> с рангом, равным половине уровня предмета, округленного до большего целого. Вы можете @UUID[Compendium.pf2e.actionspf2e.Item.3f5DMFu8fPiqHpRg] эту Активацию как если бы это было заклинание.</p>"
+		},
+		"Steal Luck": {
+			"name": "Steal Luck",
+			"description": "<p><strong>Аспект:</strong> luck</p>\n<p><strong>Активация:</strong> <span class=\"action-glyph\">R</span></p>\n<p><strong>Частота:</strong> раз в день</p>\n<p><strong>Trigger </strong>You or a creature within 30 feet of you rolls two d20s for a fortune or misfortune effect and you like the higher roll</p>\n<hr />\n<p><strong>Эффект:</strong> You steal the higher of the two numbers the triggering target rolled; the target must use the other result. Until you make your next daily preparations, you can substitute that number for one d20 roll made for a saving throw or skill check you have to make against an effect created by an enemy, hazard, or the environment. Doing so is a fortune effect. If you fail to do so before your next daily preparations, you lose the stored number.</p>"
+		},
+		"Swap Luck": {
+			"name": "Swap Luck",
+			"description": "<p><strong>Аспект:</strong> luck</p>\n<p><strong>Активация:</strong> <span class=\"action-glyph\">R</span> вообразить</p>\n<p><strong>Частота:</strong> раз в час</p>\n<p><strong>Триггер:</strong> You roll a failure or critical failure on a saving throw against an effect with multiple targets</p>\n<hr />\n<p><strong>Эффект:</strong> You swap rolls with another target who's willing to swap with you. Each of you determines the new results with your new rolls.</p>"
+		},
+		"Temporal Pulse": {
+			"name": "Temporal Pulse",
+			"description": "<p><strong>Аспект:</strong> time</p>\n<p><strong>Активация:</strong> <span class=\"pf2-icon\">2</span> команда, вообразить</p>\n<p><strong>Частота:</strong> раз в день</p>\n<hr />\n<p><strong>Эффект:</strong> You make time shudder around you, stealing it from enemies and granting it to allies. Creatures of your choice within 30 feet must attempt a (@Check[type:will|dc:resolve(@actor.system.attributes.classOrSpellDC.value)]) save. For each creature you render slowed with this gift, you can render one ally within 30 feet, including you, @UUID[Compendium.pf2e.conditionitems.Item.nlCjDvLMf2EkV2dl]{Quickened} for 1 round.</p>\n<p><strong>Успех:</strong> The creature is unaffected.</p>\n<p><strong>Провал:</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1}.</p>\n<p><strong>Критический провал:</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 2}.</p>"
+		},
+		"Tidal Crash": {
+			"name": "Приливной удар",
+			"description": "<p><strong>Аспект:</strong> вода</p>\n<p><strong>Активация:</strong> <span class=\"pf2-icon\">2</span> команда, вообразить</p>\n<p><strong>Частота:</strong> раз в день</p>\n<hr />\n<p><strong>Эффект:</strong> Ваша реликвия извергает плотную сферу воды. Совершите бросок атаки заклинанием против цели в пределах 30 футов. При успехе, вы наносите 2d10 дробящего урона + 2 дробящего урона брызгами: @Damage[(2d10 + floor((@actor.level - 1) / 2)d10)[bludgeoning], (2 + floor((@actor.level - 1) / 2))[bludgeoning,splash]]. На 3-м уровне и каждые 2 уровня после этого, увеличьте начальный урон на 1d10, а урон брызгами на 1.</p>"
+		},
+		"Tide of Death": {
+			"name": "Прилив смерти",
+			"description": "<p><strong>Аспект:</strong> смерть</p>\n<p><strong>Предварительные условия:</strong> дар @UUID[Compendium.pf2e-relics.relic-gifts.Item.0BdLI4DQIP2C3cVT]</p>\n<hr />\n<p>Вы можете Активировать \"Взгляд смерти\" 3 действиями вместо 2-х. Если вы так делаете, его целями являются все живые существ в пределах @Template[type:emanation|distance:30], кроме вас. Если у вас есть негативное исцеление, то вы можете включить себя, чтобы исцелиться.</p>"
+		},
+		"Time Jump": {
+			"name": "Time Jump",
+			"description": "<p><strong>Аспект:</strong> time</p>\n<p>Activate <span class=\"pf2-icon\">1</span> команда</p>\n<p><strong>Частота:</strong> раз в день</p>\n<hr />\n<p><strong>Эффект:</strong> Your relic casts @UUID[Compendium.pf2e.spells-srd.Item.qJGW6BbIcU6sfA1d]{Time Jump} on you to your specifications.</p>"
+		},
+		"Time Reversal": {
+			"name": "Time Reversal",
+			"description": "<p><strong>Аспект:</strong> time</p>\n<p><strong>Активация:</strong> <span class=\"pf2-icon\">1</span> команда</p>\n<p><strong>Частота:</strong> раз в день</p>\n<hr />\n<p><strong>Эффект:</strong> The relic casts @UUID[Compendium.pf2e.spells-srd.Item.G56DJkxlUjFv0C4Z]{Time Beacon} on you.</p>"
+		},
+		"Track of the Beast (*BASE*)": {
+			"name": "След зверя (*Базовое*)",
+			"description": "<p><strong>Аспект:</strong> зверь</p>\n<p>Вас наполняет дух животного. Реликвия дает 1 из следующих преимуществ, выбираемое Мастером в момент получения дара.</p>\n<ul>\n<li>Бонус состояния +10 футов к вашей наземной Скорости.</li>\n<li>Скорость карабканья равная вашей наземной Скорости.</li>\n<li>Скорость плавания равная вашей наземной Скорости.</li>\n</ul>\n<p><em><strong>Примечание редактора:</strong> Не обращайте внимания на эту возможность, так как она служит оригинальной \"базовой\" возможностью \"След зверя\". Для разных Скоростей существуют отдельные способности, текст которых изменен для единообразия.</em></p>"
+		},
+		"Track of the Beast (Climb Speed)": {
+			"name": "След зверя (Скорость карабканья)",
+			"description": "<p><strong>Аспект:</strong> зверь</p>\n<hr />\n<p>Вас наполняет дух животного. Скорость карабканья равная вашей наземной Скорости.</p>"
+		},
+		"Track of the Beast (Land Speed)": {
+			"name": "След зверя (Наземная скорость)",
+			"description": "<p><strong>Аспект:</strong> зверь</p>\n<hr />\n<p>Вас наполняет дух животного. Бонус состояния +10 футов к вашей наземной Скорости.</p>"
+		},
+		"Track of the Beast (Swim Speed)": {
+			"name": "След зверя (Скорость плавания)",
+			"description": "<p><strong>Аспект:</strong> зверь</p>\n<hr />\n<p>Вас наполняет дух животного. Скорость плавания равная вашей наземной Скорости.</p>"
+		},
+		"Umbral Body": {
+			"name": "Теневое тело",
+			"description": "<p><strong>Аспект:</strong> тень</p>\n<p><strong>Активация:</strong> <span class=\"pf2-icon\">2</span> команда, @UUID[Compendium.pf2e.actionspf2e.Item.pvQ5rY2zrtPI614F]</p>\n<hr />\n<p><strong>Эффект:</strong> Теневая сущность наполняет ваше тело, и вы можете превращать частички себя в различные разрушительные тени. Это имеет эффект <em>@UUID[Compendium.pf2e.spells-srd.Item.IqJ9URobmJ9L9UBG]</em> 6-го ранга, только выбирая из дробящего, колющего или рубящего урона. Вы не можете снова использовать эту активацию [[/br 1d4 #Recharge this activation]]{1d4 раундов}.</p>"
+		},
+		"Underground Bounty": {
+			"name": "Подземные богатства",
+			"description": "<p><strong>Аспект:</strong> земля</p>\n<hr />\n<p>Ваша реликвия производит металлы и камни для усиления вашего оружия. Каждый день во время ваших ежедневных приготовлений, реликвия воплощает магические осколки серебра, холодного железа, золота или недрагоценного камня или металлического материала на ваш выбор (такого как бронза или гранит). Если ваша реликвия - оружие, то оно мгновенно поглощает осколки, получая магический блеск этого металла или камня до ваших следующих ежедневных приготовлений. Если ваша реликвия не оружие, то осколки не используются сразу, а вы можете коснуться ими каменного или металлического оружия с помощью действия @UUID[Compendium.pf2e.actionspf2e.Item.pvQ5rY2zrtPI614F], чтобы дать ему на 10 минут магический блеск этого металла. Пока оружие покрыто этим магическим блеском, оно взаимодействует со слабостями, сопротивлениями и подобным, как если бы оно было сделано из осколков этого камня или металла, а не своего собственного материала. Блеск и осколки очевидно магические по своей природе и если вы их не используете, то они исчезают во время ваших следующих ежедневных приготовлений. На 17-м уровне, добавьте к доступным вариантам Адамантин и Dawnsilver.</p>"
+		},
+		"Vitality Siphon": {
+			"name": "Переливание жизненной силы",
+			"description": "<p><strong>Аспект:</strong> жизнь</p>\n<p><strong>Активация:</strong> <span class=\"pf2-icon\">R</span> вообразить</p>\n<p><strong>Триггер:</strong> Союзник в пределах 60 футов восстанавливает больше ОЗ чем у него потеряно, от прицельного <a href=https://clck.ru/35GVoN><em>`жизненного`</em></a> <a href=https://clck.ru/pvY8V><em>`исцеляющего`</em></a> эффекта без продолжительности</p>\n<hr />\n<p><strong>Эффект:</strong> Ваша реликвия действует как ретранслятор жизненной силы. Вы или находящееся рядом готовое существо восстанавливаете количество ОЗ, превышающее максимальные ОЗ спровоцировавшего существа; например, если у спровоцировавшего существа не хватало 5 ОЗ и оно было целью <em>@UUID[Compendium.pf2e.spells-srd.Item.rfZpqmj0AIIdkVIs]</em> восстановившего 12 ОЗ, то вы или соседнее готовое существо восстановите 7 ОЗ.</p>"
+		},
+		"Whammy": {
+			"name": "Whammy",
+			"description": "<p><strong>Аспект:</strong> luck</p>\n<p><strong>Активация:</strong> <span class=\"action-glyph\">R</span> вообразить</p>\n<p><strong>Частота:</strong> раз в день</p>\n<p><strong>Триггер:</strong> An enemy within 30 feet rolls a success on an attack roll, saving throw, or skill check</p>\n<hr />\n<p><strong>Эффект:</strong>Your relic sends out a wave of bad luck, forcing the creature to reroll and take the worse result.</p>"
+		},
+		"Wind Barrier": {
+			"name": "Ветряная преграда",
+			"description": "<p><strong>Аспект:</strong> воздух</p>\n<p><strong>Активация:</strong> <span class=\"action-glyph\">1</span> команда</p>\n<hr />\n<p><strong>Эффект:</strong> До начала вашего следующего хода, невидимый воздушный барьер отклоняет дистанционные атаки, давая вам бонус обстоятельства +2 к КБ против дистанционных атак. На 13-м уровне, он увеличивается до бонуса обстоятельства +3 к КБ против дистанционных атак.</p>"
+		},
+		"Word of Faith": {
+			"name": "Слово веры",
+			"description": "<p><strong>Аспект:</strong> небесный</p>\n<p><strong>Активация:</strong> <span class=\"action-glyph\">2</span> команда, @UUID[Compendium.pf2e.actionspf2e.Item.pvQ5rY2zrtPI614F]</p>\n<p><strong>Частота:</strong> раз в час</p>\n<hr />\n<p><strong>Эффект:</strong> Помещая свои руки на себя или союзника, вы исцеляете их раны и укрепляете дух. Цель восстанавливает 1d8 ОЗ [[/r 1d8[healing]]] за уровень предмета: [[/r (max(1,floor(@actor.level)))d8[healing]]] и снижает свою величину @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Напуган} на 1.</p>"
+		},
+		"Work Harden": {
+			"name": "Закалка(*)",
+			"description": "<p><strong>Аспект:</strong> кузница</p>\n<p><strong>Частота:</strong> раз в день</p>\n<p><strong>Активация:</strong> <span class=\"action-glyph\">2</span> команда, @UUID[Compendium.pf2e.actionspf2e.Item.pvQ5rY2zrtPI614F]</p>\n<hr />\n<p><strong>Эффект:</strong> Вы ударяете реликвией по щиту или доспехам из металла, и из них вырывается пар, словно ее только что закалили. Целевой предмет закален в течение 10 минут, увеличивая свой бонус предмета к КБ на 1, если это доспех, или Твердость на 5, если это щит.</p>\n<p>@UUID[Compendium.pf2e-relics.relic-effects.Item.53FkfoGZ9za7cvaH]</p>\n<p>@UUID[Compendium.pf2e-relics.relic-effects.Item.gfriz81evOoKgeMM]</p>"
+		},
+		"Wyrm's Flight": {
+			"name": "Полет вирма",
+			"description": "<p><strong>Аспект:</strong> дракон</p>\n<p><strong>Частота:</strong> раз в день</p>\n<p><strong>Активация:</strong> <span class=\"pf2-icon\">2</span> команда, вообразить</p>\n<hr />\n<p><strong>Эффект:</strong> Призрачные драконьи крылья дают вам Скорость полета, равную вашей Скорости или 20 футов, в зависимости от того, что больше. Они длятся 10 минут или пока вы не @UUID[Compendium.pf2e.actionspf2e.Item.AjLSHZSWQ90exdLo]{Развеете} этот эффект.</p>\n<p>На 17-м уровне вы можете Активировать или \"Развеять\" умение так часто как хотите, и они имеют бесконечную продолжительность.</p>"
+		}
+	}
+}

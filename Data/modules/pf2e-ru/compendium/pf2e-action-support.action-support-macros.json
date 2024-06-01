@@ -1,0 +1,45 @@
+{
+	"label": "Макросы Action Support",
+	"entries": {
+		"Accidental Shot": {
+			"name": "Случайный выстрел",
+			"command": "game.actionsupport.accidentalShot(actor);"
+		},
+		"Double Slice": {
+			"name": "Двойной разрез",
+			"command": "game.actionsupport.doubleSlice(actor);"
+		},
+		"Flurry of Blows": {
+			"name": "Шквал ударов",
+			"command": "game.actionsupport.flurryOfBlows(actor);"
+		},
+		"Hunted Shot": {
+			"name": "Охотничий выстрел",
+			"command": "game.actionsupport.huntedShot(actor);"
+		},
+		"Inspire Heroics / Fortissimo Composition": {
+			"name": "Вдохновить на героизм / Фортиссимо композиция",
+			"command": "game.actionsupport.inspireHeroics(actor);"
+		},
+		"Knockdown": {
+			"name": "Нокдаун",
+			"command": "game.actionsupport.knockdown(actor);"
+		},
+		"Link Ranger and Animal Companion": {
+			"name": "Связь Рейнджера и Зверя-компаньона",
+			"command": "game.actionsupport.rangerLink(actor);"
+		},
+		"Paired Shots": {
+			"name": "Парные выстрелы",
+			"command": "game.actionsupport.pairedShots(actor);"
+		},
+		"Scare to Death": {
+			"name": "Напугать до смерти",
+			"command": "game.actionsupport.scareToDeath(actor);"
+		},
+		"Twin Takedown": {
+			"name": "Парный удар",
+			"command": "game.actionsupport.twinTakedown(actor);"
+		}
+	}
+}

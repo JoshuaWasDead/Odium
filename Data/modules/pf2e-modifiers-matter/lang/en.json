@@ -1,0 +1,47 @@
+{
+  "pf2e-modifiers-matter": {
+    "Settings": {
+      "always-show-highlights-to-everyone": {
+        "name": "Always show highlights to everyone",
+        "hint": "If enabled, highlights of NPC conditions such as \"Flat-footed -2\" always be shown to everyone, even if the \"Show roll breakdowns\" system setting is disabled. This is usually desired, but it does reveal some extra information to the players."
+      },
+      "always-show-defense-conditions": {
+        "name": "Always show defense conditions",
+        "hint": "If set to true, defense highlights such as \"Flat-footed -2\" will be shown constantly, even when they don't matter."
+      },
+      "ignore-crit-fail-over-fail-on-attacks": {
+        "name": "Ignore Crit Fail over Fail on Attacks",
+        "hint": "If set to true, the module will not highlight changes that changed an attack from a fail to a crit fail or vice versa. This is helpful because usually there's no difference between the two cases on attacks;  however, there are some exceptions to this rule, such as Confident Finisher."
+      },
+      "additional-ignored-labels": {
+        "name": "Additional ignored labels",
+        "hint": "Insert text separated by semicolons (;).  Each of these modifier labels will be ignored.  If you feel an existing modifier in the rules should be ignored by default, please suggest it on Github/Discord."
+      }
+    },
+    "Message": {
+      "CasterHas": "Caster has:",
+      "ActorHas": "Actor has:",
+      "TargetHas": "Target has:"
+    },
+    "IgnoredModifiers": {
+      "DeviseAStratagem": "Devise a Stratagem",
+      "HuntersEdgeFlurry1": "Hunter's Edge: Flurry",
+      "HuntersEdgeFlurry2": "Flurry",
+      "HuntersEdgeFlurry3": "Effect: Hunter's Edge, Flurry",
+      "SpellAttackHouserule": "Spell attack houserule",
+      "SpellPotency1": "Spell Potency",
+      "SpellPotency2":  "Spell potency",
+      "SkillPotency1": "Skill Potency",
+      "SkillPotency2":  "Skill potency",
+      "BattleForm1": "Nature Incarnate",
+      "BattleForm2": "Form of the Sandpoint Devil",
+      "BattleForm3": "Element Embodied",
+      "BattleForm4": "Avatar",
+      "DrakeheartMutagen": "Drakeheart Mutagen"
+    },
+    "IgnoredModifiers3p": {
+      "pf2e-flatten_pwol": "Proficiency Without Level",
+      "pf2e-flatten_pwol_half": "1/2 Level Proficiency"
+    }
+  }
+}

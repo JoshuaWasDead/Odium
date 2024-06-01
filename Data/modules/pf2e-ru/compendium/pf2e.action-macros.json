@@ -1,0 +1,289 @@
+{
+	"label": "Макросы действий",
+	"entries": {
+		"Athletics: Arcane Slam": {
+			"name": "Атлетика: Арканное придавливание",
+			"command": "game.pf2e.actions.arcaneSlam({ event: event });"
+		},
+		"Balance: Acrobatics": {
+			"name": "Акробатика: Балансировать",
+			"command": "game.pf2e.actions.balance({ event: event });"
+		},
+		"Tamper: Crafting": {
+			"name": "Ремесло: Вмешательство",
+			"command": "game.pf2e.actions.tamper({ event: event });"
+		},
+		"Pick a Lock: Thievery": {
+			"name": "Воровство: Вскрытие замка",
+			"command": "game.pf2e.actions.pickALock({ event: event });"
+		},
+		"Escape": {
+			"name": "Вырваться",
+			"command": "game.pf2e.actions.escape({ event: event });"
+		},
+		"Escape: Acrobatics": {
+			"name": "Акробатика: Вырваться",
+			"command": "game.pf2e.actions.escape({ event: event, skill: 'acrobatics' });"
+		},
+		"Escape: Athletics": {
+			"name": "Атлетика: Вырваться",
+			"command": "game.pf2e.actions.escape({ event: event, skill: 'athletics' });"
+		},
+		"Escape: Unarmed Attack": {
+			"name": "Безоружная атака: Вырваться",
+			"command": "game.pf2e.actions.escape({ event: event, skill: 'unarmed' });"
+		},
+		"Track: Survival": {
+			"name": "Выживание: Выслеживание",
+			"command": "game.pf2e.actions.track({ event: event });"
+		},
+		"Perform - Play wind instrument: Performance": {
+			"name": "Выступление: Выступить - Игра на духовом инструменте",
+			"command": "game.pf2e.actions.perform({ event: event, variant: 'winds' });"
+		},
+		"Perform - Play keyboard instrument: Performance": {
+			"name": "Выступление: Выступить - Игра на клавишном инструменте",
+			"command": "game.pf2e.actions.perform({ event: event, variant: 'keyboards' });"
+		},
+		"Perform - Play string instrument: Performance": {
+			"name": "Выступление: Выступить - Игра на струнном инструменте",
+			"command": "game.pf2e.actions.perform({ event: event, variant: 'strings' });"
+		},
+		"Perform - Play percussion instrument: Performance": {
+			"name": "Выступление: Выступить - Игра на ударном инструменте",
+			"command": "game.pf2e.actions.perform({ event: event, variant: 'percussion' });"
+		},
+		"Perform - Comedy: Performance": {
+			"name": "Выступление: Выступить - Комедия",
+			"command": "game.pf2e.actions.perform({ event: event, variant: 'comedy' });"
+		},
+		"Perform - Oratory: Performance": {
+			"name": "Выступление: Выступить - Ораторство",
+			"command": "game.pf2e.actions.perform({ event: event, variant: 'oratory' });"
+		},
+		"Perform - Singing: Performance": {
+			"name": "Выступить - Пение: Выступление",
+			"command": "game.pf2e.actions.perform({ event: event, variant: 'singing' });"
+		},
+		"Perform - Acting: Performance": {
+			"name": "Выступление: Выступить - Пьеса",
+			"command": "game.pf2e.actions.perform({ event: event, variant: 'acting' });"
+		},
+		"Perform - Dance: Performance": {
+			"name": "Выступление: Выступить - Танец",
+			"command": "game.pf2e.actions.perform({ event: event, variant: 'dance' });"
+		},
+		"Demoralize: Intimidation": {
+			"name": "Запугивание: Деморализовать",
+			"command": "game.pf2e.actions.demoralize({ event: event });"
+		},
+		"Grapple: Athletics": {
+			"name": "Атлетика: Захватить",
+			"command": "game.pf2e.actions.grapple({ event: event });"
+		},
+		"Exploration: Avoid Notice": {
+			"name": "Исследование: Избегать обнаружения",
+			"command": "game.pf2e.actions.avoidNotice({ event: event });"
+		},
+		"Climb: Athletics": {
+			"name": "Атлетика: Карабкаться",
+			"command": "game.pf2e.actions.climb({ event: event });"
+		},
+		"Command an Animal: Nature": {
+			"name": "Природа: Команда животному",
+			"command": "game.pf2e.actions.commandAnAnimal({ event: event });"
+		},
+		"Sneak: Stealth": {
+			"name": "Скрытность: Красться",
+			"command": "game.pf2e.actions.sneak({ event: event });"
+		},
+		"Whirling Throw: Athletics": {
+			"name": "Атлетика: Круговой бросок",
+			"command": "game.pf2e.actions.whirlingThrow({ event: event });"
+		},
+		"Lie: Deception": {
+			"name": "Обман: Лгать",
+			"command": "game.pf2e.actions.lie({ event: event });"
+		},
+		"Treat Disease: Medicine": {
+			"name": "Медицина: Лечение болезни",
+			"command": "game.pf2e.actions.treatDisease({ event: event });"
+		},
+		"Treat Poison: Medicine": {
+			"name": "Медицина: Лечение от яда",
+			"command": "game.pf2e.actions.treatPoison({ event: event });"
+		},
+		"Palm an Object: Thievery": {
+			"name": "Воровство: Ловкость рук",
+			"command": "game.pf2e.actions.palmAnObject({ event: event });"
+		},
+		"Maneuver in Flight: Acrobatics": {
+			"name": "Акробатика: Маневрирование в полете",
+			"command": "game.pf2e.actions.maneuverInFlight({ event: event });"
+		},
+		"Encouraging Words": {
+			"name": "Ободряющие слова",
+			"command": "const tokens = canvas.tokens.controlled;\nif (tokens.length != 1) {\n    ui.notifications.error(`You must select one pc token`);\n} else {\n    game.pf2e.actions.encouragingWords({ actors: [token.actor ?? actor].filter((actor) => actor !== null) });\n}"
+		},
+		"Sense Direction: Survival": {
+			"name": "Выживание: Определить направление",
+			"command": "game.pf2e.actions.senseDirection({ event: event });"
+		},
+		"Trip: Athletics": {
+			"name": "Атлетика: Опрокидывание",
+			"command": "game.pf2e.actions.trip({ event: event });"
+		},
+		"Bon Mot: Diplomacy": {
+			"name": "Дипломатия: Острота",
+			"command": "game.pf2e.actions.bonMot({ event: event });"
+		},
+		"Create a Diversion - Gesture: Deception": {
+			"name": "Обман: Отвлечь внимание - Жест",
+			"command": "game.pf2e.actions.createADiversion({ event: event, variant: 'gesture' });"
+		},
+		"Create a Diversion - Distracting Words: Deception": {
+			"name": "Обман: Отвлечь внимание - Отвлекающие слова",
+			"command": "game.pf2e.actions.createADiversion({ event: event, variant: 'distracting-words' });"
+		},
+		"Create a Diversion - Trick: Deception": {
+			"name": "Обман: Отвлечь внимание - Трюк",
+			"command": "game.pf2e.actions.createADiversion({ event: event, variant: 'trick' });"
+		},
+		"Disable Device: Thievery": {
+			"name": "Воровство: Отключение устройства",
+			"command": "game.pf2e.actions.disableDevice({ event: event });"
+		},
+		"Force Open: Athletics": {
+			"name": "Атлетика: Открыть силой",
+			"command": "game.pf2e.actions.forceOpen({ event: event });"
+		},
+		"Administer First Aid - Stop Bleeding: Medicine": {
+			"name": "Медицина: Первая помощь - Остановить кровотечение",
+			"command": "game.pf2e.actions.administerFirstAid({ event: event, variant: 'stop-bleeding' });"
+		},
+		"Administer First Aid - Stabilize: Medicine": {
+			"name": "Медицина: Первая помощь - Стабилизировать",
+			"command": "game.pf2e.actions.administerFirstAid({ event: event, variant: 'stabilize' });"
+		},
+		"Impersonate: Deception": {
+			"name": "Обман: Перевоплотиться",
+			"command": "game.pf2e.actions.impersonate({ event: event });"
+		},
+		"Swim: Athletics": {
+			"name": "Атлетика: Плавание",
+			"command": "game.pf2e.actions.swim({ event: event });"
+		},
+		"Raise a Shield": {
+			"name": "Поднять щит",
+			"command": "game.pf2e.actions.raiseAShield({ actors: [token?.actor ?? actor ?? game.user.character].filter((actor) => actor) })"
+		},
+		"Seek: Perception": {
+			"name": "Восприятие: Поиск",
+			"command": "game.pf2e.actions.seek({ event: event });"
+		},
+		"Sense Motive: Perception": {
+			"name": "Восприятие: Понять намерение",
+			"command": "game.pf2e.actions.senseMotive({ event: event });"
+		},
+		"Coerce: Intimidation": {
+			"name": "Запугивание: Принуждение",
+			"command": "game.pf2e.actions.coerce({ event: event });"
+		},
+		"Subsist: Survival": {
+			"name": "Выживание: Проживание",
+			"command": "game.pf2e.actions.subsist({ event: event, skill: 'survival' });"
+		},
+		"Subsist: Society": {
+			"name": "Общество: Проживание",
+			"command": "game.pf2e.actions.subsist({ event: event, skill: 'society' });"
+		},
+		"Make an Impression: Diplomacy": {
+			"name": "Дипломатия: Произвести впечатление",
+			"command": "game.pf2e.actions.makeAnImpression({ event: event });"
+		},
+		"Tumble Through: Acrobatics": {
+			"name": "Акробатика: Проскочить",
+			"command": "game.pf2e.actions.tumbleThrough({ event: event });"
+		},
+		"Request: Diplomacy": {
+			"name": "Дипломатия: Просьба",
+			"command": "game.pf2e.actions.request({ event: event });"
+		},
+		"Squeeze: Acrobatics": {
+			"name": "Акробатика: Протиснуться",
+			"command": "game.pf2e.actions.squeeze({ event: event });"
+		},
+		"High Jump: Athletics": {
+			"name": "Атлетика: Прыжок в высоту",
+			"command": "game.pf2e.actions.highJump({ event: event });"
+		},
+		"Long Jump: Athletics": {
+			"name": "Атлетика: Прыжок в длину",
+			"command": "game.pf2e.actions.longJump({ event: event });"
+		},
+		"Disarm: Athletics": {
+			"name": "Атлетика: Разоружение",
+			"command": "game.pf2e.actions.disarm({ event: event });"
+		},
+		"Decipher Writing: Arcana": {
+			"name": "Аркана: Расшифровка текста",
+			"command": "game.pf2e.actions.decipherWriting({ event: event, skill: 'arcana' });"
+		},
+		"Decipher Writing: Society": {
+			"name": "Общество: Расшифровка текста",
+			"command": "game.pf2e.actions.decipherWriting({ event: event, skill: 'society' });"
+		},
+		"Decipher Writing: Occultism": {
+			"name": "Оккультизм: Расшифровка текста",
+			"command": "game.pf2e.actions.decipherWriting({ event: event, skill: 'occultism' });"
+		},
+		"Decipher Writing: Religion": {
+			"name": "Религия: Расшифровка текста",
+			"command": "game.pf2e.actions.decipherWriting({ event: event, skill: 'religion' });"
+		},
+		"Repair: Crafting": {
+			"name": "Ремесло: Ремонт",
+			"command": "game.pf2e.actions.repair({ event: event });"
+		},
+		"Conceal an Object: Stealth": {
+			"name": "Скрытность: Скрыть объект",
+			"command": "game.pf2e.actions.concealAnObject({ event: event });"
+		},
+		"Gather Information: Diplomacy": {
+			"name": "Дипломатия: Собрать информацию",
+			"command": "game.pf2e.actions.gatherInformation({ event: event });"
+		},
+		"Create Forgery: Society": {
+			"name": "Общество: Создать подделку",
+			"command": "game.pf2e.actions.createForgery({ event: event });"
+		},
+		"Craft: Crafting": {
+			"name": "Ремесло: Создать",
+			"command": "game.pf2e.actions.craft({ event: event });"
+		},
+		"Hide: Stealth": {
+			"name": "Скрытность: Спрятаться",
+			"command": "game.pf2e.actions.hide({ event: event });"
+		},
+		"Shove: Athletics": {
+			"name": "Атлетика: Толкнуть",
+			"command": "game.pf2e.actions.shove({ event: event });"
+		},
+		"Steal: Thievery": {
+			"name": "Воровство: Украсть",
+			"command": "game.pf2e.actions.steal({ event: event });"
+		},
+		"Steel Your Resolve": {
+			"name": "Укрепить решимость",
+			"command": "const tokens = canvas.tokens.controlled;\nif (tokens.length != 1) {\n    ui.notifications.error(`You must select one pc token`);\n} else {\n    game.pf2e.actions.steelYourResolve({ actors: [token.actor ?? actor].filter((actor) => actor !== null) });\n}"
+		},
+		"Feint: Deception": {
+			"name": "Обман: Финт",
+			"command": "game.pf2e.actions.feint({ event: event });"
+		},
+		"Reposition: Athletics": {
+			"name": "Атлетика: Перестановка",
+			"command": "game.pf2e.actions.reposition({ event: event });"
+		}
+	}
+}

@@ -1,0 +1,48 @@
+{
+    "betterroofs.settings.fogVisibility.name": "Видимость плиток в тумане",
+    "betterroofs.settings.fogVisibility.hint": "Насколько видны (или насколько заметны яркие) плитки, показанные в тумане",
+
+    "betterroofs.settings.forceFallback.name": "Режим производительности",
+    "betterroofs.settings.forceFallback.hint": "Принудительный режим скрытия всех Скрывающих крыш, включите, если ваша производительность страдает",
+
+    "betterroofs.settings.roomPreview.name": "Продвинутый режим",
+    "betterroofs.settings.roomPreview.hint": "При открытии настроек плитки покажите что обнаружение здания вычислило как здание. Также предоставляет элементы управления для ручной настройки полигона для комнаты. Полезно для отладки.",
+
+    "betterroofs.settings.wbIntegration.name": "Интеграция блока погоды",
+    "betterroofs.settings.wbIntegration.hint": "Если установлен модуль Weather Blocker, динамически скрывает погоду внутри зданий. Требуется обновление.",
+
+    "betterroofs.settings.occlusionRadius.name": "Радиус перекрытия",
+    "betterroofs.settings.occlusionRadius.hint": "Множитель радиуса для режима радиального перекрытия",
+
+    "betterroofs.tokenConfig.occlusionRadius.name": "Радиус перекрытия",
+    "betterroofs.tokenConfig.occlusionRadius.placeholder": "По умолчанию",
+
+    "betterroofs.tileConfig.showInFog.name": "Показывать Туман Войны",
+    "betterroofs.tileConfig.showInFog.hint": "Когда у Токена есть видение этой плитки, плитка будет видна сквозь Туман Войны. Не работает с Освещением.",
+    "betterroofs.tileConfig.brMode.name": "Лучший режим крыши",
+    "betterroofs.tileConfig.brMode.option0": "Нет (Стандарт Foundry)",
+    "betterroofs.tileConfig.brMode.option1": "Показать (Показать плитку сквозь туман)",
+    "betterroofs.tileConfig.brMode.option2": "Скрыть (Скрывает плитку вне видения)",
+    "betterroofs.tileConfig.brMode.option3": "Маска (Отключает плитку вне видения)",
+    "betterroofs.tileConfig.manualPoly.name": "Выбранные стены",
+    "betterroofs.tileConfig.definePoly.name": "Определить полигон",
+    "betterroofs.tileConfig.clearPoly.name": "Очистить полигон",
+    "betterroofs.tileConfig.definePoly.notify": "Выберите стены, которые вы хотите использовать для полигона, затем снова нажмите кнопку Определить полигон для подтверждения",
+    "betterroofs.tileConfig.occlusionLinkId": "Идентификатор ссылки перекрытия",
+    "betterroofs.tileConfig.occlusionLinkIdHint": "Can be any text. When a tile with 'Occlusion Link Source?' is occluded (has a token under it) all tiles with the same 'Occlusion Link Id' will be occluded as well. Example usage: linking roofs together.",
+    "betterroofs.tileConfig.occlusionLinkSource": "Источник ссылки перекрытия?",
+
+    "betterroofs.tileConfig.isbroken": "Возможно не удалось выполнить автоматические определение Полигона для этой плитки. Пожалуйста, включите продвинутый режим в настройках модуля и вручную определите полигон.",
+
+    "betterroofs.wallConfig.externalWall.name":"Это внешняя стена?",
+
+    "betterroofs.scenecontrols.walledges": "Стена по краям сцены",
+
+    "betterroofs.yesnodialog.yes": "Подтвердить",
+    "betterroofs.yesnodialog.no": "Отменить",
+    "betterroofs.yesnodialog.title": "Стена по краям сцены",
+    "betterroofs.yesnodialog.desc": "Вы уверены, что хотите отгородить края сцены стеной?",
+
+    "betterroofs.bulk.notification": "ПРЕДУПРЕЖДЕНИЕ: Эта операция изменит все настройки для всех выбранных верхних плиток. Если ни одна плитка не выбрана, вместо него будут обработаны все верхние плитки. Верхние плитки с режимом лучшей крыши, установленным на Нет, не будут затронуты",
+    "betterroofs.bulk.title": "Массовое изменение Лучших крыш в сцене"
+}

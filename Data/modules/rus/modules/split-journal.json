@@ -1,0 +1,17 @@
+{
+    "FURNACE.SPLIT.title": "Разделение журнала",
+    "FURNACE.SPLIT.splitSubmit": "Разделить журналы",
+    "FURNACE.SPLIT.contextMenu": "Разделить журналы",
+    "FURNACE.SPLIT.description": "Разделить запись Журнала '{name}' на несколько записей.",
+    "FURNACE.SPLIT.splitOn": "Разделить на",
+    "FURNACE.SPLIT.newEntries": "Новые записи журнала ({numEntries}) :",
+    "FURNACE.SPLIT.separateHeader": "Включать заголовок страницы в каждую новую запись Журнала",
+    "FURNACE.SPLIT.includeImage": "Включить изображение Журнала в каждую новую запись",
+    "FURNACE.SPLIT.newFolder": "Разделить на новую Папку",
+    "FURNACE.SPLIT.errorNoHeadings": "<strong>Эта запись Журнала не имеет заголовка.</strong><p>Создайте заголовок и повторите попытку</p>",
+    "FURNACE.SPLIT.errorJournalEmpty": "<strong>Эта запись Журнала пуста.</strong><p>Разделять нечего</p>",
+    "FURNACE.SPLIT.errorOk": "Ок",
+
+    "FURNACE.ENTITIES.sortAscending": "Сортировка по алфавиту (По возрастанию)",
+    "FURNACE.ENTITIES.sortDescending": "Сортировка по алфавиту (По убыванию)"
+}

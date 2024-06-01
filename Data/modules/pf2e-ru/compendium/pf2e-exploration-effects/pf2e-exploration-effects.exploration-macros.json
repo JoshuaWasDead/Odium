@@ -1,0 +1,32 @@
+{
+	"label": "PF2E Макросы исследования",
+	"entries": {
+		"Checkmaker.js": {
+			"name": "Checkmaker.js"
+		},
+		"Exploration Activities": {
+			"name": "Активности исследования"
+		},
+		"Show Token Art": {
+			"name": "Показать изображение токена"
+		},
+		"Toggle Bullseye Lantern": {
+			"name": "Переключатель фонаря с линзой"
+		},
+		"Toggle Hooded Lantern": {
+			"name": "Переключатель закрывающегося фонаря"
+		},
+		"Toggle Light": {
+			"name": "Переключатель света"
+		},
+		"Toggle Light (Upcast)": {
+			"name": "Переключатель света (Upcast)"
+		},
+		"Toggle Sunrod": {
+			"name": "Переключатель солнечного жезла"
+		},
+		"Toggle Torch": {
+			"name": "Переключатель факела"
+		}
+	}
+}

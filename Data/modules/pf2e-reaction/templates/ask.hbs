@@ -1,0 +1,11 @@
+<div>
+{{text}}
+</div>
+<div class="message-buttons">
+    {{#if (eq true target)}}
+        <button class="reaction-check">{{localize "pf2e-reaction.yes-target"}}</button>
+    {{else}}
+        <button class="reaction-check">{{localize "pf2e-reaction.yes"}}</button>
+    {{/if}}
+    <button class="reaction-cancel">{{localize "pf2e-reaction.no"}}</button>
+</div>
