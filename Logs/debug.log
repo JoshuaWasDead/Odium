@@ -7007,3 +7007,582 @@
 {"level":"info","message":"FoundryVTT | Extracted base64 asset: \"C:\\Users\\JoshuaWasDead\\AppData\\Local\\FoundryVTT\\Data\\worlds\\odium\\assets\\scenes\\4WnyyrZf01NE0GQR-thumb.webp\"","timestamp":"2024-06-01 18:29:16"}
 {"level":"info","message":"Shutting down Foundry Virtual Tabletop server","timestamp":"2024-06-01 18:29:27"}
 {"level":"info","message":"Shut-down success. Goodbye!","timestamp":"2024-06-01 18:29:27"}
+{"level":"info","message":"Running on Node.js - Version 18.14.0","timestamp":"2024-06-01 18:54:51"}
+{"level":"info","message":"Foundry Virtual Tabletop - Version 11 Build 315","timestamp":"2024-06-01 18:54:51"}
+{"level":"info","message":"User Data Directory - \"C:/Users/JoshuaWasDead/AppData/Local/FoundryVTT\"","timestamp":"2024-06-01 18:54:51"}
+{"level":"info","message":"Application Options:\n{\n  \"compressStatic\": true,\n  \"fullscreen\": false,\n  \"hostname\": null,\n  \"language\": \"en.core\",\n  \"localHostname\": null,\n  \"port\": 30000,\n  \"protocol\": null,\n  \"proxyPort\": null,\n  \"proxySSL\": false,\n  \"routePrefix\": null,\n  \"updateChannel\": \"stable\",\n  \"upnp\": true,\n  \"upnpLeaseDuration\": null,\n  \"awsConfig\": null,\n  \"compressSocket\": true,\n  \"cssTheme\": \"foundry\",\n  \"deleteNEDB\": false,\n  \"hotReload\": false,\n  \"passwordSalt\": null,\n  \"sslCert\": null,\n  \"sslKey\": null,\n  \"world\": \"odium\",\n  \"serviceConfig\": null,\n  \"telemetry\": false,\n  \"adminPassword\": \"••••••••••••••••\",\n  \"noBackups\": false\n}","timestamp":"2024-06-01 18:54:51"}
+{"level":"error","message":"Software license verification failed. Please confirm your Foundry Virtual Tabletop software license","timestamp":"2024-06-01 18:54:51"}
+{"level":"info","message":"Requesting UPnP port forwarding to destination port 30000","timestamp":"2024-06-01 18:54:51"}
+{"level":"info","message":"Running Electron application with version 24.8.5 using Chromium 112.0.5615.204","timestamp":"2024-06-01 18:54:51"}
+{"level":"info","message":"Server started and listening on port 30000","timestamp":"2024-06-01 18:54:51"}
+{"level":"info","message":"Created client session fa487a8fe791871bb25c4788","timestamp":"2024-06-01 18:54:54"}
+{"level":"warn","message":"The module \"rolladvantage-token-stamp-2-foundry\" is using the old flat core compatibility fields which are deprecated in favor of the new \"compatibility\" object\nDeprecated since Version 10\nBackwards-compatible support will be removed in Version 13","timestamp":"2024-06-01 18:54:55"}
+{"level":"info","message":"License signature successfully created. Thank you and please enjoy Foundry Virtual Tabletop.","timestamp":"2024-06-01 18:55:01"}
+{"level":"info","message":"Software license verification succeeded","timestamp":"2024-06-01 18:55:01"}
+{"level":"info","message":"Administrator authentication successful for session fa487a8fe791871bb25c4788","timestamp":"2024-06-01 18:55:04"}
+{"level":"info","message":"Core software stable update 12.325 is available!","timestamp":"2024-06-01 18:55:05"}
+{"level":"warn","message":"The module \"rolladvantage-token-stamp-2-foundry\" is using the old flat core compatibility fields which are deprecated in favor of the new \"compatibility\" object\nDeprecated since Version 10\nBackwards-compatible support will be removed in Version 13","timestamp":"2024-06-01 18:55:08"}
+{"level":"info","message":"FoundryVTT | Connected to database \"actors\"","timestamp":"2024-06-01 18:55:08"}
+{"level":"info","message":"FoundryVTT | Connected to database \"cards\"","timestamp":"2024-06-01 18:55:08"}
+{"level":"info","message":"FoundryVTT | Connected to database \"messages\"","timestamp":"2024-06-01 18:55:08"}
+{"level":"info","message":"FoundryVTT | Connected to database \"combats\"","timestamp":"2024-06-01 18:55:08"}
+{"level":"info","message":"FoundryVTT | Connected to database \"drawings\"","timestamp":"2024-06-01 18:55:08"}
+{"level":"info","message":"FoundryVTT | Connected to database \"fog\"","timestamp":"2024-06-01 18:55:08"}
+{"level":"info","message":"FoundryVTT | Connected to database \"folders\"","timestamp":"2024-06-01 18:55:08"}
+{"level":"info","message":"FoundryVTT | Connected to database \"items\"","timestamp":"2024-06-01 18:55:08"}
+{"level":"info","message":"FoundryVTT | Connected to database \"journal\"","timestamp":"2024-06-01 18:55:08"}
+{"level":"info","message":"FoundryVTT | Connected to database \"macros\"","timestamp":"2024-06-01 18:55:08"}
+{"level":"info","message":"FoundryVTT | Connected to database \"playlists\"","timestamp":"2024-06-01 18:55:08"}
+{"level":"info","message":"FoundryVTT | Connected to database \"tables\"","timestamp":"2024-06-01 18:55:08"}
+{"level":"info","message":"FoundryVTT | Connected to database \"scenes\"","timestamp":"2024-06-01 18:55:08"}
+{"level":"info","message":"FoundryVTT | Connected to database \"settings\"","timestamp":"2024-06-01 18:55:08"}
+{"level":"info","message":"FoundryVTT | Connected to database \"users\"","timestamp":"2024-06-01 18:55:09"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e.abomination-vaults-bestiary\"","timestamp":"2024-06-01 18:55:09"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e.age-of-ashes-bestiary\"","timestamp":"2024-06-01 18:55:09"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e.agents-of-edgewatch-bestiary\"","timestamp":"2024-06-01 18:55:09"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e.book-of-the-dead-bestiary\"","timestamp":"2024-06-01 18:55:09"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e.blood-lords-bestiary\"","timestamp":"2024-06-01 18:55:09"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e.blog-bestiary\"","timestamp":"2024-06-01 18:55:09"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e.extinction-curse-bestiary\"","timestamp":"2024-06-01 18:55:09"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e.fall-of-plaguestone-bestiary\"","timestamp":"2024-06-01 18:55:09"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e.fists-of-the-ruby-phoenix-bestiary\"","timestamp":"2024-06-01 18:55:09"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e.hazards\"","timestamp":"2024-06-01 18:55:09"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e.howl-of-the-wild-bestiary\"","timestamp":"2024-06-01 18:55:09"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e.gatewalkers-bestiary\"","timestamp":"2024-06-01 18:55:09"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e.lost-omens-impossible-lands-bestiary\"","timestamp":"2024-06-01 18:55:09"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e.lost-omens-mwangi-expanse-bestiary\"","timestamp":"2024-06-01 18:55:09"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e.lost-omens-highhelm-bestiary\"","timestamp":"2024-06-01 18:55:09"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e.lost-omens-monsters-of-myth-bestiary\"","timestamp":"2024-06-01 18:55:09"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e.lost-omens-tian-xia-world-guide\"","timestamp":"2024-06-01 18:55:09"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e.lost-omens-travel-guide-bestiary\"","timestamp":"2024-06-01 18:55:09"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e.malevolence-bestiary\"","timestamp":"2024-06-01 18:55:09"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e.menace-under-otari-bestiary\"","timestamp":"2024-06-01 18:55:09"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e.npc-gallery\"","timestamp":"2024-06-01 18:55:09"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e.one-shot-bestiary\"","timestamp":"2024-06-01 18:55:09"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e.outlaws-of-alkenstar-bestiary\"","timestamp":"2024-06-01 18:55:09"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e.kingmaker-bestiary\"","timestamp":"2024-06-01 18:55:10"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e.pathfinder-bestiary\"","timestamp":"2024-06-01 18:55:10"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e.pathfinder-bestiary-2\"","timestamp":"2024-06-01 18:55:10"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e.pathfinder-bestiary-3\"","timestamp":"2024-06-01 18:55:10"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e.pathfinder-monster-core\"","timestamp":"2024-06-01 18:55:10"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e.pathfinder-dark-archive\"","timestamp":"2024-06-01 18:55:10"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e.pfs-introductions-bestiary\"","timestamp":"2024-06-01 18:55:10"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e.pfs-season-1-bestiary\"","timestamp":"2024-06-01 18:55:10"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e.pfs-season-2-bestiary\"","timestamp":"2024-06-01 18:55:10"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e.pfs-season-3-bestiary\"","timestamp":"2024-06-01 18:55:10"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e.pfs-season-4-bestiary\"","timestamp":"2024-06-01 18:55:10"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e.pfs-season-5-bestiary\"","timestamp":"2024-06-01 18:55:10"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e.quest-for-the-frozen-flame-bestiary\"","timestamp":"2024-06-01 18:55:10"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e.rusthenge-bestiary\"","timestamp":"2024-06-01 18:55:10"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e.season-of-ghosts-bestiary\"","timestamp":"2024-06-01 18:55:10"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e.seven-dooms-for-sandpoint-bestiary\"","timestamp":"2024-06-01 18:55:11"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e.shadows-at-sundown-bestiary\"","timestamp":"2024-06-01 18:55:11"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e.sky-kings-tomb-bestiary\"","timestamp":"2024-06-01 18:55:11"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e.strength-of-thousands-bestiary\"","timestamp":"2024-06-01 18:55:11"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e.the-enmity-cycle-bestiary\"","timestamp":"2024-06-01 18:55:11"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e.the-slithering-bestiary\"","timestamp":"2024-06-01 18:55:11"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e.troubles-in-otari-bestiary\"","timestamp":"2024-06-01 18:55:11"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e.night-of-the-gray-death-bestiary\"","timestamp":"2024-06-01 18:55:11"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e.crown-of-the-kobold-king-bestiary\"","timestamp":"2024-06-01 18:55:11"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e.stolen-fate-bestiary\"","timestamp":"2024-06-01 18:55:11"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e.rage-of-elements-bestiary\"","timestamp":"2024-06-01 18:55:11"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e.wardens-of-wildwood-bestiary\"","timestamp":"2024-06-01 18:55:11"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e.vehicles\"","timestamp":"2024-06-01 18:55:11"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e.actionspf2e\"","timestamp":"2024-06-01 18:55:11"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e.ancestries\"","timestamp":"2024-06-01 18:55:11"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e.ancestryfeatures\"","timestamp":"2024-06-01 18:55:11"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e.backgrounds\"","timestamp":"2024-06-01 18:55:11"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e.classes\"","timestamp":"2024-06-01 18:55:11"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e.classfeatures\"","timestamp":"2024-06-01 18:55:11"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e.familiar-abilities\"","timestamp":"2024-06-01 18:55:11"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e.feats-srd\"","timestamp":"2024-06-01 18:55:11"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e.heritages\"","timestamp":"2024-06-01 18:55:11"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e.spells-srd\"","timestamp":"2024-06-01 18:55:11"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e.bestiary-effects\"","timestamp":"2024-06-01 18:55:11"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e.boons-and-curses\"","timestamp":"2024-06-01 18:55:11"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e.conditionitems\"","timestamp":"2024-06-01 18:55:11"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e.campaign-effects\"","timestamp":"2024-06-01 18:55:11"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e.equipment-effects\"","timestamp":"2024-06-01 18:55:11"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e.other-effects\"","timestamp":"2024-06-01 18:55:11"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e.feat-effects\"","timestamp":"2024-06-01 18:55:11"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e.pathfinder-society-boons\"","timestamp":"2024-06-01 18:55:11"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e.spell-effects\"","timestamp":"2024-06-01 18:55:11"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e.equipment-srd\"","timestamp":"2024-06-01 18:55:12"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e.deities\"","timestamp":"2024-06-01 18:55:12"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e.iconics\"","timestamp":"2024-06-01 18:55:12"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e.paizo-pregens\"","timestamp":"2024-06-01 18:55:12"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e.rollable-tables\"","timestamp":"2024-06-01 18:55:12"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e.criticaldeck\"","timestamp":"2024-06-01 18:55:12"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e.journals\"","timestamp":"2024-06-01 18:55:12"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e.gmg-srd\"","timestamp":"2024-06-01 18:55:12"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e.action-macros\"","timestamp":"2024-06-01 18:55:12"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e.pf2e-macros\"","timestamp":"2024-06-01 18:55:12"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e.bestiary-ability-glossary-srd\"","timestamp":"2024-06-01 18:55:12"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e.bestiary-family-ability-glossary\"","timestamp":"2024-06-01 18:55:12"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e.adventure-specific-actions\"","timestamp":"2024-06-01 18:55:12"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e.kingmaker-features\"","timestamp":"2024-06-01 18:55:12"}
+{"level":"info","message":"FoundryVTT | Connected to database \"fxmaster.fxmaster\"","timestamp":"2024-06-01 18:55:12"}
+{"level":"info","message":"FoundryVTT | Connected to database \"JB2A_DnD5e.jb2a-sequencer\"","timestamp":"2024-06-01 18:55:12"}
+{"level":"info","message":"FoundryVTT | Connected to database \"monks-active-tiles.active-tile-macros\"","timestamp":"2024-06-01 18:55:12"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e-jb2a-macros.Macros\"","timestamp":"2024-06-01 18:55:12"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e-jb2a-macros.Actors\"","timestamp":"2024-06-01 18:55:12"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e-jb2a-macros.Actions\"","timestamp":"2024-06-01 18:55:12"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e-reaction.reaction-effects\"","timestamp":"2024-06-01 18:55:12"}
+{"level":"info","message":"FoundryVTT | Connected to database \"troubles-in-otari-remade-maps.troubles-in-otari-maps-remake-by-narchy\"","timestamp":"2024-06-01 18:55:12"}
+{"level":"info","message":"FoundryVTT | Created 0 Folder documents with ids: []","timestamp":"2024-06-01 18:55:12"}
+{"ip":"::1","level":"info","message":"User authentication successful for user Gamemaster","session":"fa487a8fe791871bb25c4788","timestamp":"2024-06-01 18:55:17"}
+{"level":"info","message":"Pathfinder Second Edition update 5.16.1 is now available!","timestamp":"2024-06-01 18:55:21"}
+{"level":"info","message":"Vended World data to User [7ZwJpDh03OzTpIOP] in 1629ms","timestamp":"2024-06-01 18:55:21"}
+{"level":"info","message":"Created client session a3d72d0be5167b72f156a038","timestamp":"2024-06-01 18:57:45"}
+{"ip":"::ffff:172.23.96.1","level":"info","message":"User authentication successful for user Party","session":"a3d72d0be5167b72f156a038","timestamp":"2024-06-01 18:57:49"}
+{"level":"warn","message":"request to https://github.com/foundryvtt/pf2e/releases/latest/download/system.json failed, reason: getaddrinfo ENOTFOUND github.com","timestamp":"2024-06-01 18:57:53"}
+{"level":"info","message":"No system update for Pathfinder Second Edition is currently available.","timestamp":"2024-06-01 18:57:53"}
+{"level":"info","message":"Vended World data to User [DSZZLvMPrgaY4Cuf] in 1089ms","timestamp":"2024-06-01 18:57:53"}
+{"level":"info","message":"Created client session 2813d44bdc8e4436da06910c","timestamp":"2024-06-01 18:59:37"}
+{"level":"info","message":"Created client session 252f3ca23d8d4e70b6390c19","timestamp":"2024-06-01 19:00:19"}
+{"level":"info","message":"FoundryVTT | Created Scene with id [5TZdq6Zq7wr7FDfE]","timestamp":"2024-06-01 19:05:58"}
+{"level":"info","message":"Otari Without Text.jpg saved to User Data storage","timestamp":"2024-06-01 19:06:31"}
+{"level":"info","message":"FoundryVTT | Extracted base64 asset: \"C:\\Users\\JoshuaWasDead\\AppData\\Local\\FoundryVTT\\Data\\worlds\\odium\\assets\\scenes\\5TZdq6Zq7wr7FDfE-thumb.webp\"","timestamp":"2024-06-01 19:06:42"}
+{"level":"info","message":"Activating scene Otari [5TZdq6Zq7wr7FDfE]","timestamp":"2024-06-01 19:06:45"}
+{"level":"info","message":"NY8GErrKNFFZHJEpPTpmKa.jpg saved to User Data storage","timestamp":"2024-06-01 19:07:20"}
+{"level":"info","message":"FoundryVTT | Extracted base64 asset: \"C:\\Users\\JoshuaWasDead\\AppData\\Local\\FoundryVTT\\Data\\worlds\\odium\\assets\\scenes\\5TZdq6Zq7wr7FDfE-thumb.webp\"","timestamp":"2024-06-01 19:08:17"}
+{"level":"info","message":"FoundryVTT | Extracted base64 asset: \"C:\\Users\\JoshuaWasDead\\AppData\\Local\\FoundryVTT\\Data\\worlds\\odium\\assets\\scenes\\5TZdq6Zq7wr7FDfE-thumb.webp\"","timestamp":"2024-06-01 19:08:32"}
+{"level":"info","message":"FoundryVTT | Created Token with id [jFWoxxrXemrVzx5n] in parent Scene [5TZdq6Zq7wr7FDfE]","timestamp":"2024-06-01 19:08:43"}
+{"level":"info","message":"photo_2024-06-01_19-10-41.jpg saved to User Data storage","timestamp":"2024-06-01 19:11:24"}
+{"level":"info","message":"photo_2024-06-01_19-10-41.jpg-w6zukt.png saved to worlds/odium/rolladvantage","timestamp":"2024-06-01 19:12:28"}
+{"level":"info","message":"FoundryVTT | Created FogExploration with id [54QzwVgLWTJZBun7]","timestamp":"2024-06-01 19:13:41"}
+{"level":"info","message":"FoundryVTT | Created FogExploration with id [UXQ24RjbnK3cDIU0]","timestamp":"2024-06-01 19:13:42"}
+{"level":"info","message":"Toggling game pause status to false","timestamp":"2024-06-01 19:14:09"}
+{"level":"info","message":"FoundryVTT | Created Item with id [9v54ARuezo4gV79e] in parent Actor [oj5QTj7E7kB4Kjke]","timestamp":"2024-06-01 19:17:39"}
+{"level":"info","message":"Pathfinder Second Edition update 5.16.1 is now available!","timestamp":"2024-06-01 19:19:39"}
+{"level":"info","message":"Vended World data to User [DSZZLvMPrgaY4Cuf] in 3910ms","timestamp":"2024-06-01 19:19:39"}
+{"level":"info","message":"Activating scene Bridge [Ic6gnRqhq4JCDMEK]","timestamp":"2024-06-01 19:33:00"}
+{"level":"info","message":"yUB6QNCOqIsOUvaU.json saved to modules/token-action-hud-core/storage/odium/actor","timestamp":"2024-06-01 19:45:12"}
+{"level":"info","message":"7ZwJpDh03OzTpIOP.json saved to modules/token-action-hud-core/storage/odium/user","timestamp":"2024-06-01 19:45:12"}
+{"level":"info","message":"Activating scene Lumber Camp [RH4d6K3GwX7jI8pW]","timestamp":"2024-06-01 19:48:08"}
+{"level":"info","message":"FoundryVTT | Created Combat with id [SbBQ6B7UldDtTYHK]","timestamp":"2024-06-01 19:55:29"}
+{"level":"info","message":"FoundryVTT | Created 10 Combatant documents in parent Combat [SbBQ6B7UldDtTYHK]","timestamp":"2024-06-01 19:55:29"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [esoXAUsUdFE0X7GH]","timestamp":"2024-06-01 19:55:51"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [n7r9bltEDMSy8R6r]","timestamp":"2024-06-01 19:55:53"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [EgKB2yUJ6QlIC89u]","timestamp":"2024-06-01 19:55:59"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [YfJpMOGw1uh7eTqc]","timestamp":"2024-06-01 19:56:00"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [oVSLLkK74DOrHLtc]","timestamp":"2024-06-01 19:56:01"}
+{"level":"info","message":"FoundryVTT | Created Item with id [8pPyNHydnINvM7cD] in parent Actor [Gae5t7NgFb3eHpLq]","timestamp":"2024-06-01 19:58:20"}
+{"level":"info","message":"FoundryVTT | Deleted Item with id [izcs02cWD0z4FcQF] in parent Actor [Gae5t7NgFb3eHpLq]","timestamp":"2024-06-01 19:58:30"}
+{"level":"info","message":"FoundryVTT | Created 2 Item documents with ids: [IBqKD0iTKFiTUPXc,iTPeUvGWH2AV9oNc] in parent ActorDelta [P5vfiMksgK6B0wsq]","timestamp":"2024-06-01 20:02:50"}
+{"level":"info","message":"FoundryVTT | Created 2 Item documents with ids: [PDnGW64VVF3LZV34,In4ugcOA55adWMd1] in parent ActorDelta [hGgP1jJt1IS8y5Y9]","timestamp":"2024-06-01 20:02:50"}
+{"level":"info","message":"FoundryVTT | Created 2 Item documents with ids: [fzhwwCl44D8zVXGy,MzCV95voKdUnWWPD] in parent ActorDelta [g3faG6Y4snWrZ1cu]","timestamp":"2024-06-01 20:02:50"}
+{"level":"info","message":"FoundryVTT | Created 2 Item documents with ids: [anfxtgJjmKugYFdO,9PuyUAPFjxPR17rR] in parent ActorDelta [MPK5tn4IzOAFX45Q]","timestamp":"2024-06-01 20:02:51"}
+{"level":"info","message":"FoundryVTT | Created 2 Item documents with ids: [LM04JDNpLctZBUcy,Pt8xpFpVq19oP6gJ] in parent Actor [KbXnE4DBpweSlfwh]","timestamp":"2024-06-01 20:04:16"}
+{"level":"info","message":"FoundryVTT | Created 2 Item documents with ids: [2cfdE3SJ1qWfJWgN,DbBBsQDoyAGB3Ktj] in parent Actor [IuyW1M6KJVl5NLVd]","timestamp":"2024-06-01 20:04:16"}
+{"level":"info","message":"FoundryVTT | Created 2 Item documents with ids: [NUln2Sl3UkxPRNbM,qqqJ0W1CND6XQ9Zq] in parent ActorDelta [1777K0HfKcQumK4K]","timestamp":"2024-06-01 20:04:16"}
+{"level":"info","message":"FoundryVTT | Deleted 2 Item documents with ids: [PDnGW64VVF3LZV34,In4ugcOA55adWMd1] in parent ActorDelta [hGgP1jJt1IS8y5Y9]","timestamp":"2024-06-01 20:04:16"}
+{"level":"info","message":"FoundryVTT | Created Item with id [Vk0F1ZwmNmKobEZt] in parent Actor [IuyW1M6KJVl5NLVd]","timestamp":"2024-06-01 20:05:56"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [70r4RPxZxA5WIbQ1]","timestamp":"2024-06-01 20:07:54"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [Fya2F37T43tmQyLm]","timestamp":"2024-06-01 20:08:06"}
+{"level":"info","message":"FoundryVTT | Created Item with id [wcy6cQQnyH6Gl9hj] in parent Actor [KbXnE4DBpweSlfwh]","timestamp":"2024-06-01 20:08:41"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [ajJIO1102DKuaruD]","timestamp":"2024-06-01 20:08:42"}
+{"level":"info","message":"FoundryVTT | Created 2 Item documents with ids: [RQAR6uik1YsWESi8,QrnxDhLNicmRpchB] in parent Actor [dr5S04djUFeCPqoA]","timestamp":"2024-06-01 20:09:46"}
+{"level":"info","message":"FoundryVTT | Created 2 Item documents with ids: [yGt3ULRmfSpdQwPE,eW6eHfqmAbecjmv6] in parent ActorDelta [hGgP1jJt1IS8y5Y9]","timestamp":"2024-06-01 20:09:46"}
+{"level":"info","message":"FoundryVTT | Created Item with id [2R51CzJlYcsHR9ih] in parent ActorDelta [g3faG6Y4snWrZ1cu]","timestamp":"2024-06-01 20:14:06"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [AtDC5Cvx3UAU8yVG]","timestamp":"2024-06-01 20:14:21"}
+{"level":"info","message":"FoundryVTT | Created Item with id [Z6YrbOTJjQEWIuER] in parent ActorDelta [g3faG6Y4snWrZ1cu]","timestamp":"2024-06-01 20:14:35"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [8L3uaPu131JbUuxk]","timestamp":"2024-06-01 20:14:47"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [52ooY2dsA5NBAQDz]","timestamp":"2024-06-01 20:15:19"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [LIcmKGUW3qHYgRWr]","timestamp":"2024-06-01 20:15:27"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [CVmw2Q35aTs4wfjp]","timestamp":"2024-06-01 20:16:01"}
+{"level":"info","message":"FoundryVTT | Created 2 Item documents with ids: [H5EMzLSwnQXCUxKP,Kiz0nNyZ8h0fEhvE] in parent Actor [Gae5t7NgFb3eHpLq]","timestamp":"2024-06-01 20:20:17"}
+{"level":"info","message":"FoundryVTT | Created 2 Item documents with ids: [saxn98cZZl9Wi7RT,n5Hv8SLNXJKCweYG] in parent Actor [oj5QTj7E7kB4Kjke]","timestamp":"2024-06-01 20:20:17"}
+{"level":"info","message":"FoundryVTT | Deleted 2 Item documents with ids: [fzhwwCl44D8zVXGy,MzCV95voKdUnWWPD] in parent ActorDelta [g3faG6Y4snWrZ1cu]","timestamp":"2024-06-01 20:20:18"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [MojYQ2eW2uCkkQuN]","timestamp":"2024-06-01 20:24:53"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [669Wd7nhPM7jIDTr]","timestamp":"2024-06-01 20:25:15"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [9xaYFPFX7jdVJqWn]","timestamp":"2024-06-01 20:26:17"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [gKqng0sAluuZZrea]","timestamp":"2024-06-01 20:26:58"}
+{"level":"info","message":"FoundryVTT | Deleted ChatMessage with id [gKqng0sAluuZZrea]","timestamp":"2024-06-01 20:27:03"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [Ul1o8roWGtv6pL88]","timestamp":"2024-06-01 20:27:09"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [aIeF0uoHDBnDcBQN]","timestamp":"2024-06-01 20:32:12"}
+{"level":"info","message":"FoundryVTT | Deleted Token with id [7VOn1m4Hw4Jp8pyh] in parent Scene [RH4d6K3GwX7jI8pW]","timestamp":"2024-06-01 20:33:41"}
+{"level":"info","message":"FoundryVTT | Deleted Combatant with id [tjoHtVToQTKWVmWa] in parent Combat [SbBQ6B7UldDtTYHK]","timestamp":"2024-06-01 20:33:41"}
+{"level":"info","message":"FoundryVTT | Created 2 Item documents with ids: [ZnsbUdhlwfsLmuWM,74bGRepU5sqJ2LhG] in parent ActorDelta [g3faG6Y4snWrZ1cu]","timestamp":"2024-06-01 20:33:41"}
+{"level":"info","message":"FoundryVTT | Deleted 2 Item documents with ids: [RQAR6uik1YsWESi8,QrnxDhLNicmRpchB] in parent Actor [dr5S04djUFeCPqoA]","timestamp":"2024-06-01 20:33:42"}
+{"level":"info","message":"FoundryVTT | Deleted 2 Item documents with ids: [LM04JDNpLctZBUcy,Pt8xpFpVq19oP6gJ] in parent Actor [KbXnE4DBpweSlfwh]","timestamp":"2024-06-01 20:33:42"}
+{"level":"info","message":"FoundryVTT | Deleted 2 Item documents with ids: [2cfdE3SJ1qWfJWgN,DbBBsQDoyAGB3Ktj] in parent Actor [IuyW1M6KJVl5NLVd]","timestamp":"2024-06-01 20:33:42"}
+{"level":"info","message":"FoundryVTT | Deleted 2 Item documents with ids: [NUln2Sl3UkxPRNbM,qqqJ0W1CND6XQ9Zq] in parent ActorDelta [1777K0HfKcQumK4K]","timestamp":"2024-06-01 20:33:42"}
+{"level":"info","message":"FoundryVTT | Created 2 Item documents with ids: [7LJEVBP51J87r5aN,pugOx7cbIDdsyYIz] in parent Actor [dr5S04djUFeCPqoA]","timestamp":"2024-06-01 20:36:58"}
+{"level":"info","message":"FoundryVTT | Created 2 Item documents with ids: [NE8HR64h1gDamN0S,F9zLjW8IehUBL3s6] in parent Actor [KbXnE4DBpweSlfwh]","timestamp":"2024-06-01 20:36:59"}
+{"level":"info","message":"FoundryVTT | Created 2 Item documents with ids: [IJuLeyGnJliXjmmd,BjtUUmfEnSPvIsij] in parent Actor [IuyW1M6KJVl5NLVd]","timestamp":"2024-06-01 20:36:59"}
+{"level":"info","message":"FoundryVTT | Created 2 Item documents with ids: [ilbm2qhJK5vjJ2F5,fzxEUN1RnLaNVRk9] in parent ActorDelta [1777K0HfKcQumK4K]","timestamp":"2024-06-01 20:37:00"}
+{"level":"info","message":"FoundryVTT | Deleted 2 Item documents with ids: [ZnsbUdhlwfsLmuWM,74bGRepU5sqJ2LhG] in parent ActorDelta [g3faG6Y4snWrZ1cu]","timestamp":"2024-06-01 20:40:47"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [l92Z759vT0XFuW0Z]","timestamp":"2024-06-01 20:41:42"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [nMiFV095xSRpdGee]","timestamp":"2024-06-01 20:41:57"}
+{"level":"info","message":"FoundryVTT | Deleted Token with id [ZYsnzmRUHhm9abdo] in parent Scene [RH4d6K3GwX7jI8pW]","timestamp":"2024-06-01 20:49:08"}
+{"level":"info","message":"FoundryVTT | Deleted Combatant with id [dFfhXJzoXJqf91OT] in parent Combat [SbBQ6B7UldDtTYHK]","timestamp":"2024-06-01 20:49:08"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [NglTSgsKalx779hN]","timestamp":"2024-06-01 20:50:33"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [j2cz80vc4zFdVB4c]","timestamp":"2024-06-01 20:50:56"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [7Mq3m4DnlKtzCvhb]","timestamp":"2024-06-01 20:53:00"}
+{"level":"info","message":"FoundryVTT | Deleted Token with id [Y6P4KBeLXsPE4uFG] in parent Scene [RH4d6K3GwX7jI8pW]","timestamp":"2024-06-01 21:01:05"}
+{"level":"info","message":"FoundryVTT | Deleted Combatant with id [cAR7SacHKTLbrq0Z] in parent Combat [SbBQ6B7UldDtTYHK]","timestamp":"2024-06-01 21:01:05"}
+{"level":"info","message":"FoundryVTT | Deleted 2 Item documents with ids: [7LJEVBP51J87r5aN,pugOx7cbIDdsyYIz] in parent Actor [dr5S04djUFeCPqoA]","timestamp":"2024-06-01 21:01:05"}
+{"level":"info","message":"FoundryVTT | Deleted 2 Item documents with ids: [H5EMzLSwnQXCUxKP,Kiz0nNyZ8h0fEhvE] in parent Actor [Gae5t7NgFb3eHpLq]","timestamp":"2024-06-01 21:01:05"}
+{"level":"info","message":"FoundryVTT | Deleted 2 Item documents with ids: [NE8HR64h1gDamN0S,F9zLjW8IehUBL3s6] in parent Actor [KbXnE4DBpweSlfwh]","timestamp":"2024-06-01 21:01:05"}
+{"level":"info","message":"FoundryVTT | Deleted 2 Item documents with ids: [ilbm2qhJK5vjJ2F5,fzxEUN1RnLaNVRk9] in parent ActorDelta [1777K0HfKcQumK4K]","timestamp":"2024-06-01 21:01:05"}
+{"level":"info","message":"FoundryVTT | Deleted 2 Item documents with ids: [saxn98cZZl9Wi7RT,n5Hv8SLNXJKCweYG] in parent Actor [oj5QTj7E7kB4Kjke]","timestamp":"2024-06-01 21:01:05"}
+{"level":"info","message":"FoundryVTT | Deleted 2 Item documents with ids: [IJuLeyGnJliXjmmd,BjtUUmfEnSPvIsij] in parent Actor [IuyW1M6KJVl5NLVd]","timestamp":"2024-06-01 21:01:05"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [oS5SUzpBcxTckD0m]","timestamp":"2024-06-01 21:02:55"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [mKJbcRHyOrhdA1Cl]","timestamp":"2024-06-01 21:03:19"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [xhV5jNcVlwnxOIWF]","timestamp":"2024-06-01 21:10:39"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [UiZxSK8mov1Mz150]","timestamp":"2024-06-01 21:10:59"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [RiQjLeI6bvBzzCvH]","timestamp":"2024-06-01 21:11:08"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [2EvSzb5SfYFkVycu]","timestamp":"2024-06-01 21:15:44"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [5TDbR2d9Cb8TS1I3]","timestamp":"2024-06-01 21:19:36"}
+{"level":"info","message":"Toggling game pause status to true","timestamp":"2024-06-01 21:20:16"}
+{"level":"info","message":"Toggling game pause status to false","timestamp":"2024-06-01 21:20:21"}
+{"level":"info","message":"FoundryVTT | Created MeasuredTemplate with id [EnqlDvfk1f6U95Km] in parent Scene [RH4d6K3GwX7jI8pW]","timestamp":"2024-06-01 21:21:50"}
+{"level":"info","message":"FoundryVTT | Deleted MeasuredTemplate with id [EnqlDvfk1f6U95Km] in parent Scene [RH4d6K3GwX7jI8pW]","timestamp":"2024-06-01 21:22:18"}
+{"level":"info","message":"FoundryVTT | Created MeasuredTemplate with id [vvXGIWJ09P7xkPyD] in parent Scene [RH4d6K3GwX7jI8pW]","timestamp":"2024-06-01 21:22:29"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [AXv0jz5rUUBQW6Sg]","timestamp":"2024-06-01 21:23:03"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [VGi4MMgTJWMYvYPa]","timestamp":"2024-06-01 21:23:09"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [tPzIB44j3hdFXoQv]","timestamp":"2024-06-01 21:23:10"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [gS665bh6yOOqKYcn]","timestamp":"2024-06-01 21:23:11"}
+{"level":"info","message":"FoundryVTT | Deleted MeasuredTemplate with id [vvXGIWJ09P7xkPyD] in parent Scene [RH4d6K3GwX7jI8pW]","timestamp":"2024-06-01 21:25:41"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [HD4oJddMxWGLaW42]","timestamp":"2024-06-01 21:42:51"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [rccE19AnGwvVBpr3]","timestamp":"2024-06-01 21:47:30"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [ffrrJug6zcar4mpD]","timestamp":"2024-06-01 21:48:57"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [yWt7bqQU6bVXVAhW]","timestamp":"2024-06-01 21:49:07"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [j6jj0EiJO7HteZk2]","timestamp":"2024-06-01 21:50:38"}
+{"level":"info","message":"FoundryVTT | Created Item with id [mCHtc0IKJtsNjvDN] in parent ActorDelta [g3faG6Y4snWrZ1cu]","timestamp":"2024-06-01 21:58:47"}
+{"level":"info","message":"FoundryVTT | Deleted Item with id [wcy6cQQnyH6Gl9hj] in parent Actor [KbXnE4DBpweSlfwh]","timestamp":"2024-06-01 22:03:16"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [nKu7GcBoekXqrGgA]","timestamp":"2024-06-01 22:05:51"}
+{"level":"info","message":"FoundryVTT | Deleted ChatMessage with id [nKu7GcBoekXqrGgA]","timestamp":"2024-06-01 22:07:23"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [oShIuQTRJyPxY0PN]","timestamp":"2024-06-01 22:07:44"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [ovSP1bdjE4OfYbhd]","timestamp":"2024-06-01 22:08:01"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [N1kt8H4oxJNt5npg]","timestamp":"2024-06-01 22:08:21"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [vA7pPH02JfBfj7L0]","timestamp":"2024-06-01 22:08:46"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [c0sSxOqr3chYWmxH]","timestamp":"2024-06-01 22:09:24"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [ym3flDLllYBza3yl]","timestamp":"2024-06-01 22:13:03"}
+{"level":"info","message":"FoundryVTT | Created MeasuredTemplate with id [yej5TQvrLsuLoWKo] in parent Scene [RH4d6K3GwX7jI8pW]","timestamp":"2024-06-01 22:13:24"}
+{"level":"info","message":"FoundryVTT | Deleted MeasuredTemplate with id [yej5TQvrLsuLoWKo] in parent Scene [RH4d6K3GwX7jI8pW]","timestamp":"2024-06-01 22:13:48"}
+{"level":"info","message":"FoundryVTT | Created MeasuredTemplate with id [gPUCo09o2dQDMICQ] in parent Scene [RH4d6K3GwX7jI8pW]","timestamp":"2024-06-01 22:13:57"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [LlZvKd7uFVDMeQ1I]","timestamp":"2024-06-01 22:14:12"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [6OJX6hYJo31WOO8K]","timestamp":"2024-06-01 22:14:59"}
+{"level":"info","message":"FoundryVTT | Deleted MeasuredTemplate with id [gPUCo09o2dQDMICQ] in parent Scene [RH4d6K3GwX7jI8pW]","timestamp":"2024-06-01 22:18:41"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [T14cQyoLRIZiBrYR]","timestamp":"2024-06-01 22:20:07"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [SrQcx8L5mr9H6tBt]","timestamp":"2024-06-01 22:20:24"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [y6Nkron0ECX0MJgD]","timestamp":"2024-06-01 22:20:57"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [4cMCIrkp0V9lpXB3]","timestamp":"2024-06-01 22:21:17"}
+{"level":"info","message":"FoundryVTT | Deleted Token with id [JlsLvKgtPtamOu9a] in parent Scene [RH4d6K3GwX7jI8pW]","timestamp":"2024-06-01 22:22:27"}
+{"level":"info","message":"FoundryVTT | Deleted Combatant with id [lD3AJOxGOKAHwtGQ] in parent Combat [SbBQ6B7UldDtTYHK]","timestamp":"2024-06-01 22:22:27"}
+{"level":"info","message":"FoundryVTT | Created Token with id [JlsLvKgtPtamOu9a] in parent Scene [RH4d6K3GwX7jI8pW]","timestamp":"2024-06-01 22:22:28"}
+{"level":"info","message":"FoundryVTT | Deleted Token with id [JlsLvKgtPtamOu9a] in parent Scene [RH4d6K3GwX7jI8pW]","timestamp":"2024-06-01 22:23:58"}
+{"level":"info","message":"FoundryVTT | Deleted Token with id [Ln5OYgUynr0sZgqx] in parent Scene [RH4d6K3GwX7jI8pW]","timestamp":"2024-06-01 22:29:30"}
+{"level":"info","message":"FoundryVTT | Deleted Combatant with id [WEcDJy2kTkso8Hna] in parent Combat [SbBQ6B7UldDtTYHK]","timestamp":"2024-06-01 22:29:30"}
+{"level":"info","message":"Activating scene Bridge [Ic6gnRqhq4JCDMEK]","timestamp":"2024-06-01 22:50:22"}
+{"level":"info","message":"FoundryVTT | Deleted Token with id [CkB3u2Au1SDUyiFr] in parent Scene [Ic6gnRqhq4JCDMEK]","timestamp":"2024-06-01 22:50:28"}
+{"level":"info","message":"FoundryVTT | Created Token with id [be6Uxg9YzBDh9TcT] in parent Scene [Ic6gnRqhq4JCDMEK]","timestamp":"2024-06-01 22:55:51"}
+{"level":"info","message":"Activating scene Otari [5TZdq6Zq7wr7FDfE]","timestamp":"2024-06-01 22:58:12"}
+{"level":"info","message":"FoundryVTT | Created Actor with id [3hsiyr4NMIBtVug9]","timestamp":"2024-06-01 23:07:27"}
+{"level":"info","message":"FoundryVTT | Created Actor with id [NCAeLHV3yb9LZHy9]","timestamp":"2024-06-01 23:07:41"}
+{"level":"info","message":"c51a8179bb841b048748cc760d7f037e.jpg saved to systems/pf2e/icons/iconics","timestamp":"2024-06-01 23:15:40"}
+{"level":"info","message":"c51a8179bb841b048748cc760d7f037e.jpg-wfqgsm.png saved to worlds/odium/rolladvantage","timestamp":"2024-06-01 23:17:07"}
+{"level":"info","message":"FoundryVTT | Created Token with id [gWucSKZeDwIWVoAw] in parent Scene [5TZdq6Zq7wr7FDfE]","timestamp":"2024-06-01 23:18:15"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [fVn6Qi3lijokfIUP]","timestamp":"2024-06-01 23:18:47"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [rFrLQbyuizOfCsCf]","timestamp":"2024-06-01 23:18:47"}
+{"level":"info","message":"FoundryVTT | Deleted Token with id [gWucSKZeDwIWVoAw] in parent Scene [5TZdq6Zq7wr7FDfE]","timestamp":"2024-06-01 23:21:02"}
+{"level":"info","message":"FoundryVTT | Created Tile with id [26reyV75zCea8ziC] in parent Scene [5TZdq6Zq7wr7FDfE]","timestamp":"2024-06-01 23:21:17"}
+{"level":"info","message":"FoundryVTT | Deleted ChatMessage with id [rFrLQbyuizOfCsCf]","timestamp":"2024-06-01 23:21:44"}
+{"level":"info","message":"FoundryVTT | Deleted ChatMessage with id [fVn6Qi3lijokfIUP]","timestamp":"2024-06-01 23:21:45"}
+{"level":"info","message":"FoundryVTT | Deleted 51 ChatMessage documents","timestamp":"2024-06-01 23:21:48"}
+{"level":"info","message":"FoundryVTT | Created Token with id [wGwErEZ1Ix36Nt1b] in parent Scene [Ic6gnRqhq4JCDMEK]","timestamp":"2024-06-01 23:22:03"}
+{"level":"info","message":"FoundryVTT | Deleted Token with id [wGwErEZ1Ix36Nt1b] in parent Scene [Ic6gnRqhq4JCDMEK]","timestamp":"2024-06-01 23:22:21"}
+{"level":"info","message":"FoundryVTT | Created Token with id [QXpSMvUDjDimlftV] in parent Scene [Ic6gnRqhq4JCDMEK]","timestamp":"2024-06-01 23:22:49"}
+{"level":"info","message":"Activating scene Bridge [Ic6gnRqhq4JCDMEK]","timestamp":"2024-06-01 23:25:23"}
+{"level":"info","message":"Pathfinder Second Edition update 5.16.1 is now available!","timestamp":"2024-06-01 23:25:24"}
+{"level":"info","message":"Vended World data to User [DSZZLvMPrgaY4Cuf] in 3677ms","timestamp":"2024-06-01 23:25:24"}
+{"level":"info","message":"Activating scene Otari [5TZdq6Zq7wr7FDfE]","timestamp":"2024-06-01 23:26:01"}
+{"level":"info","message":"Activating scene Bridge [Ic6gnRqhq4JCDMEK]","timestamp":"2024-06-01 23:26:06"}
+{"level":"info","message":"FoundryVTT | Created Token with id [Cwr7RcNVvHcPPkkq] in parent Scene [Ic6gnRqhq4JCDMEK]","timestamp":"2024-06-01 23:28:12"}
+{"level":"info","message":"Reset 2 FogExploration documents for Scene Ic6gnRqhq4JCDMEK","timestamp":"2024-06-01 23:35:40"}
+{"level":"info","message":"FoundryVTT | Created AmbientLight with id [u1R9amjWXwrlMGS0] in parent Scene [Ic6gnRqhq4JCDMEK]","timestamp":"2024-06-01 23:35:44"}
+{"level":"info","message":"FoundryVTT | Deleted AmbientLight with id [u1R9amjWXwrlMGS0] in parent Scene [Ic6gnRqhq4JCDMEK]","timestamp":"2024-06-01 23:35:48"}
+{"level":"info","message":"FoundryVTT | Created AmbientLight with id [FzYRjT760IoLm539] in parent Scene [Ic6gnRqhq4JCDMEK]","timestamp":"2024-06-01 23:35:52"}
+{"level":"info","message":"FoundryVTT | Deleted AmbientLight with id [FzYRjT760IoLm539] in parent Scene [Ic6gnRqhq4JCDMEK]","timestamp":"2024-06-01 23:35:56"}
+{"level":"info","message":"FoundryVTT | Created FogExploration with id [tKu8dFfvAoLcWbDj]","timestamp":"2024-06-01 23:36:33"}
+{"level":"info","message":"FoundryVTT | Created FogExploration with id [HkbrXdgesixa3xkH]","timestamp":"2024-06-01 23:36:34"}
+{"level":"info","message":"FoundryVTT | Created Combat with id [2La4Su9Acq2DHY3i]","timestamp":"2024-06-01 23:40:47"}
+{"level":"info","message":"FoundryVTT | Created 11 Combatant documents in parent Combat [2La4Su9Acq2DHY3i]","timestamp":"2024-06-01 23:40:48"}
+{"level":"info","message":"FoundryVTT | Deleted Combat with id [2La4Su9Acq2DHY3i]","timestamp":"2024-06-01 23:40:54"}
+{"level":"info","message":"FoundryVTT | Created Combat with id [UazFZmIXMYLQ4mew]","timestamp":"2024-06-01 23:41:28"}
+{"level":"info","message":"FoundryVTT | Created 13 Combatant documents in parent Combat [UazFZmIXMYLQ4mew]","timestamp":"2024-06-01 23:41:28"}
+{"level":"info","message":"FoundryVTT | Deleted Combat with id [UazFZmIXMYLQ4mew]","timestamp":"2024-06-01 23:41:43"}
+{"level":"info","message":"FoundryVTT | Created Combat with id [fFaX3nIlPpS6aGxg]","timestamp":"2024-06-01 23:44:10"}
+{"level":"info","message":"FoundryVTT | Created 10 Combatant documents in parent Combat [fFaX3nIlPpS6aGxg]","timestamp":"2024-06-01 23:44:11"}
+{"level":"info","message":"FoundryVTT | Deleted Combat with id [fFaX3nIlPpS6aGxg]","timestamp":"2024-06-01 23:44:16"}
+{"level":"info","message":"FoundryVTT | Created Combat with id [oKpDNlgzwUf8IP7n]","timestamp":"2024-06-01 23:46:12"}
+{"level":"info","message":"FoundryVTT | Created 8 Combatant documents in parent Combat [oKpDNlgzwUf8IP7n]","timestamp":"2024-06-01 23:46:13"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [wwhp9GI6HNzjjYHj]","timestamp":"2024-06-01 23:46:19"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [u53NWAMXrLbtKd6T]","timestamp":"2024-06-01 23:46:24"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [GevVDuxvQ04BIoKJ]","timestamp":"2024-06-01 23:46:30"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [zWd7Tul12A9TNy2F]","timestamp":"2024-06-01 23:46:38"}
+{"level":"info","message":"FoundryVTT | Created Combatant with id [J37jDd4RfEidhWI3] in parent Combat [oKpDNlgzwUf8IP7n]","timestamp":"2024-06-01 23:53:30"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [uN1qMPjKhibf7jcP]","timestamp":"2024-06-01 23:53:35"}
+{"level":"info","message":"FoundryVTT | Deleted Combatant with id [J37jDd4RfEidhWI3] in parent Combat [oKpDNlgzwUf8IP7n]","timestamp":"2024-06-01 23:53:49"}
+{"level":"info","message":"FoundryVTT | Deleted Item with id [Vk0F1ZwmNmKobEZt] in parent Actor [IuyW1M6KJVl5NLVd]","timestamp":"2024-06-01 23:54:44"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [IkHUPhFTmuhwA9sU]","timestamp":"2024-06-01 23:56:34"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [SnTSPpOfWMKrfeCN]","timestamp":"2024-06-01 23:56:50"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [toyh44jAYhhANQNX]","timestamp":"2024-06-01 23:58:25"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [SRzvCr4Gk8jiDIRW]","timestamp":"2024-06-01 23:58:45"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [DpnAd7mDhV0LGSGC]","timestamp":"2024-06-01 23:58:59"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [dtJPM3GEn2eU5Nfx]","timestamp":"2024-06-01 23:59:55"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [TV02kvjP7CkXK9W6]","timestamp":"2024-06-02 00:00:26"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [TpTkBfLWXw8D9Mbr]","timestamp":"2024-06-02 00:01:14"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [IfmymWn1Pn1Yc30U]","timestamp":"2024-06-02 00:01:22"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [dWnEAySurzEaaTAC]","timestamp":"2024-06-02 00:01:30"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [Bs7af1JTqO3Kpay1]","timestamp":"2024-06-02 00:01:41"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [gGu9GILBzIitfKc8]","timestamp":"2024-06-02 00:01:50"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [l1vgR6FoIxCqx3Ew]","timestamp":"2024-06-02 00:01:57"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [7XGDt8UCNIftrqzH]","timestamp":"2024-06-02 00:03:03"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [HRgdOQFocpjNxqok]","timestamp":"2024-06-02 00:05:54"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [5WVjhNZgTJcbs8qb]","timestamp":"2024-06-02 00:06:56"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [HmL5b1QWW8wkbNus]","timestamp":"2024-06-02 00:07:22"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [Sj1lp542plj9w1Au]","timestamp":"2024-06-02 00:07:39"}
+{"level":"info","message":"FoundryVTT | Created Item with id [iC7aA0PV9fWPHCWO] in parent Actor [NCAeLHV3yb9LZHy9]","timestamp":"2024-06-02 00:07:45"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [Zgll4kRJoacEYZC9]","timestamp":"2024-06-02 00:07:45"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [GITVH5Lu4Yw6KYYJ]","timestamp":"2024-06-02 00:09:47"}
+{"level":"info","message":"FoundryVTT | Created Item with id [tb6z6vg0Vd8RFToc] in parent ActorDelta [Pn026uGyVTVRiUeN]","timestamp":"2024-06-02 00:10:46"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [vSpV3a1TMyY6NmA5]","timestamp":"2024-06-02 00:11:05"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [gfCa45nyEabv5JjI]","timestamp":"2024-06-02 00:11:05"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [nnVvLPJuH1fWhgUh]","timestamp":"2024-06-02 00:11:44"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [85mb5zQ8mCUI5s5x]","timestamp":"2024-06-02 00:11:52"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [B7Xj06oUIIf0RU3N]","timestamp":"2024-06-02 00:12:03"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [8XOO5rOP90NsWQby]","timestamp":"2024-06-02 00:12:09"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [wFsSJcnIX18EgYNn]","timestamp":"2024-06-02 00:12:49"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [ZENAlnJQa2U9M8Ge]","timestamp":"2024-06-02 00:15:38"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [tPmKYrW94QsvH4Zj]","timestamp":"2024-06-02 00:16:20"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [mjhJ44ElXFEam0FQ]","timestamp":"2024-06-02 00:16:30"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [lGAhScika7XX9jHo]","timestamp":"2024-06-02 00:16:49"}
+{"level":"info","message":"FoundryVTT | Created Combatant with id [q6HPPRTxeaRcmpQ5] in parent Combat [oKpDNlgzwUf8IP7n]","timestamp":"2024-06-02 00:16:59"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [6p6WYwqZY7Cdnbp5]","timestamp":"2024-06-02 00:18:28"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [Q6N0L2EMTKvN9gNh]","timestamp":"2024-06-02 00:20:08"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [daHY4NkN0gR4id3a]","timestamp":"2024-06-02 00:20:44"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [hYKa5poehZF9Xam5]","timestamp":"2024-06-02 00:20:53"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [d7fDsQdBu9SWV0QQ]","timestamp":"2024-06-02 00:20:59"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [RpFoSNmapIPVdMFF]","timestamp":"2024-06-02 00:21:09"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [KnYsnaa7u2syx5IC]","timestamp":"2024-06-02 00:21:21"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [xJMGeidRWioTgFuy]","timestamp":"2024-06-02 00:22:17"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [Ut3Sv049WEmCQTw3]","timestamp":"2024-06-02 00:22:42"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [9rcQiQeg41e0J5ox]","timestamp":"2024-06-02 00:23:16"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [qfXewolG7bhJOuFl]","timestamp":"2024-06-02 00:23:25"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [Omy8EiC4RL5y8r94]","timestamp":"2024-06-02 00:23:33"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [F0K5Rh8M9Myf3THl]","timestamp":"2024-06-02 00:23:47"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [e0RQ84ur53UDAqJ2]","timestamp":"2024-06-02 00:23:54"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [HXdUasPIODJNSRNG]","timestamp":"2024-06-02 00:24:34"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [Dg9jBwA70OWAASml]","timestamp":"2024-06-02 00:24:52"}
+{"level":"info","message":"FoundryVTT | Created Item with id [l6H5jKwGeEFFkcHn] in parent Actor [oj5QTj7E7kB4Kjke]","timestamp":"2024-06-02 00:24:54"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [RJ14fvR5Wqtk9fUe]","timestamp":"2024-06-02 00:25:29"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [1uP2ztKlGETE4luc]","timestamp":"2024-06-02 00:26:12"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [k0rXZUAFvEANCfM5]","timestamp":"2024-06-02 00:26:50"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [3c2YroMYZhRrsV2V]","timestamp":"2024-06-02 00:28:17"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [4f7Ewikgsm52DGlf]","timestamp":"2024-06-02 00:29:24"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [95w36bHOTI1zrtJP]","timestamp":"2024-06-02 00:30:06"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [cMD4IvJx593PiRJb]","timestamp":"2024-06-02 00:30:15"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [EJNVXPj8gyw7r4l1]","timestamp":"2024-06-02 00:30:50"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [XpQpIxzS14v6tckz]","timestamp":"2024-06-02 00:30:57"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [4fSDsN8C12TBazLD]","timestamp":"2024-06-02 00:31:06"}
+{"level":"info","message":"Gae5t7NgFb3eHpLq.json saved to modules/token-action-hud-core/storage/odium/actor","timestamp":"2024-06-02 00:32:17"}
+{"level":"info","message":"7ZwJpDh03OzTpIOP.json saved to modules/token-action-hud-core/storage/odium/user","timestamp":"2024-06-02 00:32:18"}
+{"level":"info","message":"Gae5t7NgFb3eHpLq.json saved to modules/token-action-hud-core/storage/odium/actor","timestamp":"2024-06-02 00:32:18"}
+{"level":"info","message":"7ZwJpDh03OzTpIOP.json saved to modules/token-action-hud-core/storage/odium/user","timestamp":"2024-06-02 00:32:18"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [jeGlFY6nJFfvqM2Q]","timestamp":"2024-06-02 00:33:42"}
+{"level":"info","message":"FoundryVTT | Deleted Token with id [d33s1IYUbFb4N2Ot] in parent Scene [Ic6gnRqhq4JCDMEK]","timestamp":"2024-06-02 00:35:16"}
+{"level":"info","message":"FoundryVTT | Deleted Combatant with id [1bTcLLRf8EqYNA61] in parent Combat [oKpDNlgzwUf8IP7n]","timestamp":"2024-06-02 00:35:16"}
+{"level":"info","message":"FoundryVTT | Deleted Token with id [eqeoI58eLtiv5n67] in parent Scene [Ic6gnRqhq4JCDMEK]","timestamp":"2024-06-02 00:35:18"}
+{"level":"info","message":"FoundryVTT | Deleted Combatant with id [Xt4mHW3M31Z9keBM] in parent Combat [oKpDNlgzwUf8IP7n]","timestamp":"2024-06-02 00:35:18"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [8O900DGgvgNaP88E]","timestamp":"2024-06-02 00:39:48"}
+{"level":"info","message":"FoundryVTT | Deleted Item with id [l6H5jKwGeEFFkcHn] in parent Actor [oj5QTj7E7kB4Kjke]","timestamp":"2024-06-02 00:40:12"}
+{"level":"info","message":"FoundryVTT | Deleted Combat with id [oKpDNlgzwUf8IP7n]","timestamp":"2024-06-02 00:40:37"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [IUyp77xWiwdCsTj5]","timestamp":"2024-06-02 00:40:37"}
+{"level":"info","message":"FoundryVTT | Created Combat with id [5AGBXrBpF7h8A8qt]","timestamp":"2024-06-02 00:45:52"}
+{"level":"info","message":"FoundryVTT | Created 11 Combatant documents in parent Combat [5AGBXrBpF7h8A8qt]","timestamp":"2024-06-02 00:45:52"}
+{"level":"info","message":"FoundryVTT | Deleted Combat with id [5AGBXrBpF7h8A8qt]","timestamp":"2024-06-02 00:45:58"}
+{"level":"info","message":"FoundryVTT | Created Combat with id [o81YwMYdozFyYDCT]","timestamp":"2024-06-02 00:52:40"}
+{"level":"info","message":"FoundryVTT | Created 11 Combatant documents in parent Combat [o81YwMYdozFyYDCT]","timestamp":"2024-06-02 00:52:40"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [T2mMmGYp424hu9V1]","timestamp":"2024-06-02 00:52:47"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [vfJj3Wia0naraWNY]","timestamp":"2024-06-02 00:52:50"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [aJ0UKPYAQ6u4aSAF]","timestamp":"2024-06-02 00:52:55"}
+{"level":"info","message":"FoundryVTT | Deleted Combatant with id [m76cTeU48W33JThY] in parent Combat [o81YwMYdozFyYDCT]","timestamp":"2024-06-02 00:53:03"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [oE7JUQNmqwSlGpoR]","timestamp":"2024-06-02 00:53:09"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [eXnotv0cdToU9MXl]","timestamp":"2024-06-02 00:53:11"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [tEJdRopUrlfKqhUZ]","timestamp":"2024-06-02 00:56:08"}
+{"level":"info","message":"FoundryVTT | Created MeasuredTemplate with id [LxObuwWeqdQeQa28] in parent Scene [Ic6gnRqhq4JCDMEK]","timestamp":"2024-06-02 00:56:35"}
+{"level":"info","message":"FoundryVTT | Created Item with id [czPQ365Aq9dOV5cd] in parent Actor [dr5S04djUFeCPqoA]","timestamp":"2024-06-02 00:57:39"}
+{"level":"info","message":"FoundryVTT | Created Item with id [7lyttpi7lscZ7EIE] in parent Actor [IuyW1M6KJVl5NLVd]","timestamp":"2024-06-02 00:57:51"}
+{"level":"info","message":"FoundryVTT | Created Item with id [jq1FfqZdnw6zcEaq] in parent Actor [oj5QTj7E7kB4Kjke]","timestamp":"2024-06-02 00:57:57"}
+{"level":"info","message":"FoundryVTT | Created Item with id [cSgDQzBAE7IX2wBL] in parent Actor [KbXnE4DBpweSlfwh]","timestamp":"2024-06-02 00:58:04"}
+{"level":"info","message":"FoundryVTT | Created Combatant with id [y6rtayhnlZ9PfxSD] in parent Combat [o81YwMYdozFyYDCT]","timestamp":"2024-06-02 01:01:31"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [FPuAlrHpatGkWt2f]","timestamp":"2024-06-02 01:01:37"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [F0V5cZrFWXpholyc]","timestamp":"2024-06-02 01:01:41"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [3H6lRA5pZjUCVWyN]","timestamp":"2024-06-02 01:05:58"}
+{"level":"info","message":"FoundryVTT | Created Item with id [OD0M8r2qAv06Fcgg] in parent Actor [KbXnE4DBpweSlfwh]","timestamp":"2024-06-02 01:06:30"}
+{"level":"info","message":"FoundryVTT | Deleted Item with id [cSgDQzBAE7IX2wBL] in parent Actor [KbXnE4DBpweSlfwh]","timestamp":"2024-06-02 01:06:34"}
+{"level":"info","message":"FoundryVTT | Deleted Item with id [OD0M8r2qAv06Fcgg] in parent Actor [KbXnE4DBpweSlfwh]","timestamp":"2024-06-02 01:06:36"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [19CUKdPfQHnWae9x]","timestamp":"2024-06-02 01:07:03"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [3Ym8YKRrewmtcoVy]","timestamp":"2024-06-02 01:08:50"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [SBWphKmyGbAkHQ2P]","timestamp":"2024-06-02 01:08:59"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [IUacsWEMfFFh3lqx]","timestamp":"2024-06-02 01:11:22"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [2iw5DIeUpeZTTsfK]","timestamp":"2024-06-02 01:12:57"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [MCv3yrrPntfRSP1i]","timestamp":"2024-06-02 01:13:11"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [X9FVVf23BTIAat4Q]","timestamp":"2024-06-02 01:13:16"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [AztD5BydwrW2zFuq]","timestamp":"2024-06-02 01:13:20"}
+{"level":"info","message":"FoundryVTT | Deleted Item with id [czPQ365Aq9dOV5cd] in parent Actor [dr5S04djUFeCPqoA]","timestamp":"2024-06-02 01:14:15"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [sZD0vD1x1u7RyMJU]","timestamp":"2024-06-02 01:14:30"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [ry8zsSioKCabREwk]","timestamp":"2024-06-02 01:14:57"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [LYcn97KG8vnzO1FS]","timestamp":"2024-06-02 01:15:25"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [kndXjBa7FWPtST4e]","timestamp":"2024-06-02 01:15:51"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [RsaL7fFaCeNorb65]","timestamp":"2024-06-02 01:15:55"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [bfJiMp1a7sNkDXKh]","timestamp":"2024-06-02 01:15:59"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [p4lY9UWuzmUiLhA7]","timestamp":"2024-06-02 01:16:06"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [PpIYrHpWEOFiqFgd]","timestamp":"2024-06-02 01:16:12"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [a4BzH1AEsAjQ4Cer]","timestamp":"2024-06-02 01:17:45"}
+{"level":"info","message":"FoundryVTT | Deleted Item with id [7lyttpi7lscZ7EIE] in parent Actor [IuyW1M6KJVl5NLVd]","timestamp":"2024-06-02 01:17:57"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [V35a3Fg1E7v3lTLl]","timestamp":"2024-06-02 01:19:09"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [3Ljd6B43C3WABXH7]","timestamp":"2024-06-02 01:19:58"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [tBvoWhACPVgMphsf]","timestamp":"2024-06-02 01:20:56"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [vaTX7Z6xqsIi6TRk]","timestamp":"2024-06-02 01:21:20"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [ghDHmod3Jt9YaXCT]","timestamp":"2024-06-02 01:21:50"}
+{"level":"info","message":"FoundryVTT | Deleted MeasuredTemplate with id [LxObuwWeqdQeQa28] in parent Scene [Ic6gnRqhq4JCDMEK]","timestamp":"2024-06-02 01:22:32"}
+{"level":"info","message":"FoundryVTT | Deleted Token with id [l5n6DvhKsJ0OMoBQ] in parent Scene [Ic6gnRqhq4JCDMEK]","timestamp":"2024-06-02 01:25:05"}
+{"level":"info","message":"FoundryVTT | Deleted Combatant with id [tBypN8ieXASA6hJt] in parent Combat [o81YwMYdozFyYDCT]","timestamp":"2024-06-02 01:25:05"}
+{"level":"info","message":"FoundryVTT | Deleted Token with id [SecwbaD1gXRD4N4m] in parent Scene [Ic6gnRqhq4JCDMEK]","timestamp":"2024-06-02 01:25:07"}
+{"level":"info","message":"FoundryVTT | Deleted Combatant with id [MNN3lGsb46EH60iC] in parent Combat [o81YwMYdozFyYDCT]","timestamp":"2024-06-02 01:25:07"}
+{"level":"info","message":"FoundryVTT | Deleted Token with id [GNAX7C0MuIVUJrUr] in parent Scene [Ic6gnRqhq4JCDMEK]","timestamp":"2024-06-02 01:25:08"}
+{"level":"info","message":"FoundryVTT | Deleted Combatant with id [CZSBTapIobgL2Zbv] in parent Combat [o81YwMYdozFyYDCT]","timestamp":"2024-06-02 01:25:08"}
+{"level":"info","message":"FoundryVTT | Deleted Combat with id [o81YwMYdozFyYDCT]","timestamp":"2024-06-02 01:26:59"}
+{"level":"info","message":"FoundryVTT | Created ChatMessage with id [lFu8xOVf1fs4cqkC]","timestamp":"2024-06-02 01:26:59"}
+{"level":"info","message":"FoundryVTT | Deleted Token with id [vWPNwc4DdUrnqDqy] in parent Scene [Ic6gnRqhq4JCDMEK]","timestamp":"2024-06-02 01:30:39"}
+{"level":"info","message":"FoundryVTT | Deleted Item with id [jq1FfqZdnw6zcEaq] in parent Actor [oj5QTj7E7kB4Kjke]","timestamp":"2024-06-02 01:38:47"}
+{"level":"info","message":"FoundryVTT | Deleted Item with id [tb6z6vg0Vd8RFToc] in parent ActorDelta [Pn026uGyVTVRiUeN]","timestamp":"2024-06-02 01:40:14"}
+{"level":"info","message":"Running on Node.js - Version 18.14.0","timestamp":"2024-06-03 10:16:33"}
+{"level":"info","message":"Foundry Virtual Tabletop - Version 11 Build 315","timestamp":"2024-06-03 10:16:33"}
+{"level":"info","message":"User Data Directory - \"C:/Users/JoshuaWasDead/AppData/Local/FoundryVTT\"","timestamp":"2024-06-03 10:16:33"}
+{"level":"info","message":"Application Options:\n{\n  \"compressStatic\": true,\n  \"fullscreen\": false,\n  \"hostname\": null,\n  \"language\": \"en.core\",\n  \"localHostname\": null,\n  \"port\": 30000,\n  \"protocol\": null,\n  \"proxyPort\": null,\n  \"proxySSL\": false,\n  \"routePrefix\": null,\n  \"updateChannel\": \"stable\",\n  \"upnp\": true,\n  \"upnpLeaseDuration\": null,\n  \"awsConfig\": null,\n  \"compressSocket\": true,\n  \"cssTheme\": \"foundry\",\n  \"deleteNEDB\": false,\n  \"hotReload\": false,\n  \"passwordSalt\": null,\n  \"sslCert\": null,\n  \"sslKey\": null,\n  \"world\": \"odium\",\n  \"serviceConfig\": null,\n  \"telemetry\": false,\n  \"adminPassword\": \"••••••••••••••••\",\n  \"noBackups\": false\n}","timestamp":"2024-06-03 10:16:33"}
+{"level":"info","message":"Software license verification succeeded","timestamp":"2024-06-03 10:16:34"}
+{"level":"info","message":"Requesting UPnP port forwarding to destination port 30000","timestamp":"2024-06-03 10:16:34"}
+{"level":"info","message":"Running Electron application with version 24.8.5 using Chromium 112.0.5615.204","timestamp":"2024-06-03 10:16:34"}
+{"level":"warn","message":"The module \"rolladvantage-token-stamp-2-foundry\" is using the old flat core compatibility fields which are deprecated in favor of the new \"compatibility\" object\nDeprecated since Version 10\nBackwards-compatible support will be removed in Version 13","timestamp":"2024-06-03 10:16:35"}
+{"level":"warn","message":"The module \"rolladvantage-token-stamp-2-foundry\" is using the old flat core compatibility fields which are deprecated in favor of the new \"compatibility\" object\nDeprecated since Version 10\nBackwards-compatible support will be removed in Version 13","timestamp":"2024-06-03 10:16:36"}
+{"level":"info","message":"FoundryVTT | Connected to database \"actors\"","timestamp":"2024-06-03 10:16:36"}
+{"level":"info","message":"FoundryVTT | Connected to database \"cards\"","timestamp":"2024-06-03 10:16:36"}
+{"level":"info","message":"FoundryVTT | Connected to database \"messages\"","timestamp":"2024-06-03 10:16:36"}
+{"level":"info","message":"FoundryVTT | Connected to database \"combats\"","timestamp":"2024-06-03 10:16:36"}
+{"level":"info","message":"FoundryVTT | Connected to database \"drawings\"","timestamp":"2024-06-03 10:16:37"}
+{"level":"info","message":"FoundryVTT | Connected to database \"fog\"","timestamp":"2024-06-03 10:16:37"}
+{"level":"info","message":"FoundryVTT | Connected to database \"folders\"","timestamp":"2024-06-03 10:16:37"}
+{"level":"info","message":"FoundryVTT | Connected to database \"items\"","timestamp":"2024-06-03 10:16:37"}
+{"level":"info","message":"FoundryVTT | Connected to database \"journal\"","timestamp":"2024-06-03 10:16:37"}
+{"level":"info","message":"FoundryVTT | Connected to database \"macros\"","timestamp":"2024-06-03 10:16:37"}
+{"level":"info","message":"FoundryVTT | Connected to database \"playlists\"","timestamp":"2024-06-03 10:16:37"}
+{"level":"info","message":"FoundryVTT | Connected to database \"tables\"","timestamp":"2024-06-03 10:16:37"}
+{"level":"info","message":"FoundryVTT | Connected to database \"scenes\"","timestamp":"2024-06-03 10:16:37"}
+{"level":"info","message":"FoundryVTT | Connected to database \"settings\"","timestamp":"2024-06-03 10:16:37"}
+{"level":"info","message":"FoundryVTT | Connected to database \"users\"","timestamp":"2024-06-03 10:16:37"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e.abomination-vaults-bestiary\"","timestamp":"2024-06-03 10:16:37"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e.age-of-ashes-bestiary\"","timestamp":"2024-06-03 10:16:37"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e.agents-of-edgewatch-bestiary\"","timestamp":"2024-06-03 10:16:38"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e.book-of-the-dead-bestiary\"","timestamp":"2024-06-03 10:16:38"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e.blood-lords-bestiary\"","timestamp":"2024-06-03 10:16:38"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e.blog-bestiary\"","timestamp":"2024-06-03 10:16:38"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e.extinction-curse-bestiary\"","timestamp":"2024-06-03 10:16:38"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e.fall-of-plaguestone-bestiary\"","timestamp":"2024-06-03 10:16:38"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e.fists-of-the-ruby-phoenix-bestiary\"","timestamp":"2024-06-03 10:16:38"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e.hazards\"","timestamp":"2024-06-03 10:16:38"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e.howl-of-the-wild-bestiary\"","timestamp":"2024-06-03 10:16:38"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e.gatewalkers-bestiary\"","timestamp":"2024-06-03 10:16:38"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e.lost-omens-impossible-lands-bestiary\"","timestamp":"2024-06-03 10:16:38"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e.lost-omens-mwangi-expanse-bestiary\"","timestamp":"2024-06-03 10:16:38"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e.lost-omens-highhelm-bestiary\"","timestamp":"2024-06-03 10:16:39"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e.lost-omens-monsters-of-myth-bestiary\"","timestamp":"2024-06-03 10:16:39"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e.lost-omens-tian-xia-world-guide\"","timestamp":"2024-06-03 10:16:39"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e.lost-omens-travel-guide-bestiary\"","timestamp":"2024-06-03 10:16:39"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e.malevolence-bestiary\"","timestamp":"2024-06-03 10:16:39"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e.menace-under-otari-bestiary\"","timestamp":"2024-06-03 10:16:39"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e.npc-gallery\"","timestamp":"2024-06-03 10:16:39"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e.one-shot-bestiary\"","timestamp":"2024-06-03 10:16:39"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e.outlaws-of-alkenstar-bestiary\"","timestamp":"2024-06-03 10:16:39"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e.kingmaker-bestiary\"","timestamp":"2024-06-03 10:16:39"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e.pathfinder-bestiary\"","timestamp":"2024-06-03 10:16:40"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e.pathfinder-bestiary-2\"","timestamp":"2024-06-03 10:16:40"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e.pathfinder-bestiary-3\"","timestamp":"2024-06-03 10:16:41"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e.pathfinder-monster-core\"","timestamp":"2024-06-03 10:16:41"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e.pathfinder-dark-archive\"","timestamp":"2024-06-03 10:16:41"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e.pfs-introductions-bestiary\"","timestamp":"2024-06-03 10:16:41"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e.pfs-season-1-bestiary\"","timestamp":"2024-06-03 10:16:41"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e.pfs-season-2-bestiary\"","timestamp":"2024-06-03 10:16:41"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e.pfs-season-3-bestiary\"","timestamp":"2024-06-03 10:16:41"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e.pfs-season-4-bestiary\"","timestamp":"2024-06-03 10:16:42"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e.pfs-season-5-bestiary\"","timestamp":"2024-06-03 10:16:42"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e.quest-for-the-frozen-flame-bestiary\"","timestamp":"2024-06-03 10:16:42"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e.rusthenge-bestiary\"","timestamp":"2024-06-03 10:16:42"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e.season-of-ghosts-bestiary\"","timestamp":"2024-06-03 10:16:42"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e.seven-dooms-for-sandpoint-bestiary\"","timestamp":"2024-06-03 10:16:42"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e.shadows-at-sundown-bestiary\"","timestamp":"2024-06-03 10:16:42"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e.sky-kings-tomb-bestiary\"","timestamp":"2024-06-03 10:16:42"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e.strength-of-thousands-bestiary\"","timestamp":"2024-06-03 10:16:42"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e.the-enmity-cycle-bestiary\"","timestamp":"2024-06-03 10:16:42"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e.the-slithering-bestiary\"","timestamp":"2024-06-03 10:16:42"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e.troubles-in-otari-bestiary\"","timestamp":"2024-06-03 10:16:43"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e.night-of-the-gray-death-bestiary\"","timestamp":"2024-06-03 10:16:43"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e.crown-of-the-kobold-king-bestiary\"","timestamp":"2024-06-03 10:16:43"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e.stolen-fate-bestiary\"","timestamp":"2024-06-03 10:16:43"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e.rage-of-elements-bestiary\"","timestamp":"2024-06-03 10:16:43"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e.wardens-of-wildwood-bestiary\"","timestamp":"2024-06-03 10:16:43"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e.vehicles\"","timestamp":"2024-06-03 10:16:43"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e.actionspf2e\"","timestamp":"2024-06-03 10:16:43"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e.ancestries\"","timestamp":"2024-06-03 10:16:43"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e.ancestryfeatures\"","timestamp":"2024-06-03 10:16:43"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e.backgrounds\"","timestamp":"2024-06-03 10:16:43"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e.classes\"","timestamp":"2024-06-03 10:16:43"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e.classfeatures\"","timestamp":"2024-06-03 10:16:43"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e.familiar-abilities\"","timestamp":"2024-06-03 10:16:44"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e.feats-srd\"","timestamp":"2024-06-03 10:16:44"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e.heritages\"","timestamp":"2024-06-03 10:16:44"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e.spells-srd\"","timestamp":"2024-06-03 10:16:44"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e.bestiary-effects\"","timestamp":"2024-06-03 10:16:44"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e.boons-and-curses\"","timestamp":"2024-06-03 10:16:44"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e.conditionitems\"","timestamp":"2024-06-03 10:16:44"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e.campaign-effects\"","timestamp":"2024-06-03 10:16:44"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e.equipment-effects\"","timestamp":"2024-06-03 10:16:45"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e.other-effects\"","timestamp":"2024-06-03 10:16:45"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e.feat-effects\"","timestamp":"2024-06-03 10:16:45"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e.pathfinder-society-boons\"","timestamp":"2024-06-03 10:16:45"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e.spell-effects\"","timestamp":"2024-06-03 10:16:45"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e.equipment-srd\"","timestamp":"2024-06-03 10:16:46"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e.deities\"","timestamp":"2024-06-03 10:16:46"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e.iconics\"","timestamp":"2024-06-03 10:16:46"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e.paizo-pregens\"","timestamp":"2024-06-03 10:16:46"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e.rollable-tables\"","timestamp":"2024-06-03 10:16:46"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e.criticaldeck\"","timestamp":"2024-06-03 10:16:46"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e.journals\"","timestamp":"2024-06-03 10:16:46"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e.gmg-srd\"","timestamp":"2024-06-03 10:16:46"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e.action-macros\"","timestamp":"2024-06-03 10:16:46"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e.pf2e-macros\"","timestamp":"2024-06-03 10:16:46"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e.bestiary-ability-glossary-srd\"","timestamp":"2024-06-03 10:16:46"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e.bestiary-family-ability-glossary\"","timestamp":"2024-06-03 10:16:46"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e.adventure-specific-actions\"","timestamp":"2024-06-03 10:16:47"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e.kingmaker-features\"","timestamp":"2024-06-03 10:16:47"}
+{"level":"info","message":"FoundryVTT | Connected to database \"fxmaster.fxmaster\"","timestamp":"2024-06-03 10:16:47"}
+{"level":"info","message":"FoundryVTT | Connected to database \"JB2A_DnD5e.jb2a-sequencer\"","timestamp":"2024-06-03 10:16:47"}
+{"level":"info","message":"FoundryVTT | Connected to database \"monks-active-tiles.active-tile-macros\"","timestamp":"2024-06-03 10:16:47"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e-jb2a-macros.Macros\"","timestamp":"2024-06-03 10:16:47"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e-jb2a-macros.Actors\"","timestamp":"2024-06-03 10:16:47"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e-jb2a-macros.Actions\"","timestamp":"2024-06-03 10:16:47"}
+{"level":"info","message":"FoundryVTT | Connected to database \"pf2e-reaction.reaction-effects\"","timestamp":"2024-06-03 10:16:47"}
+{"level":"info","message":"FoundryVTT | Connected to database \"troubles-in-otari-remade-maps.troubles-in-otari-maps-remake-by-narchy\"","timestamp":"2024-06-03 10:16:47"}
+{"level":"info","message":"FoundryVTT | Created 0 Folder documents with ids: []","timestamp":"2024-06-03 10:16:47"}
+{"level":"info","message":"Server started and listening on port 30000","timestamp":"2024-06-03 10:16:47"}
+{"level":"info","message":"Created client session 29f70b94ded78acc9a7751e4","timestamp":"2024-06-03 10:16:50"}
+{"ip":"::1","level":"info","message":"User authentication successful for user Gamemaster","session":"29f70b94ded78acc9a7751e4","timestamp":"2024-06-03 10:17:21"}
+{"level":"info","message":"Core software stable update 12.325 is available!","timestamp":"2024-06-03 10:17:32"}
+{"level":"info","message":"Pathfinder Second Edition update 5.16.1 is now available!","timestamp":"2024-06-03 10:17:32"}
+{"level":"info","message":"Vended World data to User [7ZwJpDh03OzTpIOP] in 4411ms","timestamp":"2024-06-03 10:17:33"}
+{"level":"info","message":"Shutting down Foundry Virtual Tabletop server","timestamp":"2024-06-03 10:20:46"}
+{"level":"info","message":"Shut-down success. Goodbye!","timestamp":"2024-06-03 10:20:46"}

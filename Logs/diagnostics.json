@@ -1,5 +1,5 @@
 {
-  "timestamp": 1717238008914,
+  "timestamp": 1717391851323,
   "os": {
     "platform": "win32",
     "version": "10.0.19045",
@@ -49,6 +49,9 @@
     "illandril-hotbar-uses": {
       "version": "3.1.2"
     },
+    "JB2A_DnD5e": {
+      "version": "0.6.3"
+    },
     "lib-wrapper": {
       "version": "1.12.13.1"
     },
@@ -61,6 +64,9 @@
     "monks-combat-marker": {
       "version": "11.05"
     },
+    "monks-common-display": {
+      "version": "11.07"
+    },
     "monks-hotbar-expansion": {
       "version": "11.01"
     },
@@ -72,6 +78,9 @@
     },
     "pdftofoundry": {
       "version": "4.1.2"
+    },
+    "pf2-pdf-en-import": {
+      "version": "2.57"
     },
     "pf2e-dailies": {
       "version": "3.1.5"
@@ -126,17 +135,20 @@
     },
     "troubles-in-otari-remade-maps": {
       "version": "1.0.9"
+    },
+    "warpgate": {
+      "version": "1.closing"
     }
   },
   "systems": {
     "pf2e": {
       "version": "5.16.0",
-      "playtime": 12512
+      "playtime": 21341
     }
   },
   "worlds": {},
   "playtime": {
-    "total": 12512,
-    "max": 12512
+    "total": 21341,
+    "max": 21341
   }
 }

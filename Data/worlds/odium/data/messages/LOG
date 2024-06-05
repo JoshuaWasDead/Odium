@@ -1,3 +1,5 @@
-2024/06/01-18:27:55.651 44dc Recovering log #97
-2024/06/01-18:27:55.654 44dc Delete type=0 #97
-2024/06/01-18:27:55.654 44dc Delete type=3 #95
+2024/06/03-10:16:36.847 2fac Recovering log #102
+2024/06/03-10:16:36.850 2fac Level-0 table #104: started
+2024/06/03-10:16:36.867 2fac Level-0 table #104: 417274 bytes OK
+2024/06/03-10:16:36.877 2fac Delete type=0 #102
+2024/06/03-10:16:36.878 2fac Delete type=3 #101
