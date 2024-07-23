@@ -1,7 +1,1 @@
-2024/06/12-14:11:48.545 4614 Recovering log #137
-2024/06/12-14:11:48.548 4614 Delete type=0 #137
-2024/06/12-14:11:48.548 4614 Delete type=3 #135
-2024/06/12-14:32:52.922 1d00 Level-0 table #142: started
-2024/06/12-14:32:52.922 1d00 Level-0 table #142: 0 bytes OK
-2024/06/12-14:32:52.924 1d00 Delete type=0 #140
-2024/06/12-14:32:52.925 1d00 Manual compaction at level-0 from '!actors!0H2BbJCAKauXYKE6' @ 72057594037927935 : 1 .. '!actors.items!yukamyipO8x9VuZa.uIzebnQMmGWvKMo5' @ 0 : 0; will stop at (end)
+2024/06/12-15:56:24.002 2830 Delete type=3 #1

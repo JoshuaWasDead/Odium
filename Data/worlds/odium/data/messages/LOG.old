@@ -1,7 +1,8 @@
-2024/06/12-14:11:47.496 4e44 Recovering log #133
-2024/06/12-14:11:47.499 4e44 Delete type=0 #133
-2024/06/12-14:11:47.499 4e44 Delete type=3 #131
-2024/06/12-14:32:52.905 1d00 Level-0 table #138: started
-2024/06/12-14:32:52.907 1d00 Level-0 table #138: 6587 bytes OK
-2024/06/12-14:32:52.908 1d00 Delete type=0 #136
-2024/06/12-14:32:52.914 1d00 Manual compaction at level-0 from 'undefined' @ 72057594037927935 : 1 .. 'undefined' @ 0 : 0; will stop at (end)
+2024/06/12-15:56:19.663 1bac Delete type=3 #1
+2024/06/12-15:56:19.664 2534 Compacting 4@0 + 0@1 files
+2024/06/12-15:56:19.667 2534 Compacted 4@0 + 0@1 files => 0 bytes
+2024/06/12-15:56:19.671 2534 compacted to: files[ 0 0 0 0 0 0 0 ]
+2024/06/12-15:56:19.671 2534 Delete type=2 #110
+2024/06/12-15:56:19.672 2534 Delete type=2 #114
+2024/06/12-15:56:19.672 2534 Delete type=2 #118
+2024/06/12-15:56:19.672 2534 Delete type=2 #138
